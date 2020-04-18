@@ -1,19 +1,26 @@
 package com.hjn.dataStructure.learn.chapter1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+//import java.util.Scanner;
 
 /**
  * @author HJN
  *
  */
 public class MaxSubsequenceSum {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int K = in.nextInt();
+	public static void main(String[] args) throws NumberFormatException, IOException {
+//		Scanner in = new Scanner(System.in);
+//		int K = in.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int K = Integer.parseInt(br.readLine());
+		String s[] = br.readLine().split(" ");
 		int[] N = new int[K];
 		int judge1 = 1, judge2 = 1;
 		for(int i=0; i<K; i++) {
-			N[i]=in.nextInt();
+//			N[i]=in.nextInt();
+			N[i]=Integer.parseInt(s[i]);
 			if(N[i]>0) judge1 = 0; // 考虑全是非正数情况
 			if(N[i] == 0) judge2 = 0; // 考虑有0
 		}
@@ -67,5 +74,5 @@ public class MaxSubsequenceSum {
  * 
  * 最大N——运行超时
  * 分析：算法复杂度过高？
- * 
+ * 网上回答：Scanner 输入效率太低，改成BuffferedReader 最后一个测试点就能过了。
  */
