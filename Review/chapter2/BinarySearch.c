@@ -31,18 +31,39 @@ int main()
 
 /* 你的代码将被嵌在这里 */
 
+/**
+ * 返回初始化之后的List
+ * @return:L 
+ */
 List ReadInput()
 {
-    List L = (List *)malloc(sizeof(List));
+    List L = (List)malloc(sizeof(List));
     if(NULL == L)
     {
         printf("Malloc Failed!\n");
         exit(1); // 表示了一个进程的结束
     }
-
+    L->Last = 5;
+    int temp[6] = {0, 5, 2, 6, 2, 1};
+    for (int i = 0; i <= L->Last; i++)
+    {
+        L->Data[i] = temp[i];
+    }
+    return L;
 }
 
+/**
+ * 返回二分查找的元素位置
+ * @return:i 元素的位置
+ */
 Position BinarySearch( List L, ElementType X )
 {
-
+    for (int i = 1; i <= L->Last; i++)
+    {
+        if(X == L->Data[i])
+        {
+            return i;
+        }
+    }
+    return NotFound;
 }
