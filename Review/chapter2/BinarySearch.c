@@ -68,7 +68,7 @@ List ReadInput()
 Position BinarySearch( List L, ElementType X )
 {
     int binary = 0, left = 1, right = L->Last;
-    while(left<=right)
+    while(left<=right) // 如果不加=，则情况5：大数据，在尾部找到——答案错误
     {
         /**
          * 错误：
