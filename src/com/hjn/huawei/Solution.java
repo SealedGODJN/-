@@ -7,7 +7,7 @@ public class Solution {
 	static int[][] F = new int[][]{{0,2,3,2},{0,1,1,3}};;
 	static int f1 = 0;
 	static int f2 = 0;
-	static int temp_f2 = 0;
+//	static int temp_f2 = 0;
 	static int currentT = 0;
 	static int bestT = 100;
 	public static void swap(int t,int i) {
@@ -17,10 +17,13 @@ public class Solution {
 	}
 	
 	public static void solve(int t) {
+		int temp_f2; 
+		// temp_f2不能设置为全局变量，每一次递归都会用到该变量，
+		//且每一次递归该变量的值不同影响最终结果
 		if(t>=n) { // t控制层数
 			if(currentT < bestT) {
-				for(int i = 1; i <n; i++) {
-					bestx[i] = x[i];
+				for(int j = 1; j <n; j++) {
+					bestx[j] = x[j];
 				}
 				bestT = currentT;
 			}
