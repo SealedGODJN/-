@@ -2,6 +2,11 @@ package com.hjn.huawei;
 
 import java.util.*;
 
+/**
+ * 华为机试测试
+ * @author HJN
+ *
+ */
 public class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
