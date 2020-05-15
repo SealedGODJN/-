@@ -20,6 +20,8 @@
     "C_Cpp.clang_format_sortIncludes": true,
     "files.associations": {
         "algorithm": "c",
-        "xstring": "c"
+        "xstring": "c",
+        "cstdlib": "c",
+        "xutility": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }
