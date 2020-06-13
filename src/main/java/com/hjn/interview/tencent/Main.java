@@ -1,4 +1,4 @@
-package com.hjn.tencent;
+package com.hjn.interview.tencent;
 
 import java.util.ArrayList;
 import java.util.Scanner;

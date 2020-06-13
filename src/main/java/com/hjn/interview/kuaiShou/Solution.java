@@ -1,4 +1,4 @@
-package com.hjn.kuaiShou;
+package com.hjn.interview.kuaiShou;
 
 import java.util.*;
 

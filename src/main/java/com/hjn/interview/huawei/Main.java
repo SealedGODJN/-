@@ -1,4 +1,4 @@
-package com.hjn.huawei;
+package com.hjn.interview.huawei;
 
 import java.util.*;
 

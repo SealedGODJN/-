@@ -1,4 +1,4 @@
-package com.hjn.huawei;
+package com.hjn.interview.huawei;
 
 public class Solution {
 	static int n = 4;

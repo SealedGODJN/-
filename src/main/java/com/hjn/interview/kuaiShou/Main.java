@@ -1,6 +1,5 @@
-package com.hjn.kuaiShou;
+package com.hjn.interview.kuaiShou;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
