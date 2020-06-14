@@ -26,10 +26,10 @@ public class ClimbStairs_70 {
         return sum;
     }
     public static int A(int i, int n) {
-        if(i>n) {
+        if(i >= n) {
             int temp = i;
-            i = n;
-            n = temp;
+            i = n - 1;
+            n = temp + 1;
         }
         int sum = 1;
         int j=i, k=n;
