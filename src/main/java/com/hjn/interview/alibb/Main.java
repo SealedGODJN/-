@@ -1,4 +1,4 @@
-package com.hjn.alibb;
+package com.hjn.interview.alibb;
 //
 //import java.util.Scanner;
 //import java.util.ArrayList;
