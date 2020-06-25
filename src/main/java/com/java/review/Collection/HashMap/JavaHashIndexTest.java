@@ -1,4 +1,4 @@
-package com.java.review;
+package com.java.review.Collection.HashMap;
 
 public class JavaHashIndexTest {
 	public static void main(String[] args) {

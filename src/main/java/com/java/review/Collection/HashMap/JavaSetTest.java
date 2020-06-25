@@ -1,4 +1,4 @@
-package com.java.review;
+package com.java.review.Collection.HashMap;
 
 import java.util.HashSet;
  

@@ -1,4 +1,4 @@
-package com.hjn.dataStructure.chapter1;
+package com.hjn.dataStructure.array;
 
 import java.util.Scanner;
 
