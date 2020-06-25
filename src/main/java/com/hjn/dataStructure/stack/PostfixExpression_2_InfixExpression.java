@@ -98,7 +98,7 @@ public class PostfixExpression_2_InfixExpression {
                 if(c!= '(' && c!=')') {
                     num.push(letter.pop());
                     if(letter.size() == 0) {
-                        System.err.println("letter.size()==0");
+//                        System.err.println("letter.size()==0");
                         return;
                     }
                 }
