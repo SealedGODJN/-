@@ -25,7 +25,7 @@ public class PostfixExpression_2_InfixExpression {
         letter_score.put(')', 3);
 
         // 测试
-        String test= "2*(9+6/3-5)+4";
+        String test= "(3+2)*(9+6/3-5)+4";
         char[] pe = test.toCharArray();
         pe2ie(pe);
         for(Character c:num) {
@@ -78,12 +78,13 @@ public class PostfixExpression_2_InfixExpression {
                             num.push(letter.pop());
                         } else {
                             letter.pop();
+                            letter_score.replace('(',3);
                             break;
                         }
 
                         if(letter.size() == 0) {
                             System.err.println("letter.size()==0");
-                            return;
+                            break;
                         }
                     }
 
