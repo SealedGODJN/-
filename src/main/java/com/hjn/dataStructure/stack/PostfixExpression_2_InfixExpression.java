@@ -83,7 +83,7 @@ public class PostfixExpression_2_InfixExpression {
                         }
 
                         if(letter.size() == 0) {
-                            System.err.println("letter.size()==0");
+//                            System.err.println("letter.size()==0");
                             break;
                         }
                     }
