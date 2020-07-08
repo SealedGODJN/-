@@ -1,6 +1,6 @@
 package com.hjn.dataStructure.stack;
 
-import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.Stack;
 
@@ -92,6 +92,7 @@ public class PostfixExpression_2_InfixExpression {
             }
         }
 
+        // 将运算符栈内的其他运算符一一处理到结果中
         while (true) {
             if(letter.size() != 0) {
                 Character c = letter.peek();
