@@ -265,3 +265,101 @@ BinomialNode* binomial_delete(BinomialHeap heap, Type key)
     return heap;
 }
 
+/*
+    减少节点的key:将二项堆heap中的节点node的键值减少为key
+*/
+static void binomial_decrease_key(BinomialHeap heap, BinomialNode* node, Type key)
+{
+    if ((key >= node->key) || (binomial_search(heap, key) != NULL))
+    {
+        printf("decrease failed: the new key(%d) is exised already, \
+         or is no smaller than current key(%d)\n", key, node->key);
+        return;
+    }
+
+    node->key = key;
+
+    BinomialNode *child, *parent;
+    child = node;
+    parent = node->parent;
+    while (parent!=NULL && child->key < parent->key)
+    {
+        swap(child->key, parent->key);
+        child = parent;
+        parent = child->parent;
+    }
+    
+}
+
+/*
+    增加关键字的值：将二项堆heap中的节点node的键值增加为key
+*/
+static void binomial_increase_key(BinomialHeap heap, BinomialNode* node, Type key)
+{
+    if ((key <= node->key) || (binomial_search(heap, key) != NULL))
+    {
+        printf("increase failed: the new key(%d) is exised already, \
+         or is no bigger than current key(%d)\n", key, node->key);
+        return;
+    }
+
+    node->key = key;
+
+    BinomialNode *cur, *child, *least;
+    cur = node;
+    child = cur->child;
+    while (child!=NULL)
+    {
+        if(cur->key > child->key)
+        {
+            // 如果“cur的key” < “cur的左孩子的key”
+            // 则在cur的所有孩子中找出具有最小key的节点
+            // 将最小key的节点和cur节点的key对换
+            least = child;
+            while (child->next != NULL)
+            {
+                if (child->key > child->next->key)
+                {
+                    least = child->next;
+                }
+                child = child->next;
+            }
+            swap(least->key, cur->key);
+
+            // 交换数据之后，再对”原最小节点“进行调整，使它满足最小堆的性质：父节点<=子节点
+            cur = least;
+            child = cur->child;
+        }
+        else
+        {
+            child = child->next;
+        }
+        
+    }
+    
+}
+
+/*
+    更新二项堆heap的节点node的键值为key
+*/
+static void binomial_update_key(BinomialHeap heap, BinomialNode* node, Type key)
+{
+    if (node == NULL)
+    {
+        return;
+    }
+
+    if (key<node->key)
+    {
+        binomial_decrease_key(heap, node, key);
+    }
+    else if (key > node->key)
+    {
+        binomial_increase_key(heap, node, key);
+    }
+    else
+    {
+        printf("No need to update!!!\n");
+    }
+}
+
