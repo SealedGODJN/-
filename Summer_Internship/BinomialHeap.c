@@ -186,6 +186,8 @@ BinomialNode* binomial_insert(BinomialHeap heap, Type key)
 
 /*
     反转二项堆heap
+
+    将根的所有孩子独立出来（之前作为child的节点，现在变成parent，关系反转），并将这些孩子整合成二项堆
 */
 static binomial_reverse(BinomialNode* heap)
 {
@@ -198,10 +200,68 @@ static binomial_reverse(BinomialNode* heap)
     heap->parent = NULL;
     while(heap->next)
     {
-        next = heap->next;
-        heap->next = tail;
-        tail = heap; // NULL?
-        heap = next;
-        
+        next = heap->next; // 先将heap->next保存在next中
+        heap->next = tail; // 第一次：置heap->next为空；之后：heap->next = 之前的heap（关系反转）
+        tail = heap;
+        heap = next; // 相当于heap = heap->next
+        heap->parent = NULL;
     }
+    heap->next = tail;
+
+    return heap;
 }
+
+/*
+    删除节点：删除键值为key的节点，并返回删除节点后的二项树
+*/
+BinomialNode* binomial_delete(BinomialHeap heap, Type key)
+{
+    BinomialNode *node;
+    BinomialNode *parent, *prev, *pos;
+
+    if (heap == NULL)
+    {
+        return heap;
+    }
+
+    // 查找键值为key的节点
+    if ((node = binomial_search(heap,key)) == NULL)
+    {
+        return heap;
+    }
+
+    // 将被删除的节点的数据，上移到它所在的二项树的根节点
+    parent = node->parent;
+    while (parent != NULL)
+    {
+        // 交换数据
+        swap(node->key, parent->key);
+        // 下一个父节点
+        node = parent;
+        parent = node->parent;
+    }
+    
+    // 找到node的前一个根节点(prev)
+    prev = NULL;
+    pos = heap;
+    while (pos!=node)
+    {
+        prev = pos;
+        pos = pos->next;
+    }
+
+    if (prev)
+    {
+        prev->next = node->next;
+    }
+    else
+    {
+        heap = node->next; // prev为空，说明node原本就是堆的根节点
+    }
+    heap = binomial_union(heap, binomial_reverse(node->child));
+
+    free(node);
+
+    return heap;
+}
+

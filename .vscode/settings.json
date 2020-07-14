@@ -22,6 +22,12 @@
         "algorithm": "c",
         "xstring": "c",
         "cstdlib": "c",
-        "xutility": "c"
+        "xutility": "c",
+        "list": "c",
+        "memory": "c",
+        "vector": "c",
+        "xlocale": "c",
+        "xlocinfo": "c",
+        "xlocnum": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }
