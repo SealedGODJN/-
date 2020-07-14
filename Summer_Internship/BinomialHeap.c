@@ -4,49 +4,84 @@
     时间：2020.7.14
 */
 
+#include "BinomialHeap.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-#ifndef _BINOMIAL_HEAP_H_
-#define _BIONMIAL_HEAP_H_
+#define swap(a,b) (a^=b,b^=a,a^=b)
 
-typedef int Type;
+/*
+    查找：在二项堆heap中查找键值为key的节点
+*/
+BinomialNode* binomial_search(BinomialHeap heap, Type key)
+{
+    BinomialNode *child;
+    BinomialNode *parent = heap;
 
-typedef struct _BinomialNode{
-    Type key;                       // 关键字（键值）:用于比较节点大学
-    int degree;                     // 节点的度数：用来表示当前节点的度数
-    /*
-        根节点的度数=C(1,k)，即代表该二项树的k
-        在合并“根节点度数相同的二项树”时，
-        另一位博主的做法为：专门维护一个变量k（保存树的k值）
-        而这位博主为树的每个节点都记录其度数
-        （个人感觉比较浪费，除了根节点有用到度数，其他节点没有用到度数？）
-    */
-    struct _BinomialNode *child;    // 左孩子
-    struct _BinomialNode *parent;   // 父节点
-    struct _BinomialNode *next;     // 兄弟
-} BinomialNode, *BinomialHeap;
+    while (parent!=NULL)
+    {
+        if (parent->key == key)
+        {
+            return parent;
+        }
+        else
+        {
+            if ((child = binomial_search(parent->child,key)) != NULL)
+            {
+                return child;
+            }
+            // else
+            // {
+            //     return NULL;
+            // }
+            // else分支错误，刚刚是在以parent为根节点的树寻找该key
+            // 接下来应该去寻找另一棵树
+            parent = parent->next;
+        }
+    }
+    return NULL;
+}
 
-// 新建key对应的节点，并将其插入到二项堆中
-BinomialNode *binomial_insert(BinomialHeap heap, Type key);
-// 删除节点：删除键值为key的节点，并返回删除节点后的二项树
-BinomialNode *binomial_delete(BinomialHeap heap, Type key);
-// 将二项堆heap的键值oldkey更新为newkey
-void binomial_update(BinomialHeap heap, Type oldkey, Type newkey);
+/*
+ * 获取二项堆中的最小根节点(*y)
+ * 
+ * 参数说明：
+ *  heap    二项堆
+ *  prev_y  [输出参数]最小根节点y的前一个根节点
+ *  y       [输出参数]最小根节点
+ */
+static void _binomial_minimum(BinomialHeap heap, BinomialNode **prev_y, BinomialNode **y)
+{
+    BinomialNode *x, *prev_x; // x用来遍历的当前节点
+    if(heap == NULL)
+        return;
 
-// 合并二项堆：将h1, h2合并成一个堆，并返回合并后的堆
-BinomialNode *binomial_union(BinomialHeap h1, BinomialHeap h2);
+    prev_x = heap;
+    x = heap->next;
+    *prev_y = NULL;
+    *y = heap;
+    while (x!=NULL)
+    {
+        if(x->key < (*y)->key)
+        {
+            *y = x;
+            *prev_y = prev_x;
+        }
+        prev_x = x;
+        x = prev_x->next; // 相当于x=x->next
+    }
+    
+}
 
-// 查找：在二项堆中查找键值为key的节点
-BinomialNode *binomial_search(BinomialHeap heap, Type key);
-// 获取二项堆中的最小节点
-BinomialNode *binomial_minimum(BinomialHeap heap);
-// 移除最小节点，并返回移除节点后的二项堆
-BinomialNode *binomial_extract_minimum(BinomialHeap heap);
-
-// 打印“二项堆”
-void binomial_print(BinomialHeap heap);
-
-#endif
+/*
+ * 返回二项堆中具有最小key的节点
+ */
+BinomialNode* binomial_minimum(BinomialHeap heap)
+{
+    BinomialNode *prev_y, *y;
+    _binomial_minimum(heap, &prev_y, &y);
+    return y;
+}
 
 /*
     将h1,h2中的根表合并成一个按度数递增的链表，返回合并后的根节点
@@ -151,6 +186,28 @@ BinomialNode* binomial_union(BinomialHeap h1, BinomialHeap h2)
         next_x = x->next;
     }
     return heap;
+}
+
+/**
+ * 新建二项堆的节点
+ */
+static BinomialNode* make_binomial_node(Type key)
+{
+    BinomialNode *node;
+    node = (BinomialNode *)malloc(sizeof(BinomialNode));
+    if (node == NULL)
+    {
+        printf("malloc BinomialNode failed!\n");
+        return NULL;
+    }
+
+    node->key = key;
+    node->degree = 0;
+    node->parent = NULL;
+    node->child = NULL;
+    node->next = NULL;
+
+    return node;
 }
 
 /*
@@ -265,6 +322,41 @@ BinomialNode* binomial_delete(BinomialHeap heap, Type key)
     return heap;
 }
 
+/**
+ * 移除最小节点，并返回移除节点后的二项堆
+ */
+BinomialNode* binomial_extract_minimum(BinomialHeap heap)
+{
+    BinomialNode *y, *prev_y; // y是最小节点
+    if (heap == NULL)
+    {
+        return heap;
+    }
+
+    // 找到最小节点和最小节点的前一个节点
+    _binomial_minimum(heap, &prev_y, &y);
+
+    if (prev_y == NULL) // heap的根节点就是最小节点
+    {
+        heap = heap->next;
+    }
+    else
+    {
+        prev_y->next = y->next; // heap的根节点不是最小节点
+    }
+    
+    // 反转最小节点的左孩子，得到最小堆child
+    // 使最小节点所在的二项树独立出来
+    BinomialNode *child = binomial_reverse(y->child);
+    // 将“child”和“heap”合并
+    heap = binomial_union(heap, child);
+
+    // 删除最小节点
+    free(y);
+
+    return heap;
+}
+
 /*
     减少节点的key:将二项堆heap中的节点node的键值减少为key
 */
@@ -363,3 +455,83 @@ static void binomial_update_key(BinomialHeap heap, BinomialNode* node, Type key)
     }
 }
 
+/**
+ * 将二项堆heap的键值oldkey更新为newkey
+ */
+void binomial_update(BinomialHeap heap, Type oldkey, Type newkey)
+{
+    BinomialNode *node;
+    if(heap == NULL)
+    {
+        return;
+    }
+    node = binomial_search(heap, oldkey);
+    if(node != NULL)
+    {
+        binomial_update_key(heap, node, newkey);
+    }
+}
+
+/**
+ * 打印“二项堆”
+ * 
+ * 参数说明：
+ *  node        当前节点
+ *  prev        当前节点的前一个节点（父节点or兄弟节点）
+ *  direction   1:表示当前节点是一个左孩子，2：表示当前节点是一个兄弟节点
+ */
+static void _binomial_print(BinomialNode *node, BinomialNode *prev, int direction)
+{
+    while (node!=NULL)
+    {
+        //printf("%2d \n", node->key);
+        if (direction==1)
+        {
+            printf("\t%2d(%d) is %2d's child\n", node->key, node->degree, prev->key);
+        }
+        else
+        {
+            printf("\t%2d(%d) is %2d's next\n", node->key, node->degree, prev->key);
+        }
+        
+        if (node->child != NULL)
+        {
+            _binomial_print(node->child, node, 1);
+        }
+
+        // 兄弟节点
+        prev = node;
+        node = node->next;
+        direction = 2;
+    }
+    
+}
+
+/*
+    打印二叉堆heap
+*/
+void binomial_print(BinomialHeap heap)
+{
+    if(heap == NULL)
+        return;
+    BinomialNode *p = heap;
+    printf("== 二项堆（");
+    while (p!=NULL)
+    {
+        printf("B%d ", p->degree);
+        p = p->next;
+    }
+    printf("）的详细信息：\n");
+
+    int i = 0;
+    while (heap!=NULL)
+    {
+        i++;
+        printf("%d. 二项树B%d: \n", i, heap->degree);
+        printf("\t%2d(%d) is root\n", heap->key, heap->degree);
+
+        _binomial_print(heap->child, heap, 1);
+        heap = heap->next;
+    }
+    printf("\n");
+}
