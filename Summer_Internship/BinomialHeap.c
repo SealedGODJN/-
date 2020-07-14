@@ -152,3 +152,56 @@ BinomialNode* binomial_union(BinomialHeap h1, BinomialHeap h2)
     }
     return heap;
 }
+
+/*
+    新建key对应的节点，将其插入到二项堆中
+
+    参数说明：
+        heap 原始的二项树
+        key  键值
+    返回值：
+        插入key之后的二项树
+
+    备注：
+        禁止插入相同key的节点（若想允许，则可以屏蔽binomial_search部分的代码）
+*/
+BinomialNode* binomial_insert(BinomialHeap heap, Type key)
+{
+    BinomialNode *node;
+
+    if(binomial_search(heap,key)!=NULL)
+    {
+        printf("insert failed: the key(%d) is existed already!\n", key);
+        return heap;
+    }
+
+    node = make_binomial_node(key);
+    if (node == NULL)
+    {
+        return heap;
+    }
+
+    return binomial_union(heap, node);
+}
+
+/*
+    反转二项堆heap
+*/
+static binomial_reverse(BinomialNode* heap)
+{
+    BinomialNode *next;
+    BinomialNode *tail = NULL;
+
+    if(!heap)
+        return heap;
+
+    heap->parent = NULL;
+    while(heap->next)
+    {
+        next = heap->next;
+        heap->next = tail;
+        tail = heap; // NULL?
+        heap = next;
+        
+    }
+}
