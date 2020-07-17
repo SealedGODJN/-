@@ -209,7 +209,7 @@ static FibNode *fib_heap_remove_min(FibHeap *heap)
 /*
  * 将node链接到root根结点
  */
-static void fib_heap_link(FibHeap * heap, FibNode * node, FibNode *root)
+static void fib_heap_link(FibNode * node, FibNode *root)
 {
     // 将node从双链表中移除
     fib_node_remove(node);
@@ -217,7 +217,7 @@ static void fib_heap_link(FibHeap * heap, FibNode * node, FibNode *root)
     if (root->child == NULL)
         root->child = node;
     else
-        fib_node_add(node, root->child);
+        fib_node_add(node, root->child); // 在root的child层次的双向链表中添加node节点
 
     node->parent = root;
     root->degree++;
@@ -274,11 +274,11 @@ static void fib_heap_consolidate(FibHeap *heap)
                 y = tmp;
 
             }
-            fib_heap_link(heap, y, x);    // 将y链接到x中
-            heap->cons[d] = NULL;
+            fib_heap_link(y, x);    // 将y链接到x中
+            heap->cons[d] = NULL; // 合并之后，应该将之前对应的度设置为NULL
             d++;
         }
-        heap->cons[d] = x;
+        heap->cons[d] = x; // 两种情况，这里只说合并之后：合并之后,d++,对应的度设置为对应的树
     }
     heap->min = NULL;
 
@@ -380,7 +380,7 @@ static void renew_degree(FibNode *parent, int degree)
 static void fib_heap_cut(FibHeap *heap, FibNode *node, FibNode *parent)
 {
     fib_node_remove(node);
-    renew_degree(parent, node->degree);
+    renew_degree(parent, 1);
     // node没有兄弟
     if (node == node->right)
         parent->child = NULL;
