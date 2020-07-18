@@ -157,6 +157,13 @@ BinomialNode* binomial_union(BinomialHeap h1, BinomialHeap h2)
             x = next_x;
             // 不做任何操作？继续循环？
             // 对，对于Case2:三个度数相同的，则合并后面两个
+            //
+            // 有问题？如果前四颗树的度数都相同，只会合并这四棵树中的后两棵树
+            // 没有问题，因为原来的二项堆里面不可能出现2个相同k的二项树
+            // case2产生的原因：
+            // 示例：
+            // 1 1 2 2
+            // 1和1合并得到2，出现了2 2 2的情况
         }
         else if (x->key <= next_x->key)
         {
