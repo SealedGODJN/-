@@ -696,19 +696,33 @@ int b[] = {18, 35, 20, 42,  9,
            31, 23,  6, 48, 11,
            24, 52, 13, 2};
 
+// 共24个
+int c[] = {12, 7, 25, 15, 28,
+           33, 41, 1, 18, 35,
+           20, 42, 9, 55, 58,
+           31, 23, 6, 48, 11,
+           24, 52, 13, 2};
+
+// 共24个
+int d[] = {112, 17, 125, 115, 128,
+           133, 141, 1111, 118, 135,
+           120, 142, 1119, 155, 158,
+           131, 123, 1116, 148, 111,
+           124, 152, 113, 112};
+
 // 验证"基本信息(斐波那契堆的结构)"
 void test_basic()
 {
     int i;
-    int blen=LENGTH(b);
+    int blen=LENGTH(c);
     FibHeap *hb = fib_heap_make();
 
     // 斐波那契堆hb
     printf("== 斐波那契堆(hb)中依次添加: ");
     for(i=0; i<blen; i++)
     {
-        printf("%d ", b[i]);
-        fib_heap_insert_key(hb, b[i]);
+        printf("%d ", c[i]);
+        fib_heap_insert_key(hb, c[i]);
     }
     printf("\n");
     printf("== 斐波那契堆(hb)删除最小节点\n");
@@ -750,8 +764,8 @@ void test_insert()
 void test_union()
 {
     int i;
-    int alen=LENGTH(a);
-    int blen=LENGTH(b);
+    int alen=LENGTH(c);
+    int blen=LENGTH(d);
     FibHeap *ha = fib_heap_make();
     FibHeap *hb = fib_heap_make();
 
@@ -760,8 +774,8 @@ void test_union()
 
     for(i=0; i<alen; i++)
     {
-        printf("%d ", a[i]);
-        fib_heap_insert_key(ha, a[i]);
+        printf("%d ", c[i]);
+        fib_heap_insert_key(ha, c[i]);
     }
     printf("\n");
     printf("== 斐波那契堆(ha)删除最小节点\n");
@@ -772,8 +786,8 @@ void test_union()
     printf("== 斐波那契堆(hb)中依次添加: ");
     for(i=0; i<blen; i++)
     {
-        printf("%d ", b[i]);
-        fib_heap_insert_key(hb, b[i]);
+        printf("%d ", d[i]);
+        fib_heap_insert_key(hb, d[i]);
     }
     printf("\n");
     printf("== 斐波那契堆(hb)删除最小节点\n");
@@ -840,23 +854,27 @@ void test_remove_min()
 void test_decrease()
 {
     int i;
-    int blen=LENGTH(b);
+    int blen=LENGTH(d);
     FibHeap *hb = fib_heap_make();
 
     // 斐波那契堆hb
     printf("== 斐波那契堆(hb)中依次添加: ");
     for(i=0; i<blen; i++)
     {
-        printf("%d ", b[i]);
-        fib_heap_insert_key(hb, b[i]);
+        printf("%d ", d[i]);
+        fib_heap_insert_key(hb, d[i]);
     }
     printf("\n");
     printf("== 斐波那契堆(hb)删除最小节点\n");
     fib_heap_extract_min(hb);
     fib_print(hb);
 
-    printf("== 将20减小为2\n");
-    fib_heap_update(hb, 20, 2);
+    printf("== 将123减小为2\n");
+    fib_heap_update(hb, 123, 2);
+    // fib_print(hb);
+
+    printf("== 将142减小为1\n");
+    fib_heap_update(hb, 142, 1);
     fib_print(hb);
 
     fib_heap_destroy(hb);
@@ -919,15 +937,15 @@ void main()
     // 验证"基本信息(斐波那契堆的结构)"
     // test_basic();
     // 验证"插入操作"
-    test_insert();
+    // test_insert();
     // 验证"合并操作"
-    //test_union();
+    // test_union();
     // 验证"删除最小节点"
-    //test_remove_min();
+    // test_remove_min();
     // 验证"减小节点"
-    //test_decrease();
+    // test_decrease();
     // 验证"增大节点"
-    //test_increase();
+    // test_increase();
     // 验证"删除节点"
-    //test_delete();
+    test_delete();
 }
