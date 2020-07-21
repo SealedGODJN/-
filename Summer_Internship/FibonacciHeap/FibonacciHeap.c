@@ -304,7 +304,7 @@ static void fib_heap_consolidate(FibHeap *heap)
  */
 FibNode* _fib_heap_extract_min(FibHeap *heap)
 {
-    if (heap==NULL || heap->min==NULL)
+    if (heap==NULL || heap->min==NULL) // 多余，在fib_heap_extract_min()中已经判断过了
         return NULL;
 
     FibNode *child = NULL;
