@@ -346,7 +346,7 @@ static void fib_heap_consolidate(FibHeap *heap)
             }
             else
             {
-                fib_node_add(heap->cons[i]);
+                fib_node_add(heap->cons[i], heap->min);
                 if(heap->min->key > heap->cons[i]->key)
                 {
                     heap->min = heap->cons[i];
