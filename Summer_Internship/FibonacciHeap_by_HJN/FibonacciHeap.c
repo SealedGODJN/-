@@ -440,7 +440,10 @@ int fib_heap_get_min(FibHeap *heap, Type *pkey)
  */
 static void renew_degree(FibNode *parent, int degree)
 {
-
+    parent->degree -= degree;
+    if(parent->parent != NULL) {
+        renew_degree(parent->parent, degree);
+    }
 }
 
 /*
@@ -449,7 +452,31 @@ static void renew_degree(FibNode *parent, int degree)
  */
 static void fib_heap_cut(FibHeap *heap, FibNode *node, FibNode *parent)
 {
+    if(node->right == node) // 此时parent只有node一个孩子
+    {
+        parent->child = NULL;
+        // node->parent = NULL;
+        // fib_node_add(node, heap->min);
+        // 和else中相同的语句合并
+    }
+    else
+    {
+        parent->child = node->right;
+        fib_node_remove(node);
+        // node->parent = NULL;
+        // fib_node_add(node, heap->min);
+    }
+    renew_degree(parent, 1);
+    node->parent = NULL;
+    // 注意！！！
+    // 要更新node的marked值为0（重生）
+    node->marked = 0;
 
+    // 注意！！！
+    // 函数fib_node_add是将node的left和right指针指向min和min->left中间
+    // 但是不需要用到node->left和node->right的值
+
+    fib_node_add(node, heap->min);
 }
 
 /*
@@ -462,7 +489,20 @@ static void fib_heap_cut(FibHeap *heap, FibNode *node, FibNode *parent)
  */
 static void fib_heap_cascading_cut(FibHeap *heap, FibNode *node)
 {
-
+    if(node->parent == NULL) // 如果node是根节点，则不需要对其进行级联剪
+        return;
+    if (node->marked == 0)
+    {
+        node->marked = 1;
+        return;
+    }
+    else
+    {
+        fib_heap_cut(heap, node, node->parent);
+        fib_heap_cascading_cut(heap, node->parent);
+    }
+    
+    
 }
 
 /*
@@ -470,7 +510,29 @@ static void fib_heap_cascading_cut(FibHeap *heap, FibNode *node)
  */
 static void fib_heap_decrease(FibHeap *heap, FibNode *node, Type key)
 {
+    FibNode *parent;
+    if(heap == NULL || node == NULL || heap->min == NULL)
+        return;
+    
+    if(key >= node->key)
+    {
+        printf("decrease failed: the new key(%d) is no smaller than current key(%d)\n", key, node->key);
+        return ;
+    }
 
+    node->key = key;
+    parent = node->parent;
+    // if(parent != NULL)
+    // 注意：只有当node的key减小后，破坏了最小堆的性质（子节点的key都比父母的key小）
+    // 即node->key < parent->key
+    // 才需要进行如下操作
+    if(parent != NULL && node->key < parent->key)
+    {
+        fib_heap_cut(heap, node, parent);
+        fib_heap_cascading_cut(heap, parent);
+    }
+    if(node->key < heap->min->key)
+        heap->min = node;
 }
 
 /*
@@ -478,7 +540,70 @@ static void fib_heap_decrease(FibHeap *heap, FibNode *node, Type key)
  */
 static void fib_heap_increase(FibHeap *heap, FibNode *node, Type key)
 {
+    // 增加node的key之后，node的key和孩子的key有多种大小关系
+    // 此时，只要把node的孩子都挂到根链表上，再把被增加的节点挂到根链表上，
+    // 就能保持最小堆的性质
+    // 最后，级联剪！！！
+    
+    FibNode *parent, *child, *right;
+    if(heap == NULL || node == NULL || heap->min == NULL)
+        return;
+    
+    if(key <= node->key)
+    {
+        printf("increase failed: the new key(%d) is no bigger than current key(%d)\n", key, node->key);
+        return ;
+    }
 
+    node->key = key;
+    parent = node->parent;
+
+    while (node->child != NULL)
+    {
+        child = node->child;
+        fib_node_remove(child);
+        fib_node_add(child, heap->min);
+        // node->degree--;
+        // 在循环体之外，修改node->degree=0即可
+
+        // child = child->right;
+        // 错误：
+        // 1、注意while的循环条件为node->child != NULL
+        // 则此处应该去改变node->child的指向
+        // 2、要考虑node只有一个child的情况
+        if(child->right == child)
+            node->child = NULL;
+        else
+        {
+            node->child = child->right;
+        }
+        
+        // 还应该修改child的parent（转移到根链表上了）
+        child->parent = NULL;
+    }
+    node->degree = 0;
+    // node->marked = 1;
+    // 注意！！！key被修改的node不需要改变其marked值，只有node的父母才需要修改marked
+
+    if(parent != NULL && node->key < parent->key) // 如果没有破坏最小堆的性质，就不需要进行级联剪？
+    {
+        fib_heap_cut(heap, node, parent);
+        fib_heap_cascading_cut(heap, parent);
+    }
+    else if (heap->min == node)
+    {
+        // 由于此时node为最小的节点
+        // 增大node的值，需要更新整个heap的min值
+        right = node->right;
+        while(right != node)
+        {
+            if(node->key > right->key)
+                heap->min = right;
+            right = right->right;
+        }
+    }
+    
+    
 }
 
 /*
@@ -486,12 +611,24 @@ static void fib_heap_increase(FibHeap *heap, FibNode *node, Type key)
  */
 void _fib_heap_update(FibHeap *heap, FibNode *node, Type key)
 {
-
+    if(key < node->key)
+        fib_heap_decrease(heap, node, key);
+    else if(key > node->key)
+        fib_heap_increase(heap, node, key);
+    else
+        printf("No need to update\n");
 }
 
 void fib_heap_update(FibHeap *heap, Type oldkey, Type newkey)
 {
+    FibNode *node;
 
+    if (heap==NULL)
+        return ;
+
+    node = fib_heap_search(heap, oldkey);
+    if (node!=NULL)
+        _fib_heap_update(heap, node, newkey);
 }
 
 /*
@@ -499,7 +636,28 @@ void fib_heap_update(FibHeap *heap, Type oldkey, Type newkey)
  */
 static FibNode* fib_node_search(FibNode *root, Type key)
 {
+    FibNode *t = root;    // 临时节点
+    FibNode *p = NULL;    // 要查找的节点
 
+    if (root==NULL)
+        return root;
+
+    do
+    {
+        if (t->key == key)
+        {
+            p = t;
+            break;
+        }
+        else
+        {
+            if ((p = fib_node_search(t->child, key)) != NULL)
+                break;
+        }
+        t = t->right;
+    } while (t != root);
+
+    return p;
 }
 
 /*
@@ -507,7 +665,10 @@ static FibNode* fib_node_search(FibNode *root, Type key)
  */
 static FibNode *fib_heap_search(FibHeap *heap, Type key)
 {
+    if (heap==NULL || heap->min==NULL)
+        return NULL;
 
+    return fib_node_search(heap->min, key);
 }
 
 /*
@@ -516,7 +677,7 @@ static FibNode *fib_heap_search(FibHeap *heap, Type key)
  */
 int fib_heap_contains(FibHeap *heap, Type key)
 {
-
+    return fib_heap_search(heap,key)!=NULL ? 1: 0;
 }
 
 /*
@@ -524,12 +685,24 @@ int fib_heap_contains(FibHeap *heap, Type key)
  */
 static void _fib_heap_delete(FibHeap *heap, FibNode *node)
 {
-
+    Type min = heap->min->key;
+    fib_heap_decrease(heap, node, min-1);
+    _fib_heap_extract_min(heap);
+    free(node);
 }
 
 void fib_heap_delete(FibHeap *heap, Type key)
 {
+    FibNode *node;
 
+    if (heap==NULL || heap->min==NULL)
+        return ;
+
+    node = fib_heap_search(heap, key);
+    if (node==NULL)
+        return ;
+
+    _fib_heap_delete(heap, node);
 }
 
 /*
@@ -538,6 +711,17 @@ void fib_heap_delete(FibHeap *heap, Type key)
 static void fib_node_destroy(FibNode *node)
 {
 
+    FibNode *start = node;
+
+    if(node == NULL)
+        return;
+
+    do {
+        fib_node_destroy(node->child);
+        // 销毁node，并将node指向下一个
+        node = node->right;
+        free(node->left);
+    } while(node != start);
 }
 
 void fib_heap_destroy(FibHeap *heap)
@@ -558,10 +742,43 @@ void fib_heap_destroy(FibHeap *heap)
  */
 static void _fib_print(FibNode *node, FibNode *prev, int direction)
 {
+    FibonacciNode *start=node;
 
+    if (node==NULL)
+        return ;
+    do
+    {
+        if (direction == 1)
+            printf("%8d(%d) is %2d's child\n", node->key, node->degree, prev->key);
+        else
+            printf("%8d(%d) is %2d's next\n", node->key, node->degree, prev->key);
+
+        if (node->child != NULL)
+            _fib_print(node->child, node, 1);
+
+        // 兄弟节点
+        prev = node;
+        node = node->right;
+        direction = 2;
+    } while(node != start);
 }
 
 void fib_print(FibHeap *heap)
 {
+    int i=0;
+    FibonacciNode *p;
 
+    if (heap==NULL || heap->min==NULL)
+        return ;
+
+    printf("== 斐波那契堆的详细信息: ==\n");
+    p = heap->min;
+    do {
+        i++;
+        printf("%2d. %4d(%d) is root\n", i, p->key, p->degree);
+
+        _fib_print(p->child, p, 1);
+        p = p->right;
+    } while (p != heap->min);
+    printf("\n");
 }
