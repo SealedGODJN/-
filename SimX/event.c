@@ -697,7 +697,7 @@ static struct EVENT_NODE *EVENT_QUEUE_search(struct EVENT_QUEUE *heap, Type key)
 }
 
 /*
- * 在最小堆root中查找为key的节点
+ * 在最小堆root中查找EVENT_ID_TYPE为key的节点
  */
 static struct EVENT_NODE* EVENT_NODE_search_by_ID(struct EVENT_NODE *root, EVENT_ID_TYPE key)
 {
@@ -726,7 +726,7 @@ static struct EVENT_NODE* EVENT_NODE_search_by_ID(struct EVENT_NODE *root, EVENT
 }
 
 /*
- * 在斐波那契堆heap中查找键值为key的节点
+ * 在斐波那契堆heap中查找EVENT_ID_TYPE为key的节点
  */
 static struct EVENT_NODE *EVENT_QUEUE_search_by_ID(struct EVENT_QUEUE *heap, EVENT_ID_TYPE key)
 {
@@ -755,6 +755,7 @@ static void _EVENT_QUEUE_delete(struct EVENT_QUEUE *heap, struct EVENT_NODE *nod
     Type min = heap->min->event_describe_table->EVENT_TIME;
     EVENT_QUEUE_decrease(heap, node, min-1);
     _EVENT_QUEUE_extract_min(heap);
+    free(node->event_describe_table); // 先销毁事件描述表
     free(node);
 }
 
@@ -923,6 +924,17 @@ void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
             curQueue = event_queue;
         
     }
+    struct EVENT_NODE *tmp = EVENT_QUEUE_search_by_ID(curQueue, event_describe_table->EVENT_ID);
+    if(tmp == NULL)
+    {
+        printf("未找到对应的节点");
+        return;
+    }
+    else
+    {
+        event_describe_table = tmp->event_describe_table;
+    }
+    
 }
 
 // 根据事件ID（EVENT_ID）移除对应的EVENT
@@ -954,6 +966,17 @@ void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
             curQueue = event_queue;
         
     }
+    struct EVENT_NODE *tmp = EVENT_QUEUE_search_by_ID(curQueue, event_describe_table->EVENT_ID);
+    if(tmp == NULL)
+    {
+        printf("未找到对应的节点");
+        return;
+    }
+    else
+    {
+        Type key = tmp->event_describe_table->EVENT_TIME;
+        EVENT_QUEUE_delete(curQueue, key);
+    }
 }
 
 // 获得最小的Event
@@ -967,6 +990,7 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         printf("该事件队列未初始化，请初始化事件队列");
         return;
     }
+    
     if(event_describe_table == NULL)
     {
         printf("该事件描述表未初始化，请初始化事件描述表");
@@ -987,5 +1011,5 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
     }
 
     // 获取最小节点
-
+    EVENT_QUEUE_get_min(curQueue, event_describe_table);
 }
