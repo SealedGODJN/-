@@ -93,6 +93,7 @@ static struct EVENT_NODE* EVENT_NODE_make(Type key)
     }
     node->event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
     node->event_describe_table->EVENT_TIME = key;
+    node->event_describe_table->EVENT_ID = -1;
     node->degree = 0;
     node->left = node;
     node->right = node;
@@ -907,7 +908,7 @@ void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
 }
 
 // 根据事件ID（EVENT_ID）查找EVENT
-void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
+void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE **event_describe_table)
 {
     // 判断两个事件队列的指针是否相同，
     // 若不同，选择第一个参数中的事件队列，
@@ -923,7 +924,7 @@ void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    struct EVENT_QUEUE *curQueue = event_describe_table->CURRENT_EVENT_QUEUE;
+    struct EVENT_QUEUE *curQueue = (*event_describe_table)->CURRENT_EVENT_QUEUE;
     if( curQueue == NULL)
     {
         curQueue = event_queue;
@@ -935,7 +936,7 @@ void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
             curQueue = event_queue;
         
     }
-    struct EVENT_NODE *tmp = EVENT_QUEUE_search_by_ID(curQueue, event_describe_table->EVENT_ID);
+    struct EVENT_NODE *tmp = EVENT_QUEUE_search_by_ID(curQueue, (*event_describe_table)->EVENT_ID);
     if(tmp == NULL)
     {
         printf("未找到对应的节点");
@@ -943,7 +944,7 @@ void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
     }
     else
     {
-        event_describe_table = tmp->event_describe_table;
+        *event_describe_table = &(tmp->event_describe_table);
     }
     
 }
@@ -1110,20 +1111,110 @@ void test_union()
     EVENT_QUEUE_destroy(ha);
 }
 
+void test_insert()
+{
+    int i;
+    int alen=LENGTH(a);
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *ha = EVENT_QUEUE_make();
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆ha
+    printf("== 斐波那契堆(ha)中依次添加: ");
+
+    for(i=0; i<alen; i++)
+    {
+        printf("%ld ", a[i]);
+        EVENT_QUEUE_insert_key(ha, a[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(ha)删除最小节点\n");
+    EVENT_QUEUE_extract_min(ha);
+    EVENT_QUEUE_print(ha);
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)删除最小节点\n");
+    EVENT_QUEUE_extract_min(hb);
+    EVENT_QUEUE_print(hb);
+
+    // 插入事件
+    printf("== 插入事件,key=1000\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = ha;
+    Type key = 1000;
+    event_describe_table->EVENT_TIME = key;
+    Insert_Event(hb, event_describe_table);
+    EVENT_QUEUE_print(hb);
+
+    // 销毁堆
+    EVENT_QUEUE_destroy(ha);
+}
+
+void test_search()
+{
+    int i;
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)优化结构\n");
+    EVENT_QUEUE_consolidate(hb);
+    EVENT_QUEUE_print(hb);
+
+
+    // 插入事件
+    printf("== 插入事件,key=1000,ID=10\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = hb;
+    Type key = 1000;
+    EVENT_ID_TYPE ID = 10;
+    event_describe_table->EVENT_TIME = key;
+    event_describe_table->EVENT_ID = ID;
+    Insert_Event(hb, event_describe_table);
+
+    EVENT_QUEUE_print(hb);
+
+    printf("\n");
+    printf("== 查找ID为10的事件\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
+    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
+    EVENT_ID_TYPE ID1 = 10;
+    event_describe_table1->EVENT_ID = ID;
+    Search_Event(hb, &event_describe_table1);
+    printf("%ld\n\n", event_describe_table1->EVENT_TIME);
+
+    EVENT_QUEUE_destroy(hb);
+}
+
+
 void main()
 {
     // 验证"基本信息(斐波那契堆的结构)"
     // test_basic();
+    
+    // 验证"合并操作"
+    // test_union();
+    
     // 验证"插入操作"
     // test_insert();
-    // 验证"合并操作"
-    test_union();
-    // 验证"删除最小节点"
-    // test_remove_min();
-    // 验证"减小节点"
-    // test_decrease();
-    // 验证"增大节点"
-    // test_increase();
-    // 验证"删除节点"
-    // test_delete();
+
+    // 验证“搜索操作”
+    test_search();
 }

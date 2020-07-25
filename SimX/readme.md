@@ -1234,3 +1234,56 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
 
 ### 3.1 插入一个event
 
+3.1.1 测试思路
+
+
+
+#### 3.1.2 测试结果
+
+```
+== 斐波那契堆(ha)中依次添加: 12 7 25 15 28 33 41 1 
+== 斐波那契堆(ha)删除最小节点
+== EVENT_QUEUE的详细信息: ==
+ 1.    7(2) is root
+      12(0) is  7's child
+      15(1) is 12's next
+      25(0) is 15's child
+ 2.   28(1) is root
+      33(0) is 28's child
+ 3.   41(0) is root
+
+== 斐波那契堆(hb)中依次添加: 18 35 20 42 9 31 23 6 48 11 24 52 13 2 
+== 斐波那契堆(hb)删除最小节点
+== EVENT_QUEUE的详细信息: ==
+ 1.    6(3) is root
+       9(0) is  6's child
+      18(1) is  9's next
+      35(0) is 18's child
+      20(2) is 18's next
+      42(0) is 20's child
+      23(1) is 42's next
+      31(0) is 23's child
+ 2.   11(2) is root
+      48(0) is 11's child
+      24(1) is 48's next
+      52(0) is 24's child
+ 3.   13(0) is root
+
+== 插入事件,key=1000
+== EVENT_QUEUE的详细信息: ==
+ 1.    6(3) is root
+       9(0) is  6's child
+      18(1) is  9's next
+      35(0) is 18's child
+      20(2) is 18's next
+      42(0) is 20's child
+      23(1) is 42's next
+      31(0) is 23's child
+ 2.   11(2) is root
+      48(0) is 11's child
+      24(1) is 48's next
+      52(0) is 24's child
+ 3.   13(1) is root
+    1000(0) is 13's child
+```
+
