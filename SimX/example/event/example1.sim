@@ -1,0 +1,10 @@
+//事件嵌套的实现
+//上下文的恢复
+
+event example1{
+    int a, b;
+    a = 1;
+    b = 1;
+    call event e1(a) at time1;
+    call event e2(b) at time2;
+}

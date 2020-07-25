@@ -1,0 +1,9 @@
+//时间轴wait语法的实现方式
+
+event TimeTest{
+    //work1
+    wait(10);
+    //work2
+    wait(20);
+    //work3
+}
