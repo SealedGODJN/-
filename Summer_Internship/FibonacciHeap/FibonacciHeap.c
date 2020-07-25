@@ -726,7 +726,7 @@ void test_basic()
     }
     printf("\n");
     printf("== 斐波那契堆(hb)删除最小节点\n");
-    fib_heap_extract_min(hb);
+    fib_heap_consolidate(hb);
     fib_print(hb);
 
     fib_heap_destroy(hb);
@@ -935,7 +935,7 @@ void test_delete()
 void main()
 {
     // 验证"基本信息(斐波那契堆的结构)"
-    // test_basic();
+    test_basic();
     // 验证"插入操作"
     // test_insert();
     // 验证"合并操作"
@@ -947,5 +947,5 @@ void main()
     // 验证"增大节点"
     // test_increase();
     // 验证"删除节点"
-    test_delete();
+    // test_delete();
 }

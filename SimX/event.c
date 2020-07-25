@@ -85,6 +85,29 @@ static struct EVENT_NODE* EVENT_NODE_make(Type key)
 }
 
 /*
+ * 根据event_describe_table，创建斐波那契堆的节点
+ */
+static struct EVENT_NODE* EVENT_NODE_make_by_TABLE(struct EVENT_DESCRIBE_TABLE *event_describe_table)
+{
+    struct EVENT_NODE *node = (struct EVENT_NODE *)malloc(sizeof(struct EVENT_NODE));
+    if (node == NULL)
+    {
+        printf("内存空间不足，未能创建node");
+        return NULL;
+    }
+    node->event_describe_table = event_describe_table;
+
+    node->degree = 0;
+    node->left = NULL;
+    node->right = NULL;
+    node->child = NULL;
+    node->parent = NULL;
+    node->marked = 0;
+
+    return node;
+}
+
+/*
  * 将节点node插入到斐波那契堆heap中
  */
 static void EVENT_QUEUE_insert_node(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
@@ -425,15 +448,16 @@ void EVENT_QUEUE_extract_min(struct EVENT_QUEUE *heap)
 }
 
 /*
- * 在斐波那契堆heap中是否存在键值为key的节点；存在返回1，否则返回0。
+ * 返回斐波那契堆的最小节点（保存在event_describe_table中）
  */
-int EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, Type *pkey)
+void EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-    if (heap==NULL || heap->min==NULL || pkey==NULL)
-        return 0;
-
-    *pkey = heap->min->event_describe_table->EVENT_TIME;
-    return 1;
+    if (heap==NULL || heap->min==NULL)
+    {
+        printf("不存在最小节点");
+        return;
+    }
+    event_describe_table = heap->min->event_describe_table;
 }
 
 /*
@@ -718,9 +742,9 @@ static struct EVENT_NODE *EVENT_QUEUE_search_by_ID(struct EVENT_QUEUE *heap, EVE
  * 在斐波那契堆heap中是否存在键值为key的节点。
  * 存在返回1，否则返回0。
  */
-int EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key)
+bool EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key)
 {
-    return EVENT_QUEUE_search(heap,key)!=NULL ? 1: 0;
+    return EVENT_QUEUE_search(heap,key)!=NULL ? True: False;
 }
 
 /*
@@ -844,19 +868,30 @@ void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
-    if( tmp == NULL)
+    struct EVENT_QUEUE *curQueue = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( curQueue == NULL)
     {
-        tmp = event_queue;
+        curQueue = event_queue;
     }
     else
     {
         
-        if(tmp != event_queue)
-            tmp = event_queue;
+        if(curQueue != event_queue)
+            curQueue = event_queue;
         
     }
-    
+
+    // 新建节点
+    struct EVENT_NODE *node = EVENT_NODE_make_by_TABLE(event_describe_table);
+    if(node == NULL)
+    {
+        printf("未能新建一个EVENT_NODE节点");
+        return;
+    }
+    // 插入节点
+    EVENT_QUEUE_insert_node(curQueue, node);
+    // 整理队列
+    EVENT_QUEUE_consolidate(curQueue);
 }
 
 // 根据事件ID（EVENT_ID）查找EVENT
@@ -876,16 +911,16 @@ void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
-    if( tmp == NULL)
+    struct EVENT_QUEUE *curQueue = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( curQueue == NULL)
     {
-        tmp = event_queue;
+        curQueue = event_queue;
     }
     else
     {
         
-        if(tmp != event_queue)
-            tmp = event_queue;
+        if(curQueue != event_queue)
+            curQueue = event_queue;
         
     }
 }
@@ -907,16 +942,16 @@ void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
-    if( tmp == NULL)
+    struct EVENT_QUEUE *curQueue = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( curQueue == NULL)
     {
-        tmp = event_queue;
+        curQueue = event_queue;
     }
     else
     {
         
-        if(tmp != event_queue)
-            tmp = event_queue;
+        if(curQueue != event_queue)
+            curQueue = event_queue;
         
     }
 }
@@ -938,19 +973,19 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
-    if( tmp == NULL)
+    struct EVENT_QUEUE *curQueue = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( curQueue == NULL)
     {
-        tmp = event_queue;
+        curQueue = event_queue;
     }
     else
     {
         
-        if(tmp != event_queue)
-            tmp = event_queue;
+        if(curQueue != event_queue)
+            curQueue = event_queue;
         
     }
 
-    // 删除最小节点
+    // 获取最小节点
 
 }

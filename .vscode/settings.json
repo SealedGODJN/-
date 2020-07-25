@@ -28,6 +28,7 @@
         "vector": "c",
         "xlocale": "c",
         "xlocinfo": "c",
-        "xlocnum": "c"
+        "xlocnum": "c",
+        "xiosbase": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }

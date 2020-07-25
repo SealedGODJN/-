@@ -121,9 +121,9 @@ void EVENT_QUEUE_update(struct EVENT_QUEUE *heap, Type oldkey, Type newkey);
 // 将h1, h2合并成一个堆，并返回合并后的堆
 struct EVENT_QUEUE* EVENT_QUEUE_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h2);
 // 在斐波那契堆heap中是否存在键值为key的节点；存在返回1，否则返回0。
-Type EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key);
-// 获取最小节点对应的值(保存在pkey中)；成功返回1，失败返回0。
-Type EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, Type *pkey);
+bool EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key);
+// 获取最小节点，返回最小节点
+void EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, struct EVENT_DESCRIBE_TABLE *event_describe_table);
 // 销毁斐波那契堆
 void EVENT_QUEUE_destroy(struct EVENT_QUEUE *heap);
 // 打印"斐波那契堆"
