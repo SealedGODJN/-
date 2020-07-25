@@ -429,7 +429,11 @@ void EVENT_QUEUE_extract_min(struct EVENT_QUEUE *heap)
  */
 int EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, Type *pkey)
 {
+    if (heap==NULL || heap->min==NULL || pkey==NULL)
+        return 0;
 
+    *pkey = heap->min->event_describe_table->EVENT_TIME;
+    return 1;
 }
 
 /*
@@ -780,35 +784,34 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
     printf("\n");
 }
 
-// 判断两个事件队列是否相同，
-// 若不同，选择第一个参数中的事件队列，
-// 同时将事件描述表中的事件队列改为第一个参数
+// 插入一个EVENT
 void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-
+    // 判断两个事件队列是否相同，
+    // 若不同，选择第一个参数中的事件队列，
+    // 同时将事件描述表中的事件队列改为第一个参数
 }
 
-// 判断两个事件队列是否相同，
-// 若不同，选择第一个参数中的事件队列，
-// 同时将事件描述表中的事件队列改为第一个参数
+// 根据事件ID（EVENT_ID）查找EVENT
 void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-
+    // 判断两个事件队列是否相同，
+    // 若不同，选择第一个参数中的事件队列，
+    // 同时将事件描述表中的事件队列改为第一个参数
 }
 
-// 判断两个事件队列是否相同，
-// 若不同，选择第一个参数中的事件队列，
-// 同时将事件描述表中的事件队列改为第一个参数
+// 移除当前优先级队列中最前面（EVENT_TIME最小）的EVENT
 void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-
+    // 判断两个事件队列是否相同，
+    // 若不同，选择第一个参数中的事件队列，
+    // 同时将事件描述表中的事件队列改为第一个参数
 }
 
 
-// 判断两个事件队列是否相同，
-// 若不同，选择第一个参数中的事件队列，
-// 同时将事件描述表中的事件队列改为第一个参数
 void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-
+    // 判断两个事件队列是否相同，
+    // 若不同，选择第一个参数中的事件队列，
+    // 同时将事件描述表中的事件队列改为第一个参数
 }
