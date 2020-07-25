@@ -1035,6 +1035,10 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
 
 #define LENGTH(a) ( (sizeof(a)) / (sizeof(a[0])) )
 
+// 共8个
+Type a[] = {12,  7, 25, 15, 28,
+           33, 41, 1};
+
 // 共14个
 Type b[] = {18, 35, 20, 42,  9,
            31, 23,  6, 48, 11,
@@ -1062,14 +1066,58 @@ void test_basic()
     EVENT_QUEUE_destroy(hb);
 }
 
+
+// 验证"合并操作"
+void test_union()
+{
+    int i;
+    int alen=LENGTH(a);
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *ha = EVENT_QUEUE_make();
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆ha
+    printf("== 斐波那契堆(ha)中依次添加: ");
+
+    for(i=0; i<alen; i++)
+    {
+        printf("%ld ", a[i]);
+        EVENT_QUEUE_insert_key(ha, a[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(ha)删除最小节点\n");
+    EVENT_QUEUE_extract_min(ha);
+    EVENT_QUEUE_print(ha);
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)删除最小节点\n");
+    EVENT_QUEUE_extract_min(hb);
+    EVENT_QUEUE_print(hb);
+
+    // 将"斐波那契堆hb"合并到"斐波那契堆ha"中。
+    printf("== 合并ha和hb\n");
+    ha = EVENT_QUEUE_union(ha, hb);
+    EVENT_QUEUE_print(ha);
+
+    // 销毁堆
+    EVENT_QUEUE_destroy(ha);
+}
+
 void main()
 {
     // 验证"基本信息(斐波那契堆的结构)"
-    test_basic();
+    // test_basic();
     // 验证"插入操作"
     // test_insert();
     // 验证"合并操作"
-    // test_union();
+    test_union();
     // 验证"删除最小节点"
     // test_remove_min();
     // 验证"减小节点"
