@@ -13,10 +13,10 @@
 #define LOG2(x) ((log((double)(x))) / (log(2.0)))
 #endif
 
-static struct EVENT_NODE *fib_heap_search(struct EVENT_QUEUE *heap, Type key);
+static struct EVENT_NODE *EVENT_QUEUE_search(struct EVENT_QUEUE *heap, Type key);
 
 // 创建Fibonacci堆
-struct EVENT_QUEUE* fib_heap_make()
+struct EVENT_QUEUE* EVENT_QUEUE_make()
 {
     struct EVENT_QUEUE *heap = (struct EVENT_QUEUE *)malloc(sizeof(struct EVENT_QUEUE));
     if (heap == NULL)
@@ -36,7 +36,7 @@ struct EVENT_QUEUE* fib_heap_make()
 /*
  * 将node从双链表移除
  */
-static void fib_node_remove(struct EVENT_NODE *node)
+static void EVENT_NODE_remove(struct EVENT_NODE *node)
 {
     node->left->right = node->right;
     node->right->left = node->left;
@@ -49,7 +49,7 @@ static void fib_node_remove(struct EVENT_NODE *node)
  *
  * 注意： 此处node是单个节点，而root是双向链表
 */
-static void fib_node_add(struct EVENT_NODE *node, struct EVENT_NODE *root)
+static void EVENT_NODE_add(struct EVENT_NODE *node, struct EVENT_NODE *root)
 {
     struct EVENT_NODE *tmp;
     tmp = root->left;
@@ -64,7 +64,7 @@ static void fib_node_add(struct EVENT_NODE *node, struct EVENT_NODE *root)
 /*
  * 创建斐波那契堆的节点
  */
-static struct EVENT_NODE* fib_node_make(Type key)
+static struct EVENT_NODE* EVENT_NODE_make(Type key)
 {
     struct EVENT_NODE *node = (struct EVENT_NODE *)malloc(sizeof(struct EVENT_NODE));
     if (node == NULL)
@@ -72,6 +72,7 @@ static struct EVENT_NODE* fib_node_make(Type key)
         printf("内存空间不足，未能创建node");
         return NULL;
     }
+    node->event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
     node->event_describe_table->EVENT_TIME = key;
     node->degree = 0;
     node->left = NULL;
@@ -86,7 +87,7 @@ static struct EVENT_NODE* fib_node_make(Type key)
 /*
  * 将节点node插入到斐波那契堆heap中
  */
-static void fib_heap_insert_node(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
+static void EVENT_QUEUE_insert_node(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
 {
     // 不应该用heap->min==NULL判断
     //if (heap->min == NULL)
@@ -104,7 +105,7 @@ static void fib_heap_insert_node(struct EVENT_QUEUE *heap, struct EVENT_NODE *no
     }
     else
     {
-        fib_node_add(node, heap->min);
+        EVENT_NODE_add(node, heap->min);
         if(node->event_describe_table->EVENT_TIME < heap->min->event_describe_table->EVENT_TIME) {
             heap->min = node;
         }
@@ -116,19 +117,19 @@ static void fib_heap_insert_node(struct EVENT_QUEUE *heap, struct EVENT_NODE *no
 /*
  * 新建键值为key的节点，并将其插入到斐波那契堆中
  */
-void fib_heap_insert_key(struct EVENT_QUEUE *heap, Type key)
+void EVENT_QUEUE_insert_key(struct EVENT_QUEUE *heap, Type key)
 {
     if (heap == NULL) // 未初始化heap，不能进行接下来插入节点的操作
     {
         return;
     }
 
-    struct EVENT_NODE *node = fib_node_make(node->event_describe_table->EVENT_TIME);
+    struct EVENT_NODE *node = EVENT_NODE_make(node->event_describe_table->EVENT_TIME);
     if (node == NULL)
     {
         return;
     }
-    fib_heap_insert_node(heap, node);
+    EVENT_QUEUE_insert_node(heap, node);
 }
 
 /*
@@ -136,7 +137,7 @@ void fib_heap_insert_key(struct EVENT_QUEUE *heap, Type key)
  *
  * 注意： 此处a和b都是双向链表
 */
-static void fib_node_cat(struct EVENT_NODE *a, struct EVENT_NODE *b)
+static void EVENT_NODE_cat(struct EVENT_NODE *a, struct EVENT_NODE *b)
 {
     struct EVENT_NODE *tmp;
     
@@ -150,7 +151,7 @@ static void fib_node_cat(struct EVENT_NODE *a, struct EVENT_NODE *b)
 /*
  * 将h1, h2合并成一个堆，并返回合并后的堆
  */
-struct EVENT_QUEUE* fib_heap_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h2)
+struct EVENT_QUEUE* EVENT_QUEUE_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h2)
 {
     struct EVENT_NODE *tmp;
     if(h1 == NULL)
@@ -191,9 +192,9 @@ struct EVENT_QUEUE* fib_heap_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h
     }
     else if (h1->min != NULL && h2->min != NULL)
     {
-        // fib_node_cat(h1, h2);
+        // EVENT_NODE_cat(h1, h2);
         // 错误，应该是h1->min和h2->min
-        fib_node_cat(h1->min, h2->min);
+        EVENT_NODE_cat(h1->min, h2->min);
         // if (h1->min > h2->min)
         // 错误！应该是对应的key比较大小！
         if (h1->min->event_describe_table->EVENT_TIME > h2->min->event_describe_table->EVENT_TIME)
@@ -217,7 +218,7 @@ struct EVENT_QUEUE* fib_heap_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h
  * 
  * 返回值为：移除掉的heap->min
  */
-static struct EVENT_NODE *fib_heap_remove_min(struct EVENT_QUEUE *heap)
+static struct EVENT_NODE *EVENT_QUEUE_remove_min(struct EVENT_QUEUE *heap)
 {
     struct EVENT_NODE *tmp;
     tmp = heap->min;
@@ -227,7 +228,7 @@ static struct EVENT_NODE *fib_heap_remove_min(struct EVENT_QUEUE *heap)
     }
     else
     {
-        fib_node_remove(heap->min);
+        EVENT_NODE_remove(heap->min);
         // 此时应该将heap->min往右移动一位
         heap->min = tmp->right;
     }
@@ -241,10 +242,10 @@ static struct EVENT_NODE *fib_heap_remove_min(struct EVENT_QUEUE *heap)
 /*
  * 将node链接到root根结点
  */
-static void fib_heap_link(struct EVENT_NODE * node, struct EVENT_NODE *root)
+static void EVENT_QUEUE_link(struct EVENT_NODE * node, struct EVENT_NODE *root)
 {
     // 注意！！！首先要将node从双向链表中移除
-    fib_node_remove(node);
+    EVENT_NODE_remove(node);
 
     if (root->child == NULL)
     {
@@ -258,7 +259,7 @@ static void fib_heap_link(struct EVENT_NODE * node, struct EVENT_NODE *root)
     }
     else
     {
-        fib_node_add(node, root->child);
+        EVENT_NODE_add(node, root->child);
     }
     node->parent = root;
     
@@ -268,13 +269,13 @@ static void fib_heap_link(struct EVENT_NODE * node, struct EVENT_NODE *root)
 }
 
 /*
- * 创建fib_heap_consolidate所需空间
+ * 创建EVENT_QUEUE_consolidate所需空间
  */
-static void fib_heap_cons_make(struct EVENT_QUEUE * heap)
+static void EVENT_QUEUE_cons_make(struct EVENT_QUEUE * heap)
 {
     // heap->cons = (struct EVENT_NODE **)malloc(sizeof(struct EVENT_NODE) * heap->maxDegree);
     // 错误！
-    // 1、要考虑heap之前是否已经经过一次fib_heap_extract_min
+    // 1、要考虑heap之前是否已经经过一次EVENT_QUEUE_extract_min
     // 如果已经经过了一次，则heap->cons所对应的内存空间不为空，需要重新分配内存
     // （如果之前分配的空间已经足够，则不需要再分配一次空间）
     // 应该使用reallloc函数（用于调整已分配的内存空间大小）
@@ -291,12 +292,12 @@ static void fib_heap_cons_make(struct EVENT_QUEUE * heap)
 /*
  * 合并斐波那契堆的根链表中左右相同度数的树
  */
-static void fib_heap_consolidate(struct EVENT_QUEUE *heap)
+static void EVENT_QUEUE_consolidate(struct EVENT_QUEUE *heap)
 {
     int i, d, D;
     struct EVENT_NODE *x, *y, *tmp;
 
-    fib_heap_cons_make(heap);
+    EVENT_QUEUE_cons_make(heap);
     D = heap->maxDegree + 1;
     // 因为要将heap中的根链表中的所有节点都移到heap->cons中，
     // 至少需要maxDegree+1个空间
@@ -308,7 +309,7 @@ static void fib_heap_consolidate(struct EVENT_QUEUE *heap)
 
     while (heap->min != NULL)
     {
-        x = fib_heap_remove_min(heap);
+        x = EVENT_QUEUE_remove_min(heap);
         d = x->degree;
 
         while (heap->cons[d] != NULL)
@@ -325,7 +326,7 @@ static void fib_heap_consolidate(struct EVENT_QUEUE *heap)
                 y = x;
                 x = y;
             }
-            fib_heap_link(y, x);
+            EVENT_QUEUE_link(y, x);
             heap->cons[d] = NULL;
             d++;
         }
@@ -342,8 +343,8 @@ static void fib_heap_consolidate(struct EVENT_QUEUE *heap)
             }
             else
             {
-                fib_node_add(heap->cons[i], heap->min);
-                if(heap->min->event_describe_table->EVENT_TIME > heap->cons[i]->key)
+                EVENT_NODE_add(heap->cons[i], heap->min);
+                if(heap->min->event_describe_table->EVENT_TIME > heap->cons[i]->event_describe_table->EVENT_TIME)
                 {
                     heap->min = heap->cons[i];
                 }
@@ -356,7 +357,7 @@ static void fib_heap_consolidate(struct EVENT_QUEUE *heap)
 /*
  * 移除最小节点，并返回移除的min节点
  */
-struct EVENT_NODE* _fib_heap_extract_min(struct EVENT_QUEUE *heap)
+struct EVENT_NODE* _EVENT_QUEUE_extract_min(struct EVENT_QUEUE *heap)
 {
     struct EVENT_NODE *child = NULL;
     struct EVENT_NODE *min = heap->min;
@@ -365,10 +366,10 @@ struct EVENT_NODE* _fib_heap_extract_min(struct EVENT_QUEUE *heap)
     {
         child = min->child;
         child->parent = NULL;
-        fib_node_remove(child);
+        EVENT_NODE_remove(child);
         // min->child = child->right;
         // 错误：未考虑到每一层是一个双向链表
-        // min可能只有一个孩子，此时尽管执行了fib_node_remove(child)
+        // min可能只有一个孩子，此时尽管执行了EVENT_NODE_remove(child)
         // child->right还是child
         // 需要对其进行判断
         if (child->right == child)
@@ -382,10 +383,10 @@ struct EVENT_NODE* _fib_heap_extract_min(struct EVENT_QUEUE *heap)
 
         // renew_degree(min, 1);
         // 不需要更新degree，因为min节点马上就要被删除了
-        fib_heap_insert_node(heap, child);
+        EVENT_QUEUE_insert_node(heap, child);
     }
 
-    fib_node_remove(min);
+    EVENT_NODE_remove(min);
     
     // if (heap->keyNum == 1)
     // 考虑min是堆中唯一节点
@@ -398,11 +399,11 @@ struct EVENT_NODE* _fib_heap_extract_min(struct EVENT_QUEUE *heap)
     else // min不是堆中唯一节点
     {
         // 此时需要临时指定一个heap->min，为什么呢？
-        // fib_heap_consolidate里面需要用到heap->min，
+        // EVENT_QUEUE_consolidate里面需要用到heap->min，
         // 需要不断地从heap中找出min节点，并将其放入heap->cons中
         // 所以需要指定一个heap->min
         heap->min = min->right;
-        fib_heap_consolidate(heap);
+        EVENT_QUEUE_consolidate(heap);
     }
 
     heap->keyNum--;
@@ -410,13 +411,13 @@ struct EVENT_NODE* _fib_heap_extract_min(struct EVENT_QUEUE *heap)
     return min;
 }
 
-void fib_heap_extract_min(struct EVENT_QUEUE *heap)
+void EVENT_QUEUE_extract_min(struct EVENT_QUEUE *heap)
 {
     if(heap == NULL)
         return;
     if(heap->min == NULL)
         return;
-    struct EVENT_NODE *node = _fib_heap_extract_min(heap); // node接收heap->min
+    struct EVENT_NODE *node = _EVENT_QUEUE_extract_min(heap); // node接收heap->min
     if(node != NULL)
     {
         free(node);
@@ -426,7 +427,7 @@ void fib_heap_extract_min(struct EVENT_QUEUE *heap)
 /*
  * 在斐波那契堆heap中是否存在键值为key的节点；存在返回1，否则返回0。
  */
-int fib_heap_get_min(struct EVENT_QUEUE *heap, Type *pkey)
+int EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, Type *pkey)
 {
 
 }
@@ -446,21 +447,21 @@ static void renew_degree(struct EVENT_NODE *parent, int degree)
  * 将node从父节点parent的子链接中剥离出来，
  * 并使node成为"堆的根链表"中的一员。
  */
-static void fib_heap_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, struct EVENT_NODE *parent)
+static void EVENT_QUEUE_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, struct EVENT_NODE *parent)
 {
     if(node->right == node) // 此时parent只有node一个孩子
     {
         parent->child = NULL;
         // node->parent = NULL;
-        // fib_node_add(node, heap->min);
+        // EVENT_NODE_add(node, heap->min);
         // 和else中相同的语句合并
     }
     else
     {
         parent->child = node->right;
-        fib_node_remove(node);
+        EVENT_NODE_remove(node);
         // node->parent = NULL;
-        // fib_node_add(node, heap->min);
+        // EVENT_NODE_add(node, heap->min);
     }
     renew_degree(parent, 1);
     node->parent = NULL;
@@ -469,10 +470,10 @@ static void fib_heap_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, stru
     node->marked = 0;
 
     // 注意！！！
-    // 函数fib_node_add是将node的left和right指针指向min和min->left中间
+    // 函数EVENT_NODE_add是将node的left和right指针指向min和min->left中间
     // 但是不需要用到node->left和node->right的值
 
-    fib_node_add(node, heap->min);
+    EVENT_NODE_add(node, heap->min);
 }
 
 /*
@@ -483,7 +484,7 @@ static void fib_heap_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, stru
  *     其插入到由最小树根节点形成的双向链表中)，
  *     然后再从"被切节点的父节点"到所在树根节点递归执行级联剪枝
  */
-static void fib_heap_cascading_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
+static void EVENT_QUEUE_cascading_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
 {
     if(node->parent == NULL) // 如果node是根节点，则不需要对其进行级联剪
         return;
@@ -494,8 +495,8 @@ static void fib_heap_cascading_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *
     }
     else
     {
-        fib_heap_cut(heap, node, node->parent);
-        fib_heap_cascading_cut(heap, node->parent);
+        EVENT_QUEUE_cut(heap, node, node->parent);
+        EVENT_QUEUE_cascading_cut(heap, node->parent);
     }
     
     
@@ -504,7 +505,7 @@ static void fib_heap_cascading_cut(struct EVENT_QUEUE *heap, struct EVENT_NODE *
 /*
  * 将斐波那契堆heap中节点node的值减少为key
  */
-static void fib_heap_decrease(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
+static void EVENT_QUEUE_decrease(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
 {
     struct EVENT_NODE *parent;
     if(heap == NULL || node == NULL || heap->min == NULL)
@@ -522,10 +523,10 @@ static void fib_heap_decrease(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
     // 注意：只有当node的key减小后，破坏了最小堆的性质（子节点的key都比父母的key小）
     // 即node->event_describe_table->EVENT_TIME < parent->key
     // 才需要进行如下操作
-    if(parent != NULL && node->event_describe_table->EVENT_TIME < parent->key)
+    if(parent != NULL && node->event_describe_table->EVENT_TIME < parent->event_describe_table->EVENT_TIME)
     {
-        fib_heap_cut(heap, node, parent);
-        fib_heap_cascading_cut(heap, parent);
+        EVENT_QUEUE_cut(heap, node, parent);
+        EVENT_QUEUE_cascading_cut(heap, parent);
     }
     if(node->event_describe_table->EVENT_TIME < heap->min->event_describe_table->EVENT_TIME)
         heap->min = node;
@@ -534,7 +535,7 @@ static void fib_heap_decrease(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
 /*
  * 将斐波那契堆heap中节点node的值增加为key
  */
-static void fib_heap_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
+static void EVENT_QUEUE_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
 {
     // 增加node的key之后，node的key和孩子的key有多种大小关系
     // 此时，只要把node的孩子都挂到根链表上，再把被增加的节点挂到根链表上，
@@ -557,8 +558,8 @@ static void fib_heap_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
     while (node->child != NULL)
     {
         child = node->child;
-        fib_node_remove(child);
-        fib_node_add(child, heap->min);
+        EVENT_NODE_remove(child);
+        EVENT_NODE_add(child, heap->min);
         // node->degree--;
         // 在循环体之外，修改node->degree=0即可
 
@@ -581,10 +582,10 @@ static void fib_heap_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
     // node->marked = 1;
     // 注意！！！key被修改的node不需要改变其marked值，只有node的父母才需要修改marked
 
-    if(parent != NULL && node->event_describe_table->EVENT_TIME < parent->key) // 如果没有破坏最小堆的性质，就不需要进行级联剪？
+    if(parent != NULL && node->event_describe_table->EVENT_TIME < parent->event_describe_table->EVENT_TIME) // 如果没有破坏最小堆的性质，就不需要进行级联剪？
     {
-        fib_heap_cut(heap, node, parent);
-        fib_heap_cascading_cut(heap, parent);
+        EVENT_QUEUE_cut(heap, node, parent);
+        EVENT_QUEUE_cascading_cut(heap, parent);
     }
     else if (heap->min == node)
     {
@@ -593,7 +594,7 @@ static void fib_heap_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
         right = node->right;
         while(right != node)
         {
-            if(node->event_describe_table->EVENT_TIME > right->key)
+            if(node->event_describe_table->EVENT_TIME > right->event_describe_table->EVENT_TIME)
                 heap->min = right;
             right = right->right;
         }
@@ -605,32 +606,32 @@ static void fib_heap_increase(struct EVENT_QUEUE *heap, struct EVENT_NODE *node,
 /*
  * 更新二项堆heap的节点node的键值为key
  */
-void _fib_heap_update(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
+void _EVENT_QUEUE_update(struct EVENT_QUEUE *heap, struct EVENT_NODE *node, Type key)
 {
     if(key < node->event_describe_table->EVENT_TIME)
-        fib_heap_decrease(heap, node, key);
+        EVENT_QUEUE_decrease(heap, node, key);
     else if(key > node->event_describe_table->EVENT_TIME)
-        fib_heap_increase(heap, node, key);
+        EVENT_QUEUE_increase(heap, node, key);
     else
         printf("No need to update\n");
 }
 
-void fib_heap_update(struct EVENT_QUEUE *heap, Type oldkey, Type newkey)
+void EVENT_QUEUE_update(struct EVENT_QUEUE *heap, Type oldkey, Type newkey)
 {
     struct EVENT_NODE *node;
 
     if (heap==NULL)
         return ;
 
-    node = fib_heap_search(heap, oldkey);
+    node = EVENT_QUEUE_search(heap, oldkey);
     if (node!=NULL)
-        _fib_heap_update(heap, node, newkey);
+        _EVENT_QUEUE_update(heap, node, newkey);
 }
 
 /*
  * 在最小堆root中查找键值为key的节点
  */
-static struct EVENT_NODE* fib_node_search(struct EVENT_NODE *root, Type key)
+static struct EVENT_NODE* EVENT_NODE_search(struct EVENT_NODE *root, Type key)
 {
     struct EVENT_NODE *t = root;    // 临时节点
     struct EVENT_NODE *p = NULL;    // 要查找的节点
@@ -640,14 +641,14 @@ static struct EVENT_NODE* fib_node_search(struct EVENT_NODE *root, Type key)
 
     do
     {
-        if (t->key == key)
+        if (t->event_describe_table->EVENT_TIME == key)
         {
             p = t;
             break;
         }
         else
         {
-            if ((p = fib_node_search(t->child, key)) != NULL)
+            if ((p = EVENT_NODE_search(t->child, key)) != NULL)
                 break;
         }
         t = t->right;
@@ -659,52 +660,52 @@ static struct EVENT_NODE* fib_node_search(struct EVENT_NODE *root, Type key)
 /*
  * 在斐波那契堆heap中查找键值为key的节点
  */
-static struct EVENT_NODE *fib_heap_search(struct EVENT_QUEUE *heap, Type key)
+static struct EVENT_NODE *EVENT_QUEUE_search(struct EVENT_QUEUE *heap, Type key)
 {
     if (heap==NULL || heap->min==NULL)
         return NULL;
 
-    return fib_node_search(heap->min, key);
+    return EVENT_NODE_search(heap->min, key);
 }
 
 /*
  * 在斐波那契堆heap中是否存在键值为key的节点。
  * 存在返回1，否则返回0。
  */
-int fib_heap_contains(struct EVENT_QUEUE *heap, Type key)
+int EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key)
 {
-    return fib_heap_search(heap,key)!=NULL ? 1: 0;
+    return EVENT_QUEUE_search(heap,key)!=NULL ? 1: 0;
 }
 
 /*
  * 删除结点node
  */
-static void _fib_heap_delete(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
+static void _EVENT_QUEUE_delete(struct EVENT_QUEUE *heap, struct EVENT_NODE *node)
 {
     Type min = heap->min->event_describe_table->EVENT_TIME;
-    fib_heap_decrease(heap, node, min-1);
-    _fib_heap_extract_min(heap);
+    EVENT_QUEUE_decrease(heap, node, min-1);
+    _EVENT_QUEUE_extract_min(heap);
     free(node);
 }
 
-void fib_heap_delete(struct EVENT_QUEUE *heap, Type key)
+void EVENT_QUEUE_delete(struct EVENT_QUEUE *heap, Type key)
 {
     struct EVENT_NODE *node;
 
     if (heap==NULL || heap->min==NULL)
         return ;
 
-    node = fib_heap_search(heap, key);
+    node = EVENT_QUEUE_search(heap, key);
     if (node==NULL)
         return ;
 
-    _fib_heap_delete(heap, node);
+    _EVENT_QUEUE_delete(heap, node);
 }
 
 /*
  * 销毁斐波那契堆
  */
-static void fib_node_destroy(struct EVENT_NODE *node)
+static void EVENT_NODE_destroy(struct EVENT_NODE *node)
 {
 
     struct EVENT_NODE *start = node;
@@ -713,16 +714,16 @@ static void fib_node_destroy(struct EVENT_NODE *node)
         return;
 
     do {
-        fib_node_destroy(node->child);
+        EVENT_NODE_destroy(node->child);
         // 销毁node，并将node指向下一个
         node = node->right;
         free(node->left);
     } while(node != start);
 }
 
-void fib_heap_destroy(struct EVENT_QUEUE *heap)
+void EVENT_QUEUE_destroy(struct EVENT_QUEUE *heap)
 {
-    fib_node_destroy(heap->min);
+    EVENT_NODE_destroy(heap->min);
     free(heap->cons);
     free(heap);
 }
@@ -736,21 +737,21 @@ void fib_heap_destroy(struct EVENT_QUEUE *heap)
  *     direction  --  1，表示当前节点是一个左孩子;
  *                    2，表示当前节点是一个兄弟节点。
  */
-static void _fib_print(struct EVENT_NODE *node, struct EVENT_NODE *prev, int direction)
+static void _EVENT_QUEUE_print(struct EVENT_NODE *node, struct EVENT_NODE *prev, int direction)
 {
-    FibonacciNode *start=node;
+    struct EVENT_NODE *start=node;
 
     if (node==NULL)
         return ;
     do
     {
         if (direction == 1)
-            printf("%8d(%d) is %2d's child\n", node->event_describe_table->EVENT_TIME, node->degree, prev->key);
+            printf("%8d(%d) is %2d's child\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
         else
-            printf("%8d(%d) is %2d's next\n", node->event_describe_table->EVENT_TIME, node->degree, prev->key);
+            printf("%8d(%d) is %2d's next\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
 
         if (node->child != NULL)
-            _fib_print(node->child, node, 1);
+            _EVENT_QUEUE_print(node->child, node, 1);
 
         // 兄弟节点
         prev = node;
@@ -759,21 +760,21 @@ static void _fib_print(struct EVENT_NODE *node, struct EVENT_NODE *prev, int dir
     } while(node != start);
 }
 
-void fib_print(struct EVENT_QUEUE *heap)
+void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
 {
     int i=0;
-    FibonacciNode *p;
+    struct EVENT_NODE *p;
 
     if (heap==NULL || heap->min==NULL)
         return ;
 
-    printf("== 斐波那契堆的详细信息: ==\n");
+    printf("== EVENT_QUEUE的详细信息: ==\n");
     p = heap->min;
     do {
         i++;
-        printf("%2d. %4d(%d) is root\n", i, p->key, p->degree);
+        printf("%2d. %4d(%d) is root\n", i, p->event_describe_table->EVENT_TIME, p->degree);
 
-        _fib_print(p->child, p, 1);
+        _EVENT_QUEUE_print(p->child, p, 1);
         p = p->right;
     } while (p != heap->min);
     printf("\n");
