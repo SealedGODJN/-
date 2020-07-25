@@ -784,11 +784,6 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
     printf("\n");
 }
 
-//判断两个事件队列是否相同
-bool Judge_Event_Queue_Is_Equal(struct EVENT_QUEUE *q1,struct EVENT_QUEUE *q2)
-{
-
-}
 
 // 插入一个EVENT
 void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
@@ -807,16 +802,16 @@ void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
         return;
     }
 
-    if(event_describe_table->CURRENT_EVENT_QUEUE == NULL)
+    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( tmp == NULL)
     {
-        event_describe_table->CURRENT_EVENT_QUEUE = event_queue;
+        tmp = event_queue;
     }
     else
     {
-        bool isEqual = False;
-        isEqual = Judge_Event_Queue_Is_Equal(event_describe_table->CURRENT_EVENT_QUEUE, event_queue);
-        if(!isEqual)
-            event_describe_table->CURRENT_EVENT_QUEUE = event_queue;
+        
+        if(tmp != event_queue)
+            tmp = event_queue;
         
     }
     
@@ -825,25 +820,94 @@ void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
 // 根据事件ID（EVENT_ID）查找EVENT
 void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-    // 判断两个事件队列是否相同，
+    // 判断两个事件队列的指针是否相同，
     // 若不同，选择第一个参数中的事件队列，
     // 同时将事件描述表中的事件队列改为第一个参数
+    if(event_queue == NULL)
+    {
+        printf("该事件队列未初始化，请初始化事件队列");
+        return;
+    }
+    if(event_describe_table == NULL)
+    {
+        printf("该事件描述表未初始化，请初始化事件描述表");
+        return;
+    }
+
+    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( tmp == NULL)
+    {
+        tmp = event_queue;
+    }
+    else
+    {
+        
+        if(tmp != event_queue)
+            tmp = event_queue;
+        
+    }
 }
 
-// 移除当前优先级队列中最前面（EVENT_TIME最小）的EVENT
+// 根据事件ID（EVENT_ID）移除对应的EVENT
 void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-    // 判断两个事件队列是否相同，
+    // 判断两个事件队列的指针是否相同，
     // 若不同，选择第一个参数中的事件队列，
     // 同时将事件描述表中的事件队列改为第一个参数
+    if(event_queue == NULL)
+    {
+        printf("该事件队列未初始化，请初始化事件队列");
+        return;
+    }
+    if(event_describe_table == NULL)
+    {
+        printf("该事件描述表未初始化，请初始化事件描述表");
+        return;
+    }
+
+    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( tmp == NULL)
+    {
+        tmp = event_queue;
+    }
+    else
+    {
+        
+        if(tmp != event_queue)
+            tmp = event_queue;
+        
+    }
 }
 
-
+// 获得最小的Event
 void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-    // 判断两个事件队列是否相同，
+    // 判断两个事件队列的指针是否相同，
     // 若不同，选择第一个参数中的事件队列，
     // 同时将事件描述表中的事件队列改为第一个参数
+    if(event_queue == NULL)
+    {
+        printf("该事件队列未初始化，请初始化事件队列");
+        return;
+    }
+    if(event_describe_table == NULL)
+    {
+        printf("该事件描述表未初始化，请初始化事件描述表");
+        return;
+    }
+
+    struct EVENT_QUEUE *tmp = event_describe_table->CURRENT_EVENT_QUEUE;
+    if( tmp == NULL)
+    {
+        tmp = event_queue;
+    }
+    else
+    {
+        
+        if(tmp != event_queue)
+            tmp = event_queue;
+        
+    }
 
     // 删除最小节点
 
