@@ -673,6 +673,48 @@ static struct EVENT_NODE *EVENT_QUEUE_search(struct EVENT_QUEUE *heap, Type key)
 }
 
 /*
+ * 在最小堆root中查找为key的节点
+ */
+static struct EVENT_NODE* EVENT_NODE_search_by_ID(struct EVENT_NODE *root, EVENT_ID_TYPE key)
+{
+    struct EVENT_NODE *t = root;    // 临时节点
+    struct EVENT_NODE *p = NULL;    // 要查找的节点
+
+    if (root==NULL)
+        return root;
+
+    do
+    {
+        if (t->event_describe_table->EVENT_ID == key)
+        {
+            p = t;
+            break;
+        }
+        else
+        {
+            if ((p = EVENT_NODE_search_by_ID(t->child, key)) != NULL)
+                break;
+        }
+        t = t->right;
+    } while (t != root);
+
+    return p;
+}
+
+/*
+ * 在斐波那契堆heap中查找键值为key的节点
+ */
+static struct EVENT_NODE *EVENT_QUEUE_search_by_ID(struct EVENT_QUEUE *heap, EVENT_ID_TYPE key)
+{
+    if (heap==NULL || heap->min==NULL)
+        return NULL;
+
+    return EVENT_NODE_search_by_ID(heap->min, key);
+}
+
+
+
+/*
  * 在斐波那契堆heap中是否存在键值为key的节点。
  * 存在返回1，否则返回0。
  */
