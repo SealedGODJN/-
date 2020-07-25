@@ -784,12 +784,42 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
     printf("\n");
 }
 
+//判断两个事件队列是否相同
+bool Judge_Event_Queue_Is_Equal(struct EVENT_QUEUE *q1,struct EVENT_QUEUE *q2)
+{
+
+}
+
 // 插入一个EVENT
 void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table)
 {
-    // 判断两个事件队列是否相同，
+    // 判断两个事件队列的指针是否相同，
     // 若不同，选择第一个参数中的事件队列，
     // 同时将事件描述表中的事件队列改为第一个参数
+    if(event_queue == NULL)
+    {
+        printf("该事件队列未初始化，请初始化事件队列");
+        return;
+    }
+    if(event_describe_table == NULL)
+    {
+        printf("该事件描述表未初始化，请初始化事件描述表");
+        return;
+    }
+
+    if(event_describe_table->CURRENT_EVENT_QUEUE == NULL)
+    {
+        event_describe_table->CURRENT_EVENT_QUEUE = event_queue;
+    }
+    else
+    {
+        bool isEqual = False;
+        isEqual = Judge_Event_Queue_Is_Equal(event_describe_table->CURRENT_EVENT_QUEUE, event_queue);
+        if(!isEqual)
+            event_describe_table->CURRENT_EVENT_QUEUE = event_queue;
+        
+    }
+    
 }
 
 // 根据事件ID（EVENT_ID）查找EVENT
@@ -814,4 +844,7 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
     // 判断两个事件队列是否相同，
     // 若不同，选择第一个参数中的事件队列，
     // 同时将事件描述表中的事件队列改为第一个参数
+
+    // 删除最小节点
+
 }
