@@ -1,4 +1,4 @@
-#include <simx.h>
+#include "simx.h"
 
 #ifndef __SIM_EVENT__
 #define __SIM_EVENT__
@@ -110,8 +110,18 @@ struct EVENT_QUEUE{
 
 // 创建Fibonacci堆
 struct EVENT_QUEUE* EVENT_QUEUE_make();
+// 新建键值为key的节点，并将其插入到斐波那契堆中
+void EVENT_QUEUE_insert_key(struct EVENT_QUEUE *heap, Type key);
 // 删除键值为key的结点
 void EVENT_QUEUE_delete(struct EVENT_QUEUE *heap, Type key);
+// 移除最小节点
+void EVENT_QUEUE_extract_min(struct EVENT_QUEUE *heap);
+// 更新heap的中的oldkey为newkey
+void EVENT_QUEUE_update(struct EVENT_QUEUE *heap, Type oldkey, Type newkey);
+// 将h1, h2合并成一个堆，并返回合并后的堆
+struct EVENT_QUEUE* EVENT_QUEUE_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE *h2);
+// 在斐波那契堆heap中是否存在键值为key的节点；存在返回1，否则返回0。
+bool EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key);
 // 返回斐波那契堆的最小节点（保存在event_describe_table中）
 void EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, struct EVENT_DESCRIBE_TABLE *event_describe_table);
 // 销毁斐波那契堆
