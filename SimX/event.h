@@ -123,7 +123,7 @@ struct EVENT_QUEUE* EVENT_QUEUE_union(struct EVENT_QUEUE *h1, struct EVENT_QUEUE
 // 在斐波那契堆heap中是否存在键值为key的节点；存在返回1，否则返回0。
 bool EVENT_QUEUE_contains(struct EVENT_QUEUE *heap, Type key);
 // 返回斐波那契堆的最小节点（保存在event_describe_table中）
-void EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap, struct EVENT_DESCRIBE_TABLE *event_describe_table);
+struct EVENT_DESCRIBE_TABLE *EVENT_QUEUE_get_min(struct EVENT_QUEUE *heap);
 // 销毁斐波那契堆
 void EVENT_QUEUE_destroy(struct EVENT_QUEUE *heap);
 // 打印"斐波那契堆"
@@ -134,9 +134,9 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap);
 // 若不同，选择第一个参数中的事件队列，
 // 同时将事件描述表中的事件队列改为第一个参数
 void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
-void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
+void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE **event_describe_table);
 void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
-void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
+void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE **event_describe_table);
 // 悬挂一个事件
 // RUNNING -> SUSPENDING
 void Suspend_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
