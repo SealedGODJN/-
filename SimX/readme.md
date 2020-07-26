@@ -76,6 +76,24 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap);
 
 
 
+### 1.5 待实现的函数接口
+
+```c
+// 判断两个事件队列是否相同，
+// 若不同，选择第一个参数中的事件队列，
+// 同时将事件描述表中的事件队列改为第一个参数
+void Insert_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
+void Search_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE **event_describe_table);
+void Remove_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *event_describe_table);
+void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE **event_describe_table);
+```
+
+==此处修改了函数接口==
+
+注意！！！
+
+因为C语言函数中的形参传递都是值传递，且Search_Event函数和getMin_Event函数都是需要将得到的结果放入传入的event_describe_table，如果只是传入指针，则函数结束后，event_describe_table不能接收到对应的结果，需要使用指针的指针
+
 ## 2 event.c实现的函数说明
 
 ### 2.1 预定义的LOG2函数
@@ -550,6 +568,10 @@ static void EVENT_NODE_destroy(struct EVENT_NODE *node)
 
 #### 2.2.9 以一定的格式打印事件队列
 
+打印每个节点的event_describe_table的EVENT_TIME，每一棵树用序号标注（例如“1、”），每一棵树的节点内容用换行符隔开。
+
+
+
 ```c
 void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
 {
@@ -563,7 +585,7 @@ void EVENT_QUEUE_print(struct EVENT_QUEUE *heap)
     p = heap->min;
     do {
         i++;
-        printf("%2d. %4d(%d) is root\n", i, p->event_describe_table->EVENT_TIME, p->degree);
+        printf("%2d. %4ld(%d) is root\n", i, p->event_describe_table->EVENT_TIME, p->degree);
 
         _EVENT_QUEUE_print(p->child, p, 1);
         p = p->right;
@@ -594,9 +616,9 @@ static void _EVENT_QUEUE_print(struct EVENT_NODE *node, struct EVENT_NODE *prev,
     do
     {
         if (direction == 1)
-            printf("%8d(%d) is %2d's child\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
+            printf("%8ld(%d) is %2ld's child\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
         else
-            printf("%8d(%d) is %2d's next\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
+            printf("%8ld(%d) is %2ld's next\n", node->event_describe_table->EVENT_TIME, node->degree, prev->event_describe_table->EVENT_TIME);
 
         if (node->child != NULL)
             _EVENT_QUEUE_print(node->child, node, 1);
@@ -1232,9 +1254,101 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
 
 ## 3 测试函数功能
 
+主函数用来调用测试函数
+
+```c
+
+int main()
+{
+    // 验证"基本信息(斐波那契堆的结构)"
+    // test_basic();
+    
+    // 验证"两个事件队列的合并操作"
+    // test_union();
+    
+    // 验证"插入事件操作"
+    // test_insert();
+
+    // 验证“搜索事件操作”
+    // test_search();
+
+    // 验证“删除事件操作”
+    // test_remove();
+
+    // 验证“获取最小事件操作”
+    test_GetMin();
+    
+    return 0;
+}
+```
+
+
+
 ### 3.1 插入一个event
 
-3.1.1 测试思路
+#### 3.1.0 测试函数
+
+```c
+void test_insert()
+{
+    int i;
+    int alen=LENGTH(a);
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *ha = EVENT_QUEUE_make();
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆ha
+    printf("== 斐波那契堆(ha)中依次添加: ");
+
+    for(i=0; i<alen; i++)
+    {
+        printf("%ld ", a[i]);
+        EVENT_QUEUE_insert_key(ha, a[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(ha)删除最小节点\n");
+    EVENT_QUEUE_extract_min(ha);
+    EVENT_QUEUE_print(ha);
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)删除最小节点\n");
+    EVENT_QUEUE_extract_min(hb);
+    EVENT_QUEUE_print(hb);
+
+    // 插入事件
+    printf("== 插入事件,key=1000\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = ha;
+    Type key = 1000;
+    event_describe_table->EVENT_TIME = key;
+    Insert_Event(hb, event_describe_table);
+    EVENT_QUEUE_print(hb);
+
+    // 销毁堆
+    EVENT_QUEUE_destroy(ha);
+}
+
+```
+
+
+
+#### 3.1.1 测试思路
+
+1、根据Type（重定义数据类型，相当于SIM_TIME_TYPE）数组创建两个堆ha、hb
+
+2、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=ha，设置其EVENT_TIME为1000
+
+3、调用Insert_Event(hb, event_describe_table);
+
+4、打印堆的信息
 
 
 
@@ -1285,5 +1399,371 @@ void getMin_Event(struct EVENT_QUEUE *event_queue, struct EVENT_DESCRIBE_TABLE *
       52(0) is 24's child
  3.   13(1) is root
     1000(0) is 13's child
+```
+
+
+
+### 3.2 根据EVENT_ID搜索一个event
+
+#### 3.2.0 测试函数
+
+```c
+void test_search()
+{
+    int i;
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)优化结构\n");
+    EVENT_QUEUE_consolidate(hb);
+    EVENT_QUEUE_print(hb);
+
+
+    // 插入事件
+    printf("== 插入事件,key=1000,ID=10\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = hb;
+    Type key = 1000;
+    EVENT_ID_TYPE ID = 10;
+    event_describe_table->EVENT_TIME = key;
+    event_describe_table->EVENT_ID = ID;
+    Insert_Event(hb, event_describe_table);
+
+    EVENT_QUEUE_print(hb);
+
+    printf("\n");
+    printf("== 查找ID为10的事件\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
+    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
+    EVENT_ID_TYPE ID1 = 10;
+    event_describe_table1->EVENT_ID = ID1;
+    Search_Event(hb, &event_describe_table1);
+    printf("搜索得到的事件描述表的key为%ld\n\n", event_describe_table1->EVENT_TIME);
+
+    EVENT_QUEUE_destroy(hb);
+}
+
+```
+
+
+
+#### 3.1.1 测试思路
+
+1、根据数组b创建一个事件队列hb
+
+2、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb，设置其EVENT_TIME为1000，设置其EVENT_ID为10
+
+3、Insert_Event(hb, event_describe_table);
+
+4、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb，设置其EVENT_ID为10
+
+5、Search_Event(hb, &event_describe_table1);
+
+6、printf("搜索得到的事件描述表的key为%ld\n\n", event_describe_table1->EVENT_TIME);
+
+
+
+#### 3.1.2 测试结果
+
+```
+== 斐波那契堆(hb)中依次添加: 18 35 20 42 9 31 23 6 48 11 24 52 13 2 
+== 斐波那契堆(hb)优化结构
+== EVENT_QUEUE的详细信息: ==
+ 1.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+ 2.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 3.   13(1) is root
+      52(0) is 13's child
+
+== 插入事件,key=1000,ID=10
+== EVENT_QUEUE的详细信息: ==
+ 1.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+ 2.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 3.   13(1) is root
+      52(0) is 13's child
+ 4. 1000(0) is root
+
+
+== 查找ID为10的事件
+搜索得到的事件描述表的key为1000
+
+```
+
+
+
+### 3.3 根据EVENT_ID移除事件队列中的event
+
+#### 3.3.0 测试函数
+
+```c
+void test_remove()
+{
+    int i;
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)优化结构\n");
+    EVENT_QUEUE_consolidate(hb);
+    EVENT_QUEUE_print(hb);
+
+
+    // 插入事件
+    printf("== 插入事件,key=1,ID=10\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = hb;
+    Type key = 1;
+    EVENT_ID_TYPE ID = 10;
+    event_describe_table->EVENT_TIME = key;
+    event_describe_table->EVENT_ID = ID;
+    Insert_Event(hb, event_describe_table);
+
+    EVENT_QUEUE_print(hb);
+
+    printf("\n");
+    printf("== 删除ID=10(其key=1)的事件\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
+    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
+    EVENT_ID_TYPE ID1 = 10;
+    event_describe_table1->EVENT_ID = ID1;
+    Remove_Event(hb, event_describe_table1);
+
+    EVENT_QUEUE_print(hb);
+
+    EVENT_QUEUE_destroy(hb);
+}
+
+```
+
+
+
+#### 3.3.1 测试思路
+
+1、根据数组b创建一个事件队列hb
+
+2、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb，设置其EVENT_TIME为1000，设置其EVENT_ID为10
+
+3、Insert_Event(hb, event_describe_table);
+
+4、打印事件队列hb
+
+5、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb，设置其EVENT_ID为10
+
+6、Remove_Event(hb, event_describe_table1);
+
+7、打印事件队列hb，发现已经删除了对应的事件队列
+
+
+
+#### 3.3.2 测试结果
+
+```
+== 斐波那契堆(hb)中依次添加: 18 35 20 42 9 31 23 6 48 11 24 52 13 2 
+== 斐波那契堆(hb)优化结构
+== EVENT_QUEUE的详细信息: ==
+ 1.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+ 2.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 3.   13(1) is root
+      52(0) is 13's child
+
+== 插入事件,key=1,ID=10
+== EVENT_QUEUE的详细信息: ==
+ 1.    1(0) is root
+ 2.   13(1) is root
+      52(0) is 13's child
+ 3.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 4.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+
+
+== 删除ID=10(其key=1)的事件
+== EVENT_QUEUE的详细信息: ==
+ 1.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+ 2.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 3.   13(1) is root
+      52(0) is 13's child
+
+```
+
+
+
+### 3.4 获取当前事件队列EVENT_TIME最小的事件
+
+#### 3.4.0 测试函数
+
+```c
+void test_GetMin()
+{
+    int i;
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
+
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)优化结构\n");
+    EVENT_QUEUE_consolidate(hb);
+    EVENT_QUEUE_print(hb);
+
+
+    // 插入事件
+    printf("== 插入事件,key=1,ID=10\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = hb;
+    Type key = 1;
+    EVENT_ID_TYPE ID = 10;
+    event_describe_table->EVENT_TIME = key;
+    event_describe_table->EVENT_ID = ID;
+    Insert_Event(hb, event_describe_table);
+
+    EVENT_QUEUE_print(hb);
+
+    printf("\n");
+    printf("== 获得最小key的事件\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
+    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
+    getMin_Event(hb, &event_describe_table1);
+    printf("得到的事件描述表的key为%ld\n\n", event_describe_table1->EVENT_TIME);
+
+    EVENT_QUEUE_destroy(hb);
+}
+
+```
+
+
+
+#### 3.4.1 测试思路
+
+1、根据数组b创建一个事件队列hb
+
+2、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb，设置其EVENT_TIME为1（当前最小），设置其EVENT_ID为10
+
+3、Insert_Event(hb, event_describe_table);
+
+4、创建一个事件描述表，设置其CURRENT_EVENT_QUEUE=hb
+
+5、getMin_Event(hb, &event_describe_table1);
+
+6、printf("%ld\n\n", event_describe_table1->EVENT_TIME);
+
+
+
+#### 3.4.2 测试结果
+
+```
+== 斐波那契堆(hb)中依次添加: 18 35 20 42 9 31 23 6 48 11 24 52 13 2 
+== 斐波那契堆(hb)优化结构
+== EVENT_QUEUE的详细信息: ==
+ 1.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+ 2.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 3.   13(1) is root
+      52(0) is 13's child
+
+== 插入事件,key=1,ID=10
+== EVENT_QUEUE的详细信息: ==
+ 1.    1(0) is root
+ 2.   13(1) is root
+      52(0) is 13's child
+ 3.   11(2) is root
+      24(0) is 11's child
+      23(1) is 24's next
+      48(0) is 23's child
+ 4.    2(3) is root
+       6(0) is  2's child
+       9(1) is  6's next
+      18(0) is  9's child
+      20(2) is  9's next
+      35(0) is 20's child
+      31(1) is 35's next
+      42(0) is 31's child
+
+
+== 获得最小key的事件
+得到的事件描述表的key为1
+
 ```
 

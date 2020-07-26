@@ -1196,55 +1196,13 @@ void test_search()
     event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
     event_describe_table1->CURRENT_EVENT_QUEUE = hb;
     EVENT_ID_TYPE ID1 = 10;
-    event_describe_table1->EVENT_ID = ID;
+    event_describe_table1->EVENT_ID = ID1;
     Search_Event(hb, &event_describe_table1);
-    printf("%ld\n\n", event_describe_table1->EVENT_TIME);
+    printf("搜索得到的事件描述表的key为%ld\n\n", event_describe_table1->EVENT_TIME);
 
     EVENT_QUEUE_destroy(hb);
 }
 
-void test_GetMin()
-{
-    int i;
-    int blen=LENGTH(b);
-    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
-
-    // 斐波那契堆hb
-    printf("== 斐波那契堆(hb)中依次添加: ");
-    for(i=0; i<blen; i++)
-    {
-        printf("%ld ", b[i]);
-        EVENT_QUEUE_insert_key(hb, b[i]);
-    }
-    printf("\n");
-    printf("== 斐波那契堆(hb)优化结构\n");
-    EVENT_QUEUE_consolidate(hb);
-    EVENT_QUEUE_print(hb);
-
-
-    // 插入事件
-    printf("== 插入事件,key=1,ID=10\n");
-    struct EVENT_DESCRIBE_TABLE *event_describe_table;
-    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
-    event_describe_table->CURRENT_EVENT_QUEUE = hb;
-    Type key = 1;
-    EVENT_ID_TYPE ID = 10;
-    event_describe_table->EVENT_TIME = key;
-    event_describe_table->EVENT_ID = ID;
-    Insert_Event(hb, event_describe_table);
-
-    EVENT_QUEUE_print(hb);
-
-    printf("\n");
-    printf("== 获得最小key的事件\n");
-    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
-    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
-    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
-    getMin_Event(hb, &event_describe_table1);
-    printf("%ld\n\n", event_describe_table1->EVENT_TIME);
-
-    EVENT_QUEUE_destroy(hb);
-}
 
 
 void test_remove()
@@ -1293,13 +1251,57 @@ void test_remove()
     EVENT_QUEUE_destroy(hb);
 }
 
+void test_GetMin()
+{
+    int i;
+    int blen=LENGTH(b);
+    struct EVENT_QUEUE *hb = EVENT_QUEUE_make();
 
-void main()
+    // 斐波那契堆hb
+    printf("== 斐波那契堆(hb)中依次添加: ");
+    for(i=0; i<blen; i++)
+    {
+        printf("%ld ", b[i]);
+        EVENT_QUEUE_insert_key(hb, b[i]);
+    }
+    printf("\n");
+    printf("== 斐波那契堆(hb)优化结构\n");
+    EVENT_QUEUE_consolidate(hb);
+    EVENT_QUEUE_print(hb);
+
+
+    // 插入事件
+    printf("== 插入事件,key=1,ID=10\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table;
+    event_describe_table = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table->CURRENT_EVENT_QUEUE = hb;
+    Type key = 1;
+    EVENT_ID_TYPE ID = 10;
+    event_describe_table->EVENT_TIME = key;
+    event_describe_table->EVENT_ID = ID;
+    Insert_Event(hb, event_describe_table);
+
+    EVENT_QUEUE_print(hb);
+
+    printf("\n");
+    printf("== 获得最小key的事件\n");
+    struct EVENT_DESCRIBE_TABLE *event_describe_table1;
+    event_describe_table1 = (struct EVENT_DESCRIBE_TABLE *)malloc(sizeof(struct EVENT_DESCRIBE_TABLE));
+    event_describe_table1->CURRENT_EVENT_QUEUE = hb;
+    getMin_Event(hb, &event_describe_table1);
+    printf("得到的事件描述表的key为%ld\n\n", event_describe_table1->EVENT_TIME);
+
+    EVENT_QUEUE_destroy(hb);
+}
+
+
+
+int main()
 {
     // 验证"基本信息(斐波那契堆的结构)"
     // test_basic();
     
-    // 验证"合并操作"
+    // 验证"两个事件队列的合并操作"
     // test_union();
     
     // 验证"插入事件操作"
@@ -1309,8 +1311,10 @@ void main()
     // test_search();
 
     // 验证“删除事件操作”
-    test_remove();
+    // test_remove();
 
     // 验证“获取最小事件操作”
-    // test_GetMin();
+    test_GetMin();
+
+    return 0;
 }
