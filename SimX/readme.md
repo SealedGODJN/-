@@ -566,7 +566,7 @@ static void EVENT_NODE_destroy(struct EVENT_NODE *node)
 
 
 
-#### 2.2.9 以一定的格式打印事件队列
+#### ==2.2.9 以一定的格式打印事件队列==
 
 打印每个节点的event_describe_table的EVENT_TIME，每一棵树用序号标注（例如“1、”），每一棵树的节点内容用换行符隔开。
 
