@@ -16,15 +16,21 @@ public class Test {
         // 测试int整型相除
 //        System.out.print(6/10);
 
+        // 测试switch语句的执行
             // SwitchBreak对象实例化
 //            Test switchBreak = new Test();
 //
 //            switchBreak.choosePhoneBreak(1);
-        if(2000000000f == 2000000045) {
-            System.out.println("true");
-        }
 
+        // 测试：java的浮点数
+//        if(2000000000f == 2000000045) {
+//            System.out.println("true");
+//        }
 
+        long a = 1089212234l;
+        float b = 1.0f;
+        b = a;
+        System.out.println(b);
     }
 
 //    /**
