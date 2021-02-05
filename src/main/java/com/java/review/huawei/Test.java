@@ -27,10 +27,28 @@ public class Test {
 //            System.out.println("true");
 //        }
 
-        long a = 1089212234l;
-        float b = 1.0f;
-        b = a;
-        System.out.println(b);
+//        long a = 1089212234l;
+//        float b = 1.0f;
+//        b = a;
+//        System.out.println(b);
+
+//        short roomWidth = 533;
+//        float singleRoomWidth = roomWidth / 7;
+//        // 计算过程：roomWidth变为int，计算结果为76（int），再转为float，即76.0
+//        System.out.println(singleRoomWidth);
+
+        double hillHeight = 2147483642;
+        hillHeight += 1.0;
+        System.out.println(hillHeight);
+        short roomWidth = 533;
+        int treeTall = 6783;
+        long cableLen = 4664382371590123456L;
+        float singleRoomWidth = roomWidth / 5.0f;
+        double averageTall = treeTall / 30.;
+        double totalLen = (double) cableLen * 2;
+        System.out.println(singleRoomWidth);
+        System.out.println(averageTall);
+        System.out.println(totalLen);
     }
 
 //    /**
