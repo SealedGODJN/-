@@ -37,18 +37,29 @@ public class Test {
 //        // 计算过程：roomWidth变为int，计算结果为76（int），再转为float，即76.0
 //        System.out.println(singleRoomWidth);
 
-        double hillHeight = 2147483642;
-        hillHeight += 1.0;
-        System.out.println(hillHeight);
-        short roomWidth = 533;
-        int treeTall = 6783;
-        long cableLen = 4664382371590123456L;
-        float singleRoomWidth = roomWidth / 5.0f;
-        double averageTall = treeTall / 30.;
-        double totalLen = (double) cableLen * 2;
-        System.out.println(singleRoomWidth);
-        System.out.println(averageTall);
-        System.out.println(totalLen);
+        // 测试数据类型的精度
+//        double hillHeight = 2147483642;
+//        hillHeight += 1.0;
+//        System.out.println(hillHeight);
+//        short roomWidth = 533;
+//        int treeTall = 6783;
+//        long cableLen = 4664382371590123456L;
+//        float singleRoomWidth = roomWidth / 5.0f;
+//        double averageTall = treeTall / 30.;
+//        double totalLen = (double) cableLen * 2;
+//        System.out.println(singleRoomWidth);
+//        System.out.println(averageTall);
+//        System.out.println(totalLen);
+
+        // 隐藏
+//        Swan swan = new UglyDuck();
+//        System.out.println(swan.weight);
+//        swan.fly();
+//        // 总结：隐藏会导致动态绑定（dynamic dispatch）失效
+
+        // 遮蔽
+        WhoKnows test = new WhoKnows();
+        test.testInner();
     }
 
 //    /**
@@ -76,3 +87,63 @@ public class Test {
 //        }
 //    }
 }
+
+//// 不清楚“隐藏(hide)”的用法和含义
+//class Swan{
+//    int weight = 1;
+//    public static void fly() {
+//        System.out.println(("Swan can fly"));
+//    }
+//
+//    public class Blood{
+//        public int bp = 1;
+//        public void circulate(){
+//            System.out.println("Swan's blood circulate");
+//        }
+//    }
+//}
+//
+//class UglyDuck extends Swan{
+//    int weight = 2; // 属性、静态方法和内部类可以隐藏在其父类中可以访问到的具有相同名字的成员。在其被隐藏后，阻止其被继承
+//    public static void fly(){
+//        System.out.println("ugly duck can't fly");
+//    }
+//
+//    public class Blood{
+//        public int bp = 2;
+//        public void circulate() {
+//            System.out.println("UglyDuck's blood circulate");
+//        }
+//    }
+//}
+
+//// 遮蔽
+//class TestInnerClass {
+//    public void test(){
+//        System.out.println("other TestInnerClass's method test");
+//    }
+//}
+//
+//class WhoKnows{
+//    static String sentence = "I don't know";
+//    void test() {
+//        System.out.println(("WhoKnows's method test"));
+//    }
+//    void testInner() {
+//        TestInnerClass testInnerClass = new TestInnerClass(); // 实例化重名类
+//        testInnerClass.test(); // 调用重名类的方法
+//    }
+//    public class TestInnerClass { // "遮蔽"了外部的TestInnerClass
+//        public int testField = 1;
+//
+//        public void test() { // "遮蔽"了WhoKnows的方法test()
+//            System.out.println(("TestInnerClass method test"));
+//        }
+//
+//        public void testMethod() {
+//            String sentence = "I know"; // "遮蔽"了WhoKnows的属性sentence
+//            System.out.println(sentence);
+//            test();
+//        }
+//    }
+//}
