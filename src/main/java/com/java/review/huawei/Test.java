@@ -58,8 +58,19 @@ public class Test {
 //        // 总结：隐藏会导致动态绑定（dynamic dispatch）失效
 
         // 遮蔽
-        WhoKnows test = new WhoKnows();
-        test.testInner();
+//        WhoKnows test = new WhoKnows();
+//        test.testInner();
+
+        // 数组的复制
+        int[] resource2 = new int[5];
+        for (int i = 0; i < resource2.length; i++) {
+            resource2[i] = i;
+        }
+        int[] destination2 = new int[5];
+        System.arraycopy(resource2, 0, destination2, 1, 5);
+        for (int i = 0; i < destination2.length; i++) {
+            System.out.println(destination2[i]);
+        }
     }
 
 //    /**
