@@ -14,12 +14,12 @@ public class queue {
     public int rear;
     public queue(int length) {
         this.data = new int[length];
-        this.front = -1;
-        this.rear = 0; // 队尾指针指向队尾元素（而非指向队尾元素的下一个位置）
+        this.front = 0;
+        this.rear = 0; // 队尾指针指向队尾元素的下一个位置（而非指向队尾元素）
     }
 
     public boolean isEmpty() {
-        return (front == rear+1);// || (rear+1);
+        return (front == (rear+1)%this.data.length);// || (rear+1);
     }
 
     public boolean isFull() {
