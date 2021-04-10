@@ -18,16 +18,16 @@ public class queue {
         this.rear = 0; // 队尾指针指向队尾元素的下一个位置（而非指向队尾元素）
     }
 
-    public boolean isEmpty() {
+    public boolean isFull() {
         return (front == (rear+1)%this.data.length);// || (rear+1);
     }
 
-    public boolean isFull() {
+    public boolean isEmpty() {
         return front == rear;
     }
 
     public int size() {
-        return (this.data.length+front-rear) % this.data.length;
+        return (this.data.length-front+rear) % this.data.length;
     }
 
     public void enqueue(int value) {
