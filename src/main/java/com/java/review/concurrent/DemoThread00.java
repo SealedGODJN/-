@@ -65,7 +65,7 @@ class User{
         this.pass = pass;
     }
 
-    public void set(String name, String pass) {
+    public synchronized void set(String name, String pass) {
         this.name = name; // 设置用户名
         try{
             Thread.sleep(5000); // 第一个线程在修改完name之后，等待了5s，同时，第二个线程也进来访问name，修改了name
