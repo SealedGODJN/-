@@ -5,7 +5,8 @@ import sun.java2d.loops.GraphicsPrimitive;
 public class DemoThread02 {
     private /*static*/ int count = 0;
 
-    public /*synchronized*/ /*static*/ void add() {
+    // 如果add方法和count是静态的，则syn如何处理？
+    public synchronized /*static*/ void add() {
         count++;
         try {
             Thread.sleep(1000);
