@@ -3,10 +3,10 @@ package com.java.review.concurrent;
 import sun.java2d.loops.GraphicsPrimitive;
 
 public class DemoThread02 {
-    private /*static*/ int count = 0;
+    private static int count = 0;
 
     // 如果add方法和count是静态的，则syn如何处理？
-    public synchronized /*static*/ void add() {
+    public synchronized static void add() {
         count++;
         try {
             Thread.sleep(1000);
@@ -53,8 +53,8 @@ public class DemoThread02 {
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                thread1.add(); //1.同一个对象，同一把锁
-//                thread2.add();
+//                thread1.add(); //1.同一个对象，同一把锁
+                thread2.add();
             }
         }, "thread2");
 
