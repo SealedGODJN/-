@@ -12,7 +12,7 @@ public class DemoThread03 {
     }
 
     //异步执行
-    public synchronized void print2() {
+    public void print2() {
         System.out.println(Thread.currentThread().getName()+">hello!");
     }
 
