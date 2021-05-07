@@ -1,4 +1,4 @@
-package com;
+package com.XutaoInterview;
 
 public class stack {
     private int[] data; // 数据
