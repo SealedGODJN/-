@@ -1,4 +1,4 @@
-package com.hjn.basic.sort;
+package com.hjn.dataStructure.sort;
 
 public class Test {
     private static int Partition(int[] arr, int start, int end) {

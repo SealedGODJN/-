@@ -1,4 +1,4 @@
-package com.hjn.basic.sort;
+package com.hjn.dataStructure.sort;
 
 public class FastSort {
 
