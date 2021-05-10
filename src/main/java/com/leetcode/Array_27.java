@@ -1,5 +1,10 @@
 package com.leetcode;
 
+/**
+ * @author HJN
+ * @date 2021.5.10
+ * @modify 2021.5.10
+ */
 public class Array_27 {
     public static int removeElement(int[] nums, int val) {
         int index = 0; // 记录数组中元素等于val的个数
