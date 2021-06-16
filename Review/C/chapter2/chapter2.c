@@ -2,7 +2,7 @@
 
 void jolly()
 {
-    printf("For he's jolly good fellow!");
+    printf("For he's jolly good fellow!\n");
 }
 
 void deny()
