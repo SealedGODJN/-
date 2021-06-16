@@ -18,7 +18,7 @@
             { // 模板自带，好像可以更好地显示STL容器的内容，具体作用自行Google
                 "description": "Enable pretty-printing for gdb",
                 "text": "-enable-pretty-printing",
-                "ignoreFailures": false
+                "ignoreFailures": true
             }
         ],
         "preLaunchTask": "Compile" // 调试会话开始前执行的任务，一般为编译程序。与tasks.json的label相对应
