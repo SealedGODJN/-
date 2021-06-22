@@ -30,6 +30,8 @@
         "xlocinfo": "c",
         "xlocnum": "c",
         "xiosbase": "c",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "limits.h": "c",
+        "stdint.h": "c"
     }, // 格式化时调整include的顺序（按字母排序）
 }
