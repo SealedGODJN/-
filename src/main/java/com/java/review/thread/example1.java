@@ -1,7 +1,7 @@
 package com.java.review.thread;
 
 public class example1 {
-    public static class MyThread extends Thread{
+    public static class MyThread extends Thread{ // 1、继承线程类（创建线程有3种方式）
         @Override
         public void run() {
             System.out.println("new thread");
