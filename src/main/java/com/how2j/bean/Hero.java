@@ -3,10 +3,36 @@ package com.how2j.bean;
 import java.io.Serializable;
 
 public class Hero {
-    public String name;
-    public float hp;
 
+    // 测试hero的初始化的顺序
+    // 对象属性初始化有3种
+    //1. 声明该属性的时候初始化
+    //2. 构造方法中初始化
+    //3. 初始化块
+
+    //类属性初始化有2种
+    //1. 声明该属性的时候初始化
+    //2. 静态初始化块
+//    public String name = "some hero";
+//
+//    public Hero(){
+//        name = "one hero";
+//    }
+    // 显式初始化
+//    {
+//        name = "the hero";
+//    }
+//    public String name;
+    public float hp;
     public int damage;
+    // 用于测试static对象会初始化几次
+    // 测试结果：只会初始化一次（因为一个ClassLoader下，一种类，只会有一个类对象存在。通常一个JVM下，只会有一个ClassLoader)
+    static String copyright;
+
+    static {
+        System.out.println("初始化 copyright");
+        copyright = "版权由Riot Games公司所有";
+    }
 
     public void attackhero(Hero h) {
         // 暂停时间去掉，线程会尽力去争取cpu资源
