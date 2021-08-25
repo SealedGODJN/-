@@ -13,7 +13,7 @@ public class Hero {
     //类属性初始化有2种
     //1. 声明该属性的时候初始化
     //2. 静态初始化块
-//    public String name = "some hero";
+    public String name = "some hero";
 //
 //    public Hero(){
 //        name = "one hero";
