@@ -2,7 +2,11 @@ package com.leetcode;
 
 import java.util.Stack;
 
-public class MinStack_155 {
+/**
+ * @author HJN
+ * @date 2021.9.9 检查发现，未完成
+ */
+public class Stack_155 {
     public static void main(String[] args) {
         Stack<Integer> test = new Stack();
     }

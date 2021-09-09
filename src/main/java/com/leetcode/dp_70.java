@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * 注意：给定 n 是一个正整数。
  */
-public class ClimbStairs_70 {
+public class dp_70 {
     public static int climbStairs(int n) {
         int f0 = 0;
         int f1 = 1;

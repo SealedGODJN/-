@@ -3,7 +3,7 @@ package com.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class leetcode_1512_hashtable {
+public class HashTable_1512 {
     public static int numIdenticalPairs(int[] nums) {
         Map<Integer,Integer> record = new HashMap<Integer, Integer>();
         for(int i:nums) {

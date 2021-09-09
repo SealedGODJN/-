@@ -3,7 +3,7 @@ package com.leetcode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class leetcode_771_hashtable {
+public class HashTable_771 {
     public static int numJewelsInStones(String jewels, String stones) {
         char[] j = jewels.toCharArray();
         Set<Character> j_set = new HashSet<Character>();
