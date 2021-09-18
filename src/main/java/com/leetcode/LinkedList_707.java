@@ -10,9 +10,15 @@ public class LinkedList_707 {
     // 方案一：使用单链表
     public int val;
     public LinkedList_707 next;
+    public int length; // 管理长度
+    public LinkedList_707 tail; // 尾指针
 
+    /** Initialize your data structure here. */
     public LinkedList_707() {
-
+        this.val = 0; // val的有效值是0-1000
+        this.next = null;
+        this.tail = this;
+        this.length = 0;
     }
 
     /**
@@ -20,7 +26,13 @@ public class LinkedList_707 {
      * 如果无效，则返回-1
      */
     public int get(int index) {
-
+        if ( index < 0 || index > length -1 ) return -1;
+        LinkedList_707 cur = this;
+        while ( true ) {
+            index--;
+            if ( index == -1 ) return cur.val;
+            cur = cur.next; // 找下一个节点
+        }
     }
 
     /**
@@ -28,24 +40,78 @@ public class LinkedList_707 {
      * @param val
      */
     public void addAtHead(int val) {
+        if(this.length == 0) { // 链表为空
+            this.val = val;
+            this.length++; // 维护长度
+            return;
+        }
+
+        //链表不为空
+        LinkedList_707 temp = this.next;
+
+        LinkedList_707 newNode = new LinkedList_707();
+
+        // 把newNode 插入到第一个和第二个之间
+        newNode.next = temp;
+        if(temp == null) this.tail = newNode; // 维护尾指针
+        this.next = newNode;
+        newNode.val = this.val;
+        this.val = val;
+
+        newNode.tail = this.tail; // 维护尾指针
+        this.length++; // 维护长度
+        newNode.length = this.length; // 维护长度
 
     }
 
     /**
      * 是否要设立尾指针，每次在尾部插入的时候，维护尾指针【插入，时间复杂度o(1)】
+     * 不适合维护尾指针？
      * @param val
      */
     public void addAtTail(int val) {
+        LinkedList_707 newNode = new LinkedList_707();
+        newNode.val = val;
+        this.tail.next = newNode;
+
+        this.tail = newNode; // 维护尾指针
+        newNode.tail = this.tail; // 维护尾指针
+        this.length++; // 维护长度
+        newNode.length = this.length; // 维护长度
 
     }
 
     /**
-     * 在第index个节点之后添加值为val的节点
+     * 在第index个节点之前添加值为val的节点
      * @param index
      * @param val
      */
     public void addAtIndex(int index, int val) {
+        if ( index > length ) return;
+        if ( index <= 0 ) this.addAtHead(val);
+        if ( index == length ) this.addAtTail(val);
 
+        LinkedList_707 head = new LinkedList_707();
+        head.next = this;
+        LinkedList_707 cur = this;
+        LinkedList_707 pre = head;
+        while ( true ) { // 条件代表什么？
+            index--;
+            if ( index == -1 ) {
+                LinkedList_707 newNode = new LinkedList_707();
+                newNode.val = val;
+                pre.next = newNode;
+                newNode.next = cur;
+
+                newNode.tail = this.tail; // 维护尾指针
+                this.length++; // 维护长度
+                newNode.length = this.length; // 维护长度
+
+                return;
+            }
+            pre = cur;
+            cur = cur.next;
+        }
     }
 
     /**
@@ -53,7 +119,45 @@ public class LinkedList_707 {
      * @param index
      */
     public void deleteAtIndex(int index) {
+        if ( index < 0 || index > length ) return;
 
+        LinkedList_707 head = new LinkedList_707();
+        head.next = this;
+        LinkedList_707 cur = this;
+        LinkedList_707 pre = head;
+        while ( pre.next != null) {
+            index--;
+            if ( index == -1 ) {
+                pre.next = cur.next;
+                if(cur.next == null) this.tail = pre; // 维护尾指针
+                this.length--; // 维护长度
+
+                return;
+            }
+            pre = cur;
+            cur = cur.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        LinkedList_707 linkedList = new LinkedList_707();
+//        linkedList.addAtHead(1);
+//        linkedList.addAtTail(3);
+//        linkedList.addAtIndex(1,2);   //链表变为1-> 2-> 3
+//        linkedList.get(1);            //返回2
+//        linkedList.deleteAtIndex(1);  //现在链表是1-> 3
+//        linkedList.get(1);            //返回3
+        linkedList.addAtHead(7);
+        linkedList.addAtHead(2);
+        linkedList.addAtHead(1);
+        linkedList.addAtIndex(3,0);
+        linkedList.deleteAtIndex(2);;
+        linkedList.addAtHead(6);
+        linkedList.addAtTail(4);
+        linkedList.get(4);
+        linkedList.addAtHead(4);
+        linkedList.addAtIndex(5,0);
+        linkedList.addAtHead(6);
     }
 }
 
