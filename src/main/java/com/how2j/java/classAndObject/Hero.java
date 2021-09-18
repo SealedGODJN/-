@@ -54,6 +54,13 @@ public class Hero {
 
 
     public static void main(String[] args) {
+        /**
+         * 章节：
+         * 类和对象——传参
+         *
+         * 测试
+         */
+
         Hero teemo =  new Hero("提莫",383);
 
         Hero temp = teemo;

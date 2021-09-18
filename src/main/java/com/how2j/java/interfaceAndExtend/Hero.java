@@ -54,39 +54,42 @@ public class Hero {
 
 
     public static void main(String[] args) {
-        Hero teemo =  new Hero("提莫",383);
+        /**
+         *          什么时候行呢？
+         *          父类转子类
+         */
+//        Hero h =new Hero();
+//        ADHero ad = new ADHero();
+//        h = ad;
+//        ad = (ADHero) h;
 
-        Hero temp = teemo;
+        /**
+         * 什么时候不行？
+         * 引用对应的类和将要转换到的类是没有继承或者实现关系，则无法进行强制转换
+         */
+//        Hero h =new Hero();
+//        ADHero ad = new ADHero();
+//        Support s =new Support();
+//        h = s;
+//        ad = (ADHero)h;
 
-        //受到400伤害，挂了
-        teemo.hp = teemo.hp - 400;
+        /**
+         * 实现类转换成接口(向上转型)
+         */
+//        ADHero ad = new ADHero();
+//
+//        AD adi = ad;
 
-        System.out.println("===test1===");
+        /**
+         *instanceof
+         *
+         * 练习-类型转换
+         */
 
-        System.out.println(teemo.hp);
-
-        System.out.println("复活之前"+teemo);
-
-        teemo.revive(teemo);
-
-        System.out.println(teemo.hp);
-
-        System.out.println("复活之后"+teemo);
-
-        //问题： System.out.println(teemo.hp); 输出多少？ 怎么理解？
-
-        System.out.println("===test2===");
-
-        System.out.println("复活之前:"+teemo.hp);
-        System.out.println();
-        System.out.println("teemo地址:"+teemo);
-        teemo.revive1(teemo);
-
-        System.out.println("第一次复活之后:"+teemo.hp); //输出多少？ 怎么理解？
-        System.out.println("teemo地址:"+teemo);
-        teemo.revive2(teemo);
-        System.out.println("第二次复活之后:"+teemo.hp);
-
+        ADHero ad = new ADHero();
+        Hero h = ad;
+        AD adi = (AD) h; // 相当于把ADHero转换成AD【可以成功】
+        APHero ap = (APHero) adi; // 【错误】
     }
 
 }

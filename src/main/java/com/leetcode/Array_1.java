@@ -3,6 +3,11 @@ package com.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author HJN
+ * @date 2021.9.5
+ * @modify 2021.9.5
+ */
 public class Array_1 {
 //    /**
 //     * 暴力解法：O(n^2)
