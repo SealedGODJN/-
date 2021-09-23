@@ -70,14 +70,18 @@ public class LinkedList_707 {
      * @param val
      */
     public void addAtTail(int val) {
+        if(length == 0) {
+            this.val = val;
+            this.length++;
+            return;
+        }
         LinkedList_707 newNode = new LinkedList_707();
         newNode.val = val;
-        this.tail.next = newNode;
 
+        this.tail.next = newNode; // 插入到尾指针的next？
         this.tail = newNode; // 维护尾指针
-        newNode.tail = this.tail; // 维护尾指针
+        newNode.next = null;
         this.length++; // 维护长度
-        newNode.length = this.length; // 维护长度
 
     }
 
@@ -88,8 +92,14 @@ public class LinkedList_707 {
      */
     public void addAtIndex(int index, int val) {
         if ( index > length ) return;
-        if ( index <= 0 ) this.addAtHead(val);
-        if ( index == length ) this.addAtTail(val);
+        if ( index <= 0 ) {
+            this.addAtHead(val);
+            return;
+        }
+        if ( index == length ) {
+            this.addAtTail(val);
+            return;
+        }
 
         LinkedList_707 head = new LinkedList_707();
         head.next = this;
@@ -125,6 +135,27 @@ public class LinkedList_707 {
         head.next = this;
         LinkedList_707 cur = this;
         LinkedList_707 pre = head;
+
+        // 删除头节点
+        // 把所有的节点的值往前移，并移除最后一个节点
+        if ( index == 0 ) {
+
+            while( cur != null) {
+                if (cur.next != null) {
+                    cur.val = cur.next.val;
+                } else {
+                    pre.next = null;
+                    this.length--;
+                    return;
+                }
+
+                pre = cur;
+                cur = cur.next;
+            }
+            this.length--;
+            return;
+        }
+
         while ( pre.next != null) {
             index--;
             if ( index == -1 ) {
@@ -147,17 +178,45 @@ public class LinkedList_707 {
 //        linkedList.get(1);            //返回2
 //        linkedList.deleteAtIndex(1);  //现在链表是1-> 3
 //        linkedList.get(1);            //返回3
-        linkedList.addAtHead(7);
-        linkedList.addAtHead(2);
+
+        // addAtHead(7)出错【未考虑length==0】，addAtIndex(3,0)多执行了一次
+//        linkedList.addAtHead(7);
+//        linkedList.addAtHead(2);
+//        linkedList.addAtHead(1);
+//        linkedList.addAtIndex(3,0);
+//        linkedList.deleteAtIndex(2);;
+//        linkedList.addAtHead(6);
+//        linkedList.addAtTail(4);
+//        linkedList.get(4);
+//        linkedList.addAtHead(4);
+//        linkedList.addAtIndex(5,0);
+//        linkedList.addAtHead(6);
+
+        // deleteAtIndex(0)的问题，删除头节点
+//        linkedList.addAtHead(1);
+//        linkedList.addAtTail(3);
+//        linkedList.addAtIndex(1,2);
+//        linkedList.get(1);
+//        linkedList.deleteAtIndex(0);
+//        linkedList.get(0);
+
+        // addAtTail的问题【未考虑length==0】
+//        linkedList.addAtTail(1);
+//        linkedList.get(0);
+
         linkedList.addAtHead(1);
-        linkedList.addAtIndex(3,0);
-        linkedList.deleteAtIndex(2);;
-        linkedList.addAtHead(6);
-        linkedList.addAtTail(4);
-        linkedList.get(4);
-        linkedList.addAtHead(4);
-        linkedList.addAtIndex(5,0);
-        linkedList.addAtHead(6);
+        linkedList.addAtTail(3);
+        linkedList.addAtIndex(1,2);
+        linkedList.get(1);
+        linkedList.deleteAtIndex(1);
+        linkedList.get(1);
+        linkedList.get(3);
+        linkedList.deleteAtIndex(3);
+        linkedList.deleteAtIndex(0);
+        linkedList.get(0);
+        linkedList.deleteAtIndex(0);
+        linkedList.get(0);
+
     }
 }
 
