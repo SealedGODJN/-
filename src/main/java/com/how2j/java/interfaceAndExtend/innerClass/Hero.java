@@ -55,6 +55,7 @@ public class Hero {
 
         //实例化静态内部类
         Hero.EnemyCrystal crystal = new Hero.EnemyCrystal();
+        crystal.hp = 0;
         crystal.checkIfVictory();
     }
 
