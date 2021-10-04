@@ -268,7 +268,11 @@ public class TestThread {
         }
     }
 
-    //  创建一个长度是n的随机字符串，随机字符有可能是数字，大写字母或者小写字母
+    /**
+     * 创建一个长度是n的随机字符串，随机字符有可能是数字，大写字母或者小写字母
+     * @param n 随机字符串的长度
+     * @return 随机字符串
+     */
     public static String genRandPasswd(int n) {
         char[] CHAR = {'a', 'A', '0'};
         char[] PASSWORD = new char[n];

@@ -25,6 +25,8 @@ public class Hero {
 //    public String name;
     public float hp;
     public int damage;
+
+
     // 用于测试static对象会初始化几次
     // 测试结果：只会初始化一次（因为一个ClassLoader下，一种类，只会有一个类对象存在。通常一个JVM下，只会有一个ClassLoader)
     static String copyright;
@@ -32,6 +34,10 @@ public class Hero {
     static {
         System.out.println("初始化 copyright");
         copyright = "版权由Riot Games公司所有";
+    }
+
+    public static String getCopyright() {
+        return copyright;
     }
 
     public void attackhero(Hero h) {
@@ -54,7 +60,7 @@ public class Hero {
         return 0 >= hp;
     }
 
-    public void recover() {
+    public /*synchronized*/ void recover() {
         this.hp++;
 //        System.out.printf("恢复1---盖伦的血量为%.0f%n\n", this.hp);
     }

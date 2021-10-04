@@ -327,9 +327,9 @@ public class TestThread {
 
 
         // 使用hero对象作为同步对象
-        for(int i = 0 ; i< 10; i++) {
-            testSYN_3();
-        }
+//        for(int i = 0 ; i< 10; i++) {
+//            testSYN_3();
+//        }
     }
 
 
