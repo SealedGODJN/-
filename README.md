@@ -2,7 +2,7 @@
 Just a repository 新增：数据结构+算法复习
 
 ## What is it?
-这是一个idea intellij工程，原工程名为helloworld，记录了笔试的准备和数据结构复习
+这是一个idea intellij工程，原工程名为Test_2020_3_2，记录了笔试的准备和数据结构复习
 
 ## 里程碑
 
