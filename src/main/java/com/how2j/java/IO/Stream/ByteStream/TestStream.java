@@ -1,4 +1,4 @@
-package com.how2j.java.IO.Stream;
+package com.how2j.java.IO.Stream.ByteStream;
 
 import com.leetcode.Test;
 import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
@@ -212,7 +212,7 @@ public class TestStream {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 //        test1();
 //        train1();
 //        test2();
