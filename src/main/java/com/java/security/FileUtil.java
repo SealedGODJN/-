@@ -23,7 +23,7 @@ public class FileUtil {
     }
 
     public static void doPrivilegedAction(final String fileName) {
-        // 用特权访问方式创建文件
+        // 用特权访问方式创建文件8
         AccessController.doPrivileged(new PrivilegedAction<String>() {
             @Override
             public String run() {
