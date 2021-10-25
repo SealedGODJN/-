@@ -64,7 +64,7 @@ public class MyStringBuffer implements IStringBuffer{
     private void ensureCapacityInternal(int minimumCapacity) {
         if ( minimumCapacity - this.value.length > 0 ) {
             value = Arrays.copyOf(value,
-                    newCapacity(minimumCapacity));
+                    newCapacity(minimumCapacity)); // 零拷贝？
         }
     }
 

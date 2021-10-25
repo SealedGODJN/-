@@ -8,7 +8,8 @@ public class TestMyStringBuffer {
     @Test
     public void testNewMyStringBuffer() {
         MyStringBuffer mysb = new MyStringBuffer();
-        assertEquals(mysb.value.size(), 16);
+//        assertEquals(16, mysb.value.size());
+        assertEquals(0, mysb.value.size());
     }
 
     @Test

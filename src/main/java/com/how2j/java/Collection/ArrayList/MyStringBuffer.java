@@ -2,6 +2,7 @@ package com.how2j.java.Collection.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class MyStringBuffer implements IStringBuffer {
     /**
@@ -61,10 +62,10 @@ public class MyStringBuffer implements IStringBuffer {
     private void appendNUll() {
         int c = this.count;
 //        ensureCapacityInternal(c + 4);
-        this.value.set(c++, 'n');
-        this.value.set(c++, 'u');
-        this.value.set(c++, 'l');
-        this.value.set(c++, 'l');
+        this.value.add(c++, 'n');
+        this.value.add(c++, 'u');
+        this.value.add(c++, 'l');
+        this.value.add(c++, 'l');
         this.count += 4;
     }
 
@@ -115,7 +116,7 @@ public class MyStringBuffer implements IStringBuffer {
     public void append(char c) {
         // 不用考虑c==null
 //        ensureCapacityInternal(count+1);
-        this.value.set(count, c); // 不要写成count++！！！！！
+        this.value.add(count, c); // 不要写成count++！！！！！
         this.count++;
     }
 
@@ -131,9 +132,9 @@ public class MyStringBuffer implements IStringBuffer {
         int dest = pos + 1;
         int src = pos;
         for (int i = count - pos; i > 0; i--) {
-            value.set(dest++, value.get(src++));
+            value.add(dest++, value.get(src++));
         }
-        this.value.set(pos, b);
+        this.value.add(pos, b);
         this.count += 1;
     }
 
@@ -157,20 +158,20 @@ public class MyStringBuffer implements IStringBuffer {
         int dest = pos + len;
         int src = pos;
         for (int i = count - pos; i > 0; i--) {
-            value.set(dest++, value.get(src++));
+            value.add(dest++, value.get(src++));
         }
 //        b.getChars(0, len, value, pos);
         char[] temp = b.toCharArray();
         int start = pos; // 应该从start这个位置，开始复制
         for (char c : temp) {
-            value.set(start++, c);
+            value.add(start++, c);
         }
         this.count += len;
     }
 
     /**
      * 删除从start开始的所有字符序列
-     * @param start
+     * @param start 开始删除的位置
      */
     @Override
     public void delete(int start) {
@@ -179,7 +180,8 @@ public class MyStringBuffer implements IStringBuffer {
 
     /**
      * 删除从start开始，到end结束的所有字符序列
-     * @param start
+     * @param start 开始删除的位置
+     * @param end 删除终止的位置
      */
     @Override
     public void delete(int start, int end) {
@@ -232,7 +234,20 @@ public class MyStringBuffer implements IStringBuffer {
 //        return Arrays.toString(value);
 //        char[] temp = Arrays.copyOfRange(value, 0, count);
 //        return new String(temp);
-        return value.toString();
+
+//        return value.toString(); //输出格式有问题
+
+        Iterator<Character> it = this.value.iterator();
+        StringBuilder sb = new StringBuilder();
+//        sb.append('[');
+        for (;;) {
+            char e = it.next();
+            sb.append(e);
+            if (! it.hasNext())
+//                return sb.append(']').toString();
+                return sb.toString();
+//            sb.append(',').append(' ');
+        }
     }
 
     public static void main(String[] args) {
