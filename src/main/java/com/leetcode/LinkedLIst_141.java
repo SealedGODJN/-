@@ -5,7 +5,10 @@ import java.util.List;
 
 public class LinkedLIst_141 {
     /**
+     * 哈希表法，遍历一遍链表
      * 时间复杂度为O(n)
+     * 空间复杂度O(n)
+     *
      * @param head
      * @return
      */
@@ -27,7 +30,10 @@ public class LinkedLIst_141 {
 //    }
 
     /**
+     * 快慢指针法
      * 时间复杂度为O(n)
+     * 空间复杂度O(1)
+     *
      * @param head
      * @return
      */
@@ -35,10 +41,10 @@ public class LinkedLIst_141 {
         if (head == null) return false;
         ListNode fast = head;
         ListNode slow = head;
-        int length = 0;
+//        int length = 0;
         while (slow.next != null) {
             slow = slow.next;
-            length++;
+//            length++;
 //            if (length>10000) return true; // 快慢指针一定会相遇
 
             if(fast.next != null) {
