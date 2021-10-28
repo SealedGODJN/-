@@ -72,19 +72,16 @@ public class HashMap_242 {
     public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
 
-        char[] count = new char[26]; // 26个英文小写字母
-        Arrays.fill(count, (char) 0);
+        int[] count = new int[26]; // 26个英文小写字母，初始化的时候，都为0
 
         char[] sCharArray = s.toCharArray();
         char[] tCharArray = t.toCharArray();
         for (int i = 0; i < s.length(); i++) {
-            int sIndex = sCharArray[i] - 'a';
-            int tIndex = tCharArray[i] - 'a';
-            count[sIndex]++;
-            count[tIndex]--;
+            count[sCharArray[i] - 'a']++;
+            count[tCharArray[i] - 'a']--;
         }
 
-        for (char c : count) {
+        for (int c : count) {
             if (c != 0) return false;
         }
         return true;
