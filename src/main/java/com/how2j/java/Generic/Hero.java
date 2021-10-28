@@ -27,6 +27,10 @@ public class Hero {
         this.hp = hp;
     }
 
+    public Hero(String name) {
+        this.name = name;
+    }
+
     // 复活
     // 类类型传参是把类的首地址传过去了，给形参弄个新对象，相当于放弃了传过来的地址，换成了新赋予的地址，原来地址的变量和形参就没有半毛钱关系了。
     public void revive(Hero h){
