@@ -1,9 +1,8 @@
-package com.interview.pratice;
+package com.interview.pratice.hashcode_1;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 

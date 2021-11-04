@@ -5,24 +5,16 @@ import java.lang.reflect.Array;
 public class GfG {
 // main method
 
-    public static void main(String[] args)
-
-    {
+    public static void main(String[] args) {
 // Declaring and defining a byte array
-
         byte a[] = { 1, 2, 3, 4, 5 };
 
 // Traversing the array
-
         for (int i = 0; i < 5; i++) {
 // Array.getByte method
-
             byte x = Array.getByte(a, i);
-
 // Printing the values
-
             System.out.print(x + " ");
-
         }
         System.out.println();
 

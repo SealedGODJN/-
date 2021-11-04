@@ -148,11 +148,21 @@ public class TestCollection {
         System.out.println();
     }
 
+    public static void test3() {
+        List<Object> list= new ArrayList<>();
 
+        Object newObject = null;
+
+        list.add(newObject); // java.lang.Object 并没有实现 Comparable 接口
+
+        list.sort(null); // 没有抛出 java.lang.ClassCastException
+
+    }
 
     public static void main(String[] args) {
 //        test1();
 //        test2();
-        differenceOfArrayListAndLinkList();
+//        differenceOfArrayListAndLinkList();
+        test3();
     }
 }

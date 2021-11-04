@@ -1,4 +1,4 @@
-package com.interview.pratice;
+package com.interview.pratice.hashcode_1;
 
 public class RateInfo {
 
