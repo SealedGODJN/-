@@ -5,6 +5,10 @@ import java.io.*;
 
 public class TestGUI {
 
+    /**
+     * 2021-11-5 完成GUI的第一个练习
+     * @throws IOException
+     */
     public static void test1() throws IOException {
         // 主窗体
         JFrame f = new JFrame("LoL");
@@ -44,9 +48,10 @@ public class TestGUI {
 
         Thread t = new Thread(() -> {
             while (true) {
+                recordCloseLocation(f.getX(), f.getY());
                 try {
-                    recordCloseLocation(f.getX(), f.getY());
-                } catch (IOException e) {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
@@ -54,33 +59,34 @@ public class TestGUI {
         t.start();
     }
 
-    private static int[] readRecordLocation() throws IOException {
+    private static int[] readRecordLocation() {
         String fileName = "D:/location.txt";
-        BufferedReader br = new BufferedReader(new FileReader(fileName));
-        String line = null;
         int[] result = new int[2];
-        for (int i = 0; i < result.length; i++) {
-            line = br.readLine();
-            if (line == null) return null;
-            result[i] = Integer.parseInt(line);
+        try(BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String line = null;
+            for (int i = 0; i < result.length; i++) {
+                line = br.readLine();
+                if (line == null) return null;
+                result[i] = Integer.parseInt(line);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
-        br.close();
-
         return result;
     }
 
-    public static void recordCloseLocation(int x, int y) throws IOException {
+    public static void recordCloseLocation(int x, int y) {
         String fileName = "D:/location.txt";
 
-        BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileName)))
+        {
+            bw.write(x + "\n");
+            bw.write(y + "\n");
 
-        bw.write(x + "\n");
-        bw.write(y + "\n");
-
-        System.out.printf("写入位置：%s,%s 成功", x, y);
-
-        bw.close();
+            System.out.printf("写入位置：%s,%s 成功", x, y);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
