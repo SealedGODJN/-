@@ -1,9 +1,6 @@
 package com.how2j.java.IO.Stream.ReaderAndWriter;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class TestStream {
 
@@ -134,6 +131,23 @@ public class TestStream {
             fr.close();
             assert fw != null;
             fw.close();
+        }
+    }
+
+    public static void test3() throws IOException {
+        String fileName =  "D:/lol.txt";
+        String content = "EnglishTest_E001_Translate the following text into English._2_Smooth,fluent and without language problems or wrong words_C-E\n" +
+                "EnglishTest_E002_Translate the following article content._3_Clear logic and no language problems_E-C";
+
+        OutputStreamWriter fOut = null;
+        try {
+             fOut= new OutputStreamWriter(new FileOutputStream(fileName));
+            char[] chars = new char[content.length()];
+            fOut.write(chars);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            fOut.close();
         }
     }
 
