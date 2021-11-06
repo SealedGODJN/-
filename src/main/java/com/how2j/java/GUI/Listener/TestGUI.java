@@ -201,21 +201,16 @@ public class TestGUI {
         //匿名类
         // 当按钮被点击时，就会触发 ActionEvent事件
         // actionPerformed 方法就会被执行
-        AtomicBoolean isClick = new AtomicBoolean(false);
+        b.addActionListener(new ActionListener() {
 
-        b.addActionListener(e -> {
-            if (!isClick.get()) {
-                l.setVisible(false);
-                b.setText("显示图片");
-                isClick.set(true);
-
+            // 当按钮被点击时，就会触发 ActionEvent事件
+            // actionPerformed 方法就会被执行
+            boolean hide = false;
+            public void actionPerformed(ActionEvent e) {
+                l.setVisible(hide);
+                hide = !hide;
+                b.setText(hide?"显示图片":"隐藏图片");
             }
-            else {
-                l.setVisible(true);
-                b.setText("隐藏图片");
-                isClick.set(false);
-            }
-
         });
 
         f.add(l);
