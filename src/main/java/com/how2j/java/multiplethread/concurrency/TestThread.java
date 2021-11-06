@@ -36,7 +36,7 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
+
                         e.printStackTrace();
                     }
                 }
@@ -54,7 +54,7 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
+
                         e.printStackTrace();
                     }
                 }
@@ -68,7 +68,7 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -77,7 +77,7 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -113,7 +113,7 @@ public class TestThread {
                     }
                     System.out.println(now()+" t1 线程结束");
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
+
                     e.printStackTrace();
                 }
             }
@@ -133,7 +133,7 @@ public class TestThread {
                     }
                     System.out.println(now()+" t2 线程结束");
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
+
                     e.printStackTrace();
                 }
             }
@@ -174,7 +174,7 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
+
                         e.printStackTrace();
                     }
                 }
@@ -194,7 +194,7 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
+
                         e.printStackTrace();
                     }
                 }
@@ -208,7 +208,7 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
             }
         }
@@ -217,7 +217,6 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -256,7 +255,6 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }
@@ -274,7 +272,6 @@ public class TestThread {
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }
@@ -288,7 +285,6 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -297,7 +293,6 @@ public class TestThread {
             try {
                 t.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
