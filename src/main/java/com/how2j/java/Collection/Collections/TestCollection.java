@@ -99,7 +99,7 @@ public class TestCollection {
         List<Integer> synchronizedNumbers = (List<Integer>) Collections.synchronizedList(numbers);
     }
 
-    public static void test6_1() throws InterruptedException {
+    public static void test6_1() {
 
 
         /**
@@ -111,9 +111,9 @@ public class TestCollection {
          * 问题：
          * 仍然存在线程不安全？并不是，只不过有时候，t1先执行，有时候t2先执行，是线程安全的
          */
-        List<Integer> numbers = new ArrayList<>();
-        System.out.println("把非线程安全的List转换为线程安全的List");
-        List<Integer> synchronizedNumbers = (List<Integer>) Collections.synchronizedList(numbers);
+//        List<Integer> numbers = new ArrayList<>();
+//        System.out.println("把非线程安全的List转换为线程安全的List");
+//        List<Integer> synchronizedNumbers = (List<Integer>) Collections.synchronizedList(numbers);
 
         /**
          * 使用线程不安全的List
@@ -128,7 +128,7 @@ public class TestCollection {
          * 	    2、分析null：原因在于Thread.sleep()，有些线程并没有add进去？
          * 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null, null, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, null,
          */
-//        List<Integer> synchronizedNumbers = new ArrayList<>();
+        List<Integer> synchronizedNumbers = new ArrayList<>();
 
 
         final int[] i = new int[1000];
@@ -138,6 +138,8 @@ public class TestCollection {
             Thread t1 = new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    synchronizedNumbers.add(i[finalJ]);
+
                     Random random = new Random();
                     try {
                         Thread.sleep(100);
@@ -147,7 +149,6 @@ public class TestCollection {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    synchronizedNumbers.add(i[finalJ]);
                 }
             });
             t1.start();
@@ -159,13 +160,20 @@ public class TestCollection {
             Thread t2 = new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    i[finalJ]++;
+//                    i[finalJ]++;
+
+                    /**
+                     * 不管是线程安全，还是不安全，都会出现问题
+                     *
+                     * java.lang.IndexOutOfBoundsException: Index: 883, Size: 883
+                     */
+                    synchronizedNumbers.remove(synchronizedNumbers.size()-1);
                 }
             });
             t2.start();
         }
 
-        System.out.println(synchronizedNumbers);
+        System.out.println(synchronizedNumbers.size());
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -175,8 +183,6 @@ public class TestCollection {
 //        test4();
 //        test5();
 //        test6();
-//        test6_1();
-
-
+        test6_1();
     }
 }
