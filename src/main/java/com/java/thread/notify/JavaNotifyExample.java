@@ -62,10 +62,10 @@ class Notify2 extends Thread {
             System.out.println("Starting of " + Thread.currentThread().getName());
             try {
                 this.notify1.wait(); // this.notify1 是临界资源？
-                if(!this.notify1.isAlive()) {
-                    this.stop();
-                    System.out.println(Thread.currentThread().getName() + "...stop");
-                }
+//                if(!this.notify1.isAlive()) {
+//                    this.stop();
+//                    System.out.println(Thread.currentThread().getName() + "...stop");
+//                }
                 // 上面syn之后，如果notify1被唤醒，则该方法无法继续运行，需要等待notify1结束？notify2才能结束？
             } catch (InterruptedException e) {
                 e.printStackTrace();
