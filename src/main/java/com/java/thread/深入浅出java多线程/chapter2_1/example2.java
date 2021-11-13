@@ -1,4 +1,4 @@
-package com.java.thread;
+package com.java.thread.深入浅出java多线程.chapter2_1;
 
 public class example2 {
     public static class MyThread implements Runnable { // 2、实现Runnable接口（java中创建线程的三种方式）

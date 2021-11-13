@@ -8,7 +8,19 @@ import java.util.Scanner;
  * 遇到了问题：两次调用try-with-resource，导致无法正常读取line
  */
 public class test {
-    public static void main(String[] args) {
+    /**
+     * 20-面向对象-方世琦
+     */
+    public static void test1() {
+        int x = 2;
+        int y = (x++)/3;
+        System.out.println(y);
+    }
+
+    /**
+     * 某个学生问我，是否需要
+     */
+    public static void test0() {
         System.out.println("Student id>");
         String id;
 
@@ -41,5 +53,9 @@ public class test {
         System.out.println(id);
         System.out.println(name);
          */
+    }
+
+    public static void main(String[] args) {
+        test1();
     }
 }

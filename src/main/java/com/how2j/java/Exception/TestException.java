@@ -2,6 +2,7 @@ package com.how2j.java.Exception;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.Random;
 import java.util.Scanner;
 
 public class TestException {
@@ -32,7 +33,14 @@ public class TestException {
         String length = in.trim();
     }
 
-    public static void main(String[] args) {
+    public static void test4() throws Exception {
+        Random random = new Random();
+        if (random.nextBoolean()) {
+            throw new Exception("new exception");
+        }
+    }
 
+    public static void main(String[] args) throws Exception {
+        test4();
     }
 }
