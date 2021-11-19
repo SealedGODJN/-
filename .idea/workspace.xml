@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a757fa2-ef8c-4c5e-a18d-bc69649bfd26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/daemon/ThreadDaemonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/CallableAdapter/Executors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/CallableAdapter/FutureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/CallableAdapter/RunnableFutureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/CallableAndFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/CallableThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/SuspendAndResume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_344.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_541.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_1/example1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_1/example1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_18.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a757fa2-ef8c-4c5e-a18d-bc69649bfd26" name="Changes" comment="" />
+      <created>1637338645753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637338645753</updated>
+      <workItem from="1637338660622" duration="359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
