@@ -17,8 +17,9 @@ public class Task implements Callable<Integer> {
         Future<Integer> result = executorService.submit(task);
         // 调用get方法会阻塞当前线程，直到得到结果
         // 实际使用时，会设置超时时间
+        System.out.println(result.get()); // 一直阻塞当前线程（=主线程），直到任务返回结果？
 //        System.out.println(result.get(1, TimeUnit.SECONDS)); // 超时
 //        System.out.println(result.get(2, TimeUnit.SECONDS)); // 是否超时？不超时
-        System.out.println(result.get(2, TimeUnit.SECONDS)); // 不超时
+//        System.out.println(result.get(2, TimeUnit.SECONDS)); // 不超时
     }
 }

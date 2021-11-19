@@ -22,5 +22,8 @@ public class example1 {
     public static void main(String[] args) {
         Thread mythread = new MyThread(); // 在静态方法中new一个内部类，需要设定该类为static
         mythread.start();
+
+        Thread t1 = new Thread();
+        t1.start();
     }
 }

@@ -158,30 +158,39 @@ public class HashMap_18 {
         if (nums == null || nums.length < 4) {
             return quadruplets;
         }
-        Arrays.sort(nums);
+        Arrays.sort(nums); // 从小到大排序
         int length = nums.length;
         for (int i = 0; i < length - 3; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
+
+            // 这种剪枝是错误的，这道题目target 是任意值
+            // if (nums[k] > target) {
+            //     return result;
+            // }
             if (nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3] > target) {
+                // 这种剪枝是对的，最小的四个数相加>target，过大
                 break;
             }
             if (nums[i] + nums[length - 3] + nums[length - 2] + nums[length - 1] < target) {
+                // 最大三个数相加都<target，过小
                 continue;
             }
             for (int j = i + 1; j < length - 2; j++) {
-                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) { // 剪枝（去重）
                     continue;
                 }
                 if (nums[i] + nums[j] + nums[j + 1] + nums[j + 2] > target) {
+                    // 已经确定了两个数，再拿最小的两个数相加>target，过大
                     break;
                 }
                 if (nums[i] + nums[j] + nums[length - 2] + nums[length - 1] < target) {
+                    // 已经确定了两个数，再拿最大的两个数相加<target，过小
                     continue;
                 }
                 int left = j + 1, right = length - 1;
-                while (left < right) {
+                while (left < right) { // 开始使用双指针，根据target和sum的大小关系【控制】，调整两个指针的位置
                     int sum = nums[i] + nums[j] + nums[left] + nums[right];
                     if (sum == target) {
                         quadruplets.add(Arrays.asList(nums[i], nums[j], nums[left], nums[right]));
@@ -193,9 +202,9 @@ public class HashMap_18 {
                             right--;
                         }
                         right--;
-                    } else if (sum < target) {
+                    } else if (sum < target) { // sum < target ，则需要数组中更大的数来参与四数之和
                         left++;
-                    } else {
+                    } else { // sum > target ，则需要数组中更小的数来参与四数之和
                         right--;
                     }
                 }
@@ -209,8 +218,6 @@ public class HashMap_18 {
         int[] nums = {2,2,2,2,2,2};
         int target = 0;
         List<List<Integer>> result = fourSum(nums, target);
-
-        assert result != null;
 
         result.forEach(integers -> integers.forEach(System.out::print));
     }
