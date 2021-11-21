@@ -21,58 +21,82 @@ public class String_541 {
      * @param k
      * @return
      */
+//    public static String reverseStr(String s, int k) {
+//        int totallen = s.length();
+//        int len = s.length(); // 对String对长度进行记录
+//        int start = 0; // 从0开始对s的子串进行反转
+//
+//        do {
+//            if (len >= 2 * k) {
+//                String subString = s.substring(start, start + k);
+//                char[] temp = subString.toCharArray();
+//                reverseString(temp);
+//                if (start > 1)
+//                    s = s.substring(0, start) + getStringOfCharArray(temp) + s.substring(start + k, totallen);
+//                else
+//                    s = getStringOfCharArray(temp) + s.substring(start + k, totallen);
+//            } else if (len < 2 * k && len >= k) {
+//                String subString = s.substring(start, start + k);
+//                char[] temp = subString.toCharArray();
+//                reverseString(temp);
+//
+//                if (start > 1)
+//                    s = s.substring(0, start) + getStringOfCharArray(temp) + s.substring(start + k, totallen);
+//                else
+//                    s = getStringOfCharArray(temp) + s.substring(start + k, totallen);
+//
+//                return s;
+//            } else { // 0 < len < k
+//                String subString = s.substring(start, totallen);
+//                char[] temp = subString.toCharArray();
+//                reverseString(temp);
+//                s = s.substring(0, start) + getStringOfCharArray(temp);
+//                return s;
+//            }
+//
+//            len -= 2 * k;
+//            start += 2 * k;
+//
+//        } while (true);
+//    }
+//
+//    private static String getStringOfCharArray(char[] temp) {
+//        StringBuilder s = new StringBuilder();
+//        for (char c :
+//                temp) {
+//            s.append(c);
+//        }
+//        return s.toString();
+//    }
+
+    /**
+     * 循环一遍s即可
+     * @param s
+     * @param k
+     * @return
+     */
     public static String reverseStr(String s, int k) {
-        int totallen = s.length();
-        int len = s.length(); // 对String对长度进行记录
-        int start = 0; // 从0开始对s的子串进行反转
-
-        do {
-            if (len >= 2 * k) {
-                String subString = s.substring(start, start + k);
-                char[] temp = subString.toCharArray();
-                reverseString(temp);
-                if (start > 1)
-                    s = s.substring(0, start) + getStringOfCharArray(temp) + s.substring(start + k, totallen);
-                else
-                    s = getStringOfCharArray(temp) + s.substring(start + k, totallen);
-            } else if (len < 2 * k && len >= k) {
-                String subString = s.substring(start, start + k);
-                char[] temp = subString.toCharArray();
-                reverseString(temp);
-
-                if (start > 1)
-                    s = s.substring(0, start) + getStringOfCharArray(temp) + s.substring(start + k, totallen);
-                else
-                    s = getStringOfCharArray(temp) + s.substring(start + k, totallen);
-
-                return s;
-            } else { // 0 < len < k
-                String subString = s.substring(start, totallen);
-                char[] temp = subString.toCharArray();
-                reverseString(temp);
-                s = s.substring(0, start) + getStringOfCharArray(temp);
-                return s;
-            }
-
-            len -= 2 * k;
-            start += 2 * k;
-
-        } while (true);
-    }
-
-    private static String getStringOfCharArray(char[] temp) {
-        StringBuilder s = new StringBuilder();
-        for (char c :
-                temp) {
-            s.append(c);
+        char[] newStr = s.toCharArray();
+        for(int i = 0; i < newStr.length; i += 2 * k) {
+            reverseLeftRight(newStr, i, i + Math.min(newStr.length - i, k) - 1);
         }
-        return s.toString();
+        return new String(newStr);
     }
 
+    private static void reverseLeftRight(char[] newStr, int left, int right) {
+        while (left < right) {
+            char leftChar = newStr[left];
+            newStr[left] = newStr[right];
+            newStr[right] = leftChar;
+
+            left++;
+            right--;
+        }
+    }
 
     public static void main(String[] args) {
-//        String s = "abcdefg";
-        String s = "abcd";
+        String s = "abcdefg";
+//        String s = "abcd";
 
         int k = 2;
         System.out.println(reverseStr(s, k));
