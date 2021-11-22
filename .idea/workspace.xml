@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a757fa2-ef8c-4c5e-a18d-bc69649bfd26" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_Offer_5.java" afterDir="false" />
+    <list default="true" id="8a757fa2-ef8c-4c5e-a18d-bc69649bfd26" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_541.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_541.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
