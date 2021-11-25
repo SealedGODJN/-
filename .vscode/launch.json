@@ -1,0 +1,1288 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.AbstractFactoryPattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdapterClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.AdapterPattern.AdapterClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(1)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.BridgePattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(2)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.BuilderPattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(3)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.BuilderPattern.Impove.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DogWang2Cor",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.ChainOfResponsibilityPattern.DogWang2Cor",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DogWang2Client",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.CommandPattern.DogWang2Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompositeClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.CompositePattern.CompositeClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(4)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.DecoratorPattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Boss",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.DelegatePattern.Boss",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FacadeClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.FacadePattern.FacadeClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(5)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.FactoryPattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FlyweightClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.FlyWeightPattern.FlyweightClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch IteratorClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.IteratorPattern.IteratorClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MementoClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.MementoPattern.MementoClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrototypeClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.PrototypePattern.PrototypeClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(6)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.ProxyPattern.DynamicProxy.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(7)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.ProxyPattern.StaticProxy.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(8)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.ProxyPattern.cgLib.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleComputerFactory",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.SimpleFactoryPattern.SimpleComputerFactory",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch StateClient",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.StatePattern.StateClient",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrafficFeeCalculator",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.StrategyPattern.TrafficFeeCalculator",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Client(9)",
+            "request": "launch",
+            "mainClass": "com.DesignPattern.TemplatePattern.Client",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch OpenCloseTest",
+            "request": "launch",
+            "mainClass": "com.DesignPrinciple.OpenCloseTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "com.JavaLesson.test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AutoControl",
+            "request": "launch",
+            "mainClass": "com.NPU.robot_learn.AutoControl",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AutoPaint",
+            "request": "launch",
+            "mainClass": "com.NPU.robot_learn.AutoPaint",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "com.NPU.scala.XutaoInterview.Solution",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue",
+            "request": "launch",
+            "mainClass": "com.NPU.scala.XutaoInterview.queue",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack",
+            "request": "launch",
+            "mainClass": "com.NPU.scala.XutaoInterview.stack",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ByteBufferDemo",
+            "request": "launch",
+            "mainClass": "com.alibaba.ByteBufferDemo",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSubsequence",
+            "request": "launch",
+            "mainClass": "com.dataStructure.array.MaxSubsequence",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSubsequenceSum",
+            "request": "launch",
+            "mainClass": "com.dataStructure.array.MaxSubsequenceSum",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListUDG",
+            "request": "launch",
+            "mainClass": "com.dataStructure.graph.ListUDG",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FastSort",
+            "request": "launch",
+            "mainClass": "com.dataStructure.sort.FastSort",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertSort",
+            "request": "launch",
+            "mainClass": "com.dataStructure.sort.InsertSort",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectionSort",
+            "request": "launch",
+            "mainClass": "com.dataStructure.sort.SelectionSort",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "com.dataStructure.sort.Test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch PostfixExpression_2_InfixExpression",
+            "request": "launch",
+            "mainClass": "com.dataStructure.stack.PostfixExpression_2_InfixExpression",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HuffmanTest",
+            "request": "launch",
+            "mainClass": "com.dataStructure.tree.Huffman.HuffmanTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HuffmanTree",
+            "request": "launch",
+            "mainClass": "com.dataStructure.tree.HuffmanTree",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Create100Threads",
+            "request": "launch",
+            "mainClass": "com.hjn.thread.Create100Threads",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaAndThread",
+            "request": "launch",
+            "mainClass": "com.hjn.thread.JavaAndThread",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestClassInit",
+            "request": "launch",
+            "mainClass": "com.how2j.bean.TestClassInit",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyStringBuffer",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Collection.ArrayList.MyStringBuffer",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCollection",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Collection.ArrayList.TestCollection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCollection(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Collection.Collections.TestCollection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCollection(2)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Collection.HashMapAndSet.TestCollection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCollection(3)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Collection.LinkedList.TestCollection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestException",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Exception.TestException",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGUI",
+            "request": "launch",
+            "mainClass": "com.how2j.java.GUI.Listener.TestGUI",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGUI(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.GUI.LookAndFeel.TestGUI",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGUI(2)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.GUI.TestGUI",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGUI(3)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.GUI.train1.TestGUI",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Generic.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HeroStack",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Generic.HeroStack",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyStack",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Generic.MyStack",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGeneric",
+            "request": "launch",
+            "mainClass": "com.how2j.java.Generic.TestGeneric",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFile",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.File.TestFile",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.BufferStream.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.ByteStream.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream(2)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.DataStream.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream(3)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.ObjectOutputStream.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream(4)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.ReaderAndWriter.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStream(5)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.IO.Stream.SystemIn.TestStream",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyStringBuffer(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.String.MyStringBuffer.MyStringBuffer",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestString",
+            "request": "launch",
+            "mainClass": "com.how2j.java.String.TestString",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.TestVolatile.Test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestVolatile",
+            "request": "launch",
+            "mainClass": "com.how2j.java.TestVolatile.TestVolatile",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ADHero",
+            "request": "launch",
+            "mainClass": "com.how2j.java.classAndObject.ADHero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.classAndObject.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGiantDragon",
+            "request": "launch",
+            "mainClass": "com.how2j.java.classAndObject.TestGiantDragon",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestNumber",
+            "request": "launch",
+            "mainClass": "com.how2j.java.digit.TestNumber",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(2)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Final.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(3)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(4)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Hide.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(5)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Object.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Item",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Object.Item",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Item(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Override.Item",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ADHero(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Super.ADHero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(6)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Super.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(2)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.Test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ADAPHero",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.defaultMethod.ADAPHero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(7)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.innerClass.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(8)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.noNameClass.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hero(9)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.interfaceAndExtend.polymorphism.Hero",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestThread",
+            "request": "launch",
+            "mainClass": "com.how2j.java.multiplethread.TestThread",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestThread(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.multiplethread.concurrency.TestThread",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestReflection",
+            "request": "launch",
+            "mainClass": "com.how2j.java.reflection.TestReflection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestReflection(1)",
+            "request": "launch",
+            "mainClass": "com.how2j.java.reflection.newObject.TestReflection",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestJDBC",
+            "request": "launch",
+            "mainClass": "com.how2j.jdbc.TestJDBC",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.interview.NC2020321.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.interview.ShenXinFu.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution(1)",
+            "request": "launch",
+            "mainClass": "com.interview.ShenXinFu.Solution",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.interview.alibb.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "com.interview.huawei.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution(2)",
+            "request": "launch",
+            "mainClass": "com.interview.huawei.Solution",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "com.interview.kuaiShou.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution(3)",
+            "request": "launch",
+            "mainClass": "com.interview.kuaiShou.Solution",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "com.interview.tencent.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaHashIndexTest",
+            "request": "launch",
+            "mainClass": "com.java.Collection.HashMap.JavaHashIndexTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaSetTest",
+            "request": "launch",
+            "mainClass": "com.java.Collection.HashMap.JavaSetTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestList",
+            "request": "launch",
+            "mainClass": "com.java.Collection.List.TestList",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestGarbage1",
+            "request": "launch",
+            "mainClass": "com.java.GarbageCollection.TestGarbage1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GfG",
+            "request": "launch",
+            "mainClass": "com.java.Reflect.Array.GfG",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountdownLatchTest1",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.CountDownLatch.CountdownLatchTest1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountdownLatchTest2",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.CountDownLatch.CountdownLatchTest2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoThread00",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.DemoThread00",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoThread02",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.DemoThread02",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoThread03",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.DemoThread03",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoThread04",
+            "request": "launch",
+            "mainClass": "com.java.concurrent.DemoThread04",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HasStatic",
+            "request": "launch",
+            "mainClass": "com.java.control.HasStatic",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch EnumTest",
+            "request": "launch",
+            "mainClass": "com.java.enumtest.EnumTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(3)",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2_2",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test2_2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2_4",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test2_4",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2_zuoye1",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test2_zuoye1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test3_1",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test3_1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test3_3",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test3_3",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test_Hash",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.Test_Hash",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhoKnows",
+            "request": "launch",
+            "mainClass": "com.java.huaweiJavaTraining.WhoKnows",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2",
+            "request": "launch",
+            "mainClass": "com.java.io.SystemOutAndSystemErr.Test2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch BufferedReaderDemo",
+            "request": "launch",
+            "mainClass": "com.java.io.nio.BufferedReaderDemo",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChannelDemo",
+            "request": "launch",
+            "mainClass": "com.java.io.nio.ChannelDemo",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch JConcoleRAMMonitor",
+            "request": "launch",
+            "mainClass": "com.java.jConsole.JConcoleRAMMonitor",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LockTest",
+            "request": "launch",
+            "mainClass": "com.java.jConsole.LockTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadLockDemo",
+            "request": "launch",
+            "mainClass": "com.java.jConsole.ThreadLockDemo",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "com.java.learning.Main",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Point",
+            "request": "launch",
+            "mainClass": "com.java.learning.Point",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListener",
+            "request": "launch",
+            "mainClass": "com.java.listener.TestListener",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoDoPrivilege",
+            "request": "launch",
+            "mainClass": "com.java.security.DemoDoPrivilege",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestThreadPool",
+            "request": "launch",
+            "mainClass": "com.java.thread.ExecutorService.TestThreadPool",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultitasking1",
+            "request": "launch",
+            "mainClass": "com.java.thread.Multitasking.TestMultitasking1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultitasking2",
+            "request": "launch",
+            "mainClass": "com.java.thread.Multitasking.TestMultitasking2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultitasking3",
+            "request": "launch",
+            "mainClass": "com.java.thread.Multitasking.TestMultitasking3",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultitasking4",
+            "request": "launch",
+            "mainClass": "com.java.thread.Multitasking.TestMultitasking4",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultitasking5",
+            "request": "launch",
+            "mainClass": "com.java.thread.Multitasking.TestMultitasking5",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadGroupDemo",
+            "request": "launch",
+            "mainClass": "com.java.thread.ThreadGroup.ThreadGroupDemo",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestDaemonThread1",
+            "request": "launch",
+            "mainClass": "com.java.thread.daemon.TestDaemonThread1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestDaemonThread2",
+            "request": "launch",
+            "mainClass": "com.java.thread.daemon.TestDaemonThread2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestJoinMethod1",
+            "request": "launch",
+            "mainClass": "com.java.thread.join.TestJoinMethod1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaNotifyExample",
+            "request": "launch",
+            "mainClass": "com.java.thread.notify.JavaNotifyExample",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestMultiPriority1",
+            "request": "launch",
+            "mainClass": "com.java.thread.priority.TestMultiPriority1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCallRun1",
+            "request": "launch",
+            "mainClass": "com.java.thread.run.TestCallRun1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCallRun2",
+            "request": "launch",
+            "mainClass": "com.java.thread.run.TestCallRun2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemoryTest",
+            "request": "launch",
+            "mainClass": "com.java.thread.runtime.MemoryTest",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runtime1",
+            "request": "launch",
+            "mainClass": "com.java.thread.runtime.Runtime1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runtime2",
+            "request": "launch",
+            "mainClass": "com.java.thread.runtime.Runtime2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runtime4",
+            "request": "launch",
+            "mainClass": "com.java.thread.runtime.Runtime4",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestShutdown1",
+            "request": "launch",
+            "mainClass": "com.java.thread.shutdownHook.TestShutdown1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch SafeRunnable",
+            "request": "launch",
+            "mainClass": "com.java.thread.深入浅出java多线程.chapter2_1.SafeRunnable",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch example1",
+            "request": "launch",
+            "mainClass": "com.java.thread.深入浅出java多线程.chapter2_1.example1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch example2",
+            "request": "launch",
+            "mainClass": "com.java.thread.深入浅出java多线程.chapter2_1.example2",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Task",
+            "request": "launch",
+            "mainClass": "com.java.thread.深入浅出java多线程.chapter2_2.Task",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_1",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_1300",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_1300",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_15",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_15",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_209",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_209",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_27",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_27",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_35",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_35",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_503",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_503",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_54",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_54",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_59",
+            "request": "launch",
+            "mainClass": "com.leetcode.Array_59",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_18",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_18",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_202",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_202",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_242",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_242",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_349",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_349",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_383",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_383",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_454",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashMap_454",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashTable_1512",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashTable_1512",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashTable_771",
+            "request": "launch",
+            "mainClass": "com.leetcode.HashTable_771",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedLIst_141",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedLIst_141",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList_142",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedList_142",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList_203",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedList_203",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList_206",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedList_206",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList_707",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedList_707",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedList_707_1",
+            "request": "launch",
+            "mainClass": "com.leetcode.LinkedList_707_1",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack_155",
+            "request": "launch",
+            "mainClass": "com.leetcode.Stack_155",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack_331",
+            "request": "launch",
+            "mainClass": "com.leetcode.Stack_331",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(4)",
+            "request": "launch",
+            "mainClass": "com.leetcode.Test",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch dp_131",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp_131",
+            "projectName": "Test_2020_3_2"
+        },
+        {
+            "type": "java",
+            "name": "Launch dp_70",
+            "request": "launch",
+            "mainClass": "com.leetcode.dp_70",
+            "projectName": "Test_2020_3_2"
+        }
+    ]
+}
