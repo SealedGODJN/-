@@ -41,7 +41,7 @@ public class String_28 {
 //                }
 //            } else j = 0;
             while (j>0 && haystackArray[i] != needleArray[j]) {
-                j = next[j-1];
+                j = next[j-1]; // 回溯到最初始的j的位置
             }
             if (haystackArray[i] == needleArray[j]) j++;
             if (j == needle.length()) return i - needle.length() + 1;
