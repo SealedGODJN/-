@@ -44,7 +44,7 @@ public class String_Offer_5 {
         for (int i = 0; i < sArray.length; i++) {
             if(sArray[i] == ' ') sum++;
         }
-        char[] result = new char[sArray.length + sum*2];
+        char[] result = new char[sArray.length + sum*2]; // 创建新的且长度适合的字符数组存储result
         int j = result.length - 1;
         for (int i = sArray.length - 1; i >= 0 ; i--) {
             if (sArray[i] == ' ') {

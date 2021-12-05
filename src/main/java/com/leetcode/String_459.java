@@ -77,8 +77,8 @@ public class String_459 {
 //        String s = "abcd,abcd,abcd,";
 //        String s = "aba";
 //        String s = "a";
-//        String s = "abaababaab";
-        String s = "abac";
+        String s = "aabaabaabaab";
+//        String s = "abac";
 //        String s = "aa";
         int[] next = genNext(s.toCharArray());
         for (int i : next) {

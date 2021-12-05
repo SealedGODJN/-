@@ -53,7 +53,7 @@ public class String_151 {
                 s[slow++] = s[fast];
                 firstMeetSpace = true;
             } else {
-                if (firstMeetSpace) {
+                if (firstMeetSpace) { // 双指针法很容易弄错 指针的移动条件
                     if (fast == 0) {
                         s[slow] = s[++fast];
                         firstMeetSpace = false;

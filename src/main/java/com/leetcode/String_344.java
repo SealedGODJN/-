@@ -1,6 +1,10 @@
 package com.leetcode;
 
 public class String_344 {
+    /**
+     * 双指针法
+     * @param s 待反转的字符串
+     */
     public static void reverseString(char[] s) {
         int head = 0;
         int tail = s.length - 1;
