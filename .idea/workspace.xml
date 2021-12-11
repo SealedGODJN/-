@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String459&#10;3、完成对Offer 5的修改，从后向前替换空格&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_344.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_344.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_459.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_459.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_Offer_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String_Offer_5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +150,13 @@
       <workItem from="1638628435241" duration="2216000" />
       <workItem from="1638631878686" duration="699000" />
       <workItem from="1638709124409" duration="270000" />
+      <workItem from="1638709537703" duration="575000" />
+      <workItem from="1638759323359" duration="1863000" />
+      <workItem from="1638890174672" duration="304000" />
+      <workItem from="1638892077495" duration="191000" />
+      <workItem from="1638972690274" duration="437000" />
+      <workItem from="1639059245986" duration="588000" />
+      <workItem from="1639215622719" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -183,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638191262996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1638718846298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638718846298</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +216,8 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String28&#10;3、需要对Offer 5 进行修改&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String459&#10;3、完成对Offer 5的修改，从后向前替换空格&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String459&#10;3、完成对Offer 5的修改，从后向前替换空格&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
