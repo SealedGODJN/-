@@ -14,10 +14,10 @@ public class Hero {
     //1. 声明该属性的时候初始化
     //2. 静态初始化块
     public String name = "some hero";
-//
-//    public Hero(){
-//        name = "one hero";
-//    }
+
+    public Hero(){
+        name = "one hero";
+    }
     // 显式初始化
 //    {
 //        name = "the hero";
@@ -34,6 +34,12 @@ public class Hero {
     static {
         System.out.println("初始化 copyright");
         copyright = "版权由Riot Games公司所有";
+    }
+
+    public Hero(String name, float hp, int damage) {
+        this.name = name;
+        this.hp = hp;
+        this.damage = damage;
     }
 
     public static String getCopyright() {
