@@ -42,32 +42,32 @@ public class LinkedList_142 {
      * @param head 链表的表头
      * @return 如果存在环，则返回环的起点，否则返回空
      */
-    public static ListNode detectCycle(ListNode head) {
-        if(head == null) return null;
-
-        ListNode fast = head;
-        ListNode slow = head;
-        while (slow.next != null) {
-            slow = slow.next;
-            if (fast.next != null) {
-                if (fast.next.next != null)
-                    fast = fast.next.next;
-                else return null;
-            }
-            else return null;
-            if (fast == slow) {
-                break;
-            }
-        }
-        fast = head;
-        while (slow.next != null) {
-            if(fast == slow) return slow;
-
-            slow = slow.next;
-            fast = fast.next;
-        }
-        return null;
-    }
+//    public static ListNode detectCycle(ListNode head) {
+//        if(head == null) return null;
+//
+//        ListNode fast = head;
+//        ListNode slow = head;
+//        while (slow.next != null) {
+//            slow = slow.next;
+//            if (fast.next != null) {
+//                if (fast.next.next != null)
+//                    fast = fast.next.next;
+//                else return null;
+//            }
+//            else return null;
+//            if (fast == slow) {
+//                break;
+//            }
+//        }
+//        fast = head;
+//        while (slow.next != null) {
+//            if(fast == slow) return slow;
+//
+//            slow = slow.next;
+//            fast = fast.next;
+//        }
+//        return null;
+//    }
 
     /*
 解释一下为什么慢指针入环第一圈没走完的时候就会和快指针相遇
@@ -81,17 +81,42 @@ public class LinkedList_142 {
 故 慢指针在第一圈必定能和快指针相遇
      */
 
+    public static ListNode detectCycle(ListNode head) {
+        if (head == null) return null;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (slow.next != null) {
+            slow = slow.next;
+
+            if (fast.next != null) {
+                if (fast.next.next != null) {
+                    fast = fast.next.next;
+                } else return null;
+            } else return null;
+
+            if (fast == slow) break;
+        }
+        fast = head;
+        while (slow.next != null) {
+            if (slow == fast) return slow; // 应该放到第一句
+            slow = slow.next;
+            fast = fast.next;
+
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         int[] array = {2};
+//        int[] array = {2, 3, 4, 5, 6};
 
         ListNode cur = head;
 
         for(int i=0; i<array.length; i++) {
             ListNode temp = new ListNode(array[i]);
-            cur.next = temp;
             temp.next = null;
-
+            cur.next = temp;
             cur = temp;
         }
 
