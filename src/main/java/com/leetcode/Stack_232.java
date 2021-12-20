@@ -7,15 +7,30 @@ public class Stack_232 {
     public static void main(String[] args) {
         int x = 10;
         MyQueue obj = new MyQueue();
-        obj.push(x);
-        obj.push(x+1);
-        obj.push(x+2);
-        int param_2 = obj.pop();
-        int param_3 = obj.peek();
-        boolean param_4 = obj.empty();
+
+        obj.push(x); // 10
+        obj.push(x+1); // 11
+        obj.push(x+2); // 12
+
+        int param_2 = obj.pop(); // 10
+        int param_3 = obj.pop(); // 11
+        int param_4 = obj.pop(); // 10
+
+        boolean param_6 = obj.empty();
+
         System.out.println(param_2);
         System.out.println(param_3);
         System.out.println(param_4);
+        System.out.println(param_6);
+
+        obj.push(x); // 10
+        obj.push(x+1); // 11
+        obj.push(x+2); // 12
+
+        int param_5 = obj.pop(); // 10
+
+        System.out.println(param_5);
+
     }
 }
 
@@ -32,39 +47,37 @@ class MyQueue {
     }
 
     public int pop() {
-        while (!stackA.isEmpty()) {
-            int temp = stackA.pop();
-            stackB.push(temp);
+        if( stackB.isEmpty() ) { // B是空的，A放倒B中
+            while (!stackA.isEmpty()) {
+                int temp = stackA.pop();
+                stackB.push(temp);
+            }
         }
-        int result = -1;
+        int result;
         if (!stackB.isEmpty()) {
-             result = stackB.pop();
+            result = stackB.pop();
         } else throw new EmptyStackException();
-        while (!stackB.isEmpty()) {
-            int temp = stackB.pop();
-            stackA.push(temp);
-        }
+
         return result;
     }
 
     public int peek() {
-        while (!stackA.isEmpty()) {
-            int temp = stackA.pop();
-            stackB.push(temp);
+        if( stackB.isEmpty() ) { // B是空的，A放倒B中
+            while (!stackA.isEmpty()) {
+                int temp = stackA.pop();
+                stackB.push(temp);
+            }
         }
-        int result = -1;
+        int result;
         if (!stackB.isEmpty()) {
             result = stackB.peek();
         } else throw new EmptyStackException();
-        while (!stackB.isEmpty()) {
-            int temp = stackB.pop();
-            stackA.push(temp);
-        }
+
         return result;
     }
 
     public boolean empty() {
-        return stackA.empty();
+        return stackA.empty() && stackB.empty(); // 为什么是 && 而不是 ||？
     }
 }
 
