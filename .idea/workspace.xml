@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成队列实现栈225&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/fuckMCY/GenFuckingDailyReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_225.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
