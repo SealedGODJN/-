@@ -73,7 +73,7 @@ class Solution {
             else if (nums[left] >= max - 1) {
                 max = nums[left];
                 prex = left;
-            } else {
+            } else { // 寻找滑动窗口中的最大值
                 max = Integer.MIN_VALUE;
                 for (int i = left; i <= right; i++) {
                     if (nums[i] >= max) {
