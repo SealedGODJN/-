@@ -1,8 +1,8 @@
-package com.interview.pratice.hashcode_1;
+package com.java_Interview_Reference.hashcode_1;
 
 import java.util.*;
 
-public class hashCode1 {
+public class HashCode1 {
     public static Integer hashCode(String str, Integer multiplier) {
         int hash = 0;
         for (int i = 0; i < str.length(); i++) {

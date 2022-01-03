@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、了解了垃圾回收的三种引用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_20.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047，用两种方法&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/深入浅出java多线程/chapter2_2/FutureTask/FutureTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_239.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_interview/103976个英语单词库.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java面经-小傅哥/103976个英语单词库.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_interview/HashCode散列分布.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/java面经-小傅哥/HashCode散列分布.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alibaba/ByteBufferDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/alibaba/ByteBufferDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hjn/thread/Create100Threads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/Create100Threads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hjn/thread/JavaAndThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/thread/JavaAndThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/pratice/hashcode_1/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/pratice/hashcode_1/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/pratice/hashcode_1/RateInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/RateInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/pratice/hashcode_1/hashCode1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/HashCode1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_331.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_331.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../小傅哥/itstack-ark-wx-test-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,15 +58,17 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="Application.Stack_1047">
-    <configuration name="Array_27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Array_27" />
-      <module name="helloworld" />
+  <component name="RunManager" selected="Application.Stack_239">
+    <configuration name="FutureTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.java.thread.深入浅出java多线程.chapter2_2.FutureTask.FutureTest1" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.java.thread.深入浅出java多线程.chapter2_2.FutureTask.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,21 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_20" />
-      <module name="helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="String_459" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.String_459" />
+    <configuration name="Stack_150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_150" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -100,9 +102,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String_Offer_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.String_Offer_5" />
-      <module name="helloworld" />
+    <configuration name="Stack_239" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_239" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leetcode.*" />
@@ -113,13 +115,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dataStructure.hashcode_1" />
+      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_1.HashCodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack_239" />
+        <item itemvalue="JUnit.HashCodeTest" />
+        <item itemvalue="Application.FutureTest1" />
+        <item itemvalue="Application.Stack_150" />
         <item itemvalue="Application.Stack_1047" />
-        <item itemvalue="Application.Stack_20" />
-        <item itemvalue="Application.Array_27" />
-        <item itemvalue="Application.String_459" />
-        <item itemvalue="Application.String_Offer_5" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +180,14 @@
       <workItem from="1639970261555" duration="709000" />
       <workItem from="1640006376495" duration="2478000" />
       <workItem from="1640746324866" duration="2174000" />
-      <workItem from="1640797589040" duration="1483000" />
+      <workItem from="1640797589040" duration="1590000" />
+      <workItem from="1640872449419" duration="12613000" />
+      <workItem from="1641014121011" duration="2322000" />
+      <workItem from="1641020706483" duration="7003000" />
+      <workItem from="1641031234423" duration="2387000" />
+      <workItem from="1641100617624" duration="1000" />
+      <workItem from="1641122804263" duration="553000" />
+      <workItem from="1641174000346" duration="12179000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -200,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638718846298</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1640799166286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640799166287</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +255,9 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String28&#10;3、需要对Offer 5 进行修改&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String459&#10;3、完成对Offer 5的修改，从后向前替换空格&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047，用两种方法&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047，用两种方法&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,11 +282,27 @@
           <line>20</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="s.length() % (s.length() - next[next.length-1] + 1)" language="JAVA" />
+        <watch expression="i-Q.getFirst()" language="JAVA" />
+        <watch expression="i-k+1" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

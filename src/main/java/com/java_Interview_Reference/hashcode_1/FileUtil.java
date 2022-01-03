@@ -1,4 +1,4 @@
-package com.interview.pratice.hashcode_1;
+package com.java_Interview_Reference.hashcode_1;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -20,7 +20,7 @@ public class FileUtil {
             String line = "";
             while ((line = bufferedReader.readLine()) != null) {
                 String[] ss = line.split("\t");
-                list.add(ss[1]); // 第二列是所需数据
+                list.add(ss[1]); // 从第二列开始，是所需数据
             }
         } catch (IOException e) {
             e.printStackTrace();

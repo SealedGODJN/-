@@ -1,4 +1,4 @@
-package com.hjn.thread;
+package com.java.thread;
 
 /**
  * 创建100个线程，用活动监视器的CPU栏目看Java线程数量的变化，10秒后线程消失了
