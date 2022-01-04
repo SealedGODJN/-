@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/WYStudy/XuanZeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,14 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
   <component name="ProjectLevelVcsManager">
@@ -43,9 +53,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Stack_239">
+  <component name="RunManager" selected="Application.Stack_347">
     <configuration name="FutureTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -61,38 +71,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack_1047" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_1047" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Stack_150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_150" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Stack_239" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_239" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stack_347" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_347" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XuanZeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.WYStudy.XuanZeSort" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.WYStudy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack_347" />
+        <item itemvalue="Application.XuanZeSort" />
         <item itemvalue="Application.Stack_239" />
         <item itemvalue="JUnit.HashCodeTest" />
         <item itemvalue="Application.FutureTest1" />
-        <item itemvalue="Application.Stack_150" />
-        <item itemvalue="Application.Stack_1047" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +183,11 @@
       <workItem from="1641100617624" duration="1000" />
       <workItem from="1641122804263" duration="553000" />
       <workItem from="1641174000346" duration="15064000" />
+      <workItem from="1641210859756" duration="1730000" />
+      <workItem from="1641223129570" duration="106000" />
+      <workItem from="1641223305746" duration="1613000" />
+      <workItem from="1641264944796" duration="4443000" />
+      <workItem from="1641284274828" duration="7716000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -237,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641208023684</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1641211176696</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641211176696</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,14 +328,18 @@
           <line>33</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="i-Q.getFirst()" language="JAVA" />
-        <watch expression="i-k+1" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
