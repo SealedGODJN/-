@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/WYStudy/XuanZeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/DisturbHashIdx.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/ControlAndLoop/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/Disturb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_2/TestDisturb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +54,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,20 +63,23 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Stack_347">
-    <configuration name="FutureTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.java.thread.深入浅出java多线程.chapter2_2.FutureTask.FutureTest1" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.java_Interview_Reference.hashcode_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestEasyExcel">
+    <configuration name="HashMap_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.HashMap_1" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.thread.深入浅出java多线程.chapter2_2.FutureTask.*" />
+          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack_239" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_239" />
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.ControlAndLoop.HelloWorld" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.how2j.java.ControlAndLoop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack_347" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_347" />
+    <configuration name="TestEasyExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestEasyExcel" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,41 +113,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XuanZeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.WYStudy.XuanZeSort" />
+    <configuration name="TestDisturb.test_disturb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.WYStudy.*" />
+          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.java_Interview_Reference.hashcode_2" />
+      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestDisturb" />
+      <option name="METHOD_NAME" value="test_disturb" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDisturb.test_hashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_1.*" />
+          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dataStructure.hashcode_1" />
-      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_1.HashCodeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.java_Interview_Reference.hashcode_2" />
+      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestDisturb" />
+      <option name="METHOD_NAME" value="test_hashMap" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Stack_347" />
-        <item itemvalue="Application.XuanZeSort" />
-        <item itemvalue="Application.Stack_239" />
-        <item itemvalue="JUnit.HashCodeTest" />
-        <item itemvalue="Application.FutureTest1" />
+        <item itemvalue="Application.TestEasyExcel" />
+        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="JUnit.TestDisturb.test_disturb" />
+        <item itemvalue="JUnit.TestDisturb.test_hashMap" />
+        <item itemvalue="Application.HashMap_1" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +207,13 @@
       <workItem from="1641223129570" duration="106000" />
       <workItem from="1641223305746" duration="1613000" />
       <workItem from="1641264944796" duration="4443000" />
-      <workItem from="1641284274828" duration="7716000" />
+      <workItem from="1641284274828" duration="12662000" />
+      <workItem from="1641391240736" duration="1642000" />
+      <workItem from="1641446328120" duration="598000" />
+      <workItem from="1641461269961" duration="1658000" />
+      <workItem from="1641475898946" duration="3633000" />
+      <workItem from="1641542819595" duration="18030000" />
+      <workItem from="1641731108177" duration="979000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -259,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641211176696</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1641298821093</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641298821093</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +311,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String28&#10;3、需要对Offer 5 进行修改&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
@@ -288,7 +322,8 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、修改项目结构，复习HashMap的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,16 +365,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="15" />
+          <line>56</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="!(i++ == 3)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

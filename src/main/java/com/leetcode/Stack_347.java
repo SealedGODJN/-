@@ -33,35 +33,19 @@ public class Stack_347 {
         // key 是nums[i]，value是出现的频率
         Map<Integer, Integer> map = new HashMap<>(16);
         for (int num : nums) {
-            // 代码不够简洁
-//            if(times.containsKey(num)) {
-//                times.replace(num, times.get(num) + 1);
-//            } else {
-//                times.put(num, 1);
-//            }
+            // 之前代码不够简洁
             map.put(num,map.getOrDefault(num,0) + 1);
         }
 
         // 初始化优先级队列
-//        PriorityQueue<Pair> PQ = new PriorityQueue<>();
         PriorityQueue<Integer> PQ = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return map.get(o1) - map.get(o2);
             }
         });
-//        Comparator<Pair> timesSorter = Comparator.comparing(Pair::getTimes);
-//        PriorityQueue<Pair> PQ = new PriorityQueue<>( timesSorter );
 
         int[] result = new int[k];
-//        for (Integer key :times.keySet()) {
-//            PQ.add(new Pair(key, times.get(key)));
-//        }
-//        Iterator<Pair> iterator = PQ.iterator();
-//        for(int i = 0; i < k; i++) {
-//            result[i] = iterator.next().getKey();
-//        }
-
         for(Integer key : map.keySet()) {
             if (!PQ.contains(key)) {
                 PQ.add(key);
