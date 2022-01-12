@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/DisturbHashIdx.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/ControlAndLoop/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/Disturb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_2/TestDisturb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000610669.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000838373.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000902405.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110102838632.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104544803.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104558818.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104612760.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104625154.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +210,9 @@
       <workItem from="1641461269961" duration="1658000" />
       <workItem from="1641475898946" duration="3633000" />
       <workItem from="1641542819595" duration="18030000" />
-      <workItem from="1641731108177" duration="979000" />
+      <workItem from="1641731108177" duration="10721000" />
+      <workItem from="1641788680183" duration="1187000" />
+      <workItem from="1641954416666" duration="268000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -292,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641298821093</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1641738734338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641738734338</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +329,8 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -370,21 +377,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="17" />
+          <line>39</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="!(i++ == 3)" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -16,6 +16,10 @@ public class TestEasyExcel {
      */
     private static final Logger logger = LoggerFactory.getLogger(TestEasyExcel.class.getName());
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Set<String> words;
         words = FileUtil.readWordList("D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\103976个英语单词库.txt");
