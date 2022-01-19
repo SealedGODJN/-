@@ -6,6 +6,7 @@ import com.java_Interview_Reference.hashcode_1.FileUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.util.*;
 
 public class TestEasyExcel {
@@ -21,44 +22,12 @@ public class TestEasyExcel {
      * @param args
      */
     public static void main(String[] args) {
-        Set<String> words;
-        words = FileUtil.readWordList("D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\103976个英语单词库.txt");
 
-        Map<Integer, Integer> map = new HashMap<>(16);
-        for(String word : words) {
-            // 使用扰动函数
-            // size 应该小于原数组长度
-//            int idx = Disturb.disturbHashIdx(word, 128);
-//            int idx = Disturb.disturbHashIdx(word, words.size());
-            // 不适用扰动函数
-            int idx = Disturb.hashIdx(word, 128);
-//            int idx = Disturb.hashIdx(word, words.size());
-            if (map.containsKey(idx)) {
-                Integer integer = map.get(idx);
-                // 记录每个key对应的string,观察扰动函数的效果
-                map.put(idx, integer+1);
-            } else {
-                map.put(idx, 1);
-            }
-        }
-
-        List<List<Integer>> result = new ArrayList<>();
-
-        for(Integer i: map.values()) {
-            List<Integer> disturb = new ArrayList<>();
-            disturb.add(i);
-            result.add(disturb);
-        }
-
-//        String fileName = "D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\" + "disturb.xlsx";
-//        EasyExcel.write(fileName).sheet("sheet1").doWrite(result);
-//        EasyExcel.write(fileName).sheet("sheet1").doWrite(Arrays.asList();
-
-        String fileName = "D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\" + "disturb1.xlsx";
-        EasyExcel.write(fileName).sheet("sheet1").doWrite(result);
+        String fileName = System.getProperty("user.dir") + "testBeanMap_EasyExcel.xlsx";
+        EasyExcel.write(fileName).sheet("sheet1").head(head()).doWrite(dataList());
     }
 
-    private List<List<String>> head() {
+    private static List<List<String>> head() {
         List<List<String>> list = new ArrayList<>();
         List<String> head0 = new ArrayList<>();
         head0.add("姓名");
@@ -84,3 +53,40 @@ public class TestEasyExcel {
         return list;
     }
 }
+
+
+//        Set<String> words;
+//        words = FileUtil.readWordList(System.getProperty("user.dir")+"\\java面经-小傅哥\\103976个英语单词库.txt");
+////
+////        Map<Integer, Integer> map = new HashMap<>(16);
+////        for(String word : words) {
+////            // 使用扰动函数
+////            // size 应该小于原数组长度
+//////            int idx = Disturb.disturbHashIdx(word, 128);
+//////            int idx = Disturb.disturbHashIdx(word, words.size());
+////            // 不适用扰动函数
+////            int idx = Disturb.hashIdx(word, 128);
+//////            int idx = Disturb.hashIdx(word, words.size());
+////            if (map.containsKey(idx)) {
+////                Integer integer = map.get(idx);
+////                // 记录每个key对应的string,观察扰动函数的效果
+////                map.put(idx, integer+1);
+////            } else {
+////                map.put(idx, 1);
+////            }
+////        }
+////
+////        List<List<Integer>> result = new ArrayList<>();
+////
+////        for(Integer i: map.values()) {
+////            List<Integer> disturb = new ArrayList<>();
+////            disturb.add(i);
+////            result.add(disturb);
+////        }
+//
+////        String fileName = "D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\" + "disturb.xlsx";
+//        String fileName = System.getProperty("user.dir") + "\\java面经-小傅哥\\disturb.xlsx"; // 在工作目录下生产excel
+//        EasyExcel.write(fileName).sheet("sheet1").doWrite(Arrays.asList(words));
+//
+////        String fileName = "D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\" + "disturb1.xlsx";
+////        EasyExcel.write(fileName).sheet("sheet1").doWrite(result);

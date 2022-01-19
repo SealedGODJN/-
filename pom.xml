@@ -21,6 +21,13 @@
     </build>
 
     <dependencies>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/mysql/mysql-connector-java &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>8.0.27</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <scope>compile</scope>
             <groupId>junit</groupId>
@@ -41,38 +48,16 @@
             <version>1.2.28</version>
         </dependency>
 
-        <dependency>
-        　　<groupId>com.alibaba</groupId>
-        　　<artifactId>easyexcel</artifactId>
-        　　<version>2.2.4</version>
-        </dependency>
-
-        <!--xls-->
-        <dependency>
-        　　<groupId>org.apache.poi</groupId>
-        　　<artifactId>poi</artifactId>
-        　　<version>3.17</version>
-        </dependency>
-
-        <dependency>
-        　　<groupId>org.apache.poi</groupId>
-        　　<artifactId>poi-ooxml</artifactId>
-        　　<version>3.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.21</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>2.2.4</version>
         </dependency>
     </dependencies>
 

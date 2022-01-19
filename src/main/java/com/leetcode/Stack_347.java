@@ -38,6 +38,9 @@ public class Stack_347 {
         }
 
         // 初始化优先级队列
+        // 该优先级队列是一个最小堆
+        // 其队头元素是频率最小的元素
+        // 队尾元素是频率最大的元素
         PriorityQueue<Integer> PQ = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -48,9 +51,15 @@ public class Stack_347 {
         int[] result = new int[k];
         for(Integer key : map.keySet()) {
             if (!PQ.contains(key)) {
+                // 向队尾添加元素
+                // add()函数会调用siftUp(i,key)函数
+                // 向第i个位置插入key，并维护堆的大小关系
+                // 因此，插入的元素会按照其出现频率被调整
                 PQ.add(key);
             }
             if (PQ.size() > k) {
+                // 删除队头元素
+                // 队头元素是最小频率的元素
                 PQ.remove();
             }
         }
@@ -91,33 +100,36 @@ public class Stack_347 {
 //        }
     }
 
-    static class Employee implements Comparable<Employee> {
-        private Long id;
-        private String name;
-        private LocalDate dob;
-        public Employee(Long id, String name, LocalDate dob) {
-            super();
-            this.id = id;
-            this.name = name;
-            this.dob = dob;
-        }
-
-        @Override
-        public int compareTo(Employee emp) {
-            return this.getId().compareTo(emp.getId());
-        }
-
-        public Long getId() {
-            return id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        @Override
-        public String toString() {
-            return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + "]";
-        }
-    }
+    /**
+     * 测试代码
+     */
+//    static class Employee implements Comparable<Employee> {
+//        private Long id;
+//        private String name;
+//        private LocalDate dob;
+//        public Employee(Long id, String name, LocalDate dob) {
+//            super();
+//            this.id = id;
+//            this.name = name;
+//            this.dob = dob;
+//        }
+//
+//        @Override
+//        public int compareTo(Employee emp) {
+//            return this.getId().compareTo(emp.getId());
+//        }
+//
+//        public Long getId() {
+//            return id;
+//        }
+//
+//        public String getName() {
+//            return name;
+//        }
+//
+//        @Override
+//        public String toString() {
+//            return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + "]";
+//        }
+//    }
 }

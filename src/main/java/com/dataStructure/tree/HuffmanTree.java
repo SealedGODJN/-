@@ -12,10 +12,13 @@ import java.util.Queue;
 public class HuffmanTree {
     private Node root;
 
-    //构建哈夫曼树
+    /**
+     *
+     * @param weights
+     */
     public void createHuffman(int[] weights){
         //优先队列，用于辅助构建哈夫曼树
-        Queue<Node> nodeQueue =new PriorityQueue<>();
+        Queue<Node> nodeQueue =new PriorityQueue<Node>();
         Node[] nodes = new Node[weights.length];
         //构建森林，初始化nodes数组
         for(int i=0; i<weights.length; i++){
@@ -25,7 +28,8 @@ public class HuffmanTree {
         //主循环，当结点队列只剩一个结点时结束
         while(nodeQueue.size()>1){
             //从结点队列选择权值最小的两个结点
-            Node left = nodeQueue.poll(); // O(logN)
+            // O(logN)
+            Node left = nodeQueue.poll();
             Node right = nodeQueue.poll();
             //创建新结点作为两结点的父节点
             Node parent =new Node(left.weight + right.weight, left, right);
@@ -55,9 +59,9 @@ public static class Node implements Comparable<Node>{
             this.lChild = lChild;
             this.rChild = rChild;
         }
-        @Override
+
         public int compareTo(Node o){
-            return Integer.compare(this.weight, o.weight);
+            return (this.weight < o.weight) ? -1 : ((this.weight == o.weight) ? 0 : 1);
         }
     }
     public static void main(String[] args){

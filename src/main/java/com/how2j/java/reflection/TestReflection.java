@@ -4,6 +4,44 @@ import com.how2j.bean.Hero;
 import com.how2j.java.interfaceAndExtend.Test;
 
 public class TestReflection {
+    public static void test1() {
+        String className = "com.how2j.bean.Hero";
+//        try {
+            // 以下三种都是classloader新建的类对象
+            // 这种方式不会导致静态属性被初始化？
+            // 会导致静态属性初始化
+            Class pClass2 = Hero.class;
+            System.out.println(Hero.getCopyright());
+            System.out.println(Hero.getAuthor());
+
+
+            /**
+             * 获取类对象的时候，会导致类属性被初始化
+             */
+//            Class pClass1 = Class.forName(className);
+//            System.out.println(Hero.getCopyright());
+
+
+//            Class pClass3 = new Hero().getClass();
+//            System.out.println(Hero.getCopyright());
+
+
+//            System.out.print("pClass1 == pClass2:");
+//            System.out.println(pClass1 == pClass2);
+
+//            System.out.print("pClass1 == pClass3:");
+//            System.out.println(pClass1 == pClass3);
+//
+//            System.out.print("pClass2 == pClass3:");
+//            System.out.println(pClass2 == pClass3);
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    /**
+     * static方法的同步对象是谁？
+     */
     public static void method1() {
         synchronized (TestReflection.class) {
             // 对于method1而言，同步对象是TestReflection.class，
@@ -28,37 +66,11 @@ public class TestReflection {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
-//        String className = "com.how2j.bean.Hero";
-//        try {
-//            // 以下三种都是classloader新建的类对象
-//            Class pClass2 = Hero.class; // 这种方式不会导致静态属性被初始化
-//            System.out.println(Hero.getCopyright());
-//
-//
-//            /**
-//             * 获取类对象的时候，会导致类属性被初始化
-//             */
-//            Class pClass1 = Class.forName(className);
-//            System.out.println(Hero.getCopyright());
-//
-//
-//            Class pClass3 = new Hero().getClass();
-//            System.out.println(Hero.getCopyright());
-//
-//
-//            System.out.print("pClass1 == pClass2:");
-//            System.out.println(pClass1 == pClass2);
-//
-//            System.out.print("pClass1 == pClass3:");
-//            System.out.println(pClass1 == pClass3);
-//
-//            System.out.print("pClass2 == pClass3:");
-//            System.out.println(pClass2 == pClass3);
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-
+    /**
+     * 静态方法被修饰为synchronized的时候，其同步对象就是当前类的类对象。
+     * @throws InterruptedException
+     */
+    public static void testMethod1AndMethod2() throws InterruptedException {
         Thread t1 = new Thread(){
             public void run() {
                 // 调用method1
@@ -79,5 +91,10 @@ public class TestReflection {
         };
         t2.setName("第二个线程");
         t2.start();
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+//        test1();
+        testMethod1AndMethod2();
     }
 }

@@ -4,19 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000610669.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000838373.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000902405.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110102838632.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104544803.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104558818.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104612760.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104625154.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.md" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、简单学习了BeanMap的相关&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥disturb.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥testBeanMap_EasyExcel.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java面经-小傅哥/testBeanMap_EasyExcel.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.27.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Annotation/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Annotation/GetBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Annotation/GetClass/Annotation中annotationType和getclass的区别.assets/image-20220113213008704.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Annotation/GetClass/GetClassAndAnnotationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Annotation/JDBCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/Generic/GenericsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/VisitMethod/TestReflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/VisitProperty/TestReflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/hero.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/BeanMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/java面经-小傅哥/disturb1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/Huffman/HuffmanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/Huffman/HuffmanNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/HuffmanTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/bean/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/bean/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/digit/TestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/digit/TestNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/TestReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/TestReflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/TestReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/TestReflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/EasyExcel.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +57,16 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/ExcelWriter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/ExcelBuilderImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar!/net/sf/cglib/beans/BeanMap.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/builder/ExcelWriterSheetBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/executor/ExcelWriteAddExecutor.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,29 +79,37 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../小傅哥/itstack-ark-wx-test-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../how2j/hutubill" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.4690497" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/GetClass" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.how2j.java.reflection.GetClass" />
       <recent name="com.java_Interview_Reference.hashcode_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestEasyExcel">
-    <configuration name="HashMap_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.HashMap_1" />
-      <module name="Test_2020_3_2" />
+  <component name="RunManager" selected="Application.TestNumber">
+    <configuration name="GetClassAndAnnotationType (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.Annotation.GetClass.GetClassAndAnnotationType" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
+          <option name="PATTERN" value="com.how2j.java.Annotation.GetClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2j.java.ControlAndLoop.HelloWorld" />
-      <module name="Test_2020_3_2" />
+    <configuration name="GetClassAndAnnotationType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.reflection.GetClass.GetClassAndAnnotationType" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2j.java.ControlAndLoop.*" />
+          <option name="PATTERN" value="com.how2j.java.reflection.GetClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEasyExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestEasyExcel" />
+    <configuration name="TestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.digit.TestNumber" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
+          <option name="PATTERN" value="com.how2j.java.digit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,33 +143,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDisturb.test_disturb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Test_2020_3_2" />
+    <configuration name="TestReflection (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.reflection.VisitProperty.TestReflection" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
+          <option name="PATTERN" value="com.how2j.java.reflection.VisitProperty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.java_Interview_Reference.hashcode_2" />
-      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestDisturb" />
-      <option name="METHOD_NAME" value="test_disturb" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDisturb.test_hashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Test_2020_3_2" />
+    <configuration name="GenericsDemo.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java_Interview_Reference.hashcode_2.*" />
+          <option name="PATTERN" value="com.how2j.java.Generic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.java_Interview_Reference.hashcode_2" />
-      <option name="MAIN_CLASS_NAME" value="com.java_Interview_Reference.hashcode_2.TestDisturb" />
-      <option name="METHOD_NAME" value="test_hashMap" />
+      <option name="PACKAGE_NAME" value="com.how2j.java.Generic" />
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.Generic.GenericsDemo" />
+      <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestEasyExcel" />
-        <item itemvalue="Application.HelloWorld" />
-        <item itemvalue="JUnit.TestDisturb.test_disturb" />
-        <item itemvalue="JUnit.TestDisturb.test_hashMap" />
-        <item itemvalue="Application.HashMap_1" />
+        <item itemvalue="Application.TestNumber" />
+        <item itemvalue="JUnit.GenericsDemo.main" />
+        <item itemvalue="Application.GetClassAndAnnotationType (1)" />
+        <item itemvalue="Application.GetClassAndAnnotationType" />
+        <item itemvalue="Application.TestReflection (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +242,18 @@
       <workItem from="1641542819595" duration="18030000" />
       <workItem from="1641731108177" duration="10721000" />
       <workItem from="1641788680183" duration="1187000" />
-      <workItem from="1641954416666" duration="268000" />
+      <workItem from="1641954416666" duration="2051000" />
+      <workItem from="1641956543088" duration="411000" />
+      <workItem from="1641957008146" duration="968000" />
+      <workItem from="1641958006654" duration="3415000" />
+      <workItem from="1642005160798" duration="2276000" />
+      <workItem from="1642060652829" duration="12672000" />
+      <workItem from="1642078854072" duration="7669000" />
+      <workItem from="1642091675659" duration="123000" />
+      <workItem from="1642130922582" duration="601000" />
+      <workItem from="1642142432243" duration="2662000" />
+      <workItem from="1642424938221" duration="316000" />
+      <workItem from="1642562201272" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -298,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641738734338</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1641954981439</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641954981440</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +378,8 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -371,19 +420,44 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
           <line>39</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="19" />
+          <line>24</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/BeanMapTest.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/TestReflection.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

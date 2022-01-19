@@ -70,7 +70,7 @@ public class TickStep {
 //        System.out.println(tickStep(0.1, 9.9, 6));
 //        System.out.println(tickStep(0.1, 29.9, 6));
 
-        List<Double> result = ticks(0.1 ,9.9, 6);
+        List<Double> result = ticks(0.1 ,99.9, 6);
         for (Double aDouble : result) {
             System.out.println(aDouble);
         }

@@ -25,7 +25,8 @@ public class HuffmanNode implements Comparable, Cloneable {
 		Object obj=null;
 		
 		try {
-			obj = (HuffmanNode)super.clone();//Object 中的clone()识别出你要复制的是哪一个对象。    
+			//Object 中的clone()识别出你要复制的是哪一个对象。
+			obj = (HuffmanNode)super.clone();
 		} catch(CloneNotSupportedException e) {
 			System.out.println(e.toString());
 		}
@@ -33,7 +34,6 @@ public class HuffmanNode implements Comparable, Cloneable {
 		return obj;    
 	}
 
-	@Override
 	public int compareTo(Object obj) {
 		return this.key - ((HuffmanNode)obj).key;
 	}

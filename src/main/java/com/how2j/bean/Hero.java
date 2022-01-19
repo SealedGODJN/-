@@ -25,11 +25,16 @@ public class Hero {
 //    public String name;
     public float hp;
     public int damage;
+    private float price;
 
+    public float getPrice() {
+        return price;
+    }
 
     // 用于测试static对象会初始化几次
     // 测试结果：只会初始化一次（因为一个ClassLoader下，一种类，只会有一个类对象存在。通常一个JVM下，只会有一个ClassLoader)
     static String copyright;
+    static String author = "hjn";
 
     static {
         System.out.println("初始化 copyright");
@@ -44,6 +49,10 @@ public class Hero {
 
     public static String getCopyright() {
         return copyright;
+    }
+
+    public static String getAuthor() {
+        return author;
     }
 
     public void attackhero(Hero h) {
