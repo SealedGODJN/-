@@ -5,11 +5,13 @@ import java.util.Deque;
 
 public class Stack_239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        Deque<Integer> Q = new ArrayDeque<>(); // 存储的是编号
+        // 存储的是编号
+        Deque<Integer> Q = new ArrayDeque<>();
         int[] result = new int[nums.length - k + 1];
         for (int i = 0; i < nums.length; ++i) {
             // 去尾
-            while (!Q.isEmpty() && nums[Q.getLast()] < nums[i]) { // 队头一直是最大值
+            // 队头一直是最大值
+            while (!Q.isEmpty() && nums[Q.getLast()] < nums[i]) {
                 Q.removeLast();
             }
             Q.addLast(i);

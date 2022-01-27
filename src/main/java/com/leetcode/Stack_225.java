@@ -7,7 +7,8 @@ import java.util.Queue;
 public class Stack_225 {
     public static void main(String[] args) {
         int x = 0;
-        MyStack obj = new MyStack();
+//        MyStack obj = new MyStack();
+        MyStack_OneQueue obj = new MyStack_OneQueue();
         obj.push(x);
         obj.push(x+1);
         obj.push(x+2);
@@ -20,6 +21,12 @@ public class Stack_225 {
     }
 }
 
+/**
+ * 「一个队列在模拟栈弹出元素的时候只要将队列头部的元素（除了最后一个元素外）
+ * 重新添加到队列尾部，此时在去弹出元素就是栈的顺序了。」
+ *
+ * 不需要两个队列！！！！
+ */
 class MyStack {
     Deque<Integer> first;
     Deque<Integer> second;
@@ -87,5 +94,30 @@ class MyStack {
 
     public boolean empty() {
         return first.isEmpty() && second.isEmpty();
+    }
+}
+
+
+class MyStack_OneQueue {
+    Deque<Integer> value;
+
+    public MyStack_OneQueue() {
+        value = new ArrayDeque<>();
+    }
+
+    public void push(int x) {
+        value.addLast(x);
+    }
+
+    public int top() {
+        return value.peekLast();
+    }
+
+    public int pop() {
+        return value.removeLast();
+    }
+
+    public boolean empty() {
+        return value.isEmpty();
     }
 }

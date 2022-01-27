@@ -74,7 +74,10 @@ public class HashMap_202 {
     public static void main(String[] args) {
         for(int i=0; i < 1000; i++) {
             boolean isHappy = isHappy(i);
-            if(isHappy) System.out.println(i); // 输出1~1000以内的快乐数
+            // 输出1~1000以内的快乐数
+            if (isHappy) {
+                System.out.println(i);
+            }
         }
     }
 }
