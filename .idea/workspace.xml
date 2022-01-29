@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_71.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_145.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥disturb.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥testBeanMap_EasyExcel.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_202.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_202.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_225.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_225.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_239.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
       <recent name="com.java_Interview_Reference.hashcode_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree_94">
+  <component name="RunManager" selected="Application.Tree_145">
     <configuration name="Stack_225" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_225" />
       <module name="Test_2020_3_2" />
@@ -111,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2j.java.digit.TestNumber" />
+    <configuration name="Tree_144" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_144" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2j.java.digit.*" />
+          <option name="PATTERN" value="com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,8 +120,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_144" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_144" />
+    <configuration name="Tree_145" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_145" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -152,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tree_94" />
+        <item itemvalue="Application.Tree_145" />
         <item itemvalue="Application.Tree_144" />
+        <item itemvalue="Application.Tree_94" />
         <item itemvalue="Application.Stack_71" />
         <item itemvalue="Application.Stack_225" />
-        <item itemvalue="Application.TestNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +233,11 @@
       <workItem from="1642988999218" duration="1140000" />
       <workItem from="1643205804668" duration="5212000" />
       <workItem from="1643276291366" duration="2736000" />
+      <workItem from="1643280643812" duration="8869000" />
+      <workItem from="1643335201815" duration="1064000" />
+      <workItem from="1643414488176" duration="3933000" />
+      <workItem from="1643421393935" duration="2658000" />
+      <workItem from="1643428089334" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -336,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642563042317</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历和中序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1643280853142</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1643280853142</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +378,9 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历和中序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

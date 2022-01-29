@@ -43,7 +43,6 @@ public class Tree_94 {
         TreeNode root_left_right = new TreeNode(5);
         TreeNode root_left = new TreeNode(2, root_left_left, root_left_right);
 
-
         TreeNode root_right_left = new TreeNode(6);
         TreeNode root_right_right = new TreeNode(7);
         TreeNode root_right = new TreeNode(3, root_right_left, root_right_right);

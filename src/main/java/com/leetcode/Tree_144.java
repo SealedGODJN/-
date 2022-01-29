@@ -46,11 +46,12 @@ public class Tree_144 {
         while (!needToTraversal.isEmpty()) {
             TreeNode visitNode = needToTraversal.pop();
             result.add(visitNode.val);
-            if (visitNode.left != null) {
-                needToTraversal.add(visitNode.left);
-            }
+
             if (visitNode.right != null) {
                 needToTraversal.add(visitNode.right);
+            }
+            if (visitNode.left != null) {
+                needToTraversal.add(visitNode.left);
             }
         }
         return result;
