@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_145.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥disturb.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DIDEA_PROGECThelloworldjava面经-小傅哥testBeanMap_EasyExcel.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_145.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_145.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +36,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/executor/ExcelWriteAddExecutor.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/builder/ExcelWriterSheetBuilder.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar!/net/sf/cglib/beans/BeanMap.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/ExcelWriter.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/ExcelBuilderImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar!/net/sf/cglib/beans/BeanMap.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/builder/ExcelWriterSheetBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/executor/ExcelWriteAddExecutor.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
   <component name="ProjectLevelVcsManager">
@@ -80,7 +78,7 @@
       <recent name="com.java_Interview_Reference.hashcode_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree_145">
+  <component name="RunManager" selected="Application.Tree_144">
     <configuration name="Stack_225" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Stack_225" />
       <module name="Test_2020_3_2" />
@@ -134,8 +132,10 @@
       </method>
     </configuration>
     <configuration name="Tree_94" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_94" />
-      <module name="helloworld" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leetcode.*" />
@@ -148,9 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tree_145" />
         <item itemvalue="Application.Tree_144" />
         <item itemvalue="Application.Tree_94" />
+        <item itemvalue="Application.Tree_145" />
         <item itemvalue="Application.Stack_71" />
         <item itemvalue="Application.Stack_225" />
       </list>
@@ -237,7 +237,11 @@
       <workItem from="1643335201815" duration="1064000" />
       <workItem from="1643414488176" duration="3933000" />
       <workItem from="1643421393935" duration="2658000" />
-      <workItem from="1643428089334" duration="393000" />
+      <workItem from="1643428089334" duration="1441000" />
+      <workItem from="1643432168463" duration="1784000" />
+      <workItem from="1643456365733" duration="6000" />
+      <workItem from="1643460814735" duration="2339000" />
+      <workItem from="1643469710912" duration="7651000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -344,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643280853142</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1643428624117</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643428624117</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +391,8 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历和中序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

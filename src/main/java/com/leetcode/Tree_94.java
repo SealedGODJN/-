@@ -38,6 +38,54 @@ public class Tree_94 {
         return result;
     }
 
+    /**
+     * Morris算法进行先序遍历
+     * @param root
+     * @return
+     */
+    public List<Integer> inorderTraversal_Morris(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        //进入方法让cur = root
+        TreeNode cur = root;
+        //没有遍历完之前持续循环
+        while (cur != null){
+            /*
+            对于迭代还是递归，一个节点的左子树即使为空
+            它们都会让cur = left 然后回溯回来
+            morris这里就会判断如果一个节点的左边为空就不会去
+            */
+            // 第一次经过第二类节点
+            if (cur.left == null){
+                result.add(cur.val);
+                cur = cur.right;
+
+            } else {
+                /*
+                让next = cur.left，然后一直往左子树的最右面走
+                */
+                TreeNode next = cur.left;
+                while (next.right != null && next.right != cur) {
+                    next = next.right;
+                }
+                // 第一次经过第一类节点
+                if (next.right == null){
+                    // 第一类节点指的是cur，而不是next
+                    // result.add(next.val);
+                    result.add(cur.val);
+                    next.right = cur;
+                    cur = cur.left;
+                }else {
+                    next.right = null;
+                    cur = cur.right;
+                }
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         TreeNode root_left_left = new TreeNode(4);
         TreeNode root_left_right = new TreeNode(5);
@@ -52,7 +100,8 @@ public class Tree_94 {
         TreeNode root = new TreeNode(1, root_left, root_right);
 
         Tree_94 tree_94 = new Tree_94();
-        List<Integer> result  = tree_94.inorderTraversal(root);
+//        List<Integer> result  = tree_94.inorderTraversal(root);
+        List<Integer> result  = tree_94.inorderTraversal_Morris(root);
         for (Integer integer : result) {
             System.out.print(integer + " ");
         }
