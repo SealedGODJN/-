@@ -16,18 +16,19 @@ public class Tree_102 {
         level.push(root);
         while (!level.isEmpty()) {
             List<Integer> levelResult = new ArrayList<>();
-            List<TreeNode> waitToAdd = new ArrayList<>();
-            while (!level.isEmpty()) {
+//            List<TreeNode> waitToAdd = new ArrayList<>();
+            int size = level.size();
+            for (int i = 0; i < size; i++) {
                 TreeNode temp = level.pop();
-                    if (temp.left != null) {
-                    waitToAdd.add(temp.left);
+                if (temp.left != null) {
+                    level.add(temp.left);
                 }
                 if (temp.right != null) {
-                    waitToAdd.add(temp.right);
+                    level.add(temp.right);
                 }
                 levelResult.add(temp.val);
             }
-            level.addAll(waitToAdd);
+//            level.addAll(waitToAdd);
             result.add(levelResult);
         }
         return result;
