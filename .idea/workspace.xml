@@ -4,10 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_102.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_226.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_107.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_199.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_589.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_637.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_1300.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_1300.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_209.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_209.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_27.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_35.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_35.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_503.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_503.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_54.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Array_59.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Array/Array_59.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_202.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_202.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_242.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_242.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_349.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_349.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_383.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_383.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap_454.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashMap_454.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashTable_1512.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashTable_1512.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashTable_705.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashTable_705.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/HashTable_771.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/HashMap/HashTable_771.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedLIst_141.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedLIst_141.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList_142.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedList_142.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList_203.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedList_203.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList_206.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedList_206.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList_707.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedList_707.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList_707_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/LinkedList_707_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_1047.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_150.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_155.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_155.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_225.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_225.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_232.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_232.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_239.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_331.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_331.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_347.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_347.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack_71.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_71.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_151.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_28.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_344.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_344.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_459.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_459.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_541.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_541.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_Offer_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_Offer_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/String_Offer_58.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/String/String_Offer_58.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_102.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_102.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_144.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_144.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_145.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_145.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_226.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_226.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +83,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/executor/ExcelWriteAddExecutor.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/builder/ExcelWriterSheetBuilder.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar!/net/sf/cglib/beans/BeanMap.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/ExcelWriter.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/ExcelBuilderImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/alibaba/easyexcel/2.2.4/easyexcel-2.2.4-sources.jar!/com/alibaba/excel/write/executor/ExcelWriteAddExecutor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar!/net/sf/cglib/beans/BeanMap.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
   <component name="ProjectLevelVcsManager">
@@ -73,17 +121,22 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/GetClass" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.how2j.java.reflection.GetClass" />
-      <recent name="com.java_Interview_Reference.hashcode_1" />
+      <recent name="com.leetcode.Tree" />
+      <recent name="com.leetcode.String" />
+      <recent name="com.leetcode.Stack" />
+      <recent name="com.leetcode.LinkedList" />
+      <recent name="com.leetcode.HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree_226">
+  <component name="RunManager" selected="Application.Tree_199">
     <configuration name="Tree_102" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_102" />
-      <module name="Test_2020_3_2" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.Tree_102" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_144" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_144" />
-      <module name="Test_2020_3_2" />
+    <configuration name="Tree_107" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.Tree_107" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_145" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_145" />
-      <module name="Test_2020_3_2" />
+    <configuration name="Tree_199" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.Tree_199" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.leetcode.Tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +171,11 @@
       </method>
     </configuration>
     <configuration name="Tree_226" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_226" />
-      <module name="Test_2020_3_2" />
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.Tree_226" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,14 +183,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_94" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree_94" />
-      <module name="Test_2020_3_2" />
+    <configuration name="Tree_589" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.Tree_589" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tree_226" />
+        <item itemvalue="Application.Tree_199" />
+        <item itemvalue="Application.Tree_107" />
         <item itemvalue="Application.Tree_102" />
-        <item itemvalue="Application.Tree_144" />
-        <item itemvalue="Application.Tree_94" />
-        <item itemvalue="Application.Tree_145" />
+        <item itemvalue="Application.Tree_589" />
+        <item itemvalue="Application.Tree_226" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +294,12 @@
       <workItem from="1643469710912" duration="9036000" />
       <workItem from="1643619985627" duration="6370000" />
       <workItem from="1643780764260" duration="162000" />
-      <workItem from="1643781060895" duration="535000" />
+      <workItem from="1643781060895" duration="2920000" />
+      <workItem from="1643803326769" duration="1788000" />
+      <workItem from="1643892607256" duration="1712000" />
+      <workItem from="1643898021746" duration="1400000" />
+      <workItem from="1643938564293" duration="90000" />
+      <workItem from="1643939428359" duration="661000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -364,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643520910345</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1643781979388</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643781979388</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,43 +465,24 @@
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/String_541.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/String_151.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/String_459.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_1047.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_1047.java</url>
           <line>71</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_150.java</url>
           <line>22</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack_150.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_150.java</url>
           <line>33</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
