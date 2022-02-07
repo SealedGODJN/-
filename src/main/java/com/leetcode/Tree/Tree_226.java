@@ -6,33 +6,56 @@ import java.util.Deque;
 import java.util.List;
 
 public class Tree_226 {
-    public TreeNode invertTree(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        if (root == null) {
-            return root;
-        }
+    /**
+     * 基于层序遍历的二叉树的翻转
+     * @param root
+     * @return
+     */
+//    public TreeNode invertTree(TreeNode root) {
+//        List<List<Integer>> result = new ArrayList<>();
+//        if (root == null) {
+//            return root;
+//        }
+//
+//        Deque<TreeNode> level = new ArrayDeque<>();
+//        level.push(root);
+//        while (!level.isEmpty()) {
+//            List<Integer> levelResult = new ArrayList<>();
+//            List<TreeNode> waitToAdd = new ArrayList<>();
+//            while (!level.isEmpty()) {
+//                TreeNode temp = level.pop();
+//                if (temp.left != null) {
+//                    waitToAdd.add(temp.left);
+//                }
+//                if (temp.right != null) {
+//                    waitToAdd.add(temp.right);
+//                }
+////                levelResult.add(temp.val);
+//                TreeNode swap = temp.right;
+//                temp.right = temp.left;
+//                temp.left = swap;
+//            }
+//            level.addAll(waitToAdd);
+//            result.add(levelResult);
+//        }
+//        return root;
+//    }
 
-        Deque<TreeNode> level = new ArrayDeque<>();
-        level.push(root);
-        while (!level.isEmpty()) {
-            List<Integer> levelResult = new ArrayList<>();
-            List<TreeNode> waitToAdd = new ArrayList<>();
-            while (!level.isEmpty()) {
-                TreeNode temp = level.pop();
-                if (temp.left != null) {
-                    waitToAdd.add(temp.left);
-                }
-                if (temp.right != null) {
-                    waitToAdd.add(temp.right);
-                }
-//                levelResult.add(temp.val);
-                TreeNode swap = temp.right;
-                temp.right = temp.left;
-                temp.left = swap;
-            }
-            level.addAll(waitToAdd);
-            result.add(levelResult);
+    /**
+     * 基于中序遍历的二叉树的翻转
+     * @param root
+     * @return
+     */
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return null;
         }
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        invertTree(root.left);
+        invertTree(root.right);
+
         return root;
     }
 

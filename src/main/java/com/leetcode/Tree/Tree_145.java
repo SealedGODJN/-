@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Stack;
 
 public class Tree_145 {
+    /**
+     * 后序遍历
+     * @param root
+     * @return
+     */
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {
