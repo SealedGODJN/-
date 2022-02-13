@@ -1,4 +1,6 @@
-package com.leetcode.Tree;
+package com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse;
+
+import com.leetcode.Tree.Node;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

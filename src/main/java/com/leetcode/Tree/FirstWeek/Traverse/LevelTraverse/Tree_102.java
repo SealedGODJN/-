@@ -1,13 +1,15 @@
-package com.leetcode.Tree;
+package com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse;;
+
+import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class Tree_515 {
-    public List<Integer> largestValues(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
+public class Tree_102 {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
@@ -15,7 +17,7 @@ public class Tree_515 {
         Deque<TreeNode> level = new ArrayDeque<>();
         level.push(root);
         while (!level.isEmpty()) {
-            int levelResult = Integer.MIN_VALUE;
+            List<Integer> levelResult = new ArrayList<>();
 //            List<TreeNode> waitToAdd = new ArrayList<>();
             int size = level.size();
             for (int i = 0; i < size; i++) {
@@ -26,9 +28,7 @@ public class Tree_515 {
                 if (temp.right != null) {
                     level.add(temp.right);
                 }
-                if (levelResult < temp.val) {
-                    levelResult = temp.val;
-                }
+                levelResult.add(temp.val);
             }
 //            level.addAll(waitToAdd);
             result.add(levelResult);
@@ -50,11 +50,14 @@ public class Tree_515 {
 //        TreeNode root_right = new TreeNode(2);
         TreeNode root = new TreeNode(3, root_left, root_right);
 
-
-        Tree_515 tree_515 = new Tree_515();
-        List<Integer> result  = tree_515.largestValues(root);
-        for (Integer integer : result) {
-            System.out.print(integer + " ");
+        Tree_102 tree_102 = new Tree_102();
+        List<List<Integer>> result  = tree_102.levelOrder(root);
+//        List<Integer> result  = tree_145.postorderTraversal_Morris(root);
+        for (List<Integer> level : result) {
+            for (Integer integer : level) {
+                System.out.print(integer + " ");
+            }
+            System.out.println();
         }
     }
 }

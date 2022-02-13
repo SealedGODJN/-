@@ -1,4 +1,6 @@
-package com.leetcode.Tree;
+package com.leetcode.Tree.SecondWeek;
+
+import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

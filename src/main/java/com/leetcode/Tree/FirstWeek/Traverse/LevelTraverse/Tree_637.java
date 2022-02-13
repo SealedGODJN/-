@@ -1,19 +1,30 @@
-package com.leetcode.Tree;
+package com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse;
+
+import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class Tree_199 {
-    /**
-     * 利用层序遍历的结果得到树的右视图，即取树层序遍历每一层的最后一个元素
-     * @param root 待遍历的节点
-     * @return 如果root为空，返回空的数组<br>
-     *         如果root不为空，返回树的右视图
-     */
-    public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+public class Tree_637 {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
@@ -34,7 +45,14 @@ public class Tree_199 {
                 levelResult.add(temp.val);
             }
             level.addAll(waitToAdd);
-            result.add(levelResult.get(levelResult.size() - 1));
+//            result.add(levelResult);
+            double sum = 0;
+            for (Integer integer : levelResult) {
+                sum += integer;
+            }
+            double size = levelResult.size();
+            sum = sum / size;
+            result.add(sum);
         }
         return result;
     }
@@ -53,11 +71,11 @@ public class Tree_199 {
 //        TreeNode root_right = new TreeNode(2);
         TreeNode root = new TreeNode(3, root_left, root_right);
 
-        Tree_199 tree_199 = new Tree_199();
-        List<Integer> result  = tree_199.rightSideView(root);
+        Tree_637 tree_637 = new Tree_637();
+        List<Double> result  = tree_637.averageOfLevels(root);
 //        List<Integer> result  = tree_145.postorderTraversal_Morris(root);
-        for (Integer integer : result) {
-            System.out.print(integer + " ");
+        for (Double d : result) {
+            System.out.print(d + " ");
         }
         System.out.println();
     }
