@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【超级改进版】 | 回溯）&#10;3、257：找出根节点到叶子节点的所有路径【迭代法：利用栈来模拟递归】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_100.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_257.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_257.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4690497" />
-    <property name="settings.editor.selected.configurable" value="AtomConfig" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -82,7 +82,20 @@
       <recent name="com.leetcode.HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree_257">
+  <component name="RunManager" selected="Application.Tree_100">
+    <configuration name="Tree_100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.SecondWeek.Tree_100" />
+      <module name="helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.Tree.SecondWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tree_101" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.SecondWeek.Tree_101" />
       <module name="helloworld" />
@@ -135,26 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_515" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse.Tree_515" />
-      <module name="helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.Tree.SecondWeek.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tree_100" />
         <item itemvalue="Application.Tree_257" />
         <item itemvalue="Application.Tree_110" />
         <item itemvalue="Application.Tree_101" />
         <item itemvalue="Application.Tree_226" />
-        <item itemvalue="Application.Tree_515" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +264,7 @@
       <workItem from="1644915257442" duration="152000" />
       <workItem from="1644915436289" duration="3161000" />
       <workItem from="1644925122650" duration="2150000" />
-      <workItem from="1644976697220" duration="1989000" />
+      <workItem from="1644976697220" duration="7400000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -434,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644976762988</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【超级改进版】 | 回溯）&#10;3、257：找出根节点到叶子节点的所有路径【迭代法：利用栈来模拟递归】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
+      <created>1644979230908</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1644979230908</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +461,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，剑指Offer5和58&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String28&#10;3、需要对Offer 5 进行修改&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String459&#10;3、完成对Offer 5的修改，从后向前替换空格&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
@@ -479,7 +485,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对刷题进行总结归纳，复习第一周和第二周所学内容&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成110：二叉树是否平衡（递归）&#10;3、完成257：找出根节点到叶子节点的所有路径（递归 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【超级改进版】 | 回溯）&#10;3、257：找出根节点到叶子节点的所有路径【迭代法：利用栈来模拟递归】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【超级改进版】 | 回溯）&#10;3、257：找出根节点到叶子节点的所有路径【迭代法：利用栈来模拟递归】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
