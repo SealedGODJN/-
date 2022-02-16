@@ -13,82 +13,49 @@ public class Tree_100 {
      * @return
      */
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        Deque<TreeNode> queP = new ArrayDeque<>();
         if (p == null && q == null) {
             return true;
-        } else if (p != null && q == null) {
+        }
+        if (p == null || q == null) {
             return false;
-        } else if (p == null && q!= null) {
-            return false;
-        } else {
-            if (p.val != q.val) {
-                return false;
-            } else {
-                if (p.left == null && q.left == null && p.right == null && q.right == null) return true;
-
-                if (p.left == null && q.left == null) {
-//                    return true;
-                } else if (p.left != null && q.left == null) {
-                    return false;
-                } else if (p.left == null && q.left != null) {
-                    return false;
-                } else {
-                    queP.add(p.left);
-                    queQ.add(q.left);
-                }
-
-                if (p.right == null && q.right == null) {
-//                    return true;
-                } else if (p.right != null && q.right == null) {
-                    return false;
-                } else if (p.right == null && q.right != null) {
-                    return false;
-                } else {
-                    queP.add(p.right);
-                    queQ.add(q.right);
-                }
-            }
         }
 
+        Deque<TreeNode> que = new ArrayDeque<>();
+
+        // 将第一棵树的头结点加入队列
+        que.push(p);
+        // 将第二棵树的头结点加入队列
+        que.push(q);
+
         // 接下来就要判断这这两个树是否相互翻转
-        while (true) {
-            TreeNode leftP = queP.removeFirst();
-            TreeNode rightP = queP.removeFirst();
-            TreeNode leftQ = queQ.removeFirst();
-            TreeNode rightQ = queQ.removeFirst();
+        while (!que.isEmpty()) {
+            TreeNode leftP = que.removeFirst();
+            TreeNode leftQ = que.removeFirst();
 
+            // 两个节点都为空，则继续判断
             if (leftP == null && leftQ == null) {
-//                return true;
-            } else if (leftP != null && leftQ == null) {
-                return false;
-            } else if (leftP == null && leftQ != null) {
-                return false;
-            } else {
-                if (leftP.val != leftQ.val) {
-                    return false;
-                }
+                continue;
             }
 
-            if (rightP == null && rightQ == null) {
-//                return true;
-            } else if (rightP != null && rightQ == null) {
+            // 有一个节点为空，另一个节点为空
+            // 两个节点的值不一样
+            // 都符合false
+            if (leftP == null || leftQ == null || (leftP.val != leftQ.val)) {
                 return false;
-            } else if (rightP == null && rightQ != null) {
-                return false;
-            } else {
-                if (rightP.val != rightQ.val) {
-                    return false;
-                }
             }
 
+//            que.add(leftP.left);
+//            que.add(second.left);
+//            que.add(leftP.right);
+//            que.add(second.right);
 
             if (leftP.left == null && leftQ.left != null) {
                 return false;
             } else if (leftP.left != null && leftQ.left == null) {
                 return false;
             } else if (leftP.left != null && leftQ.left != null) {
-                queP.add(leftP.left);
-                queQ.add(leftQ.left);
+                que.add(leftP.left);
+                que.add(leftQ.left);
             }
 
             if (leftP.right == null && leftQ.right != null) {
@@ -96,34 +63,8 @@ public class Tree_100 {
             } else if (leftP.right != null && leftQ.right == null) {
                 return false;
             } else if (leftP.right != null && leftQ.right != null) {
-                queP.add(leftP.right);
-                queQ.add(leftQ.right);
-            }
-
-            if (rightP.left == null && rightQ.left != null) {
-                return false;
-            } else if (rightP.left != null && rightQ.left == null) {
-                return false;
-            } else if (rightP.left != null && rightQ.left != null) {
-                queP.add(rightP.left);
-                queQ.add(rightQ.left);
-            }
-
-            if (rightP.right == null && rightQ.right != null) {
-                return false;
-            } else if (rightP.right != null && rightQ.right == null) {
-                return false;
-            } else if (rightP.right != null && rightQ.right != null) {
-                queP.add(rightP.right);
-                queQ.add(rightQ.right);
-            }
-
-            if (queP.isEmpty() && !queQ.isEmpty()) {
-                return false;
-            } else if (!queP.isEmpty() && queQ.isEmpty()) {
-                return false;
-            } else if ((queP.isEmpty() && queQ.isEmpty())) {
-                break;
+                que.add(leftP.right);
+                que.add(leftQ.right);
             }
         }
         return true;
@@ -177,11 +118,11 @@ public class Tree_100 {
 
         TreeNode root_right_left = new TreeNode(5);
         TreeNode root_right_right = new TreeNode(4);
-        TreeNode root_right = new TreeNode(2, root_right_left, root_right_right);
+        TreeNode root_right = new TreeNode(2, null, null);
 
 //        TreeNode root_left = new TreeNode(1);
 //        TreeNode root_right = new TreeNode(2);
-        TreeNode root = new TreeNode(1, null, null);
+        TreeNode root = new TreeNode(1, null, root_right);
 
         TreeNode root_left_left1 = new TreeNode(4);
         TreeNode root_left_right1 = new TreeNode(5);
