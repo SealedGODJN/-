@@ -105,6 +105,9 @@ public class Tree_100 {
 //        } else if (left != null && right == null) {
 //            return false;
 //        } else if (left.val != right.val) return false;
+//        // 此处没有用else
+//        // 此时就是：左右节点都不为空，且数值相同的情况
+//        // 此时才做递归，做下一层的判断
 //        boolean result1 = compare(left.left, right.left);
 //        boolean result2 = compare(left.right, right.right);
 //        return result1 && result2;

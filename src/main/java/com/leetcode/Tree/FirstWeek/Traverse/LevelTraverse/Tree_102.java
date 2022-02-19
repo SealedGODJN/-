@@ -8,6 +8,11 @@ import java.util.Deque;
 import java.util.List;
 
 public class Tree_102 {
+    /**
+     * 层次遍历
+     * @param root 待遍历的节点
+     * @return 二维数组，每一维是树的一层节点
+     */
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {

@@ -1,14 +1,12 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.FirstWeek.Traverse.Tree_94;
 import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
-public class Tree_257 {
+public class Tree_257_BackTracking {
 //    List<List<Integer>> result = new ArrayList<>();
 //    public List<String> binaryTreePaths(TreeNode root) {
 //        List<String> allPath = new ArrayList<>();
@@ -224,7 +222,7 @@ public class Tree_257 {
 
         TreeNode root = new TreeNode(1, root_left, root_right);
 
-        Tree_257 tree_94 = new Tree_257();
+        Tree_257_BackTracking tree_94 = new Tree_257_BackTracking();
         List<String> result  = tree_94.binaryTreePaths(root);
         for (String integer : result) {
             System.out.print(integer + " ");
