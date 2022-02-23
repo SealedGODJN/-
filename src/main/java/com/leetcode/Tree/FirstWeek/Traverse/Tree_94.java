@@ -96,7 +96,7 @@ public class Tree_94 {
      * @return 如果树节点不为空，则返回该树待中序遍历的结果<br>
      *         如果树节点为空，则返回空的数组
      */
-    public List<Integer> inorderTraversal_Non_Recursion(TreeNode root) {
+    public List<Integer> inorderTraversal_Non_Recursion_TheSame(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         Stack<TreeNode> record = new Stack<>();
         record.push(root);
@@ -113,7 +113,7 @@ public class Tree_94 {
                 record.push(null);
                 // 左
                 if (node.left != null) {
-                    record.push(root.left);
+                    record.push(node.left);
                 }
             } else {
                 node = record.pop();

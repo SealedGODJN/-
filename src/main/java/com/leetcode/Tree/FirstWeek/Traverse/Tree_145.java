@@ -169,6 +169,41 @@ public class Tree_145 {
         return result;
     }
 
+    /**
+     * 以非递归的方式遍历
+     * @param root 待遍历待树节点
+     * @return 如果树节点不为空，则返回该树“后序遍历”的结果<br>
+     *         如果树节点为空，则返回空的数组
+     */
+    public List<Integer> postorderTraversal_Non_Recursion_TheSame(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> record = new Stack<>();
+        record.push(root);
+        while (!record.isEmpty()) {
+            TreeNode node = record.pop();
+            if (node != null) {
+                // 中
+                record.push(node);
+                // 使用空指针进行标记
+                record.push(null);
+                // 右
+                if (node.right != null) {
+                    record.push(node.right);
+                }
+                // 左
+                if (node.left != null) {
+                    record.push(node.left);
+                }
+            } else {
+                node = record.pop();
+                // 此处再将“中”加入到result中
+                // 保证“左中右”的顺序
+                result.add(node.val);
+            }
+        }
+        return result;
+    }
+
 
     public static void main(String[] args) {
         TreeNode root_left_left = new TreeNode(4);
@@ -182,10 +217,10 @@ public class Tree_145 {
 
 //        TreeNode root_left = new TreeNode(1);
 //        TreeNode root_right = new TreeNode(2);
-        TreeNode root = new TreeNode(3, root_left, root_right);
+        TreeNode root = new TreeNode(1, root_left, root_right);
 
         Tree_145 tree_145 = new Tree_145();
-        List<Integer> result  = tree_145.postorderTraversal(root);
+        List<Integer> result  = tree_145.postorderTraversal_Non_Recursion_TheSame(root);
 //        List<Integer> result  = tree_145.postorderTraversal_Morris(root);
         for (Integer integer : result) {
             System.out.print(integer + " ");

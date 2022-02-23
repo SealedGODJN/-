@@ -109,23 +109,58 @@ public class Tree_144 {
         return result;
     }
 
-    public static void main(String[] args) {
-//        TreeNode root_left_left = new TreeNode(4);
-//        TreeNode root_left_right = new TreeNode(5);
-//        TreeNode root_left = new TreeNode(2, root_left_left, root_left_right);
-//
-//
-//        TreeNode root_right_left = new TreeNode(6);
-//        TreeNode root_right_right = new TreeNode(7);
-//        TreeNode root_right = new TreeNode(3, root_right_left, root_right_right);
+    /**
+     * 以非递归的方式遍历
+     * @param root 待遍历待树节点
+     * @return 如果树节点不为空，则返回该树的“前序遍历”的结果<br>
+     *         如果树节点为空，则返回空的数组
+     */
+    public List<Integer> preorderTraversal_Non_Recursion_TheSame(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> record = new Stack<>();
+        record.push(root);
+        while (!record.isEmpty()) {
+            TreeNode node = record.pop();
+            if (node != null) {
+                // 右
+                if (node.right != null) {
+                    record.push(node.right);
+                }
+                // 左
+                if (node.left != null) {
+                    record.push(node.left);
+                }
+                // 中
+                record.push(node);
+                // 使用空指针进行标记
+                record.push(null);
+            } else {
+                node = record.pop();
+                // 此处再将“中”加入到result中
+                // 保证“左中右”的顺序
+                result.add(node.val);
+            }
+        }
+        return result;
+    }
 
-        TreeNode root_left = new TreeNode(1);
-        TreeNode root_right = new TreeNode(2);
-        TreeNode root = new TreeNode(3, root_left, root_right);
+    public static void main(String[] args) {
+        TreeNode root_left_left = new TreeNode(4);
+        TreeNode root_left_right = new TreeNode(5);
+        TreeNode root_left = new TreeNode(2, root_left_left, root_left_right);
+
+
+        TreeNode root_right_left = new TreeNode(6);
+        TreeNode root_right_right = new TreeNode(7);
+        TreeNode root_right = new TreeNode(3, root_right_left, root_right_right);
+
+//        TreeNode root_left = new TreeNode(1);
+//        TreeNode root_right = new TreeNode(2);
+        TreeNode root = new TreeNode(1, root_left, root_right);
 
         Tree_144 tree_144 = new Tree_144();
 //        List<Integer> result  = tree_144.preorderTraversal(root);
-        List<Integer> result  = tree_144.preorderTraversal_Morris(root);
+        List<Integer> result  = tree_144.preorderTraversal_Non_Recursion_TheSame(root);
         for (Integer integer : result) {
             System.out.print(integer + " ");
         }
