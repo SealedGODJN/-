@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class Tree_145 {
     /**
-     * 后序遍历
+     * 后序遍历，参照前序遍历，将前序遍历的结果进行反转，即是“后序遍历”的结果
      * @param root
      * @return
      */
@@ -21,13 +21,13 @@ public class Tree_145 {
         needToTraversal.push(root);
         while (!needToTraversal.isEmpty()) {
             TreeNode visitNode = needToTraversal.pop();
-            result.add(visitNode.val);
+            result.add(visitNode.val); // 中
 
             if (visitNode.left != null) {
-                needToTraversal.add(visitNode.left);
+                needToTraversal.add(visitNode.left); // 左
             }
             if (visitNode.right != null) {
-                needToTraversal.add(visitNode.right);
+                needToTraversal.add(visitNode.right); // 右
             }
         }
         result = reverse(result);
@@ -78,28 +78,29 @@ public class Tree_145 {
                     next = next.right;
                 }
                 /*
-                此时next经过上面while循环的
-                next = next.right之后
-                已经走到了左子树的最右边，我们讨论过此时要让
-                next.right = cur
+                此时next经过上面while循环的next = next.right之后
+                已经走到了左子树的最右边，我们讨论过，此时要让next.right = cur
                 以便cur走到这里时可以回溯回去，
-                这件事是if(next.right == null)时
-                要做的，else中做的是cur回溯回去了，
-                但是下一次经历最外面的while循环
-                时他还会创建一个next = cur.left的引用
+                这件事【不是回溯】是if(next.right == null)时，要做的。
+
+                else中做的是cur回溯回去了，
+
+                但是下一次经历最外面的while循环时，他还会创建一个next = cur.left的引用
                 然后一直遍历到cur左子树的最右面
-                这次是第二次经过这里我们知道
-                next.right != null 而是next.right == cur
-                为了保证原树不变我们要把这条线擦掉，
-                即next.right = null，然后让cur = cur.right
-                即cur的左子树走完了，让cur去走右子树。
                  */
                 if (next.right == null){
                     next.right = cur;
                     cur = cur.left;
-                }else {
+                } else {
+                    // else中做的是cur回溯回去了
+                    /*
+                    这次是第二次经过这里，我们知道next.right != null 而是next.right == cur
+                    为了保证原树不变我们要把这条线擦掉，
+                    即next.right = null，然后让cur = cur.right
+                    即cur的左子树走完了，让cur去走右子树。
+                    */
                     next.right = null;
-                    cur = cur.right;
+                    cur = cur.right; // 回溯！！！
                 }
             }
         }

@@ -59,6 +59,11 @@ public class Tree_144 {
         return result;
     }
 
+    /**
+     * 前序遍历
+     * @param root
+     * @return
+     */
     public List<Integer> preorderTraversal_Morris(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {

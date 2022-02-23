@@ -11,7 +11,7 @@ public class Tree_94 {
     /**
      * 以非递归的方式遍历
      * @param root 待遍历待树节点
-     * @return 如果树节点不为空，则返回该树待前序遍历的结果<br></>
+     * @return 如果树节点不为空，则返回该树待中序遍历的结果<br>
      *         如果树节点为空，则返回空的数组
      */
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -41,7 +41,7 @@ public class Tree_94 {
     }
 
     /**
-     * Morris算法进行先序遍历
+     * Morris算法进行中序遍历
      * @param root
      * @return
      */
@@ -59,7 +59,7 @@ public class Tree_94 {
             它们都会让cur = left 然后回溯回来
             morris这里就会判断如果一个节点的左边为空就不会去
             */
-            // 第一次经过第二类节点
+            // 第一次经过第二类节点[第二类是没有左子树的节点]
             if (cur.left == null){
                 result.add(cur.val);
                 cur = cur.right;
@@ -72,17 +72,54 @@ public class Tree_94 {
                 while (next.right != null && next.right != cur) {
                     next = next.right;
                 }
-                // 第一次经过第一类节点
+                // 第一次经过第一类节点[第一类是有左子树的节点]
                 if (next.right == null){
                     // 第一类节点指的是cur，而不是next
                     // result.add(next.val);
-                    result.add(cur.val);
+//                    result.add(cur.val);
                     next.right = cur;
                     cur = cur.left;
                 }else {
+                    // 第二次经过第一类节点
+                    result.add(cur.val);
                     next.right = null;
                     cur = cur.right;
                 }
+            }
+        }
+        return result;
+    }
+
+    /**
+     * 以非递归的方式遍历
+     * @param root 待遍历待树节点
+     * @return 如果树节点不为空，则返回该树待中序遍历的结果<br>
+     *         如果树节点为空，则返回空的数组
+     */
+    public List<Integer> inorderTraversal_Non_Recursion(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> record = new Stack<>();
+        record.push(root);
+        while (!record.isEmpty()) {
+            TreeNode node = record.pop();
+            if (node != null) {
+                // 右
+                if (node.right != null) {
+                    record.push(node.right);
+                }
+                // 中
+                record.push(node);
+                // 使用空指针进行标记
+                record.push(null);
+                // 左
+                if (node.left != null) {
+                    record.push(root.left);
+                }
+            } else {
+                node = record.pop();
+                // 此处再将“中”加入到result中
+                // 保证“左中右”的顺序
+                result.add(node.val);
             }
         }
         return result;
