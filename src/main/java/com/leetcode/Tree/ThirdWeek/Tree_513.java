@@ -1,5 +1,6 @@
-package com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse;
+package com.leetcode.Tree.ThirdWeek;
 
+import com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse.Tree_102;
 import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayDeque;
@@ -7,17 +8,16 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class Tree_102 {
+public class Tree_513 {
     /**
-     * 层次遍历
+     * 513.找树左下角的值
+     * 给定一个二叉树，在树的最后一行找到最左边的值。
+     *
      * @param root 待遍历的节点
-     * @return 二维数组，每一维是树的一层节点
+     * @return 树的最后一行找到最左边的值
      */
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public int findBottomLeftValue(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
-        if (root == null) {
-            return result;
-        }
 
         Deque<TreeNode> level = new ArrayDeque<>();
         level.push(root);
@@ -38,7 +38,7 @@ public class Tree_102 {
 //            level.addAll(waitToAdd);
             result.add(levelResult);
         }
-        return result;
+        return result.get(result.size() - 1).get(0);
     }
 
     public static void main(String[] args) {
@@ -55,14 +55,8 @@ public class Tree_102 {
 //        TreeNode root_right = new TreeNode(2);
         TreeNode root = new TreeNode(3, root_left, root_right);
 
-        Tree_102 tree_102 = new Tree_102();
-        List<List<Integer>> result  = tree_102.levelOrder(root);
-//        List<Integer> result  = tree_145.postorderTraversal_Morris(root);
-        for (List<Integer> level : result) {
-            for (Integer integer : level) {
-                System.out.print(integer + " ");
-            }
-            System.out.println();
-        }
+        Tree_513 tree_102 = new Tree_513();
+        int result  = tree_102.findBottomLeftValue(root);
+        System.out.println(result);
     }
 }

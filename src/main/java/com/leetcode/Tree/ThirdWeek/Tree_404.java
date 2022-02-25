@@ -3,7 +3,9 @@ package com.leetcode.Tree.ThirdWeek;
 import com.leetcode.Tree.FirstWeek.Traverse.Tree_94;
 import com.leetcode.Tree.TreeNode;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Tree_404 {
     /**
@@ -21,21 +23,58 @@ public class Tree_404 {
      * @param root
      * @return
      */
+//    public int sumOfLeftLeaves(TreeNode root) {
+//        int sum = 0;
+//        if (root == null) {
+//            return sum;
+//        }
+//        if (root.left == null && root.right == null) {
+//            return sum;
+//        }
+//
+//        sum += sumOfLeftLeaves(root.left); // 左
+//        sum += sumOfLeftLeaves(root.right); // 右
+//
+//        if (root.left != null && root.left.left == null && root.left.right == null) { // 中
+//            sum += root.left.val;
+//        }
+//        return sum;
+//    }
+
     public int sumOfLeftLeaves(TreeNode root) {
+//        List<Integer> result = new ArrayList<>();
         int sum = 0;
-        if (root == null) {
-            return sum;
-        }
-        if (root.left == null && root.right == null) {
-            return sum;
-        }
+        Stack<TreeNode> record = new Stack<>();
+        record.push(root);
+        while (!record.isEmpty()) {
+            TreeNode node = record.pop();
+//            if (node != null) {
+//                // 中
+//                record.push(node);
+//                // 使用空指针进行标记
+//                record.push(null);
 
-        sum += sumOfLeftLeaves(root.left);
-        sum += sumOfLeftLeaves(root.right);
+            if (node.left != null && node.left.left == null && node.left.right == null) { // 中
+                sum += node.left.val;
+            }
 
-        if (root.left != null && root.left.left == null && root.left.right == null) {
-            sum += root.left.val;
+            // 右
+            if (node.right != null) {
+                record.push(node.right);
+
+            }
+            // 左
+            if (node.left != null) {
+                record.push(node.left);
+            }
+//            } else {
+//                node = record.pop();
+//                // 此处再将“中”加入到result中
+//                // 保证“左中右”的顺序
+//                result.add(node.val);
+//            }
         }
+//        return result;
         return sum;
     }
 
