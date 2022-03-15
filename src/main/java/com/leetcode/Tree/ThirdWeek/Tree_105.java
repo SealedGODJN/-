@@ -8,10 +8,8 @@ public class Tree_105 {
 
     /**
      *
-     *
      * 1 <= inorder.length <= 3000
      * postorder.length == inorder.length
-     *
      *
      * @param inorder
      * @param preorder

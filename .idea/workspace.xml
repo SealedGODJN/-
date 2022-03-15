@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/LinkedList/Sword_Offer_06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java" afterDir="false" />
     </list>
@@ -299,7 +300,7 @@
       <workItem from="1647271646116" duration="8987000" />
       <workItem from="1647343302349" duration="2093000" />
       <workItem from="1647345530128" duration="158000" />
-      <workItem from="1647345826807" duration="1372000" />
+      <workItem from="1647345826807" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -525,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647345566859</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <created>1647348166946</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1647348166946</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +665,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java</url>
-          <line>66</line>
+          <line>64</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
