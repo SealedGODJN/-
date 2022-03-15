@@ -25,7 +25,7 @@ public class Tree_105 {
         if (preorder.length == 1) {
             return new TreeNode(preorder[0], null, null);
         }
-        int rootVal = preorder[preorder.length - 1];
+        int rootVal = preorder[0];
 
         int rootIndex = -1;
         for (int i = 0; i < inorder.length; i++) {
@@ -36,34 +36,34 @@ public class Tree_105 {
         }
 
         int[] inorderLeft = new int[0];
-        int[] postorderLeft;
+        int[] preorderLeft;
         TreeNode left;
-        if (0 <= rootIndex && 0 <= inorder.length) {
+//        if (0 <= rootIndex && 0 <= inorder.length) {
             inorderLeft = Arrays.copyOfRange(inorder, 0, rootIndex);
-            postorderLeft = Arrays.copyOfRange(preorder, 0, inorderLeft.length);
-            left = buildTree(inorderLeft, postorderLeft);
-        } else {
-            left = null;
-        }
+            preorderLeft = Arrays.copyOfRange(preorder, 1, inorderLeft.length + 1);
+            left = buildTree(preorderLeft, inorderLeft);
+//        } else {
+//            left = null;
+//        }
 
         TreeNode right;
-        if (rootIndex + 1 < inorder.length && inorderLeft.length + 1 <= preorder.length - 1) {
+//        if (rootIndex + 1 < inorder.length && inorderLeft.length + 1 <= preorder.length) {
             int[] inorderRight = Arrays.copyOfRange(inorder, rootIndex + 1, inorder.length);
-            int[] postorderRight = Arrays.copyOfRange(preorder, inorderLeft.length, preorder.length - 1);
-            right = buildTree(inorderRight, postorderRight);
-        } else {
-            right = null;
-        }
+            int[] preorderRight = Arrays.copyOfRange(preorder, inorderLeft.length + 1, preorder.length);
+            right = buildTree(preorderRight, inorderRight);
+//        } else {
+//            right = null;
+//        }
 
         return new TreeNode(rootVal, left, right);
     }
 
     public static void main(String[] args) {
-//        int[] inorder = {9,3,15,20,7}, postorder = {9,15,7,20,3};
-        int[] inorder = {2,1}, postorder = {1,2};
+//        int[] inorder = {9,3,15,20,7}, preorder = {3,9,20,15,7};
+        int[] inorder = {2,1}, preorder = {1,2};
 
-        Tree_106 tree_106 = new Tree_106();
-        TreeNode temp = tree_106.buildTree(inorder, postorder);
+        Tree_105 tree_106 = new Tree_105();
+        TreeNode temp = tree_106.buildTree(preorder, inorder);
         System.out.println(temp);
     }
 }
