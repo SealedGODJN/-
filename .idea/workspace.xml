@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DNC-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,7 +67,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4690497" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,7 +86,7 @@
       <recent name="com.leetcode.HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tree_112">
+  <component name="RunManager" selected="Application.Tree_106">
     <configuration name="FushiSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.Assistant.FushiSystem" />
       <module name="helloworld" />
@@ -107,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_112" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_112" />
+    <configuration name="Tree_106" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_106" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +121,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_404" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_404" />
+    <configuration name="Tree_112" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_112" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
@@ -149,17 +150,17 @@
     <list>
       <item itemvalue="Application.FushiSystem" />
       <item itemvalue="Application.FushiSystemGUI" />
-      <item itemvalue="Application.Tree_404" />
       <item itemvalue="Application.Tree_513" />
       <item itemvalue="Application.Tree_112" />
+      <item itemvalue="Application.Tree_106" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tree_106" />
         <item itemvalue="Application.Tree_112" />
         <item itemvalue="Application.FushiSystemGUI" />
         <item itemvalue="Application.FushiSystem" />
         <item itemvalue="Application.Tree_513" />
-        <item itemvalue="Application.Tree_404" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +293,13 @@
       <workItem from="1646064081481" duration="158000" />
       <workItem from="1646064373093" duration="1536000" />
       <workItem from="1646821831152" duration="975000" />
-      <workItem from="1646964492747" duration="5238000" />
+      <workItem from="1646964492747" duration="5638000" />
+      <workItem from="1647066259733" duration="1239000" />
+      <workItem from="1647150154863" duration="599000" />
+      <workItem from="1647215953660" duration="1180000" />
+      <workItem from="1647271646116" duration="8987000" />
+      <workItem from="1647343302349" duration="2093000" />
+      <workItem from="1647345530128" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -504,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645758232511</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成112：计算路径的节点值之和是否与targetSum匹配【基于257：所有的路径】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
+      <created>1647007576824</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1647007576824</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,8 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、修改项目结构，复习HashMap的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
@@ -549,7 +561,9 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、准备复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、完成复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成112：计算路径的节点值之和是否与targetSum匹配【基于257：所有的路径】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,6 +642,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java</url>
           <line>50</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
