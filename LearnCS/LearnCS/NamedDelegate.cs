@@ -11,20 +11,20 @@ public class Class1
 	public delegate void SortBookPrice(Book[] books);
 
 	// 同一个工程中，只能有一个Main函数
-	static void Main(string[] args)
-	{
-		Book[] book = new Book[3];
-		book[0] = new Book("计算机应用", 50);
-		book[1] = new Book("C# 教程", 59);
-		book[2] = new Book("VS2015应用", 49);
-		SortBookPrice sortBookPrice = new SortBookPrice(Book.BookSort);
-		sortBookPrice(book);
+	//static void Main(string[] args)
+	//{
+	//	Book[] book = new Book[3];
+	//	book[0] = new Book("计算机应用", 50);
+	//	book[1] = new Book("C# 教程", 59);
+	//	book[2] = new Book("VS2015应用", 49);
+	//	SortBookPrice sortBookPrice = new SortBookPrice(Book.BookSort);
+	//	sortBookPrice(book);
 
-		for(int i = 0; i < book.Length; i++)
-		{
-			Console.WriteLine(book[i].ToString());
-		}
-	}
+	//	for(int i = 0; i < book.Length; i++)
+	//	{
+	//		Console.WriteLine(book[i].ToString());
+	//	}
+	//}
 
 }
 
