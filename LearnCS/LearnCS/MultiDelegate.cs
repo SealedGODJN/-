@@ -3,13 +3,13 @@ using System;
 public class Program {
     // 购买商品委托
     public delegate void OrderDelegate();
-    static void Main(string[] args) {
-		OrderDelegate order = new OrderDelegate(Order.OrderFastfood);
-        //order += OrderFastfood;
-        order += Order.OrderCake;
-        order += Order.OrderFlowers;
-		order();
-    }
+  //  static void Main(string[] args) {
+		//OrderDelegate order = new OrderDelegate(Order.OrderFastfood);
+  //      //order += OrderFastfood;
+  //      order += Order.OrderCake;
+  //      order += Order.OrderFlowers;
+		//order();
+  //  }
 }
 
 public class Order {

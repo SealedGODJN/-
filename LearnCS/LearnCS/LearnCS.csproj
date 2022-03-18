@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="MultiDelegate.cs" />
     <Compile Include="NamedDelegate.cs" />
+    <Compile Include="NonNamedDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

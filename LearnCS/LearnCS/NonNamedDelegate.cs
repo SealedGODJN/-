@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class Program1
 {
     public delegate void AreaDelegate(double length, double width);
     static void Main(string[] args)
