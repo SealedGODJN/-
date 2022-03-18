@@ -1,0 +1,7 @@
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\bin\Debug\LearnCS.exe.config
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\bin\Debug\LearnCS.exe
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\bin\Debug\LearnCS.pdb
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\obj\Debug\LearnCS.csprojAssemblyReference.cache
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\obj\Debug\LearnCS.csproj.CoreCompileInputs.cache
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\obj\Debug\LearnCS.exe
+D:\文档\2022-3找工作\委托\LearnCS\LearnCS\obj\Debug\LearnCS.pdb
