@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【递归+非递归+头插入ArrayList】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <changelist_data name="hjn" email="1286039722@qq.com" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_113.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hjn &lt;1286039722@qq.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -66,7 +77,8 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4690497" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.10101652" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,20 +97,7 @@
       <recent name="com.leetcode.HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FushiSystem">
-    <configuration name="FushiSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.Assistant.FushiSystem" />
-      <module name="helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.Assistant.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.Tree_113">
     <configuration name="Tree_105" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_105" />
       <module name="helloworld" />
@@ -138,6 +137,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tree_113" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_113" />
+      <module name="helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.Tree.ThirdWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tree_654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_654" />
       <module name="helloworld" />
@@ -152,12 +164,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FushiSystem" />
-      <item itemvalue="Application.Tree_105" />
-      <item itemvalue="Application.Tree_106" />
-      <item itemvalue="Application.Tree_112" />
-      <item itemvalue="Application.Tree_654" />
+      <item itemvalue="应用程序.Tree_105" />
+      <item itemvalue="应用程序.Tree_106" />
+      <item itemvalue="应用程序.Tree_112" />
+      <item itemvalue="应用程序.Tree_654" />
+      <item itemvalue="应用程序.Tree_113" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Tree_113" />
+        <item itemvalue="应用程序.Tree_112" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -306,7 +324,9 @@
       <workItem from="1647795535180" duration="7000" />
       <workItem from="1647853571152" duration="12000" />
       <workItem from="1647869204229" duration="10000" />
-      <workItem from="1647869261768" duration="73000" />
+      <workItem from="1647869261768" duration="6795000" />
+      <workItem from="1647910836425" duration="154000" />
+      <workItem from="1647911083885" duration="3975000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -553,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647535502341</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成 654：构造二叉树【递归构造二叉树】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <created>1647869467063</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1647869467063</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,8 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历和中序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
@@ -598,7 +623,10 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【待改进】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【递归+非递归+头插入ArrayList】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【递归+非递归+头插入ArrayList】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成 654：构造二叉树【递归构造二叉树】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -670,7 +698,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java</url>
-          <line>89</line>
+          <line>93</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -680,7 +708,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java</url>
-          <line>67</line>
+          <line>123</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -690,7 +718,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java</url>
-          <line>83</line>
+          <line>115</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>

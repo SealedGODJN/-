@@ -1,6 +1,5 @@
 package com.leetcode.Tree.ThirdWeek;
 
-import com.leetcode.Tree.FirstWeek.Traverse.Tree_94;
 import com.leetcode.Tree.TreeNode;
 
 import java.util.ArrayList;
@@ -20,8 +19,9 @@ public class Tree_404 {
      * 先计算左右子树的sum值
      * 最后计算根节点的左叶子值
      *
-     * @param root
-     * @return
+     * @param root 树的根节点
+     * @return 左叶子节点之和（int）
+     * '
      */
 //    public int sumOfLeftLeaves(TreeNode root) {
 //        int sum = 0;

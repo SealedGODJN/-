@@ -15,8 +15,7 @@ import java.util.Arrays;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/maximum-binary-tree
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- */
-/**
+ *
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
@@ -52,30 +51,63 @@ public class Tree_654 {
      * 2）划分左子树
      * 3）划分右子树
      *
-     * @param nums
-     * @return
+     * @param nums 基于nums生成树
+     * @return 树的根节点
      */
+//    public TreeNode constructMaximumBinaryTree(int[] nums) {
+//        if (nums.length == 0) {
+//            return null;
+//        }
+//        if (nums.length == 1) {
+//            return new TreeNode(nums[0], null, null);
+//        }
+//
+//        // 找出数组中最大值所在的index
+//        int maxIndex = 0;
+//        for (int i = maxIndex + 1; i < nums.length; i++) {
+//            if (nums[maxIndex] < nums[i]) {
+//                maxIndex = i;
+//            }
+//        }
+//        int[] numsLeft = Arrays.copyOfRange(nums, 0, maxIndex);
+//        int[] numsRight = Arrays.copyOfRange(nums, maxIndex + 1, nums.length);
+//        TreeNode left = constructMaximumBinaryTree(numsLeft);
+//        TreeNode right = constructMaximumBinaryTree(numsRight);
+//
+//        return new TreeNode(nums[maxIndex], left, right);
+//    }
     public TreeNode constructMaximumBinaryTree(int[] nums) {
-        if (nums.length == 0) {
+
+        return traversal(nums, 0, nums.length);
+    }
+
+    public TreeNode traversal(int[] nums, int left, int right) {
+//        if (nums.length == 0) {
+        // 区间长度为0
+        if (left >= right) {
             return null;
         }
-        if (nums.length == 1) {
-            return new TreeNode(nums[0], null, null);
+        // 区间长度为1
+        if (left == right - 1) {
+            return new TreeNode(nums[left], null, null);
         }
 
         // 找出数组中最大值所在的index
-        int maxIndex = 0;
-        for (int i = maxIndex + 1; i < nums.length; i++) {
+        int maxIndex = left;
+        for (int i = maxIndex + 1; i < right; i++) {
             if (nums[maxIndex] < nums[i]) {
                 maxIndex = i;
             }
         }
-        int[] numsLeft = Arrays.copyOfRange(nums, 0, maxIndex);
-        int[] numsRight = Arrays.copyOfRange(nums, maxIndex + 1, nums.length);
-        TreeNode left = constructMaximumBinaryTree(numsLeft);
-        TreeNode right = constructMaximumBinaryTree(numsRight);
+//        int[] numsLeft = Arrays.copyOfRange(nums, 0, maxIndex);
+//        int[] numsRight = Arrays.copyOfRange(nums, maxIndex + 1, nums.length);
 
-        return new TreeNode(nums[maxIndex], left, right);
+        // 左闭右开：[left, maxValueIndex)
+        TreeNode leftNode = traversal(nums, left, maxIndex);
+        // 左闭右开：[maxValueIndex + 1, right)
+        TreeNode rightNode = traversal(nums, maxIndex + 1, right);
+
+        return new TreeNode(nums[maxIndex], leftNode, rightNode);
     }
 
     public static void main(String[] args) {

@@ -29,7 +29,11 @@ public class Tree_513 {
             int size = level.size();
             for (int i = 0; i < size; i++) {
                 TreeNode temp = level.pop();
-                if (i == 0) result = temp.val;
+
+                // 获取最后一行的第一个节点
+                if (i == 0) {
+                    result = temp.val;
+                }
                 if (temp.left != null) {
                     level.add(temp.left);
                 }
