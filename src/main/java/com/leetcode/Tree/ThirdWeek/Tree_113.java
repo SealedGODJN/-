@@ -5,6 +5,9 @@ import com.leetcode.Tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author hjn
+ */
 public class Tree_113 {
     List<List<Integer>> allPath = new ArrayList<>();
 
@@ -26,21 +29,20 @@ public class Tree_113 {
         }
 
         path.add(root.val);
-        traversal(root, root.val, targetSum);
+        traversal(root, targetSum - root.val);
         return allPath;
     }
 
     /**
      * 递归遍历树的每一个节点
      *
-     * @param root      树的节点
-     * @param sum       记录当前路径节点值的和
-     * @param targetSum 路径节点值的和的目标值
+     * @param root 树的节点
+     * @param sum  记录当前路径节点值的和
      */
-    public void traversal(TreeNode root, int sum, int targetSum) {
+    public void traversal(TreeNode root, int sum) {
 
         if (root.left == null && root.right == null) {
-            if (sum == targetSum) {
+            if (sum == 0) {
                 allPath.add(new ArrayList<>(path));
                 return;
             }
@@ -48,7 +50,7 @@ public class Tree_113 {
 
         if (root.left != null) {
             path.add(root.left.val);
-            traversal(root.left, sum + root.left.val, targetSum);
+            traversal(root.left, sum - root.left.val);
             // 回溯和递归是一一对应的，有一个递归，就要有一个回溯
             path.remove(path.size() - 1);
         }
@@ -56,7 +58,7 @@ public class Tree_113 {
         if (root.right != null) {
             path.add(root.right.val);
             // 回溯和递归是一一对应的，有一个递归，就要有一个回溯
-            traversal(root.right, sum + root.right.val, targetSum);
+            traversal(root.right, sum - root.right.val);
             path.remove(path.size() - 1);
         }
 
