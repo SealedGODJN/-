@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tree_113 {
+    List<List<Integer>> allPath = new ArrayList<>();
+
+    List<Integer> path = new ArrayList<>();
+
     /**
      * 返回所有 从根节点到叶子节点 路径总和等于给定目标和的路径。
      * <p>
@@ -16,13 +20,13 @@ public class Tree_113 {
      * @return 所有满足目标和的路径
      */
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        List<List<Integer>> allPath = new ArrayList<>();
+
         if (root == null) {
             return allPath;
         }
-        List<Integer> path = new ArrayList<>();
+
         path.add(root.val);
-        traversal(root, path, allPath, root.val, targetSum);
+        traversal(root, root.val, targetSum);
         return allPath;
     }
 
@@ -30,12 +34,10 @@ public class Tree_113 {
      * 递归遍历树的每一个节点
      *
      * @param root      树的节点
-     * @param path      当前走的一条路径
-     * @param allPath   树的所有路径
      * @param sum       记录当前路径节点值的和
      * @param targetSum 路径节点值的和的目标值
      */
-    public void traversal(TreeNode root, List<Integer> path, List<List<Integer>> allPath, int sum, int targetSum) {
+    public void traversal(TreeNode root, int sum, int targetSum) {
 
         if (root.left == null && root.right == null) {
             if (sum == targetSum) {
@@ -46,7 +48,7 @@ public class Tree_113 {
 
         if (root.left != null) {
             path.add(root.left.val);
-            traversal(root.left, path, allPath, sum + root.left.val, targetSum);
+            traversal(root.left, sum + root.left.val, targetSum);
             // 回溯和递归是一一对应的，有一个递归，就要有一个回溯
             path.remove(path.size() - 1);
         }
@@ -54,7 +56,7 @@ public class Tree_113 {
         if (root.right != null) {
             path.add(root.right.val);
             // 回溯和递归是一一对应的，有一个递归，就要有一个回溯
-            traversal(root.right, path, allPath, sum + root.right.val, targetSum);
+            traversal(root.right, sum + root.right.val, targetSum);
             path.remove(path.size() - 1);
         }
 
