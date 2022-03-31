@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
+/**
+ * 给定一个二叉树，判断它是否是高度平衡的二叉树。
+ * <p>
+ * 本题中，一棵高度平衡二叉树定义为：一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1。
+ */
 public class Tree_110 {
 //    /**
 //     * 借助“最大深度”，来判断每个子树的左右孩子节点的最大深度之差是否在[-1,1]之内
@@ -77,9 +82,13 @@ public class Tree_110 {
             return 0;
         }
         int leftDepth = getHeight(root.left);
-        if (leftDepth == -1) return -1;
+        if (leftDepth == -1) {
+            return -1;
+        }
         int rightDepth = getHeight(root.right);
-        if (rightDepth == -1) return -1;
+        if (rightDepth == -1) {
+            return -1;
+        }
         return Math.abs(leftDepth - rightDepth) > 1 ? -1 : 1 + Math.max(leftDepth, rightDepth);
         // 高度差不在[-1, 1]中
 

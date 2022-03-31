@@ -23,20 +23,16 @@ public class Tree_94 {
         TreeNode visit = root;
 
         // 先沿左子树将所有的左子树的节点加入栈中
-        while (visit != null) {
-            needToTraversal.add(visit);
-            visit = visit.left;
-        }
-
-        do {
-            TreeNode visitNode = needToTraversal.pop();
-            result.add(visitNode.val);
-
-            if (visitNode.right != null) {
-                needToTraversal.add(visitNode.right);
+        while (visit != null || !needToTraversal.isEmpty()) {
+            if (visit != null) {
+                needToTraversal.add(visit);
+                visit = visit.left; // 左
+            } else {
+                visit = needToTraversal.pop(); // 从栈里弹出的数据，就是要处理的数据（放进result数组里的数据）
+                result.add(visit.val); // 中
+                visit = visit.right; // 右
             }
-
-        } while (!needToTraversal.isEmpty());
+        }
         return result;
     }
 

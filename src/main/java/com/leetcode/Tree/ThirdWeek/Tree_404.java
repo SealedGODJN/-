@@ -54,7 +54,8 @@ public class Tree_404 {
 //                // 使用空指针进行标记
 //                record.push(null);
 
-            if (node.left != null && node.left.left == null && node.left.right == null) { // 中
+            // 中
+            if (node.left != null && node.left.left == null && node.left.right == null) {
                 sum += node.left.val;
             }
 
