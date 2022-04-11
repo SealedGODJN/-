@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第四周的第三道题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/test/randomNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_700.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_98.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/zhibo/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_235.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_236.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_501.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_530.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_94.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_110.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_110.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4690497" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
     <property name="settings.editor.splitter.proportion" value="0.10101652" />
   </component>
   <component name="ReaderModeSettings">
@@ -102,13 +99,13 @@
       <recent name="com.leetcode.HashMap" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Tree_98">
-    <configuration name="Tree_113" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_113" />
+  <component name="RunManager" selected="应用程序.Tree_236">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.zhibo.Test" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Tree.ThirdWeek.*" />
+          <option name="PATTERN" value="com.NPU.zhibo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_617" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.FourWeek.Tree_617" />
+    <configuration name="Tree_236" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.FourWeek.Tree_236" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
@@ -129,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree_654" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.ThirdWeek.Tree_654" />
+    <configuration name="Tree_501" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Tree.FourWeek.Tree_501" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Tree.ThirdWeek.*" />
+          <option name="PATTERN" value="com.leetcode.Tree.FourWeek.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,19 +166,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Tree_113" />
-      <item itemvalue="应用程序.Tree_617" />
-      <item itemvalue="应用程序.Tree_654" />
       <item itemvalue="应用程序.randomNumber" />
       <item itemvalue="应用程序.Tree_98" />
+      <item itemvalue="应用程序.Tree_501" />
+      <item itemvalue="应用程序.Test" />
+      <item itemvalue="应用程序.Tree_236" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Tree_236" />
+        <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.Tree_501" />
         <item itemvalue="应用程序.Tree_98" />
         <item itemvalue="应用程序.randomNumber" />
-        <item itemvalue="应用程序.Tree_654" />
-        <item itemvalue="应用程序.Tree_617" />
-        <item itemvalue="应用程序.Tree_113" />
       </list>
     </recent_temporary>
   </component>
@@ -345,6 +342,12 @@
       <workItem from="1648549108743" duration="5105000" />
       <workItem from="1648555830284" duration="3303000" />
       <workItem from="1648650084809" duration="1500000" />
+      <workItem from="1648763972853" duration="6128000" />
+      <workItem from="1648795830076" duration="620000" />
+      <workItem from="1648796715280" duration="719000" />
+      <workItem from="1648812461707" duration="2080000" />
+      <workItem from="1649335790142" duration="186000" />
+      <workItem from="1649680086632" duration="7526000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -619,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647915785020</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
+      <created>1648764033355</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1648764033355</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +649,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了" />
     <MESSAGE value="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成199：基于层序遍历的二叉树的右视图&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
@@ -664,7 +673,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、优化第113题，减少递归函数的参数&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第四周的第三道题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第四周的第三道题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
