@@ -1,4 +1,4 @@
-package com.NPU.fuckMCY;
+package com.NPU.fuck;
 
 public class GenFuckingDailyReport {
 
