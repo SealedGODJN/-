@@ -46,6 +46,7 @@ public class Employee extends Person {
         salary = newSalary;
     }
 
+    // 示例4.19 Equals方法的演示
     /**
      * 比较两个雇员对象是否相等，重写Object中的equals方法
      *
@@ -72,6 +73,7 @@ public class Employee extends Person {
 //        return "name：  "+ getName() + "_address：  " + getAddress() + "_salary：  " + salary;
 //    }
 
+    // 示例4.16扩展与重写：子类Employee
     /**
      * 返回代表雇员的属性信息的字符串
      *
@@ -93,47 +95,77 @@ public class Employee extends Person {
 //        double salary = ((Employee) person).getSalary();//该句将抛出ClassCastException类型的异常
 
         // 示例4.14  向下强制类型转换与instanceof操作符结合使用
-        Person person = new Employee("Joe Smith", "100 Main Ave", 1);
-//                ……
-        if (person instanceof Employee) {
-            double salary = ((Employee) person).getSalary();
-        }
+//        Person person = new Employee("Joe Smith", "100 Main Ave", 1);
+////                ……
+//        if (person instanceof Employee) {
+//            double salary = ((Employee) person).getSalary();
+//        }
 
         // 示例4.17 Object中equals方法功能的验证
-        Employee employee1 = new Employee("xiao", "nwpu", 200);
-        Employee employee2 = new Employee("xiao", "nwpu", 200);
-        Employee employee3 = employee1;
-        //同一个Employee对象的比较
-        if (employee1.equals(employee3)) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
-        //内容相同的不同Employee对象的比较
-        if (employee1.equals(employee2)) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
-        //同一个Employee对象的比较
-        if (employee1 == employee3) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
-        //内容相同的不同Employee对象的比较
-        if (employee1 == employee2) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+//        Employee employee1 = new Employee("xiao", "nwpu", 200);
+//        Employee employee2 = new Employee("xiao", "nwpu", 200);
+//        Employee employee3 = employee1;
+//        //同一个Employee对象的比较
+//        if (employee1.equals(employee3)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+//        //内容相同的不同Employee对象的比较
+//        if (employee1.equals(employee2)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+//        //同一个Employee对象的比较
+//        if (employee1 == employee3) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+//        //内容相同的不同Employee对象的比较
+//        if (employee1 == employee2) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
 
-        person = new Person("xiao", "nwpu");
-//4：employee对象和Person对象的比较，person指向的是一个Person对象
-        if (employee1.equals(person)) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        // 示例4.19
+//        Employee employee1 = new Employee("xiao","nwpu",200);
+//        Employee employee2 = new Employee("xiao","nwpu",200);
+//        Employee employee3 = employee1;
+//        //1：同一个Employee对象的比较
+//        if (employee1.equals(employee3)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+////2：内容相同的不同Employee对象的比较
+//        if (employee1.equals(employee2)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+//        Person person = employee2;
+////3：内容相同的不同Employee对象的比较，person指向的是一个Employee对象
+//        if (employee1.equals(person)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+//        person = new Person("xiao","nwpu");
+////4：employee对象和Person对象的比较，person指向的是一个Person对象
+//        if (employee1.equals(person)) {
+//            System.out.println("true");
+//        } else {
+//            System.out.println("false");
+//        }
+        // 示例5.2 多态方法的演示1
+        Employee employee = new Employee("Joe", "100 Ave", 3.0);
+        Person person = employee;
+        System.out.println(person.toString());
+
+        Person p = new Person("xiao", "nwpu");
+        System.out.println(p.toString());
     }
 }
