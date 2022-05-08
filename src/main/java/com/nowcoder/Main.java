@@ -1,7 +1,10 @@
-package com.interview.NC2020321;
+package com.nowcoder;
 
 import java.util.Scanner;
 
+/**
+ * @time 2020.3.21
+ */
 public class Main {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -11,7 +14,7 @@ public class Main {
 		int M = firstLine.charAt(2) - 48; // int被存为char 以ASCII值存入 要减去48
 		int[] scores = new int[N];
 		int[][] action = new int[M][3];
-		
+
 		// 获取初始成绩
 		String secondLine = in.nextLine();
 		String[] score = secondLine.split(" ");
@@ -33,7 +36,7 @@ public class Main {
 					action[x][j] = chars[j*2];
 				} else action[x][j] = chars[j*2] - 48;
 			}
-			
+
 //			for (int j = 0; j <= 2; j++) {
 //				action[x][j] = in.nextInt();
 //			}
@@ -41,7 +44,7 @@ public class Main {
 			if(x==M) break;
 		}
 		in.close();
-		
+
 		// 处理输入
 		for (int i = 0; i < M; i++) {
 			int[] scores_temp = new int[N];
