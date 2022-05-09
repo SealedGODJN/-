@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ7.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/NC2020321/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,14 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.HJ6">
+  <component name="RunManager" selected="应用程序.HJ11">
+    <configuration name="HJ11" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ11" />
+      <module name="helloworld" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HJ3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ3" />
       <module name="helloworld" />
@@ -145,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HJ7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ7" />
+    <configuration name="HJ8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ8" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
@@ -158,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.Generic.improve.Test" />
+    <configuration name="HJ9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ9" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.Generic.improve.*" />
+          <option name="PATTERN" value="com.nowcoder.huawei.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,19 +178,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Test (1)" />
-      <item itemvalue="应用程序.HJ7" />
+      <item itemvalue="应用程序.HJ11" />
       <item itemvalue="应用程序.HJ3" />
       <item itemvalue="应用程序.HJ5" />
       <item itemvalue="应用程序.HJ6" />
+      <item itemvalue="应用程序.HJ8" />
+      <item itemvalue="应用程序.HJ9" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.HJ9" />
+        <item itemvalue="应用程序.HJ8" />
         <item itemvalue="应用程序.HJ6" />
         <item itemvalue="应用程序.HJ5" />
         <item itemvalue="应用程序.HJ3" />
-        <item itemvalue="应用程序.HJ7" />
-        <item itemvalue="应用程序.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +375,8 @@
       <workItem from="1651588500566" duration="10302000" />
       <workItem from="1651902663991" duration="7433000" />
       <workItem from="1651939890244" duration="1082000" />
-      <workItem from="1651994409139" duration="5878000" />
+      <workItem from="1651994409139" duration="11257000" />
+      <workItem from="1652096261148" duration="2786000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -685,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651721452975</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <created>1652011064015</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1652011064015</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,7 +720,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成104：二叉树的最大深度&#10;3、完成111：二叉树的最小深度&#10;4、222.完全二叉树的节点个数&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对刷题进行总结归纳，复习第一周和第二周所学内容&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成110：二叉树是否平衡（递归）&#10;3、完成257：找出根节点到叶子节点的所有路径（递归 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
@@ -730,7 +744,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：今天测完《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
