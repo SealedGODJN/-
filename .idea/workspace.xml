@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <change afterPath="$PROJECT_DIR$/Data/Data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter8/DataOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter8/StaticInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ107.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/collections/TestRerfeneceMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/EduManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/ReflectDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/ReflectDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_450.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_450.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/java/Generic/improve" />
+    <property name="last_opened_file_path" value="C:/研究生/助教/courseSupport1_0912new" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,6 +85,7 @@
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
+    <option name="showLigatures" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,7 +108,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.DataOutput">
+  <component name="RunManager" selected="应用程序.TestRerfeneceMap">
     <configuration name="DataOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter8.DataOutput" />
       <module name="helloworld" />
@@ -119,25 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HJ1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ1" />
+    <configuration name="EduManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.EduManagement" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nowcoder.huawei.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HJ107" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ107" />
-      <module name="helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.huawei.*" />
+          <option name="PATTERN" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HJ9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ9" />
+    <configuration name="ReflectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.ReflectDemo" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nowcoder.huawei.*" />
+          <option name="PATTERN" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,12 +155,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter8.StaticInput" />
+    <configuration name="ReflectDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.ReflectDemo1" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.面向对象设计.chapter8.*" />
+          <option name="PATTERN" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRerfeneceMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.collections.TestRerfeneceMap" />
+      <module name="helloworld" />
+      <option name="VM_PARAMETERS" value="-Xms1M -Xmx1M" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.面向对象设计.chapter3.apache.common.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,19 +184,19 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.HJ11" />
-      <item itemvalue="应用程序.HJ9" />
-      <item itemvalue="应用程序.HJ107" />
-      <item itemvalue="应用程序.HJ1" />
-      <item itemvalue="应用程序.StaticInput" />
       <item itemvalue="应用程序.DataOutput" />
+      <item itemvalue="应用程序.ReflectDemo" />
+      <item itemvalue="应用程序.ReflectDemo1" />
+      <item itemvalue="应用程序.EduManagement" />
+      <item itemvalue="应用程序.TestRerfeneceMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TestRerfeneceMap" />
+        <item itemvalue="应用程序.EduManagement" />
+        <item itemvalue="应用程序.ReflectDemo1" />
+        <item itemvalue="应用程序.ReflectDemo" />
         <item itemvalue="应用程序.DataOutput" />
-        <item itemvalue="应用程序.StaticInput" />
-        <item itemvalue="应用程序.HJ1" />
-        <item itemvalue="应用程序.HJ107" />
-        <item itemvalue="应用程序.HJ9" />
       </list>
     </recent_temporary>
   </component>
@@ -381,6 +385,11 @@
       <workItem from="1652100977109" duration="942000" />
       <workItem from="1652263488740" duration="5009000" />
       <workItem from="1652520241335" duration="4684000" />
+      <workItem from="1652771641531" duration="9060000" />
+      <workItem from="1653037668503" duration="899000" />
+      <workItem from="1653212627013" duration="20000" />
+      <workItem from="1653395470871" duration="475000" />
+      <workItem from="1653396103944" duration="2783000" />
     </task>
     <task id="LOCAL-00001" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1637340282171</created>
@@ -711,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652103518582</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <created>1652771681260</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1652771681260</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +747,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对刷题进行总结归纳，复习第一周和第二周所学内容&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成110：二叉树是否平衡（递归）&#10;3、完成257：找出根节点到叶子节点的所有路径（递归 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【超级改进版】 | 回溯）&#10;3、257：找出根节点到叶子节点的所有路径【迭代法：利用栈来模拟递归】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
@@ -756,7 +771,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -864,18 +880,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ1.java</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/EduManagement.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="i" language="JAVA" />
-        <watch expression="j" language="JAVA" />
-        <watch expression="airNums" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

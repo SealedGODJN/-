@@ -84,4 +84,41 @@ public class Tree_450 {
             return cur.right;
         }
     }
+
+    /**
+     * 普通二叉树的删除——递归法
+     * 返回删除的节点
+     *
+     * @param root
+     * @param key
+     * @return
+     */
+    public TreeNode deleteNode_BinaryTree(TreeNode root, int key) {
+        if (root == null) return null;
+        if (root.val == key) {
+            if (root.right == null) { // 第二次操作目标值
+                return root.left;
+            }
+            TreeNode cur = root.right;
+            while (cur.left != null) {
+                cur = cur.left;
+            }
+            swap(root, cur); // 第一次操作目标值
+        }
+        root.left = deleteNode_BinaryTree(root.left, key);
+        root.right = deleteNode_BinaryTree(root.right, key);
+        return root;
+    }
+
+    /**
+     * 交换两个节点的值
+     *
+     * @param value1
+     * @param value2
+     */
+    public void swap(TreeNode value1, TreeNode value2) {
+        int temp = value1.val;
+        value1.val = value2.val;
+        value2.val = temp;
+    }
 }
