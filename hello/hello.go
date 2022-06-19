@@ -25,8 +25,12 @@ func main() {
 		exit status 1
 	*/
 
+	// A slice of names.
+	names := []string{"Gladys", "Samantha", "Darrin"}
+
 	// Request a greeting message
-	message, err := greetings.Hello("hjn")
+	// message, err := greetings.Hello("hjn")
+	message, err := greetings.Hellos(names)
 	// If an error was returned, print it to the console and
 	// exit the program
 	if err != nil {
