@@ -15,6 +15,7 @@ func Init(path string) {
 		return
 	}
 
+	//confirm the Path doesn't exist or the dir is empty
 	if stat, err := os.Stat(path); os.IsNotExist(err) {
 		err := os.Mkdir(path, FILE_MODE)
 		if err != nil {
@@ -35,13 +36,14 @@ func Init(path string) {
 		}
 	}
 
-	// create dir .git
+	//create dir .git
 	gitPath := filepath.Join(path, ".git")
 	err := os.Mkdir(gitPath, FILE_MODE)
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	//create file: config, description, HEAD
 	os.Create(filepath.Join(gitPath, "config"))
 	os.Create(filepath.Join(gitPath, "description"))
 	head, _ := os.Create(filepath.Join(gitPath, "HEAD"))
@@ -50,7 +52,7 @@ func Init(path string) {
 	//create dir: hooks, info, object, refs
 	os.Mkdir(filepath.Join(gitPath, "hooks"), FILE_MODE)
 	os.Mkdir(filepath.Join(gitPath, "info"), FILE_MODE)
-	os.Mkdir(filepath.Join(gitPath, "object"), FILE_MODE)
+	os.Mkdir(filepath.Join(gitPath, "objects"), FILE_MODE)
 	os.Mkdir(filepath.Join(gitPath, "refs"), FILE_MODE)
 
 	//create dir tags and heads in refs

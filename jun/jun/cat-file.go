@@ -12,29 +12,19 @@ import (
 )
 
 func CatFile(p bool, t bool, s bool, args []string) {
-	// -p参数：查询文件内容
-	// -t参数：查询文件类型
 	if !p && !t && !s {
-		log.Fatal("-s or -p or -t is needed!")
+		log.Fatal("a -p or -t is needed!")
 	}
-
 	objectId := args[len(args)-1]
 	objectDir := filepath.Join(".git", "objects", objectId[:2])
 
 	dir, err := ioutil.ReadDir(objectDir)
-	// 判断读目录里面的文件时是否出错
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	var data []byte
-
-	// 遍历dir里面的所有文件
-	// 找到符合自己要求的文件
 	for _, file := range dir {
 		if strings.HasPrefix(file.Name(), objectId[2:]) {
-			// 该文件名的前缀与命令行参数中输入的objectId的前缀相符
-			// 读取该文件名对应的文件
 			data, err = ioutil.ReadFile(filepath.Join(objectDir, file.Name()))
 			if err != nil {
 				log.Fatal(err)
@@ -42,14 +32,12 @@ func CatFile(p bool, t bool, s bool, args []string) {
 		}
 	}
 
-	// 由于读取到的文件是经过hash-object命令压缩过的
-	// 因此，需要解压缩该文件
+	//uncompress
 	reader := bytes.NewReader(data)
 	r, err := zlib.NewReader(reader)
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	var out bytes.Buffer
 	io.Copy(&out, r)
 
@@ -57,19 +45,17 @@ func CatFile(p bool, t bool, s bool, args []string) {
 	i := bytes.IndexByte(raw, ' ')
 	j := bytes.IndexByte(raw, '\u0000')
 
-	// 参数-t：show object type
 	if t {
-		// raw的格式为: blob len(data)+\u0000+data
 		objectType := raw[:i]
 		fmt.Printf("%s\n", objectType)
+
 	} else if s {
-		// 参数-s：show object size
 		objectSize := raw[i+1 : j]
 		fmt.Printf("%s\n", objectSize)
+
 	} else if p {
 		objectContent := raw[j+1:]
-		// 文件数据的最后可能存在换行符，因此，此处fmt.Printf不需要输出\n
-		// fmt.Printf("%s\n", objectContent)
+		//maybe there is a \n at the last of raw, so we don't need to add \n ? (+_+)...
 		fmt.Printf("%s", objectContent)
 	}
 }
