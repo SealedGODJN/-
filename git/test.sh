@@ -45,3 +45,27 @@ run cat-file -s $h1 > fileSize1
 git cat-file -s $h2 > fileSize2
 cmp fileSize1 fileSize2
 echo -e
+
+print "test git update-index --add, git ls-files --stage"
+cd runDir
+run update-index --add file.txt
+run ls-files --stage > ../stage1
+cd ../gitDir
+git update-index --add file.txt
+git ls-files --stage > ../stage2
+cd ..
+cmp stage1 stage2
+echo -e
+
+print "test git write-tree"
+cd runDir
+mkdir dir
+echo 123 > dir/file1
+echo abc > dir/file2
+run update-index --add dir/file1
+run update-index --add dir/file2
+run write-tree > treeobj1
+#mkdir ../../test-data
+#run cat-file -p $(<treeobj1) > ../../test-data/test-write-tree-data.txt
+run cat-file -p $(<treeobj1) > treeobj1Content
+cmp treeobj1Content ../../test-data/test-write-tree-data.txt

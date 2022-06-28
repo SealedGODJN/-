@@ -6,9 +6,6 @@ import (
 )
 
 func main() {
-	// flag.Parse()
-	// var command = flag.Arg(0)
-
 	// 取第二个参数
 	var command = os.Args[1]
 	os.Args = os.Args[1:] // 获取第二个参数之后的所有参数
@@ -32,6 +29,19 @@ func main() {
 
 		flag.Parse()
 		CatFile(*p, *t, *s, flag.Args())
+
+	case "update-index":
+		a := flag.Bool("add", false, "add file content to the index")
+		flag.Parse()
+		UpdateIndex(*a, flag.Args())
+
+	case "ls-files":
+		s := flag.Bool("stage", false, "Show staged contents' mode bits, object name and stage number")
+		flag.Parse()
+		LsFiles(*s)
+
+	case "write-tree":
+		WriteTree()
 	}
 
 }

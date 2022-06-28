@@ -42,18 +42,8 @@ func CatFile(p bool, t bool, s bool, args []string) {
 		}
 	}
 
-	// 由于读取到的文件是经过hash-object命令压缩过的
-	// 因此，需要解压缩该文件
-	reader := bytes.NewReader(data)
-	r, err := zlib.NewReader(reader)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var out bytes.Buffer
-	io.Copy(&out, r)
-
-	raw := out.Bytes()
+	// 解压缩object文件
+	raw := unCompressData(data)
 	i := bytes.IndexByte(raw, ' ')
 	j := bytes.IndexByte(raw, '\u0000')
 
@@ -72,4 +62,21 @@ func CatFile(p bool, t bool, s bool, args []string) {
 		// fmt.Printf("%s\n", objectContent)
 		fmt.Printf("%s", objectContent)
 	}
+}
+
+// 原本位于catfile中的第三步：解压缩文件
+func unCompressData(data []byte) []byte {
+	// 由于读取到的文件是经过hash-object命令压缩过的
+	// 因此，需要解压缩该文件
+	reader := bytes.NewReader(data)
+	r, err := zlib.NewReader(reader)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var out bytes.Buffer
+	io.Copy(&out, r)
+
+	raw := out.Bytes()
+	return raw
 }
