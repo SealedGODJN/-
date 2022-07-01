@@ -1,0 +1,9 @@
+AAA is: 123
+total 3.4M
+-rw-r--r-- 1 Administrator 197121   12 Jun  1 14:41 output.txt
+drwxr-xr-x 1 Administrator 197121    0 Jun  1 14:41 .
+-rwxr-xr-x 1 Administrator 197121   46 Jun  1 14:41 run.sh
+drwxr-xr-x 1 Administrator 197121    0 May 17 15:27 ..
+-rw-r--r-- 1 Administrator 197121 3.4M Feb  9 22:11 morris算法-二叉树的前中后序遍历.jpeg
+-rw-r--r-- 1 Administrator 197121   65 Feb  9 22:11 ClimbStairs_70.md
+-rw-r--r-- 1 Administrator 197121 2.0K Feb  9 22:11 FindBestValue_1300.md

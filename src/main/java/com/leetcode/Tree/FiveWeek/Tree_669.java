@@ -7,19 +7,58 @@ import com.leetcode.Tree.utils.PrintTree;
 import java.util.List;
 
 public class Tree_669 {
+//    /**
+//     * 递归法
+//     *
+//     * @param root
+//     * @param low
+//     * @param high
+//     * @return
+//     */
+//    public TreeNode trimBST(TreeNode root, int low, int high) {
+//        if (root == null) return null;
+//
+//        // 节点的值小于[low, high]，则返回该节点的右子树
+//        if (root.val < low) {
+//            return trimBST(root.right, low, high);
+//        }
+//        // 节点的值大于[low, high]，则返回该节点的左子树
+//        else if (root.val > high) {
+//            return trimBST(root.left, low, high);
+//        }
+//        root.left = trimBST(root.left, low, high);
+//        root.right = trimBST(root.right, low, high);
+//        return root;
+//    }
+
+    /**
+     * @param root
+     * @param low
+     * @param high
+     * @return
+     */
     public TreeNode trimBST(TreeNode root, int low, int high) {
         if (root == null) return null;
+        while (root != null && (root.val < low || root.val > high)) {
+            if (root.val < low) root = root.right; // 小于low 往右走
+            else root = root.left; // 大于low 往左走
+        }
+        TreeNode cur = root;
+        // 处理左孩子元素小于L的情况
+        while (cur != null) {
+            if (cur.left != null && cur.left.val < low) {
+                cur.left = cur.left.right;
+            }
+            cur = cur.left;
+        }
 
-        // 节点的值小于[low, high]，则返回该节点的右子树
-        if (root.val < low) {
-            return trimBST(root.right, low, high);
+        cur = root;
+        while (cur != null) {
+            if (cur.right != null && cur.right.val > high) {
+                cur.right = cur.right.left;
+            }
+            cur = cur.right;
         }
-        // 节点的值大于[low, high]，则返回该节点的左子树
-        else if (root.val > high) {
-            return trimBST(root.left, low, high);
-        }
-        root.left = trimBST(root.left, low, high);
-        root.right = trimBST(root.right, low, high);
         return root;
     }
 
