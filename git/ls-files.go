@@ -1,4 +1,4 @@
-package git
+package gitHJN
 
 import (
 	"fmt"
@@ -18,7 +18,7 @@ func LsFiles(s bool) {
 	entryList := getEntryListFromIndex()
 
 	for _, entry := range entryList.List {
-		fmt.Printf("%s %s %d  %s\n", entry.Mode, entry.Sha1, entry.Num, entry.Path)
+		fmt.Printf("%s %s %d %s\n", entry.Mode, entry.Sha1, entry.Num, entry.Path)
 	}
 
 }

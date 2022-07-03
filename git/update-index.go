@@ -1,4 +1,4 @@
-package git
+package gitHJN
 
 import (
 	"encoding/json"
@@ -41,13 +41,22 @@ func UpdateIndex(a bool, args []string) {
 	// path为文件的相对路径
 	path := args[len(args)-1]
 
-	// create an object for the file content if the object is not exist
-	sha1 := getSha1Str(path, "blob")
-	// 如果objects文件夹里面没有该文件对应的文件夹，则先把该文件的内容写入objects文件夹里面
+	// 重构，把原有的属性放入BlobObject
+	var blob BlobObject
+	blob.Path = path
+	sha1, data := getSha1AndRawData(blob)
 	if exist := isObjectExist(sha1); !exist {
 		// Hash-Object里面的writeObject方法【先重构Hash-Object，再去实现update-index的操作】
-		writeObject(sha1, getData(path, "blob"))
+		writeObject(sha1, data)
 	}
+
+	// // create an object for the file content if the object is not exist
+	// sha1 := getSha1Str(path, "blob")
+	// // 如果objects文件夹里面没有该文件对应的文件夹，则先把该文件的内容写入objects文件夹里面
+	// if exist := isObjectExist(sha1); !exist {
+	// 	// Hash-Object里面的writeObject方法【先重构Hash-Object，再去实现update-index的操作】
+	// 	writeObject(sha1, getData(path, "blob"))
+	// }
 
 	// 文件不存在于暂存区
 	// create file index
@@ -72,16 +81,16 @@ func UpdateIndex(a bool, args []string) {
 	}
 
 	// 文件不在暂存区里面，则新建暂存区的条目entry，然后加入到entryList中
-	entry := Entry("100644", sha1, 0, path, "blob")
+	entry := Entry{"100644", sha1, 0, path, "blob"}
 	entryList.List = append(entryList.List, entry)
 
 	// write entry-list into index
 	writeEntryListToIndex(entryList)
 }
 
-func isObjectExist(sha1 String) bool {
+func isObjectExist(sha1 string) bool {
 	// 获取objects目录下的所有objects文件，并于sha1进行对比
-	dir, err := ioutil.ReadDir(filepath.join(".git", "objects"))
+	dir, err := ioutil.ReadDir(filepath.Join(".git", "objects"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -95,6 +104,7 @@ func isObjectExist(sha1 String) bool {
 	// 二分查找会更快?
 	for _, v := range dir {
 		if prefix == v.Name() {
+			// return true
 			isExistDir = true
 		}
 	}
@@ -102,27 +112,26 @@ func isObjectExist(sha1 String) bool {
 		return false
 	}
 
-	// 原代码没有下面👇这一部分，我认为仍然需要检测object文件
+	// 原代码没有下面👇这一部分，我认为仍然需要检测该文件夹下的object文件是否存在
 
 	// 再在文件夹中判断该Objects文件是否存在
 	objectDir := filepath.Join(".git", "objects", prefix)
 
-	dir, err := ioutil.ReadDir(objectDir)
+	dir1, err1 := ioutil.ReadDir(objectDir)
 	// 判断读目录里面的文件时是否出错
-	if err != nil {
+	if err1 != nil {
 		log.Fatal(err)
 	}
 
-	var data []byte
-
 	// 遍历dir里面的所有文件
 	// 找到符合自己要求的文件
-	for _, file := range dir {
-		if strings.HasPrefix(file.Name(), objectId[2:]) {
+	for _, file := range dir1 {
+		if strings.HasPrefix(file.Name(), postfix) {
 			// 该文件名的前缀与命令行参数中输入的objectId的前缀相符
 			return true
 		}
 	}
+	return false
 }
 
 // 不理解该操作
@@ -135,7 +144,7 @@ func getEntryListFromIndex() *EntryList {
 	var entryList EntryList
 	if len(bytes) > 0 {
 		bytes = unCompressData(bytes)
-		err = json.Unmarsha1(bytes, &entryList)
+		err = json.Unmarshal(bytes, &entryList)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -144,7 +153,7 @@ func getEntryListFromIndex() *EntryList {
 }
 
 func writeEntryListToIndex(entryList *EntryList) {
-	bytes, err := json.Marsha1(entryList)
+	bytes, err := json.Marshal(entryList)
 	if err != nil {
 		log.Fatal(err)
 	}
