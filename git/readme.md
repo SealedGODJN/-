@@ -190,14 +190,15 @@ file.write(compressData)
 
 查看暂存区（index目录）的内容（不带参数的 ls-files 指令是列出当前目录包括子目录下的所有文件）
 
-
 ### （3）write-tree
 
 把暂存区的内容转换成一个 tree object
-
 
 ![1656828678515](image/readme/1656828678515.png)
 
 图1 tree的结构图
 
 对于文件夹我们需要递归下降解析 tree object
+
+
+## 4.commit object
