@@ -172,6 +172,50 @@ file.write(compressData)
 
 ## 3.tree object
 
+### git命令行实践
+
+#### 1、一个内容未被 git 记录的文件会被怎样记录？
+
+在.git目录中，新建一个文件后，执行update-index --add 文件，会将该文件加入暂存区，并记录在index条目中，并且在加入暂存区之前，先执行了hash-object命令（创建了一个blob object）
+
+
+#### 2、一个文件夹会被怎么记录？
+
+git 告诉我们不能添加一个空文件夹，需要在文件夹中添加文件
+
+update-index --add 命令也不支持对目录操作，支持对文件夹下的文件进行操作
+
+git的设计初衷是用来索引文件，因此，一般文件夹下面都需要有文件（可以设置.gitkeep或者.gitconfig）
+
+
+#### 3、write-tree命令
+
+write-tree将暂存区的内容保存为一个tree object，该tree object的内容就是index的暂存区文件列表
+
+```bash
+Administrator@SEALEDGODJN MINGW64 ~/Desktop/git-test (master)
+$ git write-tree
+dee1f9349126a50a52a4fdb01ba6f573fa309e8f
+
+Administrator@SEALEDGODJN MINGW64 ~/Desktop/git-test (master)
+$ git cat-file -t dee1
+tree
+
+Administrator@SEALEDGODJN MINGW64 ~/Desktop/git-test (master)
+$ git cat-file -p dee1
+040000 tree 374e190215e27511116812dc3d2be4c69c90dbb0    dir
+100644 blob df7af2c382e49245443687973ceb711b2b74cb4a    file.txt
+100644 blob 8baef1b4abc478178b004d62031cf7fe6db6f903    new.txt
+
+```
+
+注意：
+
+在保存树对象的过程中，git 为目录 `dir` 创建了一个tree对象
+
+如果该文件在根目录下，则为blob对象
+
+
 ### （1）update-index
 
 --add
@@ -199,6 +243,5 @@ file.write(compressData)
 图1 tree的结构图
 
 对于文件夹我们需要递归下降解析 tree object
-
 
 ## 4.commit object

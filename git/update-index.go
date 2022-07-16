@@ -88,7 +88,7 @@ func UpdateIndex(a bool, args []string) {
 	writeEntryListToIndex(entryList)
 }
 
-func isObjectExist(sha1 string) bool {
+func isObjectExist(sha1 string) (bool, string) {
 	// 获取objects目录下的所有objects文件，并于sha1进行对比
 	dir, err := ioutil.ReadDir(filepath.Join(".git", "objects"))
 	if err != nil {
@@ -109,7 +109,7 @@ func isObjectExist(sha1 string) bool {
 		}
 	}
 	if isExistDir == false {
-		return false
+		return false, ""
 	}
 
 	// 原代码没有下面👇这一部分，我认为仍然需要检测该文件夹下的object文件是否存在
@@ -128,10 +128,10 @@ func isObjectExist(sha1 string) bool {
 	for _, file := range dir1 {
 		if strings.HasPrefix(file.Name(), postfix) {
 			// 该文件名的前缀与命令行参数中输入的objectId的前缀相符
-			return true
+			return true, file.Name()
 		}
 	}
-	return false
+	return false, ""
 }
 
 // 不理解该操作

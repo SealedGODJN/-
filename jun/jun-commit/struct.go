@@ -1,4 +1,4 @@
-package gitHJN
+package main
 
 import (
 	"bytes"
@@ -8,37 +8,30 @@ import (
 	"strings"
 )
 
+//descripe an item in index and tree object
 type EntryList struct {
 	List []Entry
 }
 
 type Entry struct {
-	Mode string // 10644
+	Mode string
 	Sha1 string
 	Num  int
 	Path string
 	Type string
 }
 
-// type TreeObject struct {
-// 	List []Entry
-// 	sha1 string
-// }
-
-// 重构代码 2022.7.3
-
 type Object interface {
 	getContent() []byte
 	getType() string
 }
 
-type BlobObject struct {
+type BlobOjbect struct {
 	Path string
 	Sha1 string
-	t    string // 参数 -t
 }
 
-func (blob *BlobObject) getContent() []byte {
+func (blob *BlobOjbect) getContent() []byte {
 	file, err := ioutil.ReadFile(blob.Path)
 	if err != nil {
 		log.Fatal(err)
@@ -46,20 +39,19 @@ func (blob *BlobObject) getContent() []byte {
 	return file
 }
 
-func (blob *BlobObject) getType() string {
+func (blob *BlobOjbect) getType() string {
 	return "blob"
 }
 
 type TreeObject struct {
 	List []Entry
 	Sha1 string
-	t    string // 新增
 }
 
 func (tree *TreeObject) getContent() []byte {
 	var bytes bytes.Buffer
 	for _, entry := range tree.List {
-		bytes.WriteString(fmt.Sprintf("%s %s %s %s\n", entry.Mode, entry.Type, entry.Sha1, entry.Path))
+		bytes.WriteString(fmt.Sprintf("%s %s %s	%s\n", entry.Mode, entry.Type, entry.Sha1, entry.Path))
 	}
 	return bytes.Bytes()
 }
@@ -68,8 +60,8 @@ func (tree *TreeObject) getType() string {
 	return "tree"
 }
 
-type CommitObject struct {
-	Sha1        string // 生成的commit object 对应的sha256值
+type CommitOjbect struct {
+	Sha1        string
 	parent      string
 	message     string
 	treeObjSha1 string
@@ -78,10 +70,9 @@ type CommitObject struct {
 	date        string
 }
 
-func (commit *CommitObject) getContent() []byte {
+func (commit *CommitOjbect) getContent() []byte {
 	var bytes bytes.Buffer
 	bytes.WriteString(fmt.Sprintf("tree %s\n", commit.treeObjSha1))
-	// commit的parent有可能未指定
 	if commit.parent != "" {
 		bytes.WriteString(fmt.Sprintf("parent %s\n", commit.parent))
 	}
@@ -92,11 +83,11 @@ func (commit *CommitObject) getContent() []byte {
 	return bytes.Bytes()
 }
 
-func (commit *CommitObject) getType() string {
+func (commit *CommitOjbect) getType() string {
 	return "commit"
 }
 
-func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
+func (commit *CommitOjbect) parseCommitObj(b []byte) *CommitOjbect {
 	buf := bytes.NewBuffer(b)
 	line1, err := buf.ReadString('\n')
 	if err != nil {
@@ -108,7 +99,6 @@ func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// parent不一定指明
 	if strings.HasPrefix(line2, "parent") {
 		commit.parent = line2[7 : len(line2)-2]
 
@@ -143,7 +133,6 @@ func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
 	s := strings.Split(line4, " ")
 	commit.committer = s[1]
 
-	// 中间这一空行（需要忽略）
 	_, err = buf.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
