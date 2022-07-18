@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <change afterPath="$PROJECT_DIR$/leetcode/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/Fork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/TestWordGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_108.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/RandomMACAddressGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JavaLesson/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_669.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_669.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Fork">
+  <component name="RunManager" selected="应用程序.RandomMACAddressGenerator">
     <configuration name="EduManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.EduManagement" />
       <module name="helloworld" />
@@ -126,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.ReflectDemo1" />
-      <module name="helloworld" />
+    <configuration name="RandomMACAddressGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.RandomMACAddressGenerator" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.面向对象设计.chapter3.apache.common.lang3.*" />
+          <option name="PATTERN" value="com.NPU.上海出差.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,19 +163,19 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.HJ11" />
+      <item itemvalue="应用程序.RandomMACAddressGenerator" />
       <item itemvalue="应用程序.Fork" />
       <item itemvalue="应用程序.Tree_669" />
-      <item itemvalue="应用程序.ReflectDemo1" />
       <item itemvalue="应用程序.EduManagement" />
       <item itemvalue="应用程序.TestRerfeneceMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.RandomMACAddressGenerator" />
         <item itemvalue="应用程序.Fork" />
         <item itemvalue="应用程序.Tree_669" />
         <item itemvalue="应用程序.TestRerfeneceMap" />
         <item itemvalue="应用程序.EduManagement" />
-        <item itemvalue="应用程序.ReflectDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -386,14 +381,11 @@
       <workItem from="1655778873236" duration="685000" />
       <workItem from="1656380143942" duration="716000" />
       <workItem from="1656380887200" duration="24000" />
-      <workItem from="1656645265947" duration="244000" />
-    </task>
-    <task id="LOCAL-00002" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1637340297165</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1637340297165</updated>
+      <workItem from="1656645265947" duration="3348000" />
+      <workItem from="1656727321592" duration="705000" />
+      <workItem from="1656902799591" duration="330000" />
+      <workItem from="1658113636386" duration="335000" />
+      <workItem from="1658116912828" duration="595000" />
     </task>
     <task id="LOCAL-00003" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成一道leetcode，String28&#10;3、需要对Offer 5 进行修改&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1638093760410</created>
@@ -731,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653563014718</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <created>1656645585330</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1656645585331</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -750,7 +749,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成100：相同的树【递归】&#10;3、完成100【迭代】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、准备复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、完成复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
@@ -775,7 +773,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;3、完成了面向对象Java教程的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
