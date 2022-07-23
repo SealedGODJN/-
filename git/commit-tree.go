@@ -33,7 +33,7 @@ func CommitTree(treeObjSha1 string, p string, m string) {
 			fmt.Printf("The parent commit object is not exist!")
 			return
 		}
-		parentObjectType := getCatFileStr(false, true, false, parentSha1)
+		parentObjectType := getCatFileStr(false, true, false, []string{parentSha1})
 		if parentObjectType != "commit" {
 			fmt.Printf("The parent commit object inputed is not commit object!")
 			return
