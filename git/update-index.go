@@ -28,11 +28,12 @@ objects/df/7af2c382e49245443687973ceb711b2b74cb4a
 
 $ git ls-files --stage
 100644 df7af2c382e49245443687973ceb711b2b74cb4a 0       file.txt
-我们发现缓冲区是这样来存储我们的添加记录的：一个文件模式的代号，文件内容的 blob object，一个数字和文件的名字。
+我们发现缓冲区是这样来存储我们的添加记录的：
+一个文件模式的代号，文件内容的 blob object，一个数字和文件的名字。
 
 git update-index更新暂存区，官方的这条指令是带有很多参数的，我们只实现 --add，也就是添加文件到暂存区。
-if 第一次添加文件 进入 <code>缓冲区</code> 我们需要创建一个index文件
-if index文件已经存在 则 直接把暂存区的内容读取出来（需要解压）
+if 要添加的文件不在objects数据库中，则 进入 <code>缓冲区</code> 我们需要创建一个index目录，同时，将该文件添加到objects目录中
+if 要添加的文件已经存在于objects数据中 则 直接把暂存区index的内容读取出来（需要解压uncompress）
 */
 func UpdateIndex(a bool, args []string) {
 	if !a {
@@ -41,10 +42,12 @@ func UpdateIndex(a bool, args []string) {
 	// path为文件的相对路径
 	path := args[len(args)-1]
 
-	// 重构，把原有的属性放入BlobObject
+	// 重构，把原来用到的属性放入BlobObject
 	var blob BlobObject
 	blob.Path = path
 	sha1, data := getSha1AndRawData(blob)
+
+	// 文件不存在于objects目录中
 	if exist := isObjectExist(sha1); !exist {
 		// Hash-Object里面的writeObject方法【先重构Hash-Object，再去实现update-index的操作】
 		writeObject(sha1, data)
@@ -58,8 +61,7 @@ func UpdateIndex(a bool, args []string) {
 	// 	writeObject(sha1, getData(path, "blob"))
 	// }
 
-	// 文件不存在于暂存区
-	// create file index
+	// 暂存区目录index不存在
 	if _, err := os.Stat(indexPath); os.IsNotExist(err) {
 		// 创建.git/index文件夹
 		_, err := os.Create(indexPath)
@@ -88,6 +90,8 @@ func UpdateIndex(a bool, args []string) {
 	writeEntryListToIndex(entryList)
 }
 
+// 判断sha1对应的文件是否在objects目录中
+// 有则返回true，没有返回false
 func isObjectExist(sha1 string) bool {
 	// 获取objects目录下的所有objects文件，并于sha1进行对比
 	dir, err := ioutil.ReadDir(filepath.Join(".git", "objects"))
@@ -153,12 +157,15 @@ func getEntryListFromIndex() *EntryList {
 }
 
 func writeEntryListToIndex(entryList *EntryList) {
+	// 序列化
 	bytes, err := json.Marshal(entryList)
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	// 压缩
 	bytes = compress(bytes)
+	// 把序列化后的数据bytes写入index文件夹
 	err = ioutil.WriteFile(indexPath, bytes, os.ModePerm)
 	if err != nil {
 		log.Fatal(err)
