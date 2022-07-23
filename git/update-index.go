@@ -48,7 +48,7 @@ func UpdateIndex(a bool, args []string) {
 	sha1, data := getSha1AndRawData(blob)
 
 	// 文件不存在于objects目录中
-	if exist := isObjectExist(sha1); !exist {
+	if exist, _ := isObjectExist(sha1); !exist {
 		// Hash-Object里面的writeObject方法【先重构Hash-Object，再去实现update-index的操作】
 		writeObject(sha1, data)
 	}
@@ -90,13 +90,7 @@ func UpdateIndex(a bool, args []string) {
 	writeEntryListToIndex(entryList)
 }
 
-<<<<<<< HEAD
-// 判断sha1对应的文件是否在objects目录中
-// 有则返回true，没有返回false
-func isObjectExist(sha1 string) bool {
-=======
 func isObjectExist(sha1 string) (bool, string) {
->>>>>>> 706b32130b7c8440c014961291c85cabacd41dab
 	// 获取objects目录下的所有objects文件，并于sha1进行对比
 	dir, err := ioutil.ReadDir(filepath.Join(".git", "objects"))
 	if err != nil {

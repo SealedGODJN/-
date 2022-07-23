@@ -14,6 +14,15 @@ import (
 func CatFile(p bool, t bool, s bool, args []string) {
 	// -p参数：查询文件内容
 	// -t参数：查询文件类型
+	if !p {
+		fmt.Printf("%s\n", getCatFileStr(p, t, s, args))
+	} else {
+		// maybe there is a \n at the last of raw, so we don't need to add \n ? (+_+)...
+		fmt.Printf("%s", getCatFileStr(p, t, s, args))
+	}
+}
+
+func getCatFileStr(p bool, t bool, s bool, args []string) string {
 	if !p && !t && !s {
 		log.Fatal("-s or -p or -t is needed!")
 	}
@@ -51,17 +60,17 @@ func CatFile(p bool, t bool, s bool, args []string) {
 	if t {
 		// raw的格式为: blob len(data)+\u0000+data
 		objectType := raw[:i]
-		fmt.Printf("%s\n", objectType)
+		return string(objectType)
 	} else if s {
 		// 参数-s：show object size
 		objectSize := raw[i+1 : j]
-		fmt.Printf("%s\n", objectSize)
+		return string(objectSize)
 	} else if p {
 		objectContent := raw[j+1:]
 		// 文件数据的最后可能存在换行符，因此，此处fmt.Printf不需要输出\n
-		// fmt.Printf("%s\n", objectContent)
-		fmt.Printf("%s", objectContent)
+		return string(objectContent)
 	}
+	return ""
 }
 
 // 原本位于catfile中的第三步：解压缩文件
