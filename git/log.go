@@ -3,19 +3,32 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"io/ioutil"
+	"log"
+	"path/filepath"
+	"strings"
 )
 
-func Log(objSha1 string) {
-	if objSha1 == "" || len(objSha1) < 4 {
-		fmt.Printf("Not a valid object name %s", objSha1)
-		return
+// 之前没有reference，现在存在reference，因此，对于git log master，需要去commit中寻找对应的分支
+func Log(args []string) {
+	// if objSha1 == "" || len(objSha1) < 4 {
+	// 	fmt.Printf("Not a valid object name %s", objSha1)
+	// 	return
+	// }
+
+	// exist, curObjsha1 := isObjectExist(objSha1)
+	// if !exist {
+	// 	fmt.Printf("Not a valid object name %s\n", objSha1)
+	// 	return
+	// }
+
+	var curObjsha1 string
+	if len(args) <= 1 {
+		curObjsha1 = logWithoutArgs()
+	} else {
+		curObjsha1 = logWithArgs(args)
 	}
 
-	exist, curObjsha1 := isObjectExist(objSha1)
-	if !exist {
-		fmt.Printf("Not a valid object name %s\n", objSha1)
-		return
-	}
 	objStr := getCatFileStr(true, false, false, []string{curObjsha1})
 	var commitObj CommitObject
 	commitObj.Sha1 = curObjsha1
@@ -24,6 +37,36 @@ func Log(objSha1 string) {
 	var buf bytes.Buffer
 	printLog(&commitObj, &buf)
 	fmt.Printf("%s", buf.Bytes())
+}
+
+func logWithoutArgs() string {
+	// get objSha1 from HEAD
+	bytes, err := ioutil.ReadFile(filepath.Join(".git", "HEAD"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	s := string(bytes)
+	i := strings.Index(s, " ")
+	// 读取的文件内容示例： refs: /refs/heads/master
+	path := s[i+1:]
+
+	sha1bytes, err := ioutil.ReadFile(filepath.Join(".git", path))
+	if err != nil {
+		log.Fatal(err)
+	}
+	return string(sha1bytes)
+}
+
+func logWithArgs(args []string) string {
+	argsStr := args[1]
+	exist, curObjsha1 := isObjectExist(argsStr)
+	if !exist {
+		exist, curObjsha1 = isRefExist(argsStr)
+		if !exist {
+			log.Fatalf("Not a valid object name or reference name %s\n", argsStr)
+		}
+	}
+	return curObjsha1
 }
 
 func printLog(commit *CommitObject, buf *bytes.Buffer) {

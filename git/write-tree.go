@@ -21,10 +21,11 @@ $ git cat-file -p dee1
 对于文件夹
 我们需要递归下降解析 tree object
 */
-func WriteTree() {
+func WriteTree() *TreeObject {
 	entryList := getEntryListFromIndex()
 	treeObj := getTreeObject(entryList.List)
 	fmt.Printf("%s\n", treeObj.Sha1)
+	return treeObj
 }
 
 func getTreeObject(list []Entry) *TreeObject {
