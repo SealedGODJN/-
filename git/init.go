@@ -1,4 +1,4 @@
-package gitHJN
+package main
 
 import (
 	"fmt"

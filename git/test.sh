@@ -64,8 +64,33 @@ echo 123 > dir/file1
 echo abc > dir/file2
 run update-index --add dir/file1
 run update-index --add dir/file2
-run write-tree > treeobj1
+run write-tree > treeobj1sha1
 #mkdir ../../test-data
 #run cat-file -p $(<treeobj1) > ../../test-data/test-write-tree-data.txt
-run cat-file -p $(<treeobj1) > treeobj1Content
-cmp treeobj1Content ../../test-data/test-write-tree-data.txt
+run cat-file -p $(<treeobj1sha1) > treeobjContent
+cmp treeobjContent ../../test-data/test-write-tree-data.txt
+echo -e
+
+print "test commit-tree, log"
+run commit-tree $(<treeobj1sha1) -m 'first commit' > commit1Sha1
+echo version2 > file.txt
+run update-index --add file.txt
+run write-tree > treeobj2sha1
+run commit-tree $(<treeobj2sha1) -p $(<commit1Sh1) -m 'second commit' > commit2Sha1
+run log $(<commit2Sha1) > log
+echo -e show log :
+cat log
+echo -e
+
+print "test update-ref"
+run update-ref refs/heads/master $(<commit2Sha1)
+run log master
+
+print "test symbolic-ref"
+run update-ref refs/heads/test $(<commit1Sha1)
+run symbolic-ref HEAD refs/heads/test
+run log
+
+print "test commit"
+run commit -m 'test commit'
+run log

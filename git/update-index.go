@@ -1,4 +1,4 @@
-package gitHJN
+package main
 
 import (
 	"encoding/json"
@@ -45,7 +45,7 @@ func UpdateIndex(a bool, args []string) {
 	// 重构，把原来用到的属性放入BlobObject
 	var blob BlobObject
 	blob.Path = path
-	sha1, data := getSha1AndRawData(blob)
+	sha1, data := getSha1AndRawData(&blob)
 
 	// 文件不存在于objects目录中
 	if exist, _ := isObjectExist(sha1); !exist {

@@ -1,4 +1,4 @@
-package gitHJN
+package main
 
 import (
 	// "bytes"
@@ -10,10 +10,10 @@ import (
 	"time"
 )
 
-func CommitTree(treeObjSha1 string, p string, m string) {
+func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitObject {
 	if treeObjSha1 == "" || len(treeObjSha1) < 4 {
 		fmt.Printf("Not a valid object name %s\n", treeObjSha1)
-		return
+		// return
 	}
 	var commitObj CommitObject
 
@@ -22,7 +22,7 @@ func CommitTree(treeObjSha1 string, p string, m string) {
 	if !exist {
 		// 如果tree object 不存在，则无法commit tree
 		fmt.Printf("The tree object is not exist")
-		return
+		// return
 	}
 	commitObj.treeObjSha1 = treeObjSha1
 	if p != "" {
@@ -31,12 +31,12 @@ func CommitTree(treeObjSha1 string, p string, m string) {
 		// parent commit不存在
 		if !exist {
 			fmt.Printf("The parent commit object is not exist!")
-			return
+			// return
 		}
 		parentObjectType := getCatFileStr(false, true, false, []string{parentSha1})
 		if parentObjectType != "commit" {
 			fmt.Printf("The parent commit object inputed is not commit object!")
-			return
+			// return
 		}
 		commitObj.parent = parentSha1
 	}
@@ -47,13 +47,22 @@ func CommitTree(treeObjSha1 string, p string, m string) {
 	commitObj.committer = "SealedGodJn<1286039722@qq.com>"
 
 	commitObj.date = fmt.Sprintf("%s", time.Now())
-	commitObj.message = m
+	// commitObj.message = m
+	commitObj.message = getMessage(m, rest)
 
 	objSha1, data := getSha1AndRawData(&commitObj)
 	commitObj.Sha1 = objSha1
 	writeObject(objSha1, data)
 
 	fmt.Sprintf("%s\n", objSha1)
+	return &commitObj
+}
+
+func getMessage(m string, rest []string) string {
+	for _, s := range rest {
+		m += " " + s
+	}
+	return m
 }
 
 // func getObjectType(objectId string) (string, string, string) {
