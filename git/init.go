@@ -50,7 +50,7 @@ func Init(path string) {
 	//create dir: hooks, info, object, refs
 	os.Mkdir(filepath.Join(gitPath, "hooks"), FILE_MODE)
 	os.Mkdir(filepath.Join(gitPath, "info"), FILE_MODE)
-	os.Mkdir(filepath.Join(gitPath, "object"), FILE_MODE)
+	os.Mkdir(filepath.Join(gitPath, "objects"), FILE_MODE)
 	os.Mkdir(filepath.Join(gitPath, "refs"), FILE_MODE)
 
 	//create dir tags and heads in refs

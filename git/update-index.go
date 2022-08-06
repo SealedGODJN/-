@@ -68,6 +68,7 @@ func UpdateIndex(a bool, args []string) {
 		if err != nil {
 			log.Fatal(err)
 		}
+		log.Println("INFO:已创建.git/index文件")
 	}
 
 	// read entry-list from index
@@ -94,6 +95,7 @@ func isObjectExist(sha1 string) (bool, string) {
 	// 获取objects目录下的所有objects文件，并于sha1进行对比
 	dir, err := ioutil.ReadDir(filepath.Join(".git", "objects"))
 	if err != nil {
+		log.Printf("ERROR:该路径不存在-%s", ".git/objects")
 		log.Fatal(err)
 	}
 
@@ -110,7 +112,7 @@ func isObjectExist(sha1 string) (bool, string) {
 			isExistDir = true
 		}
 	}
-	if isExistDir == false {
+	if !isExistDir {
 		return false, ""
 	}
 
@@ -122,6 +124,7 @@ func isObjectExist(sha1 string) (bool, string) {
 	dir1, err1 := ioutil.ReadDir(objectDir)
 	// 判断读目录里面的文件时是否出错
 	if err1 != nil {
+		log.Printf("ERROR:目录不存在-%s", objectDir)
 		log.Fatal(err)
 	}
 
@@ -141,11 +144,13 @@ func isObjectExist(sha1 string) (bool, string) {
 func getEntryListFromIndex() *EntryList {
 	bytes, err := ioutil.ReadFile(indexPath)
 	if err != nil {
+		log.Println(".git/index文件夹不存在")
 		log.Fatal(err)
 	}
 	var entryList EntryList
 	if len(bytes) > 0 {
 		bytes = unCompressData(bytes)
+		// 反序列化
 		err = json.Unmarshal(bytes, &entryList)
 		if err != nil {
 			log.Fatal(err)

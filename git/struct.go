@@ -35,12 +35,12 @@ type Object interface {
 type BlobObject struct {
 	Path string
 	Sha1 string
-	t    string // 参数 -t
 }
 
 func (blob *BlobObject) getContent() []byte {
 	file, err := ioutil.ReadFile(blob.Path)
 	if err != nil {
+		log.Printf("ERROR:未找到该文件-%s", blob.Path)
 		log.Fatal(err)
 	}
 	return file
@@ -53,7 +53,6 @@ func (blob *BlobObject) getType() string {
 type TreeObject struct {
 	List []Entry
 	Sha1 string
-	t    string // 新增
 }
 
 func (tree *TreeObject) getContent() []byte {

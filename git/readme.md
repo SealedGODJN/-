@@ -178,7 +178,6 @@ file.write(compressData)
 
 在.git目录中，新建一个文件后，执行update-index --add 文件，会将该文件加入暂存区，并记录在index条目中，并且在加入暂存区之前，先执行了hash-object命令（创建了一个blob object）
 
-
 #### 2、一个文件夹会被怎么记录？
 
 git 告诉我们不能添加一个空文件夹，需要在文件夹中添加文件
@@ -186,7 +185,6 @@ git 告诉我们不能添加一个空文件夹，需要在文件夹中添加文�
 update-index --add 命令也不支持对目录操作，支持对文件夹下的文件进行操作
 
 git的设计初衷是用来索引文件，因此，一般文件夹下面都需要有文件（可以设置.gitkeep或者.gitconfig）
-
 
 #### 3、write-tree命令
 
@@ -214,7 +212,6 @@ $ git cat-file -p dee1
 在保存树对象的过程中，git 为目录 `dir` 创建了一个tree对象
 
 如果该文件在根目录下，则为blob对象
-
 
 ### （1）update-index
 
@@ -245,3 +242,14 @@ $ git cat-file -p dee1
 对于文件夹我们需要递归下降解析 tree object
 
 ## 4.commit object
+
+
+# 问题
+
+1、创建objects目录出问题（名字写错，写成了object）
+
+
+2、
+
+
+3、

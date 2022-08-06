@@ -43,10 +43,12 @@ func UpdateRef(args []string) {
 func isRefExist(ref string) (bool, string) {
 	path := filepath.Join(".git", "refs", "heads", ref)
 	if _, err := os.Stat(path); os.IsNotExist(err) {
+		log.Printf("ERROR:未找到该reference-%s", ref)
 		return false, ""
 	}
 	bytes, err := ioutil.ReadFile(path)
 	if err != nil {
+		log.Printf("ERROR:未找到该文件-%s", path)
 		log.Fatal(err)
 	}
 	return true, string(bytes)

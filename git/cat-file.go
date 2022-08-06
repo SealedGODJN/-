@@ -22,6 +22,9 @@ func CatFile(p bool, t bool, s bool, args []string) {
 	}
 }
 
+// -p pretty print 打印object内容
+// -t type object类型
+// -s size object大小
 func getCatFileStr(p bool, t bool, s bool, args []string) string {
 	if !p && !t && !s {
 		log.Fatal("-s or -p or -t is needed!")
@@ -80,6 +83,7 @@ func unCompressData(data []byte) []byte {
 	reader := bytes.NewReader(data)
 	r, err := zlib.NewReader(reader)
 	if err != nil {
+		log.Println("无法读取并解压缩该文件")
 		log.Fatal(err)
 	}
 

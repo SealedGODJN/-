@@ -3,6 +3,8 @@ package main
 import (
 	// "bytes"
 	"fmt"
+	"log"
+
 	// "io/ioutil"
 	// "log"
 	// "path/filepath"
@@ -12,7 +14,7 @@ import (
 
 func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitObject {
 	if treeObjSha1 == "" || len(treeObjSha1) < 4 {
-		fmt.Printf("Not a valid object name %s\n", treeObjSha1)
+		log.Fatalf("Not a valid object name %s\n", treeObjSha1)
 		// return
 	}
 	var commitObj CommitObject
@@ -21,7 +23,7 @@ func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitOb
 	exist, treeObjSha1 := isObjectExist(treeObjSha1)
 	if !exist {
 		// 如果tree object 不存在，则无法commit tree
-		fmt.Printf("The tree object is not exist")
+		log.Fatalf("The tree object is not exist")
 		// return
 	}
 	commitObj.treeObjSha1 = treeObjSha1
@@ -54,7 +56,7 @@ func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitOb
 	commitObj.Sha1 = objSha1
 	writeObject(objSha1, data)
 
-	fmt.Sprintf("%s\n", objSha1)
+	fmt.Printf("%s\n", objSha1)
 	return &commitObj
 }
 

@@ -88,14 +88,16 @@ func writeObject(idStr string, data []byte) {
 	err := os.MkdirAll(objectDir, os.ModePerm)
 	// 判断创建文件夹是否出错
 	if err != nil {
+		log.Println("ERROR:无法设置文件夹的路径.git/objects/idStr[:2]")
 		log.Fatal(err)
 	}
 
 	// 设置object文件的路径
 	objectFile := filepath.Join(objectDir, postfix)
 	file, err := os.Create(objectFile)
-	// 判断创建文件是否出错
+	// 判断创建object文件是否出错
 	if err != nil {
+		log.Println("ERROR:无法创建文件.git/objects/idStr[:2]/idStr[2:]")
 		log.Fatal(err)
 	}
 
