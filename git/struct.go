@@ -8,24 +8,18 @@ import (
 	"strings"
 )
 
+//descripe an item in index and tree object
 type EntryList struct {
 	List []Entry
 }
 
 type Entry struct {
-	Mode string // 10644
+	Mode string
 	Sha1 string
 	Num  int
 	Path string
 	Type string
 }
-
-// type TreeObject struct {
-// 	List []Entry
-// 	sha1 string
-// }
-
-// 重构代码 2022.7.3
 
 type Object interface {
 	getContent() []byte
@@ -40,7 +34,6 @@ type BlobObject struct {
 func (blob *BlobObject) getContent() []byte {
 	file, err := ioutil.ReadFile(blob.Path)
 	if err != nil {
-		log.Printf("ERROR:未找到该文件-%s", blob.Path)
 		log.Fatal(err)
 	}
 	return file
@@ -58,7 +51,7 @@ type TreeObject struct {
 func (tree *TreeObject) getContent() []byte {
 	var bytes bytes.Buffer
 	for _, entry := range tree.List {
-		bytes.WriteString(fmt.Sprintf("%s %s %s %s\n", entry.Mode, entry.Type, entry.Sha1, entry.Path))
+		bytes.WriteString(fmt.Sprintf("%s %s %s	%s\n", entry.Mode, entry.Type, entry.Sha1, entry.Path))
 	}
 	return bytes.Bytes()
 }
@@ -68,7 +61,7 @@ func (tree *TreeObject) getType() string {
 }
 
 type CommitObject struct {
-	Sha1        string // 生成的commit object 对应的sha256值
+	Sha1        string
 	parent      string
 	message     string
 	treeObjSha1 string
@@ -80,13 +73,11 @@ type CommitObject struct {
 func (commit *CommitObject) getContent() []byte {
 	var bytes bytes.Buffer
 	bytes.WriteString(fmt.Sprintf("tree %s\n", commit.treeObjSha1))
-	// commit的parent有可能未指定
 	if commit.parent != "" {
 		bytes.WriteString(fmt.Sprintf("parent %s\n", commit.parent))
 	}
 	bytes.WriteString(fmt.Sprintf("author %s %s\n", commit.author, commit.date))
 	bytes.WriteString(fmt.Sprintf("committer %s %s\n", commit.committer, commit.date))
-	bytes.WriteString(fmt.Sprintf("\n"))
 	bytes.WriteString(fmt.Sprintf("%s\n", commit.message))
 	return bytes.Bytes()
 }
@@ -97,6 +88,7 @@ func (commit *CommitObject) getType() string {
 
 func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
 	buf := bytes.NewBuffer(b)
+
 	line1, err := buf.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
@@ -107,7 +99,6 @@ func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// parent不一定指明
 	if strings.HasPrefix(line2, "parent") {
 		commit.parent = line2[7 : len(line2)-2]
 
@@ -141,12 +132,6 @@ func (commit *CommitObject) parseCommitObj(b []byte) *CommitObject {
 	}
 	s := strings.Split(line4, " ")
 	commit.committer = s[1]
-
-	// 中间这一空行（需要忽略）
-	_, err = buf.ReadString('\n')
-	if err != nil {
-		log.Fatal(err)
-	}
 
 	line6, err := buf.ReadString('\n')
 	if err != nil {
