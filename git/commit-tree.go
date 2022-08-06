@@ -1,21 +1,15 @@
 package main
 
 import (
-	// "bytes"
 	"fmt"
 	"log"
-
-	// "io/ioutil"
-	// "log"
-	// "path/filepath"
-	// "strings"
 	"time"
 )
 
 func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitObject {
 	if treeObjSha1 == "" || len(treeObjSha1) < 4 {
 		log.Fatalf("Not a valid object name %s\n", treeObjSha1)
-		// return
+		// return nil
 	}
 	var commitObj CommitObject
 
@@ -27,19 +21,20 @@ func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitOb
 		// return
 	}
 	commitObj.treeObjSha1 = treeObjSha1
+
 	if p != "" {
 		// TODO: 应该还要验证这个parentSha1对应的object的type（parent是commit object才能设置为本次commit的parent）
 		exist, parentSha1 := isObjectExist(p)
 		// parent commit不存在
 		if !exist {
-			fmt.Printf("The parent commit object is not exist!")
+			log.Fatalf("The parent commit object is not exist!")
 			// return
 		}
-		parentObjectType := getCatFileStr(false, true, false, []string{parentSha1})
-		if parentObjectType != "commit" {
-			fmt.Printf("The parent commit object inputed is not commit object!")
-			// return
-		}
+		// parentObjectType := getCatFileStr(false, true, false, []string{parentSha1})
+		// if strings.Compare(parentObjectType, "commit") != 0 {
+		// 	log.Fatalf("The parent commit object inputed is not commit object!")
+		// 	// return
+		// }
 		commitObj.parent = parentSha1
 	}
 
@@ -48,7 +43,8 @@ func CommitTree(treeObjSha1 string, p string, m string, rest []string) *CommitOb
 	commitObj.author = "SealedGodJn<1286039722@qq.com>"
 	commitObj.committer = "SealedGodJn<1286039722@qq.com>"
 
-	commitObj.date = fmt.Sprintf("%s", time.Now())
+	// commitObj.date = fmt.Sprintf("%s", time.Now())
+	commitObj.date = time.Now().String()
 	// commitObj.message = m
 	commitObj.message = getMessage(m, rest)
 
@@ -66,39 +62,3 @@ func getMessage(m string, rest []string) string {
 	}
 	return m
 }
-
-// func getObjectType(objectId string) (string, string, string) {
-// 	objectDir := filepath.Join(".git", "objects", objectId[:2])
-// 	dir, err := ioutil.ReadDir(objectDir)
-// 	// 判断读目录里面的文件时是否出错
-// 	if err != nil {
-// 		log.Fatal(err)
-// 	}
-
-// 	var data []byte
-
-// 	// 遍历dir里面的所有文件
-// 	// 找到符合自己要求的文件
-// 	for _, file := range dir {
-// 		if strings.HasPrefix(file.Name(), objectId[2:]) {
-// 			// 该文件名的前缀与命令行参数中输入的objectId的前缀相符
-// 			// 读取该文件名对应的文件
-// 			data, err = ioutil.ReadFile(filepath.Join(objectDir, file.Name()))
-// 			if err != nil {
-// 				log.Fatal(err)
-// 			}
-// 		}
-// 	}
-
-// 	// 解压缩object文件
-// 	raw := unCompressData(data)
-// 	i := bytes.IndexByte(raw, ' ')
-// 	j := bytes.IndexByte(raw, '\u0000')
-
-// 	// raw的格式为: blob len(data)+\u0000+data
-// 	objectType := raw[:i]
-// 	objectSize := raw[i+1 : j]
-// 	objectContent := raw[j+1:]
-
-// 	return string(objectType), string(objectSize), string(objectContent)
-// }

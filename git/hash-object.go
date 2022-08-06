@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 func HashObject(t string, w bool, args []string) {
@@ -43,6 +44,7 @@ func getSha1AndRawData(o Object) (string, []byte) {
 	data := append([]byte(header), content...)
 	// s代表idStr，data的sha256值
 	s := fmt.Sprintf("%x", sha1.Sum(data))
+	log.Println(strings.Split(s, "\n"))
 	return s, data
 }
 

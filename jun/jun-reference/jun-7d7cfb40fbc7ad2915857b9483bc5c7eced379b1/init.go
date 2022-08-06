@@ -15,6 +15,7 @@ func Init(path string) {
 		return
 	}
 
+	//confirm the Path doesn't exist or the dir is empty
 	if stat, err := os.Stat(path); os.IsNotExist(err) {
 		err := os.Mkdir(path, FILE_MODE)
 		if err != nil {
@@ -35,13 +36,14 @@ func Init(path string) {
 		}
 	}
 
-	// create dir .git
+	//create dir .git
 	gitPath := filepath.Join(path, ".git")
 	err := os.Mkdir(gitPath, FILE_MODE)
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	//create file: config, description, HEAD
 	os.Create(filepath.Join(gitPath, "config"))
 	os.Create(filepath.Join(gitPath, "description"))
 	head, _ := os.Create(filepath.Join(gitPath, "HEAD"))
@@ -57,8 +59,6 @@ func Init(path string) {
 	refsPath := filepath.Join(gitPath, "refs")
 	os.Mkdir(filepath.Join(refsPath, "tags"), FILE_MODE)
 	os.Mkdir(filepath.Join(refsPath, "heads"), FILE_MODE)
-	master, _ := os.Create(filepath.Join(refsPath, "heads", "master"))
-	master.Write([]byte("refs/heads/master"))
 
 	dir, _ := os.Getwd()
 	fmt.Printf("Initialized empty Git repository in :%s\n", filepath.Join(dir, gitPath))

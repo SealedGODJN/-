@@ -11,7 +11,7 @@ function gitHJN(){
   $gitHJN $@
 }
 
-testdir="../git-test"
+testdir="git-test"
 if [ -e "$testdir" ]; then
     rm -rf $testdir
 fi
@@ -19,93 +19,71 @@ fi
 mkdir $testdir
 cd $testdir
 
-print "test git init"
-gitHJN init gitHJNDir
+print "test init"
+gitHJN init junDir
 git init gitDir
 echo -e
 
-print "test git hash-object"
-echo "version1" > gitHJNDir/file.txt
+print "test hash-object"
+echo "version1" > junDir/file.txt
 echo "version1" > gitDir/file.txt
-gitHJN hash-object -w gitHJNDir/file.txt > hash1
+gitHJN hash-object -w junDir/file.txt > hash1
 git hash-object -w gitDir/file.txt > hash2
-# 比较sha256值是否相同
-cmp hash1 hash2 --print-chars
+cmp hash1 hash2
 echo -e
 
-print "test git cat-file"
+print "test cat-file"
 h1=$(<hash1)
 h2=$(<hash2)
 gitHJN cat-file -p $h1 > fileContent1
 git cat-file -p $h2 > fileContent2
-# 比较文件内容是否相同
-cmp fileContent1 fileContent2 --print-chars
+cmp fileContent1 fileContent2
+
 gitHJN cat-file -t $h1 > fileType1
 git cat-file -t $h2 > fileType2
-# 比较object类型是否相同
-cmp fileType1 fileType2 --print-chars
+cmp fileType1 fileType2
 gitHJN cat-file -s $h1 > fileSize1
 git cat-file -s $h2 > fileSize2
-# 比较文件大小是否相同
-cmp fileSize1 fileSize2 --print-chars
+cmp fileSize1 fileSize2
 echo -e
 
-print "test git update-index --add, git ls-files --stage"
-# print "cd gitHJNDir"
-cd gitHJNDir
-# print "gitHJN update-index --add file.txt"
+print "test update-index --add, git ls-files --stage"
+cd junDir
 gitHJN update-index --add file.txt
-# print "gitHJN ls-files --stage > ../stage1"
 gitHJN ls-files --stage > ../stage1
-# print "cd ../gitDir"
 cd ../gitDir
-# print "git update-index --add file.txt"
 git update-index --add file.txt
-# print "git ls-files --stage > ../stage2"
 git ls-files --stage > ../stage2
-# print "cd .."
 cd ..
-# print "cmp stage1 stage2 --print-chars"
-cmp stage1 stage2 --print-chars
-# print "echo -e"
+cmp stage1 stage2
 echo -e
 
-print "test git write-tree"
-cd gitHJNDir
+print "test write-tree"
+cd junDir
 mkdir dir
 echo 123 > dir/file1
 echo abc > dir/file2
 gitHJN update-index --add dir/file1
 gitHJN update-index --add dir/file2
 gitHJN write-tree > treeobj1sha1
+#mkdir ../../test-data
+#gitHJN cat-file -p $(<treeobj1) > ../../test-data/test-write-tree-data.txt
 gitHJN cat-file -p $(<treeobj1sha1) > treeobjContent
-
-# 文件夹已经存在
-# mkdir ../../test-data
-
-# cd ../gitDir
-# mkdir dir
-# echo 123 > dir/file1
-# echo abc > dir/file2
-# git update-index --add dir/file1
-# git update-index --add dir/file2
-# git write-tree > treeobj1
-# git cat-file -p $(<treeobj1) > ../../test-data/test-write-tree-data.txt
-
-# cd ../gitHJNDir
 cmp treeobjContent ../../test-data/test-write-tree-data.txt
 echo -e
 
-
 print "test commit-tree, log"
-gitHJN commit-tree $(<treeobj1sha1) -m 'first commit' > commit1Sha1
+print "gitHJN commit-tree $(<treeobj1sha1) -m 'first commit' > commit1Sha1"
+gitHJN commit-tree $(<treeobj1sha1) -m "first commit" > commit1Sha1
+print "echo version2 > file.txt"
 echo version2 > file.txt
+print "gitHJN update-index --add file.txt"
 gitHJN update-index --add file.txt
+print "gitHJN write-tree > treeobj2sha1"
 gitHJN write-tree > treeobj2sha1
-gitHJN commit-tree $(<treeobj2sha1) -p $(<commit1Sha1) -m 'second commit' > commit2Sha1
-print "gitHJN log"
-print $(<commit2Sha1)
-print " > log"
+print "gitHJN commit-tree $(<treeobj2sha1) -p $(<commit1Sha1) -m "second commit" > commit2Sha1"
+gitHJN commit-tree $(<treeobj2sha1) -p $(<commit1Sha1) -m "second commit" > commit2Sha1
+print "gitHJN log $(<commit2Sha1) > log"
 gitHJN log $(<commit2Sha1) > log
 echo -e show log :
 cat log
