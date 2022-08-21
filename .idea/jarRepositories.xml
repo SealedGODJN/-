@@ -31,5 +31,10 @@
       <option name="name" value="Central Repository" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="com.e-iceblue" />
+      <option name="name" value="e-iceblue" />
+      <option name="url" value="https://repo.e-iceblue.cn/repository/maven-public/" />
+    </remote-repository>
   </component>
 </project>
