@@ -29,21 +29,20 @@ public class Sword_Offer_2_103 {
 
     public int coinChange(int[] coins, int amount) {
         int[] coinNums = new int[amount + 1];
-        int[] remainder = new int[amount + 1];
-        for (int i = 0; i <= amount; i++) {
-            coinNums[i] = i;
-            remainder[i] = i;
+//        int[] remainder = new int[amount + 1];
+        for (int i = 1; i <= amount; i++) {
+            coinNums[i] = amount + 1;
         }
         for (int i = 1; i <= amount; i++) {
             for (int j = 0; j < coins.length; j++) {
-                if (coins[j] <= i && coinNums[i - coins[j]] + 1 <= coinNums[i]) {
-                    remainder[i] = remainder[i - coins[j]];
-                    coinNums[i] = coinNums[i - coins[j]] + 1;
+                if (coins[j] <= i) {
+//                    remainder[i] = remainder[i - coins[j]];
+                    coinNums[i] = Math.min(coinNums[i - coins[j]] + 1, coinNums[i]);
                 }
             }
         }
-        if (remainder[amount] != 0) return -1;
-        else return coinNums[amount];
+//        if (remainder[amount] != 0) return -1;
+        return coinNums[amount] > amount ? -1 : coinNums[amount];
     }
 
     public static void main(String[] args) {
