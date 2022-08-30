@@ -31,6 +31,9 @@ public class Sword_Offer_2_103 {
         int[] coinNums = new int[amount + 1];
 //        int[] remainder = new int[amount + 1];
         for (int i = 1; i <= amount; i++) {
+//            coinNums[i] = i;
+//             为什么设置成amount + 1呢？
+            // amount + 1为最大的硬币数
             coinNums[i] = amount + 1;
         }
         for (int i = 1; i <= amount; i++) {
