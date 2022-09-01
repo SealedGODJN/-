@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;4、数据结构-楠哥-讲课&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/stack/Test/Stack_20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_509.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/stack/Stack_20.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/Sword_Offer_2_103.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/Sword_Offer_2_103.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_509.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_509.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_70.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_70.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,26 +105,13 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_509">
+  <component name="RunManager" selected="应用程序.dp_70">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.array.Array" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeneralArrayStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.stack.GeneralArrayStack" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dataStructure.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,21 +165,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dp_70" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_70" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="应用程序.HJ11" />
+      <item itemvalue="应用程序.dp_70" />
       <item itemvalue="应用程序.dp_509" />
       <item itemvalue="应用程序.Sword_Offer_2_103" />
       <item itemvalue="应用程序.com.dataStructure.stack.Test.GeneralArrayStack" />
       <item itemvalue="应用程序.Array" />
-      <item itemvalue="应用程序.GeneralArrayStack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.dp_70" />
         <item itemvalue="应用程序.dp_509" />
         <item itemvalue="应用程序.Sword_Offer_2_103" />
         <item itemvalue="应用程序.com.dataStructure.stack.Test.GeneralArrayStack" />
         <item itemvalue="应用程序.Array" />
-        <item itemvalue="应用程序.GeneralArrayStack" />
       </list>
     </recent_temporary>
   </component>
@@ -416,14 +415,9 @@
       <workItem from="1661781894059" duration="118000" />
       <workItem from="1661782022272" duration="777000" />
       <workItem from="1661782820922" duration="974000" />
-      <workItem from="1661869326673" duration="2232000" />
-    </task>
-    <task id="LOCAL-00005" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习完字符串，开始写双指针&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1638718846298</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638718846298</updated>
+      <workItem from="1661869326673" duration="2917000" />
+      <workItem from="1661942187775" duration="6062000" />
+      <workItem from="1662073113077" duration="1872000" />
     </task>
     <task id="LOCAL-00006" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决1047&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1640799166286</created>
@@ -761,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661695594078</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1661871873909</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1661871873909</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -780,7 +781,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成112：计算路径的节点值之和是否与targetSum匹配【基于257：所有的路径】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
@@ -805,7 +805,8 @@
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;4、数据结构-楠哥-讲课&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;4、数据结构-楠哥-讲课&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
