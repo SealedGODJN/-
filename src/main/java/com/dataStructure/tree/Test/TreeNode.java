@@ -1,11 +1,10 @@
-package com.dataStructure.tree;
+package com.dataStructure.tree.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TreeNode {
     public int val;
-    public int height;
     public TreeNode left;
     public TreeNode right;
 
@@ -27,12 +26,24 @@ public class TreeNode {
         this.right = right;
     }
 
+    /**
+     * 前序遍历
+     *
+     * @param root
+     * @return
+     */
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
         preorder(root, result);
         return result;
     }
 
+    /**
+     * 根节点 左子树 右子树
+     *
+     * @param root
+     * @param result
+     */
     public void preorder(TreeNode root, List<Integer> result) {
         if (root == null) {
             return;
@@ -42,6 +53,12 @@ public class TreeNode {
         preorder(root.right, result);
     }
 
+    /**
+     * 中序遍历
+     *
+     * @param root
+     * @return
+     */
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         inorder(root, res);
@@ -49,14 +66,15 @@ public class TreeNode {
     }
 
     void inorder(TreeNode root, List<Integer> list) {
-        if (root == null) {
-            return;
-        }
-        inorder(root.left, list);
-        list.add(root.val);             // 注意这一句
-        inorder(root.right, list);
+
     }
 
+    /**
+     * 后序遍历
+     *
+     * @param root
+     * @return
+     */
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         postorder(root, res);
@@ -64,11 +82,21 @@ public class TreeNode {
     }
 
     void postorder(TreeNode root, List<Integer> list) {
-        if (root == null) {
-            return;
-        }
-        postorder(root.left, list);
-        postorder(root.right, list);
-        list.add(root.val);             // 注意这一句
+
+    }
+
+    public static void main(String[] args) {
+        TreeNode root_left_left = new TreeNode(4);
+        TreeNode root_left_right = new TreeNode(5);
+        TreeNode root_left = new TreeNode(2, root_left_left, root_left_right);
+
+
+        TreeNode root_right_left = new TreeNode(6);
+        TreeNode root_right_right = new TreeNode(7);
+        TreeNode root_right = new TreeNode(3, root_right_left, root_right_right);
+//
+//        TreeNode root_left = new TreeNode(1);
+//        TreeNode root_right = new TreeNode(2);
+        TreeNode root = new TreeNode(3, root_left, root_right);
     }
 }

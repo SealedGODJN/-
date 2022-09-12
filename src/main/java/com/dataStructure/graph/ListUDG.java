@@ -52,10 +52,11 @@ public class ListUDG {
             ENode node1 = new ENode();
             node1.ivex = p2;
             // 将node1链接到"p1所在链表的末尾"
-            if(mVexs[p1].firstEdge == null)
+            if (mVexs[p1].firstEdge == null) {
                 mVexs[p1].firstEdge = node1;
-            else
+            } else {
                 linkLast(mVexs[p1].firstEdge, node1);
+            }
             // 初始化node2
             ENode node2 = new ENode();
             node2.ivex = p1;
@@ -144,8 +145,9 @@ public class ListUDG {
             System.out.println(i.data+":");
             ENode eNode = i.firstEdge;
             while (eNode!=null) {
-                System.out.print(eNode.ivex);
-                eNode=eNode.nextEdge;
+//                System.out.print(eNode.ivex);
+                System.out.print("\t" + i.data + "->" + pG.mVexs[eNode.ivex].data);
+                eNode = eNode.nextEdge;
             }
             System.out.println();
         }
@@ -164,7 +166,7 @@ public class ListUDG {
         ListUDG pG;
 
         pG = new ListUDG(vexs, edges);
-//        printGraph(pG); // 打印出邻接表
-        pG.DFS();
+        printGraph(pG); // 打印出邻接表
+//        pG.DFS();
     }
 }

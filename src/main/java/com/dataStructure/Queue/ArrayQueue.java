@@ -26,7 +26,7 @@ public class ArrayQueue {
         return mArray[0];
     }
 
-    // 返回“栈顶元素值”，并删除“栈顶元素”
+    // 返回“队头元素值”，并删除“队头元素”
     public int pop() {
         int ret = mArray[0];
         mCount--;
