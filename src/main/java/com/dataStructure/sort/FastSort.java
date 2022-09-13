@@ -6,7 +6,7 @@ public class FastSort {
 		int[] a = { 5,-1,10,3,30};
 		QuickSort(a,0,a.length-1);
 		for(int i:a) {
-			System.out.println(i);
+			System.out.print(i + " ");
 		}
 	}
 	

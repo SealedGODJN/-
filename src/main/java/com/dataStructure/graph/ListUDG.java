@@ -10,7 +10,7 @@ public class ListUDG {
 
     // 邻接表中表对应的链表的顶点
     private class ENode{
-        int ivex; // 该边所指向的d顶点的位置(该节点所对应的顶点在vexs中的索引)
+        int ivex; // 该边所指向的结束顶点的位置(该节点所对应的顶点在vexs中的索引)
         ENode nextEdge; // 指向下一条边的指针
     }
     // 邻接表中表的顶点
@@ -61,11 +61,11 @@ public class ListUDG {
             ENode node2 = new ENode();
             node2.ivex = p1;
             // 将node2链接到"p2所在链表的末尾"
-            if(mVexs[p2].firstEdge == null)
+            if (mVexs[p2].firstEdge == null) {
                 mVexs[p2].firstEdge = node2;
-            else
+            } else {
                 linkLast(mVexs[p2].firstEdge, node2);
-
+            }
         }
     }
 
@@ -162,7 +162,18 @@ public class ListUDG {
                 {'B', 'C'},
                 {'C', 'D'},
                 {'E', 'G'},
-                {'F', 'G'}};
+                {'F', 'G'}
+        };
+
+//        char[][] e = new char[7][2];
+//        char[] temp = new char[]{
+//                'A','C'
+//        };
+//        char[] temp2 = new char[2];
+//        temp2[0] = 'A';
+//        temp2[1] = 'B';
+//        e[0] = temp;
+
         ListUDG pG;
 
         pG = new ListUDG(vexs, edges);
