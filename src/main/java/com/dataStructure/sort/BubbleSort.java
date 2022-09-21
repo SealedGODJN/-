@@ -11,11 +11,18 @@ public class BubbleSort {
      * 2、快速排序
      */
     public static void BubbleSort(int[] A) {
+        boolean flag = false;
         for (int i = 0; i < A.length - 1; i++) {
             for (int j = i + 1; j < A.length; j++) {
                 if (A[i] > A[j]) {
                     swap(A, i, j);
+                    // 已经发生交换
+                    flag = true;
                 }
+            }
+            if (!flag) {
+                // 没有发生交换，则数组有序
+                break;
             }
         }
 
@@ -31,7 +38,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {3, -1, 0, -8, 2, 1}; // 不考虑数组长度为1的情况
+        int[] array = {-2, 3, -1, 0, -8, 2, 1}; // 不考虑数组长度为1的情况
         BubbleSort(array);
     }
 
