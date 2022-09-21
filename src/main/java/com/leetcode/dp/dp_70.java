@@ -72,9 +72,27 @@ public class dp_70 {
         return dp[n];
     }
 
+    /**
+     * @param n
+     * @param m 表示最多可以爬m个台阶
+     * @return
+     */
+    public static int climbStairs(int n, int m) {
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) { // 把m换成2，就可以AC爬楼梯这道题
+                if (i - j >= 0) dp[i] += dp[i - j];
+            }
+        }
+        return dp[n];
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(climbStairs(n));
+        System.out.println(climbStairs(n, 2));
     }
 }
