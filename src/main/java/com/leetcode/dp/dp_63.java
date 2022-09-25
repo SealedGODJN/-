@@ -34,10 +34,14 @@ public class dp_63 {
 
         int[][] dp = new int[m][n];
 
+        // 这里需要注意，不是 if (obstacleGrid[0][i] == 0)
+        // 而是如果前面有障碍，后面就走不通了
         for (int i = 0; i < n && obstacleGrid[0][i] == 0; i++) {
+//            if (obstacleGrid[0][i] == 0) {
             dp[0][i] = 1;
         }
         for (int j = 0; j < m && obstacleGrid[j][0] == 0; j++) {
+//            if (obstacleGrid[j][0] == 0) {
             dp[j][0] = 1;
         }
         for (int i = 1; i < m; i++) {
