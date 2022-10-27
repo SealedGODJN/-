@@ -1,5 +1,11 @@
-package com.dataStructure.graph;
+package com.dataStructure.graph.floyd;
 
+/**
+ * Java: Floyd算法获取最短路径(邻接矩阵)
+ *
+ * @author skywang
+ * @date 2014/04/25
+ */
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -7,10 +13,8 @@ import java.util.Scanner;
 public class MatrixUDG {
 
     private int mEdgNum;        // 边的数量
-
     private char[] mVexs;       // 顶点集合
     private int[][] mMatrix;    // 邻接矩阵
-
     private static final int INF = Integer.MAX_VALUE;   // 最大值
 
     /*
@@ -35,53 +39,34 @@ public class MatrixUDG {
             mVexs[i] = readChar();
         }
 
-        // 初始化"边"
+        // 1. 初始化"边"的权值
+        mEdgNum = elen;
         mMatrix = new int[vlen][vlen];
+        for (int i = 0; i < vlen; i++) {
+            for (int j = 0; j < vlen; j++) {
+                if (i == j)
+                    mMatrix[i][j] = 0;
+                else
+                    mMatrix[i][j] = INF;
+            }
+        }
+        // 2. 初始化"边"的权值: 根据用户的输入进行初始化
         for (int i = 0; i < elen; i++) {
-            // 读取边的起始顶点和结束顶点
+            // 读取边的起始顶点,结束顶点,权值
             System.out.printf("edge(%d):", i);
-            char c1 = readChar();
-            char c2 = readChar();
+            char c1 = readChar();       // 读取"起始顶点"
+            char c2 = readChar();       // 读取"结束顶点"
+            int weight = readInt();     // 读取"权值"
+
             int p1 = getPosition(c1);
             int p2 = getPosition(c2);
-
             if (p1 == -1 || p2 == -1) {
                 System.out.printf("input error: invalid edge!\n");
                 return;
             }
 
-            mMatrix[p1][p2] = 1;
-            mMatrix[p2][p1] = 1;
-        }
-    }
-
-    /*
-     * 创建图(用已提供的矩阵)
-     *
-     * 参数说明：
-     *     vexs  -- 顶点数组
-     *     edges -- 边数组
-     */
-    public MatrixUDG(char[] vexs, char[][] edges) {
-
-        // 初始化"顶点数"和"边数"
-        int vlen = vexs.length;
-        int elen = edges.length;
-
-        // 初始化"顶点"
-        mVexs = new char[vlen];
-        for (int i = 0; i < mVexs.length; i++)
-            mVexs[i] = vexs[i];
-
-        // 初始化"边"
-        mMatrix = new int[vlen][vlen];
-        for (int i = 0; i < elen; i++) {
-            // 读取边的起始顶点和结束顶点
-            int p1 = getPosition(edges[i][0]);
-            int p2 = getPosition(edges[i][1]);
-
-            mMatrix[p1][p2] = 1;
-            mMatrix[p2][p1] = 1;
+            mMatrix[p1][p2] = weight;
+            mMatrix[p2][p1] = weight;
         }
     }
 
@@ -107,6 +92,13 @@ public class MatrixUDG {
         for (int i = 0; i < vlen; i++)
             for (int j = 0; j < vlen; j++)
                 mMatrix[i][j] = matrix[i][j];
+
+        // 统计"边"
+        mEdgNum = 0;
+        for (int i = 0; i < vlen; i++)
+            for (int j = i + 1; j < vlen; j++)
+                if (mMatrix[i][j] != INF)
+                    mEdgNum++;
     }
 
     /*
@@ -145,18 +137,6 @@ public class MatrixUDG {
     }
 
     /*
-     * 打印矩阵队列图
-     */
-    public void print() {
-        System.out.printf("Martix Graph:\n");
-        for (int i = 0; i < mVexs.length; i++) {
-            for (int j = 0; j < mVexs.length; j++)
-                System.out.printf("%d ", mMatrix[i][j]);
-            System.out.printf("\n");
-        }
-    }
-
-    /*
      * 返回顶点v的第一个邻接顶点的索引，失败则返回-1
      */
     private int firstVertex(int v) {
@@ -165,7 +145,7 @@ public class MatrixUDG {
             return -1;
 
         for (int i = 0; i < mVexs.length; i++)
-            if (mMatrix[v][i] == 1)
+            if (mMatrix[v][i] != 0 && mMatrix[v][i] != INF)
                 return i;
 
         return -1;
@@ -180,7 +160,7 @@ public class MatrixUDG {
             return -1;
 
         for (int i = w + 1; i < mVexs.length; i++)
-            if (mMatrix[v][i] == 1)
+            if (mMatrix[v][i] != 0 && mMatrix[v][i] != INF)
                 return i;
 
         return -1;
@@ -253,6 +233,18 @@ public class MatrixUDG {
     }
 
     /*
+     * 打印矩阵队列图
+     */
+    public void print() {
+        System.out.printf("Martix Graph:\n");
+        for (int i = 0; i < mVexs.length; i++) {
+            for (int j = 0; j < mVexs.length; j++)
+                System.out.printf("%10d ", mMatrix[i][j]);
+            System.out.printf("\n");
+        }
+    }
+
+    /*
      * prim最小生成树
      *
      * 参数说明：
@@ -280,7 +272,7 @@ public class MatrixUDG {
             if (start == i)
                 continue;
 
-            int j = 0; // 循环变量，表示从A到其他顶点的第j条边
+            int j = 0;
             int k = 0;
             int min = INF;
             // 在未被加入到最小生成树的顶点中，找出权值最小的顶点。
@@ -410,6 +402,106 @@ public class MatrixUDG {
         return i;
     }
 
+    /*
+     * Dijkstra最短路径。
+     * 即，统计图中"顶点vs"到其它各个顶点的最短路径。
+     *
+     * 参数说明：
+     *       vs -- 起始顶点(start vertex)。即计算"顶点vs"到其它顶点的最短路径。
+     *     prev -- 前驱顶点数组。即，prev[i]的值是"顶点vs"到"顶点i"的最短路径所经历的全部顶点中，位于"顶点i"之前的那个顶点。
+     *     dist -- 长度数组。即，dist[i]是"顶点vs"到"顶点i"的最短路径的长度。
+     */
+    public void dijkstra(int vs, int[] prev, int[] dist) {
+        // flag[i]=true表示"顶点vs"到"顶点i"的最短路径已成功获取
+        boolean[] flag = new boolean[mVexs.length];
+
+        // 初始化
+        for (int i = 0; i < mVexs.length; i++) {
+            flag[i] = false;          // 顶点i的最短路径还没获取到。
+            prev[i] = 0;              // 顶点i的前驱顶点为0。
+            dist[i] = mMatrix[vs][i];  // 顶点i的最短路径为"顶点vs"到"顶点i"的权。
+        }
+
+        // 对"顶点vs"自身进行初始化
+        flag[vs] = true;
+        dist[vs] = 0;
+
+        // 遍历mVexs.length-1次；每次找出一个顶点的最短路径。
+        int k = 0;
+        for (int i = 1; i < mVexs.length; i++) {
+            // 寻找当前最小的路径；
+            // 即，在未获取最短路径的顶点中，找到离vs最近的顶点(k)。
+            int min = INF;
+            for (int j = 0; j < mVexs.length; j++) {
+                if (flag[j] == false && dist[j] < min) {
+                    min = dist[j];
+                    k = j;
+                }
+            }
+            // 标记"顶点k"为已经获取到最短路径
+            flag[k] = true;
+
+            // 修正当前最短路径和前驱顶点
+            // 即，当已经"顶点k的最短路径"之后，更新"未获取最短路径的顶点的最短路径和前驱顶点"。
+            for (int j = 0; j < mVexs.length; j++) {
+                int tmp = (mMatrix[k][j] == INF ? INF : (min + mMatrix[k][j]));
+                if (flag[j] == false && (tmp < dist[j])) {
+                    dist[j] = tmp;
+                    prev[j] = k;
+                }
+            }
+        }
+
+        // 打印dijkstra最短路径的结果
+        System.out.printf("dijkstra(%c): \n", mVexs[vs]);
+        for (int i = 0; i < mVexs.length; i++)
+            System.out.printf("  shortest(%c, %c)=%d\n", mVexs[vs], mVexs[i], dist[i]);
+    }
+
+    /*
+     * floyd最短路径。
+     * 即，统计图中各个顶点间的最短路径。
+     *
+     * 参数说明：
+     *     path -- 路径。path[i][j]=k表示，"顶点i"到"顶点j"的最短路径会经过顶点k。
+     *     dist -- 长度数组。即，dist[i][j]=sum表示，"顶点i"到"顶点j"的最短路径的长度是sum。
+     */
+    public void floyd(int[][] path, int[][] A) {
+
+        // 初始化
+        for (int i = 0; i < mVexs.length; i++) {
+            for (int j = 0; j < mVexs.length; j++) {
+                A[i][j] = mMatrix[i][j];    // "顶点i"到"顶点j"的路径长度为"i到j的权值"。
+                path[i][j] = j;                // "顶点i"到"顶点j"的最短路径是经过顶点j。
+            }
+        }
+
+        // 计算最短路径
+        for (int k = 0; k < mVexs.length; k++) {
+            for (int i = 0; i < mVexs.length; i++) {
+                for (int j = 0; j < mVexs.length; j++) {
+
+                    // 如果经过下标为k顶点路径比原两点间路径更短，则更新dist[i][j]和path[i][j]
+                    int tmp = (A[i][k] == INF || A[k][j] == INF) ? INF : (A[i][k] + A[k][j]);
+                    if (A[i][j] > tmp) {
+                        // "i到j最短路径"对应的值设，为更小的一个(即经过k)
+                        A[i][j] = tmp;
+                        // "i到j最短路径"对应的路径，经过k
+                        path[i][j] = path[i][k];
+                    }
+                }
+            }
+        }
+
+        // 打印floyd最短路径的结果
+        System.out.printf("floyd: \n");
+        for (int i = 0; i < mVexs.length; i++) {
+            for (int j = 0; j < mVexs.length; j++)
+                System.out.printf("%2d  ", A[i][j]);
+            System.out.printf("\n");
+        }
+    }
+
     // 边的结构体
     private static class EData {
         char start; // 边的起点
@@ -425,45 +517,8 @@ public class MatrixUDG {
 
     ;
 
+
     public static void main(String[] args) {
-//        char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
-//        char[][] edges = new char[][]{
-//                {'A', 'C'},
-//                {'A', 'D'},
-//                {'A', 'F'},
-//                {'B', 'C'},
-//                {'C', 'D'},
-//                {'E', 'G'},
-//                {'F', 'G'}};
-//        MatrixUDG pG;
-//
-//        // 自定义"图"(输入矩阵队列)
-//        //pG = new MatrixUDG();
-//        // 采用已有的"图"
-//        pG = new MatrixUDG(vexs, edges);
-//        pG.print();   // 打印图
-//        pG.DFS();     // 深度优先遍历
-//        pG.BFS();     // 广度优先遍历
-
-
-//        char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
-//        int matrix[][] = {
-//                    /*A*//*B*//*C*//*D*//*E*//*F*//*G*/
-//                /*A*/ {0, 12, INF, INF, INF, 16, 14},
-//                /*B*/ {12, 0, 10, INF, INF, 7, INF},
-//                /*C*/ {INF, 10, 0, 3, 5, 6, INF},
-//                /*D*/ {INF, INF, 3, 0, 4, INF, INF},
-//                /*E*/ {INF, INF, 5, 4, 0, 2, 8},
-//                /*F*/ {16, 7, 6, INF, 2, 0, 9},
-//                /*G*/ {14, INF, INF, INF, 8, 9, 0}};
-//        MatrixUDG pG;
-//
-//        // 自定义"图"(输入矩阵队列)
-//        //pG = new MatrixUDG();
-//        // 采用已有的"图"
-//        pG = new MatrixUDG(vexs, matrix);
-//        pG.prim(0);   // prim算法生成最小生成树
-
         char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
         int matrix[][] = {
                 /*A*//*B*//*C*//*D*//*E*//*F*//*G*/
@@ -481,6 +536,20 @@ public class MatrixUDG {
         // 采用已有的"图"
         pG = new MatrixUDG(vexs, matrix);
 
-        pG.kruskal();   // Kruskal算法生成最小生成树
+        //pG.print();   // 打印图
+        //pG.DFS();     // 深度优先遍历
+        //pG.BFS();     // 广度优先遍历
+        //pG.prim(0);   // prim算法生成最小生成树
+        //pG.kruskal(); // Kruskal算法生成最小生成树
+
+        int[] prev = new int[pG.mVexs.length];
+        int[] dist = new int[pG.mVexs.length];
+        // dijkstra算法获取"第4个顶点"到其它各个顶点的最短距离
+        //pG.dijkstra(3, prev, dist);
+
+        int[][] path = new int[pG.mVexs.length][pG.mVexs.length];
+        int[][] floy = new int[pG.mVexs.length][pG.mVexs.length];
+        // floyd算法获取各个顶点之间的最短距离
+        pG.floyd(path, floy);
     }
 }
