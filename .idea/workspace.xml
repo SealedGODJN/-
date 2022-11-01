@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_96.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第1、2、3、4、5题&#10;4、数据结构-楠哥-讲课【从后往前，DFS+BFS+最小生成树+单点路径+多点路径】&#10;5、学习JVM GC，Major GC和Full GC的概念&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/TestExcelInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/Test/ListDG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/MatrixUDG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/MatrixUDG.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +65,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -100,7 +100,20 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_96">
+  <component name="RunManager" selected="Application.Dijkstra">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.graph.Dijkstra" />
+      <module name="helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dataStructure.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HJ11" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ11" />
       <module name="helloworld" />
@@ -108,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.sort.InsertSort" />
-      <module name="Test_2020_3_2" />
+    <configuration name="ListDG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.graph.Test.ListDG" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.sort.*" />
+          <option name="PATTERN" value="com.dataStructure.graph.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,25 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.sort.Test" />
-      <module name="Test_2020_3_2" />
+    <configuration name="MatrixUDG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.graph.MatrixUDG" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dp_62" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_62" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="PATTERN" value="com.dataStructure.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,16 +174,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.HJ11" />
-      <item itemvalue="应用程序.dp_96" />
-      <item itemvalue="应用程序.InsertSort" />
-      <item itemvalue="应用程序.Test" />
-      <item itemvalue="应用程序.dp_62" />
-      <item itemvalue="应用程序.dp_746" />
+      <item itemvalue="Application.HJ11" />
+      <item itemvalue="Application.dp_746" />
+      <item itemvalue="Application.dp_96" />
+      <item itemvalue="Application.MatrixUDG" />
+      <item itemvalue="Application.ListDG" />
+      <item itemvalue="Application.Dijkstra" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.dp_96" />
+        <item itemvalue="Application.Dijkstra" />
+        <item itemvalue="Application.ListDG" />
+        <item itemvalue="Application.MatrixUDG" />
       </list>
     </recent_temporary>
   </component>
@@ -424,6 +426,11 @@
       <workItem from="1664198642093" duration="21000" />
       <workItem from="1664460381050" duration="1064000" />
       <workItem from="1664728893751" duration="3341000" />
+      <workItem from="1665484439713" duration="3903000" />
+      <workItem from="1665996738809" duration="32000" />
+      <workItem from="1666339164505" duration="750000" />
+      <workItem from="1666765654454" duration="2727000" />
+      <workItem from="1667273553474" duration="610000" />
     </task>
     <task id="LOCAL-00010" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决239滑动窗口的最大值（使用单调队列）&#10;3、解决150后缀表达式的计算&#10;4、修改项目结构，复习HashMap和Stack的原理&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1641211176696</created>

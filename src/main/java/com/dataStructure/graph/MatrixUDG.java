@@ -224,6 +224,64 @@ public class MatrixUDG {
         System.out.printf("\n");
     }
 
+    /**
+     * Dijkstra最短路径。
+     * 即，统计图(G)中"顶点vs"到其它各个顶点的最短路径。
+     * <p>
+     * 参数说明：
+     * G -- 图
+     * vs -- 起始顶点(start vertex)。即计算"顶点vs"到其它顶点的最短路径。
+     * prev -- 前驱顶点数组。即，prev[i]的值是"顶点vs"到"顶点i"的最短路径所经历的全部顶点中，位于"顶点i"之前的那个顶点。
+     * dist -- 长度数组。即，dist[i]是"顶点vs"到"顶点i"的最短路径的长度。
+     */
+    public void dijkstra(MatrixUDG G, int vs, int[] prev, int[] dist) {
+        int i, j, k = 0;
+        int min;
+        int tmp;
+        int[] flag = new int[mVexs.length];      // flag[i]=1表示"顶点vs"到"顶点i"的最短路径已成功获取。
+
+        // 初始化
+        for (i = 0; i < G.mVexs.length; i++) {
+            flag[i] = 0;              // 顶点i的最短路径还没获取到。
+            prev[i] = 0;              // 顶点i的前驱顶点为0。
+            dist[i] = G.mMatrix[vs][i];// 顶点i的最短路径为"顶点vs"到"顶点i"的权。
+        }
+
+        // 对"顶点vs"自身进行初始化
+        flag[vs] = 1;
+        dist[vs] = 0;
+
+        // 遍历G.vexnum-1次；每次找出一个顶点的最短路径。
+        for (i = 1; i < G.mVexs.length; i++) {
+            // 寻找当前最小的路径；
+            // 即，在未获取最短路径的顶点中，找到离vs最近的顶点(k)。
+            min = Integer.MAX_VALUE;
+            for (j = 0; j < G.mVexs.length; j++) {
+                if (flag[j] == 0 && dist[j] < min) {
+                    min = dist[j];
+                    k = j;
+                }
+            }
+            // 标记"顶点k"为已经获取到最短路径
+            flag[k] = 1;
+
+            // 修正当前最短路径和前驱顶点
+            // 即，当已经"顶点k的最短路径"之后，更新"未获取最短路径的顶点的最短路径和前驱顶点"。
+            for (j = 0; j < G.mVexs.length; j++) {
+                tmp = (G.mMatrix[k][j] == Integer.MAX_VALUE ? Integer.MAX_VALUE : (min + G.mMatrix[k][j])); // 防止溢出
+                if (flag[j] == 0 && (tmp < dist[j])) {
+                    dist[j] = tmp;
+                    prev[j] = k;
+                }
+            }
+        }
+
+        // 打印dijkstra最短路径的结果
+        System.out.println("dijkstra(" + G.mVexs[vs] + "): ");
+        for (i = 0; i < G.mVexs.length; i++)
+            System.out.println("  shortest(" + G.mVexs[vs] + ", " + G.mVexs[i] + ")= " + dist[i]);
+    }
+
     public static void main(String[] args) {
         char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
         char[][] edges = new char[][]{
@@ -241,8 +299,12 @@ public class MatrixUDG {
         // 采用已有的"图"
         pG = new MatrixUDG(vexs, edges);
 
-        pG.print();   // 打印图
-        pG.DFS();     // 深度优先遍历
-        pG.BFS();     // 广度优先遍历
+//        pG.print();   // 打印图
+//        pG.DFS();     // 深度优先遍历
+//        pG.BFS();     // 广度优先遍历
+
+        int[] prev = new int[pG.mVexs.length];
+        int[] dist = new int[pG.mVexs.length];
+        pG.dijkstra(pG, 3, prev, dist);
     }
 }
