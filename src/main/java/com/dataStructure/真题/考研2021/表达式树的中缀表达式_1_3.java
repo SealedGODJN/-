@@ -14,11 +14,9 @@ public class 表达式树的中缀表达式_1_3 {
         } else {
             if (deep > 1)
                 System.out.print("(");
-
             BtreeToExp(root.left, deep + 1);
             System.out.print(root.val);
             BtreeToExp(root.right, deep + 1);
-
             if (deep > 1)
                 System.out.print(")");
         }

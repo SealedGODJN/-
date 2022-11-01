@@ -1,12 +1,13 @@
 package com.dataStructure.真题.考研2022;
 
 public class 斐波那契数列_1_4 {
-    public static int F(int n) {
-        if (n == 0 || n == 1) {
-            return n;
-        }
-        return F(n - 1) + F(n - 2);
+//    static int sum = 0;
+public static int F(int n) {
+    if (n == 0 || n == 1) {
+        return n;
     }
+    return F(n - 2) + F(n - 1);
+}
 
 //    public static int F(int n) {
 //        if (n == 0 || n == 1) {
