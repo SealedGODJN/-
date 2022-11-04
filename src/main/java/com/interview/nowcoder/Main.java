@@ -1,4 +1,4 @@
-package com.nowcoder;
+package com.interview.nowcoder;
 
 import java.util.Scanner;
 

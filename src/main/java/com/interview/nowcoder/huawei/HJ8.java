@@ -1,9 +1,8 @@
-package com.nowcoder.huawei;
+package com.interview.nowcoder.huawei;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashSet;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
