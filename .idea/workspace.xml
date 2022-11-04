@@ -468,6 +468,12 @@
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
       <updated>1641298821093</updated>
+      <workItem from="1666873343936" duration="7136000" />
+      <workItem from="1667035691042" duration="1448000" />
+      <workItem from="1667128407326" duration="8645000" />
+      <workItem from="1667211189936" duration="6353000" />
+      <workItem from="1667229770941" duration="1479000" />
+      <workItem from="1667311097952" duration="2156000" />
     </task>
     <task id="LOCAL-00012" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1641738734338</created>
@@ -849,7 +855,8 @@
     <MESSAGE value="leetcode+javafx+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
