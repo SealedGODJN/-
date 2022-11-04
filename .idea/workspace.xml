@@ -4,18 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2018/第4题/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/第7题/DNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/第7题/DoubleLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/第7题/LNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/第7题/LinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第1、2、3、4、5题&#10;4、数据结构-楠哥-讲课【从后往前，DFS+BFS+最小生成树+单点路径+多点路径】&#10;5、学习JVM GC，Major GC和Full GC的概念&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2020/最大值优先级队列_第5题.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/GarbageCollection/EDAP20221103/ReferfencesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter2/Demo_2_2_1_Callable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter2/Demo_2_2_3_FutureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter2/Demo_2_2_3_FutureTask_TreiberStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter2/Demo_2_2_3_FutureTask_TreiberStack_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter2/TreiberStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter3/Demo_3_1_ThreadGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter3/Demo_3_2_ThreadGroupPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter3/Demo_3_2_ThreadPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter3/Demo_3_2_ThreadPriority_setPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/ConcurrentBook/Chapter3/Demo_3_3_1_ThreadGroup_Exception.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/求解二叉树中仅有左子树且没有右子树的节点个数_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/求解二叉树中仅有左子树且没有右子树的节点个数_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/表达式树的中缀表达式_1_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/表达式树的中缀表达式_1_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2022/斐波那契数列_1_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2022/斐波那契数列_1_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ107.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ107.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/nowcoder/huawei/HJ9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,26 +90,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/黄江南/Desktop/code/src/main/java/com/dataStructure/真题/考研2021/第7题&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\真题\考研2021\第7题" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\stack\Test" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\LinkedList" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\java\Generic\improve" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\NPU\Assistant" />
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\leetcode\dp" />
@@ -111,20 +127,13 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_01背包">
-    <configuration name="HJ11" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.huawei.HJ11" />
+  <component name="RunManager" selected="Application.最大值优先级队列_第5题">
+    <configuration name="Demo_3_2_ThreadGroupPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_2_ThreadGroupPriority" />
       <module name="helloworld" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="表达式树的中缀表达式_1_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2021.表达式树的中缀表达式_1_3" />
-      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2021.*" />
+          <option name="PATTERN" value="com.java.concurrent.ConcurrentBook.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="斐波那契数列_1_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.斐波那契数列_1_4" />
-      <module name="Test_2020_3_2" />
+    <configuration name="Demo_3_2_ThreadPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_2_ThreadPriority" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2022.*" />
+          <option name="PATTERN" value="com.java.concurrent.ConcurrentBook.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="查找二叉排序树中某特定值的双亲节点_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2021.查找二叉排序树中某特定值的双亲节点_3" />
-      <module name="Test_2020_3_2" />
+    <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2021.*" />
+          <option name="PATTERN" value="com.java.concurrent.ConcurrentBook.Chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.dataStructure.graph.floyd.MatrixUDG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.graph.floyd.MatrixUDG" />
-      <module name="Test_2020_3_2" />
+    <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.graph.floyd.*" />
+          <option name="PATTERN" value="com.NPU.上海出差.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dp_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_01背包" />
-      <module name="Test_2020_3_2" />
+    <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,20 +194,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.HJ11" />
-      <item itemvalue="应用程序.dp_01背包" />
-      <item itemvalue="应用程序.斐波那契数列_1_4" />
-      <item itemvalue="应用程序.查找二叉排序树中某特定值的双亲节点_3" />
-      <item itemvalue="应用程序.表达式树的中缀表达式_1_3" />
-      <item itemvalue="应用程序.com.dataStructure.graph.floyd.MatrixUDG" />
+      <item itemvalue="Application.Demo_3_2_ThreadPriority" />
+      <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
+      <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
+      <item itemvalue="Application.FileTaskExample" />
+      <item itemvalue="Application.最大值优先级队列_第5题" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.dp_01背包" />
-        <item itemvalue="应用程序.表达式树的中缀表达式_1_3" />
-        <item itemvalue="应用程序.查找二叉排序树中某特定值的双亲节点_3" />
-        <item itemvalue="应用程序.斐波那契数列_1_4" />
-        <item itemvalue="应用程序.com.dataStructure.graph.floyd.MatrixUDG" />
+        <item itemvalue="Application.最大值优先级队列_第5题" />
+        <item itemvalue="Application.FileTaskExample" />
+        <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
+        <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
+        <item itemvalue="Application.Demo_3_2_ThreadPriority" />
       </list>
     </recent_temporary>
   </component>
@@ -444,6 +452,22 @@
       <workItem from="1665907285808" duration="3952000" />
       <workItem from="1666509932186" duration="12050000" />
       <workItem from="1666864767021" duration="1834000" />
+      <workItem from="1666873343936" duration="1557000" />
+      <workItem from="1664728893751" duration="3341000" />
+      <workItem from="1665484439713" duration="3903000" />
+      <workItem from="1665996738809" duration="32000" />
+      <workItem from="1666339164505" duration="750000" />
+      <workItem from="1666765654454" duration="2727000" />
+      <workItem from="1667273553474" duration="610000" />
+      <workItem from="1667542756727" duration="689000" />
+      <workItem from="1667545302130" duration="4978000" />
+    </task>
+    <task id="LOCAL-00011" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1641298821093</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641298821093</updated>
       <workItem from="1666873343936" duration="7136000" />
       <workItem from="1667035691042" duration="1448000" />
       <workItem from="1667128407326" duration="8645000" />
@@ -787,14 +811,7 @@
       <option name="project" value="LOCAL" />
       <updated>1664732813779</updated>
     </task>
-    <task id="LOCAL-00060" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <created>1666877002358</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1666877002358</updated>
-    </task>
-    <option name="localTasksCounter" value="61" />
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -813,6 +830,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、优化第113题，减少递归函数的参数&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第四周的第三道题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />

@@ -1,4 +1,4 @@
-package com.nowcoder.huawei;
+package com.interview.nowcoder.huawei;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -252,178 +252,63 @@ public class MatrixUDG {
         System.out.printf("\n");
     }
 
-    /*
-     * prim最小生成树
-     *
+    /**
+     * Dijkstra最短路径。
+     * 即，统计图(G)中"顶点vs"到其它各个顶点的最短路径。
+     * <p>
      * 参数说明：
-     *   start -- 从图中的第start个元素开始，生成最小树
+     * G -- 图
+     * vs -- 起始顶点(start vertex)。即计算"顶点vs"到其它顶点的最短路径。
+     * prev -- 前驱顶点数组。即，prev[i]的值是"顶点vs"到"顶点i"的最短路径所经历的全部顶点中，位于"顶点i"之前的那个顶点。
+     * dist -- 长度数组。即，dist[i]是"顶点vs"到"顶点i"的最短路径的长度。
      */
-    public void prim(int start) {
-        int num = mVexs.length;         // 顶点个数
-        int index = 0;                    // prim最小树的索引，即prims数组的索引
-        char[] prims = new char[num];  // prim最小树的结果数组
-        int[] weights = new int[num];   // 顶点间边的权值
+    public void dijkstra(MatrixUDG G, int vs, int[] prev, int[] dist) {
+        int i, j, k = 0;
+        int min;
+        int tmp;
+        int[] flag = new int[mVexs.length];      // flag[i]=1表示"顶点vs"到"顶点i"的最短路径已成功获取。
 
-        // prim最小生成树中第一个数是"图中第start个顶点"，因为是从start开始的。
-        prims[index++] = mVexs[start];
+        // 初始化
+        for (i = 0; i < G.mVexs.length; i++) {
+            flag[i] = 0;              // 顶点i的最短路径还没获取到。
+            prev[i] = 0;              // 顶点i的前驱顶点为0。
+            dist[i] = G.mMatrix[vs][i];// 顶点i的最短路径为"顶点vs"到"顶点i"的权。
+        }
 
-        // 初始化"顶点的权值数组"，
-        // 将每个顶点的权值初始化为"第start个顶点"到"该顶点"的权值。
-        for (int i = 0; i < num; i++)
-            weights[i] = mMatrix[start][i];
-        // 将第start个顶点的权值初始化为0。
-        // 可以理解为"第start个顶点到它自身的距离为0"。
-        weights[start] = 0;
+        // 对"顶点vs"自身进行初始化
+        flag[vs] = 1;
+        dist[vs] = 0;
 
-        for (int i = 0; i < num; i++) {
-            // 由于从start开始的，因此不需要再对第start个顶点进行处理。
-            if (start == i)
-                continue;
-
-            int j = 0; // 循环变量，表示从A到其他顶点的第j条边
-            int k = 0;
-            int min = INF;
-            // 在未被加入到最小生成树的顶点中，找出权值最小的顶点。
-            while (j < num) {
-                // 若weights[j]=0，意味着"第j个节点已经被排序过"(或者说已经加入了最小生成树中)。
-                if (weights[j] != 0 && weights[j] < min) {
-                    min = weights[j];
+        // 遍历G.vexnum-1次；每次找出一个顶点的最短路径。
+        for (i = 1; i < G.mVexs.length; i++) {
+            // 寻找当前最小的路径；
+            // 即，在未获取最短路径的顶点中，找到离vs最近的顶点(k)。
+            min = Integer.MAX_VALUE;
+            for (j = 0; j < G.mVexs.length; j++) {
+                if (flag[j] == 0 && dist[j] < min) {
+                    min = dist[j];
                     k = j;
                 }
-                j++;
             }
+            // 标记"顶点k"为已经获取到最短路径
+            flag[k] = 1;
 
-            // 经过上面的处理后，在未被加入到最小生成树的顶点中，权值最小的顶点是第k个顶点。
-            // 将第k个顶点加入到最小生成树的结果数组中
-            prims[index++] = mVexs[k];
-            // 将"第k个顶点的权值"标记为0，意味着第k个顶点已经排序过了(或者说已经加入了最小树结果中)。
-            weights[k] = 0;
-            // 当第k个顶点被加入到最小生成树的结果数组中之后，更新其它顶点的权值。
-            for (j = 0; j < num; j++) {
-                // 当第j个节点没有被处理，并且需要更新时才被更新。
-                if (weights[j] != 0 && mMatrix[k][j] < weights[j])
-                    weights[j] = mMatrix[k][j];
-            }
-        }
-
-        // 计算最小生成树的权值
-        int sum = 0;
-        for (int i = 1; i < index; i++) {
-            int min = INF;
-            // 获取prims[i]在mMatrix中的位置
-            int n = getPosition(prims[i]);
-            // 在vexs[0...i]中，找出到j的权值最小的顶点。
-            for (int j = 0; j < i; j++) {
-                int m = getPosition(prims[j]);
-                if (mMatrix[m][n] < min)
-                    min = mMatrix[m][n];
-            }
-            sum += min;
-        }
-        // 打印最小生成树
-        System.out.printf("PRIM(%c)=%d: ", mVexs[start], sum);
-        for (int i = 0; i < index; i++)
-            System.out.printf("%c ", prims[i]);
-        System.out.printf("\n");
-    }
-
-    /*
-     * 克鲁斯卡尔（Kruskal)最小生成树
-     */
-    public void kruskal() {
-        int index = 0;                      // rets数组的索引
-        int[] vends = new int[mEdgNum];     // 用于保存"已有最小生成树"中每个顶点在该最小树中的终点。
-        EData[] rets = new EData[mEdgNum];  // 结果数组，保存kruskal最小生成树的边
-        EData[] edges;                      // 图对应的所有边
-
-        // 获取"图中所有的边"
-        edges = getEdges();
-        // 将边按照"权"的大小进行排序(从小到大)
-        sortEdges(edges, mEdgNum);
-
-        for (int i = 0; i < mEdgNum; i++) {
-            int p1 = getPosition(edges[i].start);      // 获取第i条边的"起点"的序号
-            int p2 = getPosition(edges[i].end);        // 获取第i条边的"终点"的序号
-
-            int m = getEnd(vends, p1);                 // 获取p1在"已有的最小生成树"中的终点
-            int n = getEnd(vends, p2);                 // 获取p2在"已有的最小生成树"中的终点
-            // 如果m!=n，意味着"边i"与"已经添加到最小生成树中的顶点"没有形成环路
-            if (m != n) {
-                vends[m] = n;                       // 设置m在"已有的最小生成树"中的终点为n
-                rets[index++] = edges[i];           // 保存结果
-            }
-        }
-
-        // 统计并打印"kruskal最小生成树"的信息
-        int length = 0;
-        for (int i = 0; i < index; i++)
-            length += rets[i].weight;
-        System.out.printf("Kruskal=%d: ", length);
-        for (int i = 0; i < index; i++)
-            System.out.printf("(%c,%c) ", rets[i].start, rets[i].end);
-        System.out.printf("\n");
-    }
-
-    /*
-     * 获取图中的边
-     */
-    private EData[] getEdges() {
-        int index = 0;
-        EData[] edges;
-
-        edges = new EData[mEdgNum];
-        for (int i = 0; i < mVexs.length; i++) {
-            for (int j = i + 1; j < mVexs.length; j++) {
-                if (mMatrix[i][j] != INF) {
-                    edges[index++] = new EData(mVexs[i], mVexs[j], mMatrix[i][j]);
+            // 修正当前最短路径和前驱顶点
+            // 即，当已经"顶点k的最短路径"之后，更新"未获取最短路径的顶点的最短路径和前驱顶点"。
+            for (j = 0; j < G.mVexs.length; j++) {
+                tmp = (G.mMatrix[k][j] == Integer.MAX_VALUE ? Integer.MAX_VALUE : (min + G.mMatrix[k][j])); // 防止溢出
+                if (flag[j] == 0 && (tmp < dist[j])) {
+                    dist[j] = tmp;
+                    prev[j] = k;
                 }
             }
         }
 
-        return edges;
+        // 打印dijkstra最短路径的结果
+        System.out.println("dijkstra(" + G.mVexs[vs] + "): ");
+        for (i = 0; i < G.mVexs.length; i++)
+            System.out.println("  shortest(" + G.mVexs[vs] + ", " + G.mVexs[i] + ")= " + dist[i]);
     }
-
-    /*
-     * 对边按照权值大小进行排序(由小到大)
-     */
-    private void sortEdges(EData[] edges, int elen) {
-
-        for (int i = 0; i < elen; i++) {
-            for (int j = i + 1; j < elen; j++) {
-
-                if (edges[i].weight > edges[j].weight) {
-                    // 交换"边i"和"边j"
-                    EData tmp = edges[i];
-                    edges[i] = edges[j];
-                    edges[j] = tmp;
-                }
-            }
-        }
-    }
-
-    /*
-     * 获取i的终点
-     */
-    private int getEnd(int[] vends, int i) {
-        while (vends[i] != 0)
-            i = vends[i];
-        return i;
-    }
-
-    // 边的结构体
-    private static class EData {
-        char start; // 边的起点
-        char end;   // 边的终点
-        int weight; // 边的权重
-
-        public EData(char start, char end, int weight) {
-            this.start = start;
-            this.end = end;
-            this.weight = weight;
-        }
-    }
-
-    ;
 
     public static void main(String[] args) {
 //        char[] vexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
@@ -481,6 +366,12 @@ public class MatrixUDG {
         // 采用已有的"图"
         pG = new MatrixUDG(vexs, matrix);
 
-        pG.kruskal();   // Kruskal算法生成最小生成树
+//        pG.print();   // 打印图
+//        pG.DFS();     // 深度优先遍历
+//        pG.BFS();     // 广度优先遍历
+
+        int[] prev = new int[pG.mVexs.length];
+        int[] dist = new int[pG.mVexs.length];
+        pG.dijkstra(pG, 3, prev, dist);
     }
 }

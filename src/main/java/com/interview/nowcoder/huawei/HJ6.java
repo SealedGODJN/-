@@ -1,9 +1,8 @@
-package com.nowcoder.huawei;
+package com.interview.nowcoder.huawei;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.io.BufferedReader;
 
