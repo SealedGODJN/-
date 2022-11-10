@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表+最大值优先队列）&#10;2、01背包问题-动态规划-二维dp数组+一维dp数组&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2020/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_416.java" afterDir="false" />
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、准备设计广义表和最大值优先级队列&#10;4、学习《深入浅出java多线程》&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,17 +109,7 @@
   <component name="RunManager" selected="Application.广义表_查找特定值的元素是否存在_第7题">
     <configuration name="Demo_3_2_ThreadGroupPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_2_ThreadGroupPriority" />
-      <module name="helloworld" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.java.concurrent.ConcurrentBook.Chapter3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.dp_416">
     <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
       <module name="helloworld" />
@@ -126,6 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
     <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
       <module name="helloworld" />
@@ -139,12 +138,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
     <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
+          <option name="PATTERN" value="com.NPU.上海出差.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
+      <module name="helloworld" />
+    <configuration name="dp_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_01背包" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
+          <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,9 +174,13 @@
     <configuration name="广义表_查找特定值的元素是否存在_第7题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2019.广义表_查找特定值的元素是否存在_第7题" />
       <module name="helloworld" />
+    <configuration name="dp_416" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_416" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.真题.考研2019.*" />
+          <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,6 +189,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.dp_01背包" />
+      <item itemvalue="应用程序.dp_416" />
+      <item itemvalue="应用程序.Demo_3_3_1_ThreadGroup_Exception" />
+      <item itemvalue="应用程序.FileTaskExample" />
+      <item itemvalue="应用程序.最大值优先级队列_第5题" />
       <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
       <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
       <item itemvalue="Application.FileTaskExample" />
@@ -179,6 +207,8 @@
         <item itemvalue="Application.FileTaskExample" />
         <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
         <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
+        <item itemvalue="应用程序.dp_416" />
+        <item itemvalue="应用程序.dp_01背包" />
       </list>
     </recent_temporary>
   </component>
@@ -434,6 +464,8 @@
       <workItem from="1667542756727" duration="689000" />
       <workItem from="1667545302130" duration="4978000" />
       <workItem from="1668067371681" duration="4266000" />
+      <workItem from="1667703115244" duration="263000" />
+      <workItem from="1667703708170" duration="2069000" />
     </task>
     <task id="LOCAL-00011" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1641298821093</created>
@@ -980,6 +1012,16 @@
           <line>41</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_416.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java</url>
           <line>129</line>
@@ -1000,11 +1042,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="node.info.value" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
