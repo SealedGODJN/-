@@ -7,13 +7,11 @@
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表+最大值优先队列）&#10;2、01背包问题-动态规划-二维dp数组+一维dp数组&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2020/Queue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_416.java" afterDir="false" />
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、准备设计广义表和最大值优先级队列&#10;4、学习《深入浅出java多线程》&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +67,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -106,16 +103,13 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.广义表_查找特定值的元素是否存在_第7题">
-    <configuration name="Demo_3_2_ThreadGroupPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_2_ThreadGroupPriority" />
   <component name="RunManager" selected="应用程序.dp_416">
     <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.java.concurrent.ConcurrentBook.Chapter3.*" />
+          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,14 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
     <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.上海出差.javafx.*" />
+          <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,15 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
     <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
       <module name="helloworld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
-          <option name="PATTERN" value="com.NPU.上海出差.javafx.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,9 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
-      <module name="helloworld" />
     <configuration name="dp_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_01背包" />
       <module name="Test_2020_3_2" />
@@ -171,9 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="广义表_查找特定值的元素是否存在_第7题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2019.广义表_查找特定值的元素是否存在_第7题" />
-      <module name="helloworld" />
     <configuration name="dp_416" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_416" />
       <module name="Test_2020_3_2" />
@@ -189,10 +172,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="应用程序.dp_494" />
+      <item itemvalue="应用程序.dp_1049" />
       <item itemvalue="应用程序.dp_01背包" />
       <item itemvalue="应用程序.dp_416" />
-      <item itemvalue="应用程序.Demo_3_3_1_ThreadGroup_Exception" />
-      <item itemvalue="应用程序.FileTaskExample" />
       <item itemvalue="应用程序.最大值优先级队列_第5题" />
       <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
       <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
@@ -202,11 +185,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.广义表_查找特定值的元素是否存在_第7题" />
-        <item itemvalue="Application.最大值优先级队列_第5题" />
-        <item itemvalue="Application.FileTaskExample" />
-        <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
-        <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
         <item itemvalue="应用程序.dp_416" />
         <item itemvalue="应用程序.dp_01背包" />
       </list>
@@ -466,26 +444,12 @@
       <workItem from="1668067371681" duration="4266000" />
       <workItem from="1667703115244" duration="263000" />
       <workItem from="1667703708170" duration="2069000" />
-    </task>
-    <task id="LOCAL-00011" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、解决347出现频率最高的K个元素&#10;3、学习优先级队列PriorityQueue的使用&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1641298821093</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1641298821093</updated>
-      <workItem from="1666873343936" duration="7136000" />
-      <workItem from="1667035691042" duration="1448000" />
-      <workItem from="1667128407326" duration="8645000" />
-      <workItem from="1667211189936" duration="6353000" />
-      <workItem from="1667229770941" duration="1479000" />
-      <workItem from="1667311097952" duration="2156000" />
-    </task>
-    <task id="LOCAL-00012" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1641738734338</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1641738734338</updated>
+      <workItem from="1667707947418" duration="258000" />
+      <workItem from="1667717327306" duration="596000" />
+      <workItem from="1667815247557" duration="9547000" />
+      <workItem from="1667918507467" duration="2259000" />
+      <workItem from="1668079715464" duration="1227000" />
+      <workItem from="1668093274609" duration="3288000" />
     </task>
     <task id="LOCAL-00013" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1641954981439</created>
@@ -816,7 +780,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664732813779</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1667708190631</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1667708190632</updated>
+    </task>
+    <task id="LOCAL-00061" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1668079786113</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1668079786113</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -835,10 +813,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对第三周的内容进行总结&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、优化第113题，减少递归函数的参数&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第四周的第三道题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、开始第五周的第一个：二叉搜索树的公共祖先&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、昨天开始测试《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：今天测完《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -861,7 +835,10 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1014,31 +991,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
-          <line>92</line>
+          <line>95</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_416.java</url>
           <line>19</line>
           <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java</url>
-          <line>129</line>
-          <properties class="com.dataStructure.真题.考研2019.GeneralList" method="find">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java</url>
-          <line>16</line>
-          <properties class="com.dataStructure.真题.考研2019.广义表_查找特定值的元素是否存在_第7题" method="createGList">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
