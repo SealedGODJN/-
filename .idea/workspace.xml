@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表+最大值优先队列）&#10;2、01背包问题-动态规划-二维dp数组+一维dp数组&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2020/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_416.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/javafx/FileTaskExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_ScheduledService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/concurrent/EDAP20221103/MyApp_Task.java" afterDir="false" />
+    <list default="true" id="9ec97dc6-5dfc-4ff2-8fc2-d5284f3794ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +61,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -103,7 +97,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_416">
+  <component name="RunManager" selected="Application.dp_01背包">
     <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
       <module name="helloworld" />
@@ -148,7 +142,6 @@
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
           <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -162,7 +155,6 @@
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2019.*" />
           <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -172,23 +164,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.dp_494" />
-      <item itemvalue="应用程序.dp_1049" />
-      <item itemvalue="应用程序.dp_01背包" />
-      <item itemvalue="应用程序.dp_416" />
-      <item itemvalue="应用程序.最大值优先级队列_第5题" />
-      <item itemvalue="Application.Demo_3_2_ThreadGroupPriority" />
+      <item itemvalue="Application.dp_01背包" />
+      <item itemvalue="Application.dp_416" />
       <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
       <item itemvalue="Application.FileTaskExample" />
       <item itemvalue="Application.最大值优先级队列_第5题" />
-      <item itemvalue="Application.广义表_查找特定值的元素是否存在_第7题" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.dp_416" />
-        <item itemvalue="应用程序.dp_01背包" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -991,7 +972,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
-          <line>95</line>
+          <line>98</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

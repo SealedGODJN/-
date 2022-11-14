@@ -16,8 +16,8 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
     //递归建立表头和表尾
     public GeneralList createGList(GeneralList L, String s) {
         System.out.println(s);
-        GeneralList p = null;
-        GeneralList q = null;
+        GeneralList p;
+        GeneralList q;
 
         if (s == null || s.equals("()")) {
             //如果是空表
@@ -71,8 +71,9 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
         int i = 0;
         int k = 0;
         char ch;
-        String hstr = null;
+        String hstr;
 
+        // 找出表头
         do {
             ch = str.charAt(i);
             i++;
@@ -95,7 +96,7 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
 
     //为了应对值传递，只能传递引用拷贝，无法传递“地址”的问题
     static class Temp {
-        String string = "";
+        String string;
 
         public Temp(String s) {
             string = s;
