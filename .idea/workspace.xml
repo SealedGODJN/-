@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_494.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/Search/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/Search/SequenceSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2022/第三题/图的填色问题.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_474.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_518.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_完全背包.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_494.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_494.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +108,13 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_494">
-    <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
-      <module name="helloworld" />
+  <component name="RunManager" selected="应用程序.图的填色问题">
+    <configuration name="图的填色问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.第三题.图的填色问题" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
+          <option name="PATTERN" value="com.dataStructure.真题.考研2022.第三题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +122,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dp_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_01背包" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.Search.BinarySearch" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dataStructure.Search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dp_完全背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_完全背包" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +148,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dp_1049" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_1049" />
+    <configuration name="dp_474" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_474" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -142,21 +161,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dp_416" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_416" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dp_494" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_494" />
+    <configuration name="dp_518" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_518" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -169,18 +175,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.dp_494" />
-      <item itemvalue="应用程序.dp_1049" />
-      <item itemvalue="应用程序.dp_01背包" />
-      <item itemvalue="应用程序.dp_416" />
-      <item itemvalue="应用程序.最大值优先级队列_第5题" />
+      <item itemvalue="应用程序.dp_518" />
+      <item itemvalue="应用程序.dp_完全背包" />
+      <item itemvalue="应用程序.图的填色问题" />
+      <item itemvalue="应用程序.dp_474" />
+      <item itemvalue="应用程序.BinarySearch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.dp_494" />
-        <item itemvalue="应用程序.dp_1049" />
-        <item itemvalue="应用程序.dp_416" />
-        <item itemvalue="应用程序.dp_01背包" />
+        <item itemvalue="应用程序.图的填色问题" />
+        <item itemvalue="应用程序.dp_518" />
+        <item itemvalue="应用程序.dp_完全背包" />
+        <item itemvalue="应用程序.dp_474" />
+        <item itemvalue="应用程序.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -442,14 +449,13 @@
       <workItem from="1667815247557" duration="9547000" />
       <workItem from="1667918507467" duration="2259000" />
       <workItem from="1668079715464" duration="1227000" />
-      <workItem from="1668093274609" duration="3288000" />
-    </task>
-    <task id="LOCAL-00013" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、理解HashMap的扰动函数、负载因子、扩容链表（hashcode的变化）&#10;3、学习使用easyexcel，存在问题：为什么doWrite()函数的参数只能是List&lt;List&lt;&gt;&gt;？已解答【add函数中分为两类，一类是添加List，一类是添加自定义class。如果使用List&lt;Number&gt;作为doWrite()函数的参数，将会调用add自定义class，无法正常解析Number类的属性，并无法将其属性添加到对应的行和列中】&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1641954981439</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1641954981440</updated>
+      <workItem from="1668093274609" duration="3939000" />
+      <workItem from="1668331566382" duration="7425000" />
+      <workItem from="1668446003403" duration="5000" />
+      <workItem from="1668509419602" duration="2658000" />
+      <workItem from="1668524613121" duration="3047000" />
+      <workItem from="1668594118164" duration="818000" />
+      <workItem from="1668841292543" duration="14413000" />
     </task>
     <task id="LOCAL-00014" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习347：前k个高频元素&#10;3、了解了spring中的annotaion的使用和相关函数&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1642563042317</created>
@@ -787,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668079786113</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1668097002181</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1668097002181</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -806,7 +819,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、开始第五周的第一个：二叉搜索树的公共祖先&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、昨天开始测试《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：今天测完《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -831,7 +843,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
