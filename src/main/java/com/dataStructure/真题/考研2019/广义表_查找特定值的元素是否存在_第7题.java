@@ -1,7 +1,5 @@
 package com.dataStructure.真题.考研2019;
 
-import java.util.Scanner;
-
 public class 广义表_查找特定值的元素是否存在_第7题 {
     public static void main(String[] args) {
 
@@ -13,6 +11,16 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
         System.out.println(GeneralList.find(generalList, "f"));
     }
 
+
+    /**
+     * ((a,b),(c,d))
+     * (a,b)
+     * a
+     * b
+     * (c,d)
+     * c
+     * d
+     */
     //建立广义表"(((a,b),(c,d)),(e,(f,g),h),z)"这样形式的字符串为内通建立广义表
     //同样采用递归方式。结束条件是空表和原子。
     //递归建立表头和表尾
@@ -43,7 +51,7 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
                     // 从表尾中取出表头的内容，循环建立同一层次的结点
                     Temp temp = new Temp(sub);
                     String hsub = sever(temp);
-                    sub = temp.string;
+                    sub = temp.tail;
 
                     p.info.hlink = createGList(p.info.hlink, hsub);
                     q = p; // hsub是头,建立表头
@@ -68,7 +76,7 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
      * @param t 广义表的字符串表示
      */
     public static String sever(Temp t) {
-        String str = t.string;
+        String str = t.tail;
         int n = str.length();
         int i = 0;
         int k = 0;
@@ -76,110 +84,6 @@ public class 广义表_查找特定值的元素是否存在_第7题 {
         String hstr;
 
         // 找出表头
-        do {
-            ch = str.charAt(i);
-            i++;
-
-            if (ch == '(') k++;
-            else if (ch == ')') k--;
-        } while (i < n && (ch != ',' || k != 0));
-
-        if (i < n) {
-            hstr = str.substring(0, i - 1);
-            str = str.substring(i);
-        } else {
-            hstr = str;
-            str = "";
-        }
-
-        t.string = str;
-        return hstr;
-    }
-
-    //为了应对值传递，只能传递引用拷贝，无法传递“地址”的问题
-    static class Temp {
-        String string;
-
-        public Temp(String s) {
-            string = s;
-        }
-        System.out.println(GeneralList.find(generalList, "z"));
-    }
-
-    //建立广义表"(((a,b),(c,d)),(e,(f,g),h),z)"这样形式的字符串为内通建立广义表
-
-    /**
-     * ((a,b),(c,d))
-     * (a,b)
-     * a
-     * b
-     * (c,d)
-     * c
-     * d
-     */
-
-    //同样采用递归方式。结束条件是空表和原子。
-    //递归建立表头和表尾
-    public GeneralList createGList(GeneralList L, String s) {
-//        System.out.println(s);
-        GeneralList p = null;
-        GeneralList q = null;
-
-        if (s == null || s.equals("()")) {
-            //如果是空表
-            return null;
-        } else {
-            if (L == null) {
-                L = new GeneralList();
-            }
-            if (s.length() == 1) {
-                //创建单原子广义表
-                L.vtype = 1;
-                L.info.value = s;
-                L.info.hlink = null;
-            } else {
-                L.vtype = 2;
-                p = L;
-                // 去除最外层的括号 or
-                String tail = s.substring(1, s.length() - 1);
-
-                do {
-                    // 从输入的字符串中取出表头的内容，循环建立同一层次的结点
-                    Temp temp = new Temp(tail);
-                    String head = sever(temp);
-                    tail = temp.tail; // 取出temp中保存的表尾
-
-                    p.info.hlink = createGList(p.info.hlink, head);
-                    q = p; // 保存表头
-
-                    if (!tail.isEmpty()) {
-                        //如果有尾
-                        p = new GeneralList();
-                        p.vtype = 2;
-                        q.tlink = p;
-                    }
-                } while (!tail.isEmpty());
-                q.tlink = null;
-            }
-        }
-
-        return L;
-    }
-
-    /**
-     * 把表头和表尾分开
-     * 该函数处理(((a,b),(c,d)),(e,(f,g),h),z)后，hstr = ((a,b),(c,d)) str = (e,(f,g),h),z.
-     *
-     * @param t 广义表的字符串表示
-     */
-    public static String sever(Temp t) {
-        String str = t.tail;
-        int n = str.length();
-        int i = 0;
-        int k = 0;
-        char ch;
-        String hstr = null;
-
         do {
             ch = str.charAt(i);
             i++;
