@@ -14,6 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_494.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_494.java" afterDir="false" />
+    <list default="true" id="9ec97dc6-5dfc-4ff2-8fc2-d5284f3794ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2019/广义表_查找特定值的元素是否存在_第7题.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +71,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -112,6 +111,10 @@
     <configuration name="图的填色问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.第三题.图的填色问题" />
       <module name="Test_2020_3_2" />
+  <component name="RunManager" selected="Application.dp_01背包">
+    <configuration name="Demo_3_3_1_ThreadGroup_Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.concurrent.ConcurrentBook.Chapter3.Demo_3_3_1_ThreadGroup_Exception" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.真题.考研2022.第三题.*" />
@@ -125,6 +128,9 @@
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.Search.BinarySearch" />
       <module name="Test_2020_3_2" />
+    <configuration name="FileTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.javafx.FileTaskExample" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.Search.*" />
@@ -138,9 +144,12 @@
     <configuration name="dp_完全背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_完全背包" />
       <module name="Test_2020_3_2" />
+    <configuration name="最大值优先级队列_第5题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2020.最大值优先级队列_第5题" />
+      <module name="helloworld" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="PATTERN" value="com.dataStructure.真题.考研2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,6 +159,8 @@
     </configuration>
     <configuration name="dp_474" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_474" />
+    <configuration name="dp_01背包" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_01背包" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -163,6 +174,8 @@
     </configuration>
     <configuration name="dp_518" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_518" />
+    <configuration name="dp_416" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_416" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -180,6 +193,11 @@
       <item itemvalue="应用程序.图的填色问题" />
       <item itemvalue="应用程序.dp_474" />
       <item itemvalue="应用程序.BinarySearch" />
+      <item itemvalue="Application.dp_01背包" />
+      <item itemvalue="Application.dp_416" />
+      <item itemvalue="Application.Demo_3_3_1_ThreadGroup_Exception" />
+      <item itemvalue="Application.FileTaskExample" />
+      <item itemvalue="Application.最大值优先级队列_第5题" />
     </list>
     <recent_temporary>
       <list>
