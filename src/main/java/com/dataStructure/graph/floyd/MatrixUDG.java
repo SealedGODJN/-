@@ -536,16 +536,16 @@ public class MatrixUDG {
         // 采用已有的"图"
         pG = new MatrixUDG(vexs, matrix);
 
-        //pG.print();   // 打印图
-        //pG.DFS();     // 深度优先遍历
-        //pG.BFS();     // 广度优先遍历
-        //pG.prim(0);   // prim算法生成最小生成树
-        //pG.kruskal(); // Kruskal算法生成最小生成树
+        pG.print();   // 打印图
+        pG.DFS();     // 深度优先遍历
+        pG.BFS();     // 广度优先遍历
+        pG.prim(0);   // prim算法生成最小生成树
+        pG.kruskal(); // Kruskal算法生成最小生成树
 
         int[] prev = new int[pG.mVexs.length];
         int[] dist = new int[pG.mVexs.length];
         // dijkstra算法获取"第4个顶点"到其它各个顶点的最短距离
-        //pG.dijkstra(3, prev, dist);
+        pG.dijkstra(3, prev, dist);
 
         int[][] path = new int[pG.mVexs.length][pG.mVexs.length];
         int[][] floy = new int[pG.mVexs.length][pG.mVexs.length];

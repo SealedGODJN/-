@@ -1,5 +1,7 @@
 package com.dataStructure.Queue;
 
+import java.util.Arrays;
+
 /**
  * Java : 数组实现“队列”，只能存储int数据。
  *
@@ -18,7 +20,15 @@ public class ArrayQueue {
 
     // 将val添加到队列的末尾
     public void add(int val) {
-        mArray[mCount++] = val;
+        if (mCount == mArray.length) {
+            // 队列满了
+            System.out.println("队列满了");
+//            int[] temp = Arrays.copyOf(mArray, mArray.length);
+
+        } else {
+            // 队列还没满
+            mArray[mCount++] = val;
+        }
     }
 
     // 返回“队列开头元素”
@@ -31,6 +41,7 @@ public class ArrayQueue {
         int ret = mArray[0];
         mCount--;
         for (int i = 1; i <= mCount; i++)
+            // 把元素往前移一位
             mArray[i - 1] = mArray[i];
         return ret;
     }

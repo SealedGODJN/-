@@ -9,6 +9,7 @@ public class 求解二叉树中仅有左子树且没有右子树的节点个数_
     public static void onlyLeft(TreeNode root) {
         if (root != null) {
             if (root.left != null && root.right == null) {
+                System.out.println(root.val);
                 num++;
             }
             onlyLeft(root.left);
