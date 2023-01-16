@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="helloworld" />
         <module name="Test_2020_3_2" />
+        <module name="code" />
       </profile>
     </annotationProcessing>
   </component>

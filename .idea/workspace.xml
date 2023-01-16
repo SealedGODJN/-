@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2022/简答题第3题/建立大根堆.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_322.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_377.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/fuck/CheckIdentifyCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/Queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/Queue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/floyd/MatrixUDG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/graph/floyd/MatrixUDG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/Huffman/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/Huffman/Huffman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/tree/HuffmanTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/求解二叉树中仅有左子树且没有右子树的节点个数_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/求解二叉树中仅有左子树且没有右子树的节点个数_6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +63,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -105,7 +97,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.建立大根堆">
+  <component name="RunManager" selected="应用程序.HuffmanTree">
     <configuration name="建立大根堆" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.简答题第3题.建立大根堆" />
       <module name="Test_2020_3_2" />
@@ -185,21 +177,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.建立大根堆" />
-      <item itemvalue="应用程序.MatrixUDG" />
       <item itemvalue="应用程序.HuffmanTree" />
+      <item itemvalue="应用程序.MatrixUDG" />
       <item itemvalue="应用程序.dp_322" />
       <item itemvalue="应用程序.dp_377" />
+      <item itemvalue="应用程序.建立大根堆" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.建立大根堆" />
-        <item itemvalue="应用程序.MatrixUDG" />
-        <item itemvalue="应用程序.HuffmanTree" />
-        <item itemvalue="应用程序.dp_322" />
-        <item itemvalue="应用程序.dp_377" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -474,14 +457,14 @@
       <workItem from="1671277982771" duration="1933000" />
       <workItem from="1671617774276" duration="19000" />
       <workItem from="1671891527137" duration="1922000" />
-      <workItem from="1672230627070" duration="1415000" />
-    </task>
-    <task id="LOCAL-00015" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历和中序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1643280853142</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1643280853142</updated>
+      <workItem from="1672230627070" duration="2013000" />
+      <workItem from="1672307869821" duration="2224000" />
+      <workItem from="1672401129611" duration="166000" />
+      <workItem from="1672404335293" duration="14000" />
+      <workItem from="1672404748541" duration="6000" />
+      <workItem from="1672915597448" duration="469000" />
+      <workItem from="1672916290720" duration="2635000" />
+      <workItem from="1673272041605" duration="169000" />
     </task>
     <task id="LOCAL-00016" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、复习二叉树的前序遍历中序遍历和后序遍历，完成递归实现和非递归实现&#10;3、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1643428624117</created>
@@ -819,7 +802,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668913935604</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1672234484950</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1672234484950</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -838,7 +828,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、昨天开始测试《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：今天测完《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -863,7 +852,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
