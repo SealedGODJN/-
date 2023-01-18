@@ -1,0 +1,19 @@
+<html>
+   
+<div id="d1" align="center" class="abc">hello HTML DOM</div>
+<script>
+var  div1 = document.getElementById("d1");
+var as = div1.attributes;
+document.write("div总共有"+as.length +" 个属性");
+document.write("分别是:");
+for(i = 0; i< as.length; i++){
+document.write("<br>");
+document.write(as[i].nodeName);
+document.write(":");
+document.write(as[i].nodeValue);
+}
+document.write("<br>");
+document.write("div的id属性值是："+ as["id"].nodeValue);
+ 
+</script>
+</html>
