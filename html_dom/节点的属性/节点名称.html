@@ -1,0 +1,15 @@
+<html>
+<div id="d1">hello HTML DOM</div>
+<script>
+    function p(s) {
+        document.write(s);
+        document.write("<br>");
+    }
+    var div1 = document.getElementById("d1");
+    p("document的nodeName：" + document.nodeName);
+    p("div元素节点的nodeName:" + div1.nodeName);
+    p("div下属性节点的nodeName:" + div1.attributes[0].nodeName);
+    p("div下内容节点的nodeName:" + div1.childNodes[0].nodeName);
+</script>
+
+</html>

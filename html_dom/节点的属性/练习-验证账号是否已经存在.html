@@ -1,0 +1,31 @@
+<html>
+<script>
+
+    function check() {
+        var input1 = document.getElementById("input1");
+        var value = input1.value;
+        
+        var warn = document.getElementById("warn");
+        var info = document.getElementById("info");
+
+        // 初始化 提示信息
+        warn.style.display="none";
+        info.style.display="none";
+
+        if (value.charAt(0).match("A") || value.charAt(0).match("a")) {
+            warn.style.display="inline";
+        } else {
+            info.style.display="inline";
+        }
+    }
+</script>
+
+<input id="input1" class="class1 class2" test="t1" value="请输入账号">
+<p id="warn" style="color:red;display:none;">账号已经存在</p>
+<p id="info" style="color:green;display:none;">账号可以使用</p>
+<br>
+<button onclick="check()">验证账号是否存在</button>
+
+<div style="height:30px"></div>
+
+</html>

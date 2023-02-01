@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function changePic1() {
+            var img1 = document.getElementById("img1");
+            img1.src = "katarina.jpg"
+        }
+        function changePic2() {
+            var img1 = document.getElementById("img1");
+            img1.attributes["src"].nodeValue = "gareen.jpg";
+        }
+    </script>
+    <body>
+        <button onclick="changePic1()">通过src属性切换图片1</button>
+        <br>
+        <button onclick="changePic2()">通过属性节点切换图片2</button>
+        <br>
+        <img id="img1" src=""/>
+    </body>
+</html>

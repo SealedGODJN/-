@@ -1,0 +1,17 @@
+<html>
+
+<div id="d1">hello HTML DOM</div>
+<script>
+
+    function changeDiv1() {
+        document.getElementById("d1").childNodes[0].nodeValue = "通过childNode[0].value改变内容";
+    }
+    function changeDiv2() {
+        document.getElementById("d1").innerHTML = "通过innerHTML改变内容";
+    }
+</script>
+
+<button onclick="changeDiv1()">通过内容节点方式改变div的内容</button>
+<button onclick="changeDiv2()">通过innerHTML改变div的内容</button>
+
+</html>

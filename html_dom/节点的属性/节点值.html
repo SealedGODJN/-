@@ -1,0 +1,16 @@
+<html>
+
+<div id="d1">hello HTML DOM</div>
+<script>
+    function p(s) {
+        document.write(s);
+        document.write("<br>");
+    }
+    var div1 = document.getElementById("d1");
+    p("document是没有nodeValue的：" + document.nodeValue);
+    p("元素节点是没有nodeValue的：" + div1.nodeValue);
+    p("属性节点id的nodeValue：" + div1.attributes[0].nodeValue);
+    p("内容节点的nodeValue：" + div1.childNodes[0].nodeValue);
+</script>
+
+</html>

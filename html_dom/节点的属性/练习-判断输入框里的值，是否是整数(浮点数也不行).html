@@ -1,0 +1,37 @@
+<html>
+<script>
+    // 答案：用parseInt()函数，不讲武德
+    function judge() {
+        var num = document.getElementById("in").value;
+        if (parseInt(num) == num) {
+            document.getElementById("out").innerHTML = "是整数";
+        }
+        else {
+            document.getElementById("out").innerHTML = "不是整数";
+        }
+    }
+
+    function check() {
+
+        var input1 = document.getElementById("input1");
+        let num = input1.value
+
+        if (num.match(/[0-9]+/) != null) {
+            if (num.match(/[0-9]+\.[0-9]+/)) {
+                alert("不是整数")
+            } else {
+                alert("是整数")
+            }
+        } else {
+            alert("不是整数")
+        }
+    }
+</script>
+
+<input id="input1" value="请输入整数">
+<br>
+<button onclick="check()">判断是否是整数</button>
+
+<div style="height:30px"></div>
+
+</html>

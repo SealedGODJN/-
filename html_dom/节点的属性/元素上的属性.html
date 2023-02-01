@@ -1,0 +1,26 @@
+<html>
+
+<div id="d1">hello HTML DOM</div>
+
+<script>
+
+    function get() {
+
+        var input1 = document.getElementById("input1");
+        var s = "id=" + input1.id + "<br>";
+        s += "value=" + input1.value + "<br>";
+        s += "class=" + input1.className + "<br>";
+        s += "test=" + input1.getAttribute("test") + "<br>";
+        s += "nodeValue=" + input1.attributes["test"].nodeValue + "<br>";
+
+        document.getElementById("d1").innerHTML = s;
+    }
+</script>
+
+<input id="input1" class="class1 class2" test="t1" value="这是一个输入框">
+<br>
+<button onclick="get()">获取input的属性</button>
+
+<div style="height:30px"></div>
+
+</html>
