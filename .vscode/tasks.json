@@ -1,17 +1,59 @@
 {
     "version": "2.0.0",
     "tasks": [
+        // {
+        //     "label": "Compile",
+        //     "command": "gcc",
+        //     "args": [
+        //         "${file}",
+        //         "-o",
+        //         "${fileDirname}/${fileBasenameNoExtension}.exe",
+        //         "-g",
+        //         "-Wall",
+        //         "-static-libgcc",
+        //         "-fexec-charset=GBK"
+        //     ],
+        //     "type": "process",
+        //     "group": "build",
+        //     "presentation": {
+        //         "echo": true,
+        //         "reveal": "always",
+        //         "focus": false,
+        //         "panel": "shared"
+        //     }
+        // },
+        // {
+        //     "type": "cppbuild",
+        //     "label": "C/C++: gcc.exe 生成活动文件",
+        //     "command": "C:\\MinGW\\bin\\gcc.exe",
+        //     "args": [
+        //         "-g",
+        //         "${file}",
+        //         "-o",
+        //         "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        //     ],
+        //     "options": {
+        //         "cwd": "C:\\MinGW\\bin"
+        //     },
+        //     "problemMatcher": [
+        //         "$gcc"
+        //     ],
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "detail": "调试器生成的任务。"
+        // }
         {
             "label": "Compile",
             "command": "gcc",
             "args": [
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "${fileDirname}/${fileBasenameNoExtension}",
                 "-g",
                 "-Wall",
-                "-static-libgcc",
-                "-fexec-charset=GBK"
+                "-static-libgcc"
             ],
             "type": "process",
             "group": "build",
@@ -24,16 +66,20 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe 生成活动文件",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "label": "C/C++: g++ 生成活动文件",
+            "command": "/usr/bin/g++",
             "args": [
+                "-std=c++17",
+                "-stdlib=libc++",
+                "-fdiagnostics-color=always",
                 "-g",
+                "-Wall",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "C:\\MinGW\\bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
