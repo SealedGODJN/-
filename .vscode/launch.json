@@ -1,4 +1,3 @@
-// https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
 {
     "version": "0.2.0",
     "configurations": [{
@@ -22,5 +21,19 @@
             }
         ],
         "preLaunchTask": "C/C++: g++.exe build active file" // 调试会话开始前执行的任务，一般为编译程序。与tasks.json的label相对应
-    }]
+    },
+    {
+        "name": "C/C++: clang++ 生成和调试活动文件",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "lldb",
+        "preLaunchTask": "C/C++: clang++ 生成活动文件"
+    }
+]
 }
