@@ -1,0 +1,3 @@
+C:/code/helloworld-c/CMake/Step1/CMakeFiles/Tutorial.dir
+C:/code/helloworld-c/CMake/Step1/CMakeFiles/edit_cache.dir
+C:/code/helloworld-c/CMake/Step1/CMakeFiles/rebuild_cache.dir
