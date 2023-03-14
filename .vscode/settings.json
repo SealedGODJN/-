@@ -87,5 +87,5 @@
     // 是否修改就Config，这个建议设置成false, 提高效率
     "cmake.configureOnEdit": false, 
     "cmake.enableTraceLogging": true,
-    "cmake.sourceDirectory": "C:/code/helloworld-c/CMake/Step3",
+    "cmake.sourceDirectory": "C:/code/helloworld-c/CMake/Step4",
 }
