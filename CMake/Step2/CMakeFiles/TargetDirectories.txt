@@ -1,6 +1,0 @@
-C:/code/helloworld-c/CMake/Step2/CMakeFiles/Tutorial.dir
-C:/code/helloworld-c/CMake/Step2/CMakeFiles/edit_cache.dir
-C:/code/helloworld-c/CMake/Step2/CMakeFiles/rebuild_cache.dir
-C:/code/helloworld-c/CMake/Step2/MathFunctions/CMakeFiles/MathFunctions.dir
-C:/code/helloworld-c/CMake/Step2/MathFunctions/CMakeFiles/edit_cache.dir
-C:/code/helloworld-c/CMake/Step2/MathFunctions/CMakeFiles/rebuild_cache.dir
