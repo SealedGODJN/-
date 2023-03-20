@@ -1,16 +1,9 @@
-
 // A simple program that computes the square root of a number
-#include <cmath>
 #include <iostream>
 #include <string>
 
 #include "TutorialConfig.h"
-
-// TODO 5: Include MathFunctions.h
-#ifdef USE_MYMATH
-  #include "MathFunctions.h"
-#endif
-
+#include "MathFunctions.h"
 
 int main(int argc, char* argv[])
 {

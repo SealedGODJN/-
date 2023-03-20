@@ -8,9 +8,7 @@
 
 ### 实验2
 
-
 ### 实验3
-
 
 ## 2023-3 CMake学习
 
@@ -44,7 +42,7 @@
 
 2、test：学习配置自动化cmake测试
 
-```shell
+```powershell
 UpdateCTestConfiguration  from :C:/code/helloworld-c/CMake/Step5/DartConfiguration.tcl
 UpdateCTestConfiguration  from :C:/code/helloworld-c/CMake/Step5/DartConfiguration.tcl
 Test project C:/code/helloworld-c/CMake/Step5
@@ -191,4 +189,101 @@ test 8
 
 Total Test time (real) =   0.21 sec
 
+```
+
+### Step6
+
+
+### Step7
+
+
+### Step8
+
+
+### Step9
+
+
+### Step10
+
+1、替换CMakeLists.txt和Mathfunctions.txt
+
+2、修改MathFunctions.h和tutorial.cxx
+
+3、cmake --build . 出现warning
+
+```powershell
+(base) C:\code\helloworld-c>cd CMake
+
+(base) C:\code\helloworld-c\CMake>cd Step10
+
+(base) C:\code\helloworld-c\CMake\Step10>cmake -G "MinGW Makefiles"
+CMake Warning:
+  No source or binary directory provided.  Both will be assumed to be the
+  same as the current working directory, but note that this warning will
+  become a fatal error in future CMake releases.
+
+
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/msys64/mingw64/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/code/helloworld-c/CMake/Step10
+
+(base) C:\code\helloworld-c\CMake\Step10>cmake --build .
+[ 11%] Building CXX object MathFunctions/CMakeFiles/MakeTable.dir/MakeTable.cxx.obj
+[ 22%] Linking CXX executable ..\MakeTable.exe
+[ 22%] Built target MakeTable
+[ 33%] Generating Table.h
+[ 44%] Building CXX object MathFunctions/CMakeFiles/SqrtLibrary.dir/MathFunctions.cxx.obj
+C:\code\helloworld-c\CMake\Step10\MathFunctions\MathFunctions.cxx:12:10: warning: 'double mathfunctions::mysqrt(double)' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   12 |   double mysqrt(double x)
+      |          ^~~~~~
+[ 55%] Linking CXX static library ..\libSqrtLibrary.a
+[ 55%] Built target SqrtLibrary
+[ 66%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.obj
+[ 77%] Linking CXX shared library ..\libMathFunctions.dll
+[ 77%] Built target MathFunctions
+[ 88%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.obj
+[100%] Linking CXX executable Tutorial.exe
+[100%] Built target Tutorial
+
+Computing sqrt of 123245 to be 15408.2
+Computing sqrt of 123245 to be 7708.12
+Computing sqrt of 123245 to be 3862.06
+Computing sqrt of 123245 to be 1946.98
+Computing sqrt of 123245 to be 1005.14
+Computing sqrt of 123245 to be 563.878
+Computing sqrt of 123245 to be 391.223
+Computing sqrt of 123245 to be 353.124
+The square root of 123245 is 353.124
+
+(base) C:\code\helloworld-c\CMake\Step10>cmake --build . 
+[ 22%] Built target MakeTable
+[ 55%] Built target SqrtLibrary
+[ 77%] Built target MathFunctions
+[100%] Built target Tutorial
+
+```
+
+4、解决方法：
+
+set the [`POSITION_INDEPENDENT_CODE`](https://cmake.org/cmake/help/latest/prop_tgt/POSITION_INDEPENDENT_CODE.html#prop_tgt:POSITION_INDEPENDENT_CODE "POSITION_INDEPENDENT_CODE") target property of SqrtLibrary to be `True` when building shared libraries.
+
+**MathFunctions/CMakeLists.txt**
+
+```
+# state that SqrtLibrary need PIC when the default is shared libraries
+set_target_properties(SqrtLibraryPROPERTIES
+POSITION_INDEPENDENT_CODE${BUILD_SHARED_LIBS}
+)
 ```
