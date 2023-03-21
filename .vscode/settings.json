@@ -73,7 +73,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "ctime": "cpp",
+        "fstream": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
     "cmake.cmakePath": "C:\\CMake\\bin\\cmake.exe",
     "cmake.mingwSearchDirs": [
