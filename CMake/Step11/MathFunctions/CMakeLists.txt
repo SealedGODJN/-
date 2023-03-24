@@ -4,7 +4,9 @@ add_library(MathFunctions MathFunctions.cxx)
 # state that anybody linking to us needs to include the current source dir
 # to find MathFunctions.h, while we don't.
 target_include_directories(MathFunctions
-                           INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+                           INTERFACE
+                           $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+                           $<INSTALL_INTERFACE:include>
                            )
 
 # should we use our own math functions
@@ -55,6 +57,7 @@ if(TARGET SqrtLibrary)
   list(APPEND installable_libs SqrtLibrary)
 endif()
 install(TARGETS ${installable_libs}
+  EXPORT MathFunctionsTargets
   DESTINATION lib)
 # install include headers
 install(FILES MathFunctions.h DESTINATION include)

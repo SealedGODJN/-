@@ -193,15 +193,11 @@ Total Test time (real) =   0.21 sec
 
 ### Step6
 
-
 ### Step7
-
 
 ### Step8
 
-
 ### Step9
-
 
 ### Step10
 
@@ -281,9 +277,72 @@ set the [`POSITION_INDEPENDENT_CODE`](https://cmake.org/cmake/help/latest/prop_t
 
 **MathFunctions/CMakeLists.txt**
 
-```
+```cmake
 # state that SqrtLibrary need PIC when the default is shared libraries
 set_target_properties(SqrtLibraryPROPERTIES
 POSITION_INDEPENDENT_CODE${BUILD_SHARED_LIBS}
+)
+```
+
+### Step11
+
+1、修改MathFunctions中的CMakeLists.txt关于install的内容：
+
+
+```cmake
+install(TARGETS${installable_libs}
+EXPORTMathFunctionsTargets
+DESTINATIONlib)
+```
+
+
+问题：
+
+```powershell
+(base) C:\code\helloworld-c>cd CMake
+
+(base) C:\code\helloworld-c\CMake>cd Step11 
+
+(base) C:\code\helloworld-c\CMake\Step11>cmake -G "MinGW Makefiles" .
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/msys64/mingw64/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.9s)
+CMake Error in MathFunctions/CMakeLists.txt:
+  Target "MathFunctions" INTERFACE_INCLUDE_DIRECTORIES property contains
+  path:
+
+    "C:/code/helloworld-c/CMake/Step11/MathFunctions"
+
+  which is prefixed in the build directory.
+
+
+-- Generating done (0.1s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+```
+
+
+2、分析：
+
+What CMake is trying to say is that during generating the export information it will export a path that is intrinsically tied to the current machine and will not be valid on other machines. The solution to this is to update the `MathFunctions `[`target_include_directories()`](https://cmake.org/cmake/help/latest/command/target_include_directories.html#command:target_include_directories "target_include_directories")to understand that it needs different `INTERFACE `locations when being used from within the build directory and from an install / package.
+
+3、解决方法：
+
+**MathFunctions/CMakeLists.txt**
+
+```cmake
+target_include_directories(MathFunctions
+INTERFACE
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+$<INSTALL_INTERFACE:include>
 )
 ```
