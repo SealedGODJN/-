@@ -1,11 +1,6 @@
 package com.leetcode.HashMap;
 
-import com.sun.org.apache.xml.internal.utils.res.XResources_es;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Set;
 
 public class HashMap_349 {
     public static int[] intersection(int[] nums1, int[] nums2) {

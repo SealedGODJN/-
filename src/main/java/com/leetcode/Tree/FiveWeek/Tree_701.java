@@ -1,8 +1,6 @@
 package com.leetcode.Tree.FiveWeek;
 
 import com.leetcode.Tree.TreeNode;
-import org.apache.poi.ss.formula.functions.T;
-import sun.reflect.generics.tree.Tree;
 
 public class Tree_701 {
 

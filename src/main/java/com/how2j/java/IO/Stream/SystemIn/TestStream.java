@@ -1,10 +1,6 @@
 package com.how2j.java.IO.Stream.SystemIn;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.io.*;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
