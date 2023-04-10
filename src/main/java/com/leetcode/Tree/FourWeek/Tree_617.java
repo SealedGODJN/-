@@ -1,8 +1,6 @@
 package com.leetcode.Tree.FourWeek;
 
-import com.leetcode.Tree.SecondWeek.Tree_100;
 import com.leetcode.Tree.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 public class Tree_617 {
 
