@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/scala/Array/ValAndVar.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/scala/WordCount/WordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_2/TestDisturb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java_Interview_Reference/hashcode_2/TestDisturb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/Annotation/GetClass/Annotation中annotationType和getclass的区别.assets/image-20220113213008704.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/Annotation/GetClass/Annotation中annotationType和getclass的区别.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/reflection/newObject/hero.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000610669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000838373.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000902405.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110102838632.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104544803.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104558818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104612760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104625154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383248292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383327304.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383427676.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383535738.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +65,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -62,20 +79,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3039612",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -110,13 +131,13 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AFDXEndToEndDelayExtended" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.网络演算法.AFDXEndToEndDelayExtended" />
-      <module name="helloworld-java" />
+  <component name="RunManager" selected="Application.ValAndVar">
+    <configuration name="建立大根堆" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.简答题第3题.建立大根堆" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.上海出差.网络演算法.*" />
+          <option name="PATTERN" value="com.dataStructure.真题.考研2022.简答题第3题.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,9 +145,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValAndVar" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.Array.ValAndVar" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scala.Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.WordCount.WordCount" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scala.WordCount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="建立大根堆" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.简答题第3题.建立大根堆" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dataStructure.真题.考研2022.简答题第3题.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dp_213" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_213" />
+      <module name="code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dp_377" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_377" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ValAndVar" />
+      <item itemvalue="Application.WordCount" />
+      <item itemvalue="Application.dp_213" />
+      <item itemvalue="Application.dp_377" />
+      <item itemvalue="Application.建立大根堆" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.AFDXEndToEndDelayExtended" />
+        <item itemvalue="Application.ValAndVar" />
+        <item itemvalue="Application.WordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -418,17 +512,24 @@
       <workItem from="1675143134395" duration="6649000" />
       <workItem from="1675480665249" duration="598000" />
       <workItem from="1675755084590" duration="3317000" />
-      <workItem from="1675841514217" duration="983000" />
-      <workItem from="1675931612948" duration="21000" />
-      <workItem from="1676626766842" duration="13000" />
-      <workItem from="1676626841945" duration="601000" />
-      <workItem from="1677120074387" duration="6257000" />
-      <workItem from="1677320252155" duration="297000" />
-      <workItem from="1679620708520" duration="480000" />
-      <workItem from="1680165367160" duration="53000" />
-      <workItem from="1680165439902" duration="1968000" />
-      <workItem from="1680267995689" duration="1812000" />
-      <workItem from="1680689457840" duration="11000" />
+      <workItem from="1675841514217" duration="652000" />
+      <workItem from="1676195368714" duration="610000" />
+      <workItem from="1680443735995" duration="515000" />
+      <workItem from="1681085623235" duration="3857000" />
+    </task>
+    <task id="LOCAL-00018" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
+      <created>1643781979388</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643781979388</updated>
+    </task>
+    <task id="LOCAL-00019" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成637：基于层序遍历的二叉树的层平均值&#10;3、完成429，基于二叉树的n叉树的层序遍历&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
+      <created>1643976850794</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643976850794</updated>
     </task>
     <task id="LOCAL-00020" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成104：二叉树的最大深度&#10;3、完成111：二叉树的最小深度&#10;4、222.完全二叉树的节点个数&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
       <created>1644416608951</created>
@@ -752,28 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673867048984</updated>
     </task>
-    <task id="LOCAL-00066" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、刷题：leetcode-198+213 打家劫舍 1,2&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <created>1675842404073</created>
+    <task id="LOCAL-00066" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1681087101068</created>
       <option name="number" value="00066" />
       <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1675842404073</updated>
+      <updated>1681087101068</updated>
     </task>
-    <task id="LOCAL-00067" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟初步的计算&#10;2、MVCC的学习（ReadView的原理）&#10;3、身份证号的验证（也可以通过接口IdCardUtils.fakeId(false,null,null,null,null,null)随机生成18位身份证号）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、">
-      <created>1677134976900</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1677134976900</updated>
-    </task>
-    <task id="LOCAL-00068" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
-      <created>1680166182019</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1680166182019</updated>
-    </task>
-    <option name="localTasksCounter" value="69" />
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -792,6 +879,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;3、完成了面向对象Java教程的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
@@ -814,10 +903,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、刷题：leetcode-198+213 打家劫舍 1,2&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟初步的计算&#10;2、MVCC的学习（ReadView的原理）&#10;3、身份证号的验证（也可以通过接口IdCardUtils.fakeId(false,null,null,null,null,null)随机生成18位身份证号）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -909,6 +996,11 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/java/Generic/improve/Test.java</url>
           <line>10</line>
           <option name="timeStamp" value="55" />
@@ -967,6 +1059,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
           <line>95</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/scala/Array/ValAndVar.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
