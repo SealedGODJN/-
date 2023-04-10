@@ -7,6 +7,12 @@ import java.util.List;
 
 public class 查找二叉排序树中某特定值的双亲节点_3 {
     //    static int top = 0;
+
+    /**
+     * @param root 树
+     * @param key  要找到值
+     * @param path 记录一路下来的路径
+     */
     public static void printPath(TreeNode root, String key, String path) {
         if (root != null) {
             if (root.val.equals(key)) {

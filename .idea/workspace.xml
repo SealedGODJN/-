@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟初步的计算&#10;2、MVCC的学习（ReadView的原理）&#10;3、身份证号的验证（也可以通过接口IdCardUtils.fakeId(false,null,null,null,null,null)随机生成18位身份证号）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/网络演算法/AFDXEndToEndDelayExtended.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/SystemIn/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/SystemIn/TestStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dataStructure/真题/考研2021/查找二叉排序树中某特定值的双亲节点_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,14 +426,9 @@
       <workItem from="1677320252155" duration="297000" />
       <workItem from="1679620708520" duration="480000" />
       <workItem from="1680165367160" duration="53000" />
-      <workItem from="1680165439902" duration="619000" />
-    </task>
-    <task id="LOCAL-00019" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成637：基于层序遍历的二叉树的层平均值&#10;3、完成429，基于二叉树的n叉树的层序遍历&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
-      <created>1643976850794</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1643976850794</updated>
+      <workItem from="1680165439902" duration="1968000" />
+      <workItem from="1680267995689" duration="1812000" />
+      <workItem from="1680689457840" duration="11000" />
     </task>
     <task id="LOCAL-00020" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成104：二叉树的最大深度&#10;3、完成111：二叉树的最小深度&#10;4、222.完全二叉树的节点个数&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
       <created>1644416608951</created>
@@ -774,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677134976900</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <created>1680166182019</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1680166182019</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -793,7 +792,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;3、完成了面向对象Java教程的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
@@ -818,7 +816,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、刷题：leetcode-198+213 打家劫舍 1,2&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟初步的计算&#10;2、MVCC的学习（ReadView的原理）&#10;3、身份证号的验证（也可以通过接口IdCardUtils.fakeId(false,null,null,null,null,null)随机生成18位身份证号）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟初步的计算&#10;2、MVCC的学习（ReadView的原理）&#10;3、身份证号的验证（也可以通过接口IdCardUtils.fakeId(false,null,null,null,null,null)随机生成18位身份证号）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、AFDX网络数据包延迟上界使用网络演算法计算得出的值为负值，流程出错&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -908,11 +907,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_113.java</url>
           <line>52</line>
           <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/java/Generic/improve/Test.java</url>
