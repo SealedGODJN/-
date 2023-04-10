@@ -52,8 +52,14 @@ Space里面的对象被认为是垃圾，则它们会被直接删除，而不是
 
 1、Major GC由Minor GC引起（因此，很难将MInor GC 和 Major GC区分开）
 
-2、不用去关注是Major GC 还是Full GC，只需要看application的所有线程都被停止了（这种情况是Full GC），or 它能够与应用程序线程并发进行（这种情况是Major GC）
+2、不用去关注是Major GC 还是Full GC，只需要看application的所有线程都被停止了（这种情况是Full GC），or
+它能够与应用程序线程并发进行（这种情况是Major GC）
 
 ##### generational hypothesis分代假设
 
 ##### GC algorithm
+
+### 2023-4-10 scala与java混合编写
+
+1、讲课：介绍scala
+2、

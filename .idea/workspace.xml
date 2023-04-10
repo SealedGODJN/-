@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/json/JsonToExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/json/bean/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/json/bean/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/json/bean/PersonInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_198.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_213.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_2/TestDisturb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java_Interview_Reference/hashcode_2/TestDisturb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +50,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -70,20 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../615edap" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDK" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3039612",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -100,6 +95,8 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/test/java" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\leetcode\dp" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\leetcode\Tree\FirstWeek\Traverse" />
       <recent name="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/GetClass" />
@@ -118,7 +115,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.dp_213">
+  <component name="RunManager" selected="Application.JsonToExcel">
     <configuration name="建立大根堆" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.简答题第3题.建立大根堆" />
       <module name="Test_2020_3_2" />
@@ -198,19 +195,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.dp_377" />
-      <item itemvalue="应用程序.建立大根堆" />
-      <item itemvalue="应用程序.JsonToExcel" />
-      <item itemvalue="应用程序.dp_198" />
-      <item itemvalue="应用程序.dp_213" />
+      <item itemvalue="Application.JsonToExcel" />
+      <item itemvalue="Application.dp_198" />
+      <item itemvalue="Application.dp_213" />
+      <item itemvalue="Application.dp_377" />
+      <item itemvalue="Application.建立大根堆" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.dp_213" />
-        <item itemvalue="应用程序.dp_198" />
-        <item itemvalue="应用程序.JsonToExcel" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -501,6 +491,9 @@
       <workItem from="1675480665249" duration="598000" />
       <workItem from="1675755084590" duration="3317000" />
       <workItem from="1675841514217" duration="652000" />
+      <workItem from="1676195368714" duration="610000" />
+      <workItem from="1680443735995" duration="515000" />
+      <workItem from="1681085623235" duration="853000" />
     </task>
     <task id="LOCAL-00017" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1643520910345</created>
