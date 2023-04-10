@@ -4,15 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/scala/Array/ValAndVar.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/scala/WordCount/WordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java_Interview_Reference/hashcode_1/HashCodeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/com/java_Interview_Reference/hashcode_2/TestDisturb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java_Interview_Reference/hashcode_2/TestDisturb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/Annotation/GetClass/Annotation中annotationType和getclass的区别.assets/image-20220113213008704.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/Annotation/GetClass/Annotation中annotationType和getclass的区别.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2j/java/reflection/newObject/hero.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000610669.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000838373.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110000902405.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110102838632.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104544803.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104558818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104612760.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.assets/image-20220110104625154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java_Interview_Reference/hashcode_2/EasyExcel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383248292.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383327304.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383427676.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70-16455383535738.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2MjA5ODQ1,size_16,color_FFFFFF,t_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Tree/FirstWeek/Traverse/Morris算法.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +65,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -72,10 +90,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3039612",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -115,7 +133,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JsonToExcel">
+  <component name="RunManager" selected="Application.ValAndVar">
     <configuration name="建立大根堆" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dataStructure.真题.考研2022.简答题第3题.建立大根堆" />
       <module name="Test_2020_3_2" />
@@ -129,12 +147,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonToExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.json.JsonToExcel" />
-      <module name="code" />
+    <configuration name="ValAndVar" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.Array.ValAndVar" />
+      <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.json.*" />
+          <option name="PATTERN" value="com.scala.Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.scala.WordCount.WordCount" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scala.WordCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,19 +179,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dataStructure.真题.考研2022.简答题第3题.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dp_198" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_198" />
-      <module name="code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,12 +213,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JsonToExcel" />
-      <item itemvalue="Application.dp_198" />
+      <item itemvalue="Application.ValAndVar" />
+      <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.dp_213" />
       <item itemvalue="Application.dp_377" />
       <item itemvalue="Application.建立大根堆" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ValAndVar" />
+        <item itemvalue="Application.WordCount" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -493,14 +517,7 @@
       <workItem from="1675841514217" duration="652000" />
       <workItem from="1676195368714" duration="610000" />
       <workItem from="1680443735995" duration="515000" />
-      <workItem from="1681085623235" duration="853000" />
-    </task>
-    <task id="LOCAL-00017" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、阅读《Traversing Binary Trees Simply and Cheaply》，利用树的大量空闲指针，实现空间开销的极限缩减&#10;3、基于csdn博客，实现Morris算法和对应的前中后序遍历&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1643520910345</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1643520910345</updated>
+      <workItem from="1681085623235" duration="3857000" />
     </task>
     <task id="LOCAL-00018" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
       <created>1643781979388</created>
@@ -838,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673867048984</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1681087101068</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681087101068</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -857,7 +881,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
@@ -882,7 +905,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1037,6 +1061,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
           <line>95</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/scala/Array/ValAndVar.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
