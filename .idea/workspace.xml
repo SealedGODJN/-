@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、更新代码&#10;2、学习scala&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -44,6 +47,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -64,7 +70,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -116,23 +125,10 @@
     </configuration>
     <configuration name="ValAndVar" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.scala.Array.ValAndVar" />
-      <module name="Test_2020_3_2" />
+      <module name="helloworld-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.scala.Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.scala.WordCount.WordCount" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.scala.WordCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,13 +175,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="helloworld-java" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="应用程序.ValAndVar" />
-      <item itemvalue="应用程序.WordCount" />
+      <item itemvalue="Scala REPL.Scala REPL" />
       <item itemvalue="应用程序.dp_213" />
       <item itemvalue="应用程序.dp_377" />
       <item itemvalue="应用程序.建立大根堆" />
+      <item itemvalue="应用程序.ValAndVar" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.ValAndVar" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -481,14 +497,9 @@
       <workItem from="1681085623235" duration="3857000" />
       <workItem from="1681376402398" duration="1333000" />
       <workItem from="1681438161809" duration="1321000" />
-      <workItem from="1681443045203" duration="723000" />
-    </task>
-    <task id="LOCAL-00018" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成226：基于层序遍历的反转二叉树&#10;&#10;待完成：&#10;1、改进反转字符串二，重构，思考哪里变慢了">
-      <created>1643781979388</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1643781979388</updated>
+      <workItem from="1681443045203" duration="2451000" />
+      <workItem from="1681448275258" duration="798000" />
+      <workItem from="1681449106361" duration="176000" />
     </task>
     <task id="LOCAL-00019" summary="学习java多线程&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成637：基于层序遍历的二叉树的层平均值&#10;3、完成429，基于二叉树的n叉树的层序遍历&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
       <created>1643976850794</created>
@@ -826,7 +837,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681087101068</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <created>1681444301689</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1681444301689</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -845,7 +863,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
@@ -870,7 +887,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
+    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

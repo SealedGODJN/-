@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="Test_2020_3_2">
+    <profile name="Maven 1" modules="Test_2020_3_2,helloworld-java">
       <option name="deprecationWarnings" value="true" />
     </profile>
   </component>
