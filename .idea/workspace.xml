@@ -7,21 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/.idea/helloworld-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/BothRunnableThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/PrimeRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/PrimeThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/wrongways/AnonymousInnerClassDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/wrongways/DemoTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/wrongways/Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/createThreads/wrongways/ThreadPool5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/startThread/CanStartTwice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/startThread/StartAndRunMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/fuck/CheckIdentifyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/fuck/CheckIdentifyCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +116,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lambda">
+  <component name="RunManager" selected="Application.StartAndRunMethod">
     <configuration name="AnonymousInnerClassDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.createThreads.wrongways.AnonymousInnerClassDemo" />
       <module name="Test_2020_3_2" />
@@ -141,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BothRunnableThread (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.createThreads.BothRunnableThread" />
+    <configuration name="CanStartTwice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.startThread.CanStartTwice" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.createThreads.*" />
+          <option name="PATTERN" value="com.NPU.线程八大基础.startThread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPool5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.createThreads.wrongways.ThreadPool5" />
+    <configuration name="StartAndRunMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.startThread.StartAndRunMethod" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.createThreads.wrongways.*" />
+          <option name="PATTERN" value="com.NPU.线程八大基础.startThread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,18 +197,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.AnonymousInnerClassDemo" />
-      <item itemvalue="Application.BothRunnableThread (2)" />
+      <item itemvalue="Application.CanStartTwice" />
       <item itemvalue="Application.DemoTimer" />
       <item itemvalue="Application.Lambda" />
-      <item itemvalue="Application.ThreadPool5" />
+      <item itemvalue="Application.StartAndRunMethod" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartAndRunMethod" />
+        <item itemvalue="Application.CanStartTwice" />
         <item itemvalue="Application.Lambda" />
         <item itemvalue="Application.AnonymousInnerClassDemo" />
         <item itemvalue="Application.DemoTimer" />
-        <item itemvalue="Application.ThreadPool5" />
-        <item itemvalue="Application.BothRunnableThread (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -527,14 +516,7 @@
       <workItem from="1681540814285" duration="638000" />
       <workItem from="1681541490109" duration="770000" />
       <workItem from="1681554912442" duration="1014000" />
-      <workItem from="1681629050145" duration="7223000" />
-    </task>
-    <task id="LOCAL-00021" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成104：二叉树的最大深度&#10;3、完成111：二叉树的最小深度&#10;4、222.完全二叉树的节点个数&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
-      <created>1644416625361</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1644416625361</updated>
+      <workItem from="1681629050145" duration="9563000" />
     </task>
     <task id="LOCAL-00022" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、对刷题进行总结归纳，复习第一周和第二周所学内容&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
       <created>1644759920499</created>
@@ -872,7 +854,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681560754000</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681636784042</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1681636784043</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -891,7 +880,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;3、完成了面向对象Java教程的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
@@ -916,7 +904,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;3、更新scala的build插件&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1071,6 +1060,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
           <line>95</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/startThread/StartAndRunMethod.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="78" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
