@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="helloworld" />
         <module name="code" />
-        <module name="helloworld-java" />
         <module name="Test_2020_3_2" />
       </profile>
     </annotationProcessing>

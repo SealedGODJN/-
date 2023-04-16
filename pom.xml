@@ -6,7 +6,7 @@
 
     <groupId>com.hjn</groupId>
     <artifactId>Test_2020_3_2</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <java.version>8</java.version>
@@ -16,30 +16,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.github.Feiyizhan</groupId>
-            <artifactId>id-validator</artifactId>
-            <version>1.8</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-collections4</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-lang3</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.projectlombok</groupId>
-                    <artifactId>lombok</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
         <!--        &lt;!&ndash; https://mvnrepository.com/artifact/mysql/mysql-connector-java &ndash;&gt;-->
         <!--        <dependency>-->
         <!--            <groupId>mysql</groupId>-->
@@ -180,6 +156,20 @@
                         <jvmArg>-Xms64m</jvmArg>
                         <jvmArg>-Xmx1024m</jvmArg>
                     </jvmArgs>
+                </configuration>
+            </plugin>
+
+            <!-- 启动该plugin的原因：编译器插件用于编译项目的源代码。
+            从 3.0 开始，默认编译器是 javax.tools.JavaCompiler（如果使用的是Java 1.6），并且用于编译 Java 源代码。
+            如果你想强制插件使用 javac，你必须配置插件选项 forceJavacCompilerUse。
+            还要注意，   目前默认的源代码设置是 1.5，默认的目标设置是 1.5，与运行 Maven 的 JDK 无关。
+            如果要更改这些默认值，则应按照设置 Java 编译器的 -source 和 -target 中所述设置源和目标。  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
