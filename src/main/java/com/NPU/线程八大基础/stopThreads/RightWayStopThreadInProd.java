@@ -1,7 +1,7 @@
 package com.NPU.线程八大基础.stopThreads;
 
 /**
- * @description catch InterruptedException之后的优先选择：在方法签名中抛出异常
+ * @description 最佳实践1：catch InterruptedException之后的优先选择：在方法签名中抛出异常
  * 在run()方法中强制try/catch
  */
 public class RightWayStopThreadInProd implements Runnable {

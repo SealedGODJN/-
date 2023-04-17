@@ -7,14 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的启动【2/8】（start()和run()）&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/CanInterrupt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadInProd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadWithSleep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadWithSleepEveryLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadWithoutSleep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RunThrowException.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadInProd2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/StopThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadInProd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/stopThreads/RightWayStopThreadInProd.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,13 +112,14 @@
       <recent name="com.leetcode.HashMap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.NPU.线程八大基础.stopThreads" />
       <recent name="com.dataStructure.Queue.Test" />
       <recent name="com.dataStructure.stack.Test" />
       <recent name="com.dataStructure.LinkedList.Test" />
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RightWayStopThreadInProd">
+  <component name="RunManager" selected="Application.StopThread">
     <configuration name="CanInterrupt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.CanInterrupt" />
       <module name="Test_2020_3_2" />
@@ -148,8 +146,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RightWayStopThreadWithSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.RightWayStopThreadWithSleep" />
+    <configuration name="RightWayStopThreadInProd2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.RightWayStopThreadInProd2" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +172,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RightWayStopThreadWithoutSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.RightWayStopThreadWithoutSleep" />
+    <configuration name="StopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.StopThread" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -188,19 +186,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.StopThread" />
       <item itemvalue="Application.CanInterrupt" />
       <item itemvalue="Application.RightWayStopThreadInProd" />
-      <item itemvalue="Application.RightWayStopThreadWithSleep" />
+      <item itemvalue="Application.RightWayStopThreadInProd2" />
       <item itemvalue="Application.RightWayStopThreadWithSleepEveryLoop" />
-      <item itemvalue="Application.RightWayStopThreadWithoutSleep" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StopThread" />
+        <item itemvalue="Application.RightWayStopThreadInProd2" />
         <item itemvalue="Application.RightWayStopThreadInProd" />
         <item itemvalue="Application.CanInterrupt" />
         <item itemvalue="Application.RightWayStopThreadWithSleepEveryLoop" />
-        <item itemvalue="Application.RightWayStopThreadWithSleep" />
-        <item itemvalue="Application.RightWayStopThreadWithoutSleep" />
       </list>
     </recent_temporary>
   </component>
@@ -510,14 +508,8 @@
       <workItem from="1681554912442" duration="1014000" />
       <workItem from="1681629050145" duration="9990000" />
       <workItem from="1681639993199" duration="27000" />
-      <workItem from="1681650478858" duration="10250000" />
-    </task>
-    <task id="LOCAL-00023" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成110：二叉树是否平衡（递归）&#10;3、完成257：找出根节点到叶子节点的所有路径（递归 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
-      <created>1644916974001</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1644916974004</updated>
+      <workItem from="1681650478858" duration="12798000" />
+      <workItem from="1681721435150" duration="4107000" />
     </task>
     <task id="LOCAL-00024" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成257：找出根节点到叶子节点的所有路径（递归【改进版】 | 回溯）&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
       <created>1644976762988</created>
@@ -855,7 +847,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681639711881</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681716288162</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1681716288162</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -874,7 +873,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -899,7 +897,8 @@
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的启动【2/8】（start()和run()）&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的启动【2/8】（start()和run()）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
