@@ -8,8 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/ShowUnsafe1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectCodeBlock2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectMethod3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +118,7 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedObjectCodeBlock2">
+  <component name="RunManager" selected="Application.SynchronizedObjectMethod3">
     <configuration name="BlockedWaitingTimedWaiting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.sixstates.BlockedWaitingTimedWaiting" />
       <module name="Test_2020_3_2" />
@@ -139,19 +138,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.NPU.线程八大基础.sixstates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RigthWayInterrupted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.stopThreads.RigthWayInterrupted" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.stopThreads.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,20 +171,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SynchronizedObjectMethod3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedObjectMethod3" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.synchronized深度解析.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.SynchronizedObjectMethod3" />
       <item itemvalue="Application.ShowUnsafe1" />
       <item itemvalue="Application.SynchronizedObjectCodeBlock2" />
       <item itemvalue="Application.BlockedWaitingTimedWaiting" />
       <item itemvalue="Application.NewRunnableTerminated" />
-      <item itemvalue="Application.RigthWayInterrupted" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SynchronizedObjectMethod3" />
         <item itemvalue="Application.SynchronizedObjectCodeBlock2" />
         <item itemvalue="Application.ShowUnsafe1" />
         <item itemvalue="Application.BlockedWaitingTimedWaiting" />
         <item itemvalue="Application.NewRunnableTerminated" />
-        <item itemvalue="Application.RigthWayInterrupted" />
       </list>
     </recent_temporary>
   </component>
@@ -520,14 +519,7 @@
       <workItem from="1682002086792" duration="1062000" />
       <workItem from="1682040103758" duration="5000000" />
       <workItem from="1682058752606" duration="4455000" />
-      <workItem from="1682079102964" duration="317000" />
-    </task>
-    <task id="LOCAL-00028" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、准备复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学">
-      <created>1645582459718</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1645582459718</updated>
+      <workItem from="1682079102964" duration="1598000" />
     </task>
     <task id="LOCAL-00029" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、完成复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
       <created>1645583588941</created>
@@ -865,7 +857,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682059045496</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682079527192</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1682079527193</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -884,7 +883,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接矩阵】&#10;5、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第3题：746爬楼梯-改进版【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -909,7 +907,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】(如何正确的停止生产者和消费者？使用interrupt和while循环外的try/catch语句)&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】（分辨interrupt()、static interrupted()、interrupted()的作用）&#10;3、开始java多线程的6个状态【3-1/8】&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;3、完成java多线程的6个状态【3/8】（New、Runnable、Terminated、Timed_waiting、waiting、blocked）&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;3、完成java多线程的6个状态【3/8】（New、Runnable、Terminated、Timed_waiting、waiting、blocked）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1065,7 +1064,7 @@
           <line>95</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectCodeBlock2.java</url>
           <line>23</line>
           <option name="timeStamp" value="77" />
