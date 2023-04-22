@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectMethod3.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedClassStatic4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_337.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -118,35 +119,22 @@
       <recent name="com.NPU.面向对象设计.chapter2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedObjectMethod3">
-    <configuration name="BlockedWaitingTimedWaiting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.sixstates.BlockedWaitingTimedWaiting" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.sixstates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewRunnableTerminated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.sixstates.NewRunnableTerminated" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.sixstates.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SynchronizedClassStatic4">
     <configuration name="ShowUnsafe1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.ShowUnsafe1" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.synchronized深度解析.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedClassStatic4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedClassStatic4" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -184,20 +172,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dp_337" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.dp.dp_337" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.dp_337" />
+      <item itemvalue="Application.SynchronizedClassStatic4" />
       <item itemvalue="Application.SynchronizedObjectMethod3" />
       <item itemvalue="Application.ShowUnsafe1" />
       <item itemvalue="Application.SynchronizedObjectCodeBlock2" />
-      <item itemvalue="Application.BlockedWaitingTimedWaiting" />
-      <item itemvalue="Application.NewRunnableTerminated" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SynchronizedClassStatic4" />
+        <item itemvalue="Application.dp_337" />
         <item itemvalue="Application.SynchronizedObjectMethod3" />
         <item itemvalue="Application.SynchronizedObjectCodeBlock2" />
         <item itemvalue="Application.ShowUnsafe1" />
-        <item itemvalue="Application.BlockedWaitingTimedWaiting" />
-        <item itemvalue="Application.NewRunnableTerminated" />
       </list>
     </recent_temporary>
   </component>
@@ -519,14 +520,10 @@
       <workItem from="1682002086792" duration="1062000" />
       <workItem from="1682040103758" duration="5000000" />
       <workItem from="1682058752606" duration="4455000" />
-      <workItem from="1682079102964" duration="1598000" />
-    </task>
-    <task id="LOCAL-00029" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成Morris算法的回忆和复习&#10;3、完成复习“前中后序迭代的统一形式”&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
-      <created>1645583588941</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1645583588941</updated>
+      <workItem from="1682079102964" duration="2393000" />
+      <workItem from="1682084858062" duration="1174000" />
+      <workItem from="1682149539432" duration="7444000" />
+      <workItem from="1682180446345" duration="640000" />
     </task>
     <task id="LOCAL-00030" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、基于“前中后序遍历的统一形式”完成404的迭代法【基于后序迭代】&#10;3、完成513：树的最后一层的最左侧节点【基于层序遍历】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
       <created>1645758232511</created>
@@ -864,7 +861,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682079527193</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682080907697</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1682080907697</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +887,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接矩阵】&#10;5、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第3题：746爬楼梯-改进版【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -908,7 +911,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】（分辨interrupt()、static interrupted()、interrupted()的作用）&#10;3、开始java多线程的6个状态【3-1/8】&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;3、完成java多线程的6个状态【3/8】（New、Runnable、Terminated、Timed_waiting、waiting、blocked）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
