@@ -13,7 +13,7 @@ public class SynchronizedClassStatic4 implements Runnable {
     }
 
     private static synchronized void method() {
-        System.out.println("我是对象锁的方法修饰符形式。我叫" + Thread.currentThread().getName());
+        System.out.println("我是类锁的static方法。我叫" + Thread.currentThread().getName());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

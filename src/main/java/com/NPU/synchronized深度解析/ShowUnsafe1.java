@@ -1,7 +1,7 @@
 package com.NPU.synchronized深度解析;
 
 /**
- * @description 两个线程同时操作一个int i，最后i是否==200000？不是！
+ * @description 线程不安全：两个线程同时操作一个int i，最后i是否==200000？不是！
  */
 public class ShowUnsafe1 implements Runnable {
 
@@ -9,12 +9,18 @@ public class ShowUnsafe1 implements Runnable {
     static int i = 0;
 
     @Override
-    public void run() {
-        for (int j = 0; j < 100000; j++) {
-            // 1、读取i的值
-            // 2、计算i+1
-            // 3、把i+1的计算结果写回到内存中，赋给i
-            i++;
+    // 方法2
+    public /*synchronized*/ void run() {
+        // 方法3
+        synchronized (ShowUnsafe1.class) {
+//        // 方法1
+//        synchronized (this) {
+            for (int j = 0; j < 100000; j++) {
+                // 1、读取i的值
+                // 2、计算i+1
+                // 3、把i+1的计算结果写回到内存中，赋给i
+                i++;
+            }
         }
     }
 
