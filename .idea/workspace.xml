@@ -7,17 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedClassClass5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedDifferetMethod7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedException9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedOtherMethod11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedRecursion10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedStaticAndNormal8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedYesAndNo6.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/Decompilation14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedTolock13.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/ShowUnsafe1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/ShowUnsafe1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedClassStatic4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedClassStatic4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +119,7 @@
       <recent name="com.dataStructure.LinkedList.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedOtherMethod11">
+  <component name="RunManager" selected="Application.SynchronizedTolock13">
     <configuration name="SynchronizedException9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedException9" />
       <module name="Test_2020_3_2" />
@@ -179,8 +172,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedYesAndNo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedYesAndNo6" />
+    <configuration name="SynchronizedTolock13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedTolock13" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -197,15 +190,15 @@
       <item itemvalue="Application.SynchronizedOtherMethod11" />
       <item itemvalue="Application.SynchronizedRecursion10" />
       <item itemvalue="Application.SynchronizedStaticAndNormal8" />
-      <item itemvalue="Application.SynchronizedYesAndNo6" />
+      <item itemvalue="Application.SynchronizedTolock13" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SynchronizedTolock13" />
         <item itemvalue="Application.SynchronizedOtherMethod11" />
         <item itemvalue="Application.SynchronizedRecursion10" />
         <item itemvalue="Application.SynchronizedException9" />
         <item itemvalue="Application.SynchronizedStaticAndNormal8" />
-        <item itemvalue="Application.SynchronizedYesAndNo6" />
       </list>
     </recent_temporary>
   </component>
@@ -530,14 +523,7 @@
       <workItem from="1682079102964" duration="2393000" />
       <workItem from="1682084858062" duration="1174000" />
       <workItem from="1682149539432" duration="7444000" />
-      <workItem from="1682180446345" duration="8224000" />
-    </task>
-    <task id="LOCAL-00031" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成112：计算路径的节点值之和是否与targetSum匹配【基于257：所有的路径】&#10;&#10;待完成：&#10;1、复习java基础&#10;2、学习组合数学【学到第四章：容斥原理】">
-      <created>1647007576824</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1647007576824</updated>
+      <workItem from="1682180446345" duration="11159000" />
     </task>
     <task id="LOCAL-00032" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
       <created>1647345566859</created>
@@ -875,7 +861,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682181507583</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682236657548</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1682236657548</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -894,7 +887,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第3题：746爬楼梯-改进版【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -919,7 +911,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
