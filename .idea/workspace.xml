@@ -8,11 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/Wait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WaitNotifyReleaseOwnMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WatiNotifyAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/ProducerConsumerModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WaitNotifyPrintOddEvenSyn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WaitNotifyPrintOddEvenWaitNotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/Decompilation14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/Decompilation14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
   </component>
@@ -60,32 +68,32 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/ucdp-front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/code/ucdp-front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37241378",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -114,42 +122,16 @@
       <recent name="com.leetcode.HashMap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.NPU.线程八大基础.threadObjectClassCommonMethods" />
       <recent name="com.NPU.synchronized深度解析" />
       <recent name="com.NPU.线程八大基础.stopThreads" />
       <recent name="com.dataStructure.Queue.Test" />
       <recent name="com.dataStructure.stack.Test" />
-      <recent name="com.dataStructure.LinkedList.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WaitNotifyReleaseOwnMonitor">
-    <configuration name="SynchronizedOtherMethod11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedOtherMethod11" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.synchronized深度解析.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SynchronizedTolock13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.synchronized深度解析.SynchronizedTolock13" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.synchronized深度解析.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Wait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.Wait" />
+  <component name="RunManager" selected="Application.SleepDontReleaseMonitor">
+    <configuration name="ProducerConsumerModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.ProducerConsumerModel" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -161,8 +143,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitNotifyReleaseOwnMonitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyReleaseOwnMonitor" />
+    <configuration name="SleepDontReleaseMonitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.SleepDontReleaseMonitor" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +156,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WatiNotifyAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WatiNotifyAll" />
+    <configuration name="WaitNotifyPrintOddEvenSyn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenSyn" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaitNotifyPrintOddEvenWaitNotify (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaitNotifyPrintOddEvenWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -188,19 +196,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SynchronizedOtherMethod11" />
-      <item itemvalue="Application.SynchronizedTolock13" />
-      <item itemvalue="Application.Wait" />
-      <item itemvalue="Application.WaitNotifyReleaseOwnMonitor" />
-      <item itemvalue="Application.WatiNotifyAll" />
+      <item itemvalue="Application.ProducerConsumerModel" />
+      <item itemvalue="Application.SleepDontReleaseMonitor" />
+      <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
+      <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
+      <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WaitNotifyReleaseOwnMonitor" />
-        <item itemvalue="Application.WatiNotifyAll" />
-        <item itemvalue="Application.Wait" />
-        <item itemvalue="Application.SynchronizedTolock13" />
-        <item itemvalue="Application.SynchronizedOtherMethod11" />
+        <item itemvalue="Application.SleepDontReleaseMonitor" />
+        <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify (1)" />
+        <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
+        <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
+        <item itemvalue="Application.ProducerConsumerModel" />
       </list>
     </recent_temporary>
   </component>
@@ -526,6 +534,7 @@
       <workItem from="1682084858062" duration="1174000" />
       <workItem from="1682149539432" duration="7444000" />
       <workItem from="1682180446345" duration="19312000" />
+      <workItem from="1682303464529" duration="13225000" />
     </task>
     <task id="LOCAL-00033" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
       <created>1647348166946</created>
