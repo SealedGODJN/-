@@ -7,13 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/ProducerConsumerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WaitNotifyPrintOddEvenSyn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/WaitNotifyPrintOddEvenWaitNotify.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/Join.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinInterrupt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepInterrupted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseLock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,9 +128,35 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SleepDontReleaseMonitor">
-    <configuration name="ProducerConsumerModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.ProducerConsumerModel" />
+  <component name="RunManager" selected="Application.JoinInterrupt">
+    <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.Join" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JoinInterrupt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.JoinInterrupt" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SleepDontReleaseLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.SleepDontReleaseLock" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -156,34 +181,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitNotifyPrintOddEvenSyn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenSyn" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitNotifyPrintOddEvenWaitNotify (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitNotifyPrintOddEvenWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
+    <configuration name="SleepInterrupted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.SleepInterrupted" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -196,19 +195,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ProducerConsumerModel" />
+      <item itemvalue="Application.Join" />
+      <item itemvalue="Application.JoinInterrupt" />
+      <item itemvalue="Application.SleepDontReleaseLock" />
       <item itemvalue="Application.SleepDontReleaseMonitor" />
-      <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
-      <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
-      <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify (1)" />
+      <item itemvalue="Application.SleepInterrupted" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JoinInterrupt" />
+        <item itemvalue="Application.Join" />
+        <item itemvalue="Application.SleepInterrupted" />
+        <item itemvalue="Application.SleepDontReleaseLock" />
         <item itemvalue="Application.SleepDontReleaseMonitor" />
-        <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify (1)" />
-        <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
-        <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
-        <item itemvalue="Application.ProducerConsumerModel" />
       </list>
     </recent_temporary>
   </component>
@@ -534,14 +533,7 @@
       <workItem from="1682084858062" duration="1174000" />
       <workItem from="1682149539432" duration="7444000" />
       <workItem from="1682180446345" duration="19312000" />
-      <workItem from="1682303464529" duration="13225000" />
-    </task>
-    <task id="LOCAL-00033" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成106：基于中序遍历和后序遍历构造二叉树【递归】&#10;3、完成105：基于中序遍历和前序遍历构造二叉树【递归】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1647348166946</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1647348166946</updated>
+      <workItem from="1682303464529" duration="17306000" />
     </task>
     <task id="LOCAL-00034" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【待改进】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
       <created>1647351919680</created>
@@ -879,7 +871,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682255452729</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682340615450</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1682340615451</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -898,7 +897,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -923,7 +921,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
