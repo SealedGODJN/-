@@ -8,11 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/Join.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinInterrupt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepInterrupted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinPrinciple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/SleepDontReleaseLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinThreadState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinThreadState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.37241378",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -128,7 +126,7 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JoinInterrupt">
+  <component name="RunManager" selected="Application.JoinPrinciple">
     <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.Join" />
       <module name="Test_2020_3_2" />
@@ -155,8 +153,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SleepDontReleaseLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.SleepDontReleaseLock" />
+    <configuration name="JoinPrinciple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.JoinPrinciple" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -168,8 +166,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SleepDontReleaseMonitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.SleepDontReleaseMonitor" />
+    <configuration name="JoinThreadState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.JoinThreadState" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
@@ -195,19 +193,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.JoinPrinciple" />
+      <item itemvalue="Application.JoinThreadState" />
       <item itemvalue="Application.Join" />
       <item itemvalue="Application.JoinInterrupt" />
-      <item itemvalue="Application.SleepDontReleaseLock" />
-      <item itemvalue="Application.SleepDontReleaseMonitor" />
       <item itemvalue="Application.SleepInterrupted" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JoinPrinciple" />
+        <item itemvalue="Application.JoinThreadState" />
         <item itemvalue="Application.JoinInterrupt" />
         <item itemvalue="Application.Join" />
         <item itemvalue="Application.SleepInterrupted" />
-        <item itemvalue="Application.SleepDontReleaseLock" />
-        <item itemvalue="Application.SleepDontReleaseMonitor" />
       </list>
     </recent_temporary>
   </component>
@@ -534,6 +532,8 @@
       <workItem from="1682149539432" duration="7444000" />
       <workItem from="1682180446345" duration="19312000" />
       <workItem from="1682303464529" duration="17306000" />
+      <workItem from="1682299916789" duration="87000" />
+      <workItem from="1682301856543" duration="141000" />
     </task>
     <task id="LOCAL-00034" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【待改进】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
       <created>1647351919680</created>
@@ -1082,6 +1082,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectCodeBlock2.java</url>
           <line>23</line>
           <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinThreadState.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
