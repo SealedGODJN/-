@@ -7,8 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadAttributes/Id.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/CantCatchDirectly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/ExceptionInChildThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,39 +126,39 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Id">
+  <component name="RunManager" selected="Application.CantCatchDirectly">
+    <configuration name="CantCatchDirectly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.UnCaughtException.CantCatchDirectly" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.UnCaughtException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionInChildThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.UnCaughtException.ExceptionInChildThread" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.NPU.线程八大基础.UnCaughtException.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Id" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadAttributes.Id" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.NPU.线程八大基础.threadAttributes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Join" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.Join" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JoinInterrupt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.JoinInterrupt" />
-      <module name="Test_2020_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,19 +193,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CantCatchDirectly" />
+      <item itemvalue="Application.ExceptionInChildThread" />
       <item itemvalue="Application.Id" />
       <item itemvalue="Application.JoinPrinciple" />
       <item itemvalue="Application.JoinThreadState" />
-      <item itemvalue="Application.Join" />
-      <item itemvalue="Application.JoinInterrupt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CantCatchDirectly" />
+        <item itemvalue="Application.ExceptionInChildThread" />
         <item itemvalue="Application.Id" />
         <item itemvalue="Application.JoinPrinciple" />
         <item itemvalue="Application.JoinThreadState" />
-        <item itemvalue="Application.JoinInterrupt" />
-        <item itemvalue="Application.Join" />
       </list>
     </recent_temporary>
   </component>
@@ -532,13 +534,6 @@
       <workItem from="1682303464529" duration="17306000" />
       <workItem from="1682299916789" duration="87000" />
       <workItem from="1682301856543" duration="141000" />
-    </task>
-    <task id="LOCAL-00035" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成剑指Offer06【递归+非递归+头插入ArrayList】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1647535502341</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1647535502341</updated>
     </task>
     <task id="LOCAL-00036" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成 654：构造二叉树【递归构造二叉树】&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
       <created>1647869467063</created>
@@ -876,7 +871,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682391707246</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682394172777</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1682394172777</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -895,7 +897,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、2021和2022递归程序的分析&#10;2、无向图的DFS+BFS&#10;3、无向图的最小生成树（Prim+kruskal）&#10;4、无向图的最短路径（dijstra+floyd）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
     <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
@@ -920,7 +921,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1085,6 +1087,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinThreadState.java</url>
           <line>11</line>
           <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadAttributes/Id.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
