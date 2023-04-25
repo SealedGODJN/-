@@ -8,8 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/CantCatchDirectly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/ExceptionInChildThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/ThreadFactoryException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,25 +71,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/code/ucdp-front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37241378",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/ucdp-front&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
     <option name="showLigatures" value="false" />
@@ -126,7 +125,7 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CantCatchDirectly">
+  <component name="RunManager" selected="Application.ThreadFactoryException">
     <configuration name="CantCatchDirectly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.UnCaughtException.CantCatchDirectly" />
       <module name="Test_2020_3_2" />
@@ -179,12 +178,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinThreadState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.JoinThreadState" />
+    <configuration name="ThreadFactoryException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.UnCaughtException.ThreadFactoryException" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
+          <option name="PATTERN" value="com.NPU.线程八大基础.UnCaughtException.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,19 +192,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ThreadFactoryException" />
       <item itemvalue="Application.CantCatchDirectly" />
       <item itemvalue="Application.ExceptionInChildThread" />
       <item itemvalue="Application.Id" />
       <item itemvalue="Application.JoinPrinciple" />
-      <item itemvalue="Application.JoinThreadState" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadFactoryException" />
         <item itemvalue="Application.CantCatchDirectly" />
         <item itemvalue="Application.ExceptionInChildThread" />
         <item itemvalue="Application.Id" />
         <item itemvalue="Application.JoinPrinciple" />
-        <item itemvalue="Application.JoinThreadState" />
       </list>
     </recent_temporary>
   </component>
