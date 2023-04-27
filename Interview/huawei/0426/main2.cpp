@@ -2,7 +2,7 @@
 #include <unordered_map>
 #include <queue>
 #include <stdlib.h>
-#include <ctime>
+#include <random>
 
 using namespace std;
 
@@ -17,7 +17,8 @@ public:
             q.push(i);
         }
         for (const auto &item: operation) {
-            if (item[0] == 1) {//动态分配
+            if (item[0] == 1) {
+                //动态分配
                 int num = item[1];
                 while(num){
                     if(unorderedMap[q.front()] == 0){
@@ -29,13 +30,14 @@ public:
                     q.pop();
                 }
 
-            } else if (item[0] == 2) {//指定分配
-                    if(q.front() == item [1] &&  unorderedMap[item[1]] == 0){
-                        q.pop();
-                    }
-                    else{
-                        unorderedMap[item[1]]++;
-                    }
+            } else if (item[0] == 2) {
+                //指定分配
+                if(q.front() == item [1] &&  unorderedMap[item[1]] == 0){
+                    q.pop();
+                }
+                else{
+                    unorderedMap[item[1]]++;
+                }
 
             } else if(item[0] == 3){
                 //释放
@@ -55,27 +57,29 @@ public:
 };
 
 int main() {
-    vector<vector<int>> num1 = {{1, 1}, {3, 1}};
-    vector<vector<int>> num2 = {{2, 2}, {3, 2}, {1, 1}};
+    // vector<vector<int>> num1 = {{1, 1}, {3, 1}};
+    // vector<vector<int>> num2 = {{2, 2}, {3, 2}, {1, 1}};
 
-    std::srand(std::time(nullptr)); // use current time as seed for random generator
-    int random_variable = std::rand();
-
+    // 以随机值播种，若可能
+    random_device r;
+    default_random_engine e1(r());
+    uniform_int_distribution<int> uniform_dist1(1, 3);
+    uniform_int_distribution<int> uniform_dist2(1, 200);
+    uniform_int_distribution<int> uniform_dist3(1, 100000);
     vector<vector<int>> num4;
     for (int i = 0; i < 100000; i++)
     {
         vector<int> num3;
-        int x = 1 + std::rand()/((RAND_MAX + 1u)/3);
-        cout << x;
+        int x = uniform_dist1(e1);
+        
         num3.push_back(x);
         if (x == 1) {
-            int y = 1 + std::rand()/((RAND_MAX + 1u)/200);
-            cout << y << endl;
+            int y = uniform_dist2(e1);
+            cout << x << " " << y << endl;
             num3.push_back(y);
         }
         else {
-            int y = 1 + std::rand()/((RAND_MAX + 1u)/100000);
-            cout << y << endl;
+            int y = uniform_dist3(e1);
             num3.push_back(y);
         }
         num4.push_back(num3);
