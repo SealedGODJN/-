@@ -1,6 +1,8 @@
 #include <iostream>
 #include <unordered_map>
 #include <queue>
+#include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -55,6 +57,30 @@ public:
 int main() {
     vector<vector<int>> num1 = {{1, 1}, {3, 1}};
     vector<vector<int>> num2 = {{2, 2}, {3, 2}, {1, 1}};
+
+    std::srand(std::time(nullptr)); // use current time as seed for random generator
+    int random_variable = std::rand();
+
+    vector<vector<int>> num4;
+    for (int i = 0; i < 100000; i++)
+    {
+        vector<int> num3;
+        int x = 1 + std::rand()/((RAND_MAX + 1u)/3);
+        cout << x;
+        num3.push_back(x);
+        if (x == 1) {
+            int y = 1 + std::rand()/((RAND_MAX + 1u)/200);
+            cout << y << endl;
+            num3.push_back(y);
+        }
+        else {
+            int y = 1 + std::rand()/((RAND_MAX + 1u)/100000);
+            cout << y << endl;
+            num3.push_back(y);
+        }
+        num4.push_back(num3);
+    }
+
     Solution s;
-    cout << s.main(3, num2);
+    cout << s.main(100000, num4);
 }
