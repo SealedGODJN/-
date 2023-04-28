@@ -12,4 +12,4 @@ project(Tutorial VERSION 1.0)
 add_library(tutorial_compiler_flags INTERFACE)
 target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_11)
 
-add_executable(Tutorial main2.cpp)
+add_executable(Tutorial main3.cpp)
