@@ -54,5 +54,6 @@ int main()
     int source = 0;
     int destination = 2;
     Solution s;
-    std::cout << s.validPath(n, edges, source, destination);
+    cout << s.validPath(n, edges, source, destination);
+    cin.get();
 }
