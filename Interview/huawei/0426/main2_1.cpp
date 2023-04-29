@@ -102,8 +102,13 @@ int main() {
 
     Solution s;
     auto t1 = std::chrono::high_resolution_clock::now();
-    cout << s.main(100000, num4);
+    int result = s.main(100000, num4);
     auto t2 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> fp_ms = t2 - t1;
+    
     std::cout << endl << "main() took " << fp_ms.count() << " ms";
+    
+    cout << result << endl;
+    
+    cin.get();
 }

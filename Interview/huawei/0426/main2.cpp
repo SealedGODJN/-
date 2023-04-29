@@ -1,3 +1,4 @@
+#include <bits/stdc++.h>
 #include <iostream>
 #include <unordered_map>
 #include <queue>
@@ -75,7 +76,7 @@ int main() {
         num3.push_back(x);
         if (x == 1) {
             int y = uniform_dist2(e1);
-            cout << x << " " << y << endl;
+            // cout << x << " " << y << endl;
             num3.push_back(y);
         }
         else {
@@ -86,5 +87,14 @@ int main() {
     }
 
     Solution s;
-    cout << s.main(100000, num4);
+    auto t1 = std::chrono::high_resolution_clock::now();
+    int result = s.main(100000, num4);
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> fp_ms = t2 - t1;
+    
+    std::cout << endl << "main() took " << fp_ms.count() << " ms";
+    
+    cout << result << endl;
+    
+    cin.get();
 }
