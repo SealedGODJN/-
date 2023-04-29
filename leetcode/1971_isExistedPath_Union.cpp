@@ -11,13 +11,14 @@ class Union
 {
 private:
     vector<int> parent;
-    // 新增一个数组记录每一个连通图的“重量”（在union的时候，把小的树放到大的树上面，而不是把大的树挂到小的树上面）
-    vector<int> rank;
+    // // 新增一个数组记录每一个连通图的“重量”（在union的时候，把小的树放到大的树上面，而不是把大的树挂到小的树上面）
+    // vector<int> rank;
     int count;
 
 public:
     Union(int n) {
         parent = vector<int>(n);
+        // rank = vector<int>(n);
         for (int i = 0; i < n; i++)
         {
             parent[i] = i;
@@ -31,22 +32,38 @@ public:
         if (rootX == rootY)
             return;
 
-        // 根据连通图的大小，决定将小的图移动到大的图上
-        if (rank[rootX] > rank[rootY]) {
-            parent[rootY] = rootX;
-            rank[rootX] += rank[rootY];
-        } else {
-            parent[rootX] = rootY;
-            rank[rootY] += rank[rootX];
-        }
+        // // 根据连通图的大小，决定将小的图移动到大的图上
+        // if (rank[rootX] > rank[rootY]) {
+        //     parent[rootY] = rootX;
+        //     rank[rootX] += rank[rootY];
+        // } else {
+        //     parent[rootX] = rootY;
+        //     rank[rootY] += rank[rootX];
+        // }
         
-        // parent[rootX] = rootY;
+        parent[rootX] = rootY;
         count--;
     }
 
     int find(int x) {
-        while (parent[x] != x) {
-            x = parent[x];
+        // while (parent[x] != x) {
+        //     // 这行代码进行路径压缩
+        //     // 每次 while 循环都会把一对儿父子节点改到同一层，这样每次调用 find 函数向树根遍历的同时，顺手就将树高缩短了
+        //     parent[x] = parent[parent[x]];
+        //     x = parent[x];
+        // }
+        // return parent[x];
+
+        // // 未优化的代码【递归】：
+        // if (parent[x] != x) {
+        //     x = find(parent[x]);
+        // }
+        // return parent[x];
+
+        // 优化后【递归】：
+        if (parent[x] != x) {
+            // 递归到最深处，找到了root，就会更新parent[x]，使parent[x]直接等于root！！！（优化了整体的路径）
+            parent[x] = find(parent[x]);
         }
         return parent[x];
     }
