@@ -11,6 +11,8 @@ class Union
 {
 private:
     vector<int> parent;
+    // 新增一个数组记录每一个连通图的“重量”（在union的时候，把小的树放到大的树上面，而不是把大的树挂到小的树上面）
+    vector<int> rank;
     int count;
 
 public:
@@ -28,7 +30,18 @@ public:
         int rootY = find(y);
         if (rootX == rootY)
             return;
-        parent[rootX] = rootY;
+
+        // 根据连通图的大小，决定将小的图移动到大的图上
+        if (rank[rootX] > rank[rootY]) {
+            parent[rootY] = rootX;
+            rank[rootX] += rank[rootY];
+        } else {
+            parent[rootX] = rootY;
+            rank[rootY] += rank[rootX];
+        }
+        
+        // parent[rootX] = rootY;
+        count--;
     }
 
     int find(int x) {
