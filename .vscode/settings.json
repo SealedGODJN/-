@@ -77,7 +77,12 @@
         "ctime": "cpp",
         "fstream": "cpp",
         "cstring": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "any": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "stacktrace": "cpp",
+        "regex": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
     "cmake.cmakePath": "C:\\CMake\\bin\\cmake.exe",
     "cmake.additionalCompilerSearchDirs": [
