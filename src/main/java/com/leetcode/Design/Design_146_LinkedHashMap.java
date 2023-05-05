@@ -3,7 +3,7 @@ package com.leetcode.Design;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Design_146 {
+public class Design_146_LinkedHashMap {
     public static void main(String[] args) {
         LRUCache lRUCache = new LRUCache(2);
         lRUCache.put(1, 1); // 缓存是 {1=1}
