@@ -5,7 +5,6 @@ using namespace std;
 const int INF = 0x3f3f3f3f;
 
 struct cmp{
-
     bool operator()(vector<int>& vec1, vector<int>& vec2){
         return vec1[1] > vec2[1];
     }
@@ -13,17 +12,21 @@ struct cmp{
 
 class Solution {
 public:
-    int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& passingFees) {
+    int minCost(int maxTime, vector<vector<int>> &edges, vector<int> &passingFees) {
         int n = passingFees.size();
-        vector<vector<pair<int, int>>> timeCost(n);
+        vector<unordered_map<int, int>> timeCost(n);
 
         // 初始化每条边的权值
         // 无向图
-        for (auto& edge : edges) {
-            timeCost[edge[0]].push_back({edge[1], edge[2]});
-            timeCost[edge[1]].push_back({edge[0], edge[2]});
+        for (auto &edge: edges) {
+            if (timeCost[edge[0]].count(edge[1])) {
+                timeCost[edge[0]][edge[1]] = min(timeCost[edge[0]][edge[1]], edge[2]);
+            } else timeCost[edge[0]][edge[1]] = edge[2];
+            if (timeCost[edge[1]].count(edge[0])) {
+                timeCost[edge[1]][edge[0]] = min(timeCost[edge[1]][edge[0]], edge[2]);
+            } else timeCost[edge[1]][edge[0]] = edge[2];
         }
-        priority_queue<vector<int>, vector<vector<int>>, cmp > queue;
+        priority_queue<vector<int>, vector<vector<int>>, cmp> queue;
         queue.push(vector<int>{0, passingFees[0], 0});
 
         unordered_map<int, int> timeMap;
@@ -43,8 +46,8 @@ public:
 
             if (timeMap.count(node) == 0 || timeMap.at(node) > time) {
                 timeMap.emplace(node, time);
-                for (auto& pair : timeCost[node]) {
-                    queue.emplace(vector<int>{pair.second + time, passingFees[pair.first] + moneyCost, pair.first});
+                for (const auto &item: timeCost[node]) {
+                    queue.emplace(vector<int>{item.second + time, passingFees[item.first] + moneyCost, item.first});
                 }
             }
         }
