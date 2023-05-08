@@ -1,4 +1,4 @@
-package com.interview.huawei20230426.main2;
+package com.interview.huawei.huawei20230426.main2;
 
 
 import java.util.LinkedList;

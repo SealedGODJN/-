@@ -1,4 +1,4 @@
-package com.interview.huawei20230426.main1;
+package com.interview.huawei.huawei20230426.main1;
 
 import java.util.*;
 

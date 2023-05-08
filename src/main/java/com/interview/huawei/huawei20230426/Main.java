@@ -1,4 +1,4 @@
-package com.interview.huawei20230426;
+package com.interview.huawei.huawei20230426;
 
 // We have imported the necessary tool classes.
 // If you need to import additional packages or classes, please import here.
