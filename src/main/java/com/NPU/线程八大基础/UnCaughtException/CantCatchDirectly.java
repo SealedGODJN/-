@@ -9,15 +9,30 @@ package com.NPU.线程八大基础.UnCaughtException;
  */
 public class CantCatchDirectly implements Runnable {
 
-    public static void main(String[] args) {
-        new Thread(new CantCatchDirectly(), "MyThread-1").start();
-        new Thread(new CantCatchDirectly(), "MyThread-2").start();
-        new Thread(new CantCatchDirectly(), "MyThread-3").start();
-        new Thread(new CantCatchDirectly(), "MyThread-4").start();
+    public static void main(String[] args) throws InterruptedException {
+        // try catch 只能捕获当前线程内出现的异常，无法捕获子线程中的异常
+        try {
+            new Thread(new CantCatchDirectly(), "MyThread-1").start();
+            Thread.sleep(300);
+            new Thread(new CantCatchDirectly(), "MyThread-2").start();
+            Thread.sleep(300);
+            new Thread(new CantCatchDirectly(), "MyThread-3").start();
+            Thread.sleep(300);
+            new Thread(new CantCatchDirectly(), "MyThread-4").start();
+        } catch (RuntimeException e) {
+            // 没有执行这句话
+            System.out.println("Caught Exception");
+        }
+
     }
 
     @Override
     public void run() {
-        throw new RuntimeException();
+        try {
+            throw new RuntimeException();
+        } catch (RuntimeException e) {
+            // 换成修复逻辑，可以提升程序健壮性
+            System.out.println("Caught Exception");
+        }
     }
 }
