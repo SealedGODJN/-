@@ -68,7 +68,8 @@ public class MultiThreadsError implements Runnable {
                 // 错误一：两个线程同时访问到同一个index，同时++，反而不会触发“发生错误”
                 // 错误二：两个线程竞争instance这把锁，一个线程先进入，完成对index=1对应的marked[1]赋值为true，退出后，回到循环的开始，先于第二个线程完成了index++;
                 // 第二个线程刚刚进入synchronized代码块，而index已经从1变为2，此时marked[2]=false，不触发错误
-                if (marked[index]) {
+                if (marked[index] && marked[index - 1]) {
+                    // 错误3：由于synchronized是保证变量可见性的，因此，每一次线程1修改完index，线程2拿到的index都是++后的结果
                     System.out.println("发生错误" + index);
                     wrongCount.incrementAndGet();
                 }
