@@ -97,7 +97,23 @@ public class LinkedList_203 {
 class ListNode {
     int val;
     ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+
+    public static void createListNode(ListNode head, int[] array) {
+        ListNode cur = head;
+        for (int j : array) {
+            ListNode temp = new ListNode(j);
+            cur.next = temp;
+            temp.next = null;
+
+            cur = temp;
+        }
+    }
 }
