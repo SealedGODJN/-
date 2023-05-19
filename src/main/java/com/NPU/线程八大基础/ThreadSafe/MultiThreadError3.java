@@ -21,11 +21,23 @@ public class MultiThreadError3 {
         return states;
     }
 
+    /**
+     * 返回一个副本
+     *
+     * @return A copy of states
+     */
+    public Map<String, String> getStatesImproved() {
+        return new HashMap<>(states);
+    }
+
     public static void main(String[] args) {
-        MultiThreadError3 multiThreadsError6 = new MultiThreadError3();
-        Map<String, String> states = multiThreadsError6.getStates();
-        System.out.println(states.get("1"));
-        states.remove("1");
-        System.out.println(states.get("1"));
+        MultiThreadError3 multiThreadsError3 = new MultiThreadError3();
+        Map<String, String> states = multiThreadsError3.getStates();
+//        System.out.println(states.get("1"));
+//        states.remove("1");
+//        System.out.println(states.get("1"));
+        System.out.println(multiThreadsError3.getStatesImproved().get("1"));
+        multiThreadsError3.getStatesImproved().remove("1");
+        System.out.println(multiThreadsError3.getStatesImproved().get("1"));
     }
 }
