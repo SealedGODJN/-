@@ -9,7 +9,6 @@ public class Stack_20 {
      * @return
      */
 //    public static boolean isValid(String s) {
-////        if (s.length() == 0) return true;
 //        char[] sToArray = s.toCharArray();
 //        Stack<Character> record = new Stack<>();
 //        for (char c : sToArray) {

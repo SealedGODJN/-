@@ -166,7 +166,7 @@ public class TestNumber {
 //        test2();
 //        train2();
 //        test3();
-//        test4();
-        test5();
+        test4();
+//        test5();
     }
 }

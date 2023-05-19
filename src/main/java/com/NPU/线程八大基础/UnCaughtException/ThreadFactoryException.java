@@ -16,6 +16,7 @@ public class ThreadFactoryException {
             return t;
         };
 
+        ExecutorService e = Executors.newFixedThreadPool(10);
         ExecutorService executorService = new ThreadPoolExecutor(
                 1,
                 1,
@@ -39,6 +40,8 @@ public class ThreadFactoryException {
 
         // execute 方法被线程工厂factory 的UncaughtExceptionHandler捕捉到异常
         executorService.execute(new Task());
+
+//        SynchronousQueue.poll();
     }
 }
 
