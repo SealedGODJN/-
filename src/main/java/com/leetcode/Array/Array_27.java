@@ -28,20 +28,26 @@ public class Array_27 {
 //    }
 
 
-    public static int removeElement(int[] nums, int val) {
-        int slow = 0;
-        int fast = 0;
-        for(;fast < nums.length; fast++) {
-            if (nums[fast] != val)
-                nums[slow++] = nums[fast];
-        }
-        return slow;
-    }
+//    public static int removeElement(int[] nums, int val) {
+//        int slow = 0;
+//        int fast = 0;
+//        for(;fast < nums.length; fast++) {
+//            if (nums[fast] != val)
+//                nums[slow++] = nums[fast];
+//        }
+//        return slow;
+//    }
 
     public static void main(String[] args) {
         int[] nums = new int[]{0,1,2,2,3,0,4,2};
         int val = 2;
-        System.out.println(removeElement(nums, val));//        System.out.println(removeElement_two_pointers(nums, val));
+        int result = removeElement(nums, val);
+        System.out.println(result);
+//        int result = removeElement_two_pointers(nums, val);
+//        System.out.println(result);
+        for (int i = 0; i < result; i++) {
+            System.out.print(nums[i] + " ");
+        }
     }
 
 
@@ -61,5 +67,15 @@ public class Array_27 {
 //        return slow;
 //    }
 
-
+    public static int removeElement(int[] nums, int val) {
+        int fast = 0, slow = 0;
+        while (fast < nums.length) {
+            if (nums[fast] != val) {
+                nums[slow] = nums[fast];
+                slow++;
+            }
+            fast++;
+        }
+        return slow;
+    }
 }
