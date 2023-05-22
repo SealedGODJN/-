@@ -5,7 +5,8 @@ import java.util.Stack;
 public class Stack_20 {
     /**
      * 使用编译原理的思想来
-     * @param c
+     *
+     * @param s
      * @return
      */
 //    public static boolean isValid(String s) {
