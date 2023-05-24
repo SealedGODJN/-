@@ -1,4 +1,4 @@
-package com.interview.huaweiOD.main3;
+package com.interview.huawei.huaweiOD.main3;
 
 import java.util.*;
 
