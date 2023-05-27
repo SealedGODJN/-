@@ -1,4 +1,4 @@
-package com.interview.huaweiOD.main2;
+package com.interview.huawei.huaweiOD.main2;
 
 import java.util.ArrayList;
 import java.util.List;
