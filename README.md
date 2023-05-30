@@ -62,4 +62,5 @@ Space里面的对象被认为是垃圾，则它们会被直接删除，而不是
 ### 2023-4-10 scala与java混合编写
 
 1、讲课：介绍scala
-2、
+
+2、maven引入plugin即可混合编译scala
