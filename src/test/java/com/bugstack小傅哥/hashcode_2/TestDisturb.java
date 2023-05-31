@@ -1,6 +1,6 @@
-package com.java_Interview_Reference.hashcode_2;
+package com.bugstack小傅哥.hashcode_2;
 
-import com.java_Interview_Reference.hashcode_1.FileUtil;
+import com.bugstack小傅哥.hashcode_1.FileUtil;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +14,7 @@ public class TestDisturb {
     public void before() {
         "abc".hashCode();
         // 读取文件
-        words = FileUtil.readWordList("D:\\IDEA_PROGECT\\helloworld\\java面经-小傅哥\\103976个英语单词库.txt");
+        words = FileUtil.readWordList(System.getProperty("user.dir")+ "\\java面经-小傅哥\\103976个英语单词库.txt");
     }
 
     // 10万单词已经初始化到words中

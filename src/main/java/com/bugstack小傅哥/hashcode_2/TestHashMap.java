@@ -1,4 +1,4 @@
-package com.java_Interview_Reference.hashcode_2;
+package com.bugstack小傅哥.hashcode_2;
 
 import java.util.HashMap;
 import java.util.Map;

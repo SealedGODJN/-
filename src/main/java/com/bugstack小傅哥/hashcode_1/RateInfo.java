@@ -1,4 +1,4 @@
-package com.java_Interview_Reference.hashcode_1;
+package com.bugstack小傅哥.hashcode_1;
 
 public class RateInfo {
 

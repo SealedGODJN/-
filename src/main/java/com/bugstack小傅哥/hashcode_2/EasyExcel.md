@@ -286,7 +286,7 @@ private void addJavaObjectToExcel(Object oneRowData, Row row, int relativeRowInd
 > 所以，推荐第3种方式。  以下是相关代码：
 
 ```java
-package com.java_Interview_Reference.hashcode_2;
+package com.bugstack小傅哥.hashcode_2;
 
 import net.sf.cglib.beans.BeanMap;
 
@@ -317,7 +317,7 @@ public class BeanMapTest {
 
 class Pojo {
 
-    private int        intValue;
+    private int intValue;
     private BigInteger bigInteger;
 
     public void setIntValue(int i) {

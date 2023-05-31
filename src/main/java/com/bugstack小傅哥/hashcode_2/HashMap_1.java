@@ -1,8 +1,8 @@
-package com.java_Interview_Reference.hashcode_2;
+package com.bugstack小傅哥.hashcode_2;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.java_Interview_Reference.hashcode_1.HashCode1;
+import com.bugstack小傅哥.hashcode_1.HashCode1;
 import com.alibaba.fastjson.JSON;
 
 /**

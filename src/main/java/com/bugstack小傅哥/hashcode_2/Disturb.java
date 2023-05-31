@@ -1,4 +1,4 @@
-package com.java_Interview_Reference.hashcode_2;
+package com.bugstack小傅哥.hashcode_2;
 
 public class Disturb {
 
