@@ -1,32 +1,36 @@
 package com.NPU.java内存模型.可见性;
 
 /**
- * @description volatile能够确保某个属性被修改前的所有操作都被其他线程可见
+ * @description 理解synchronized的可见性
  */
-public class FieldVisibility1 {
+public class FieldVisibility2 {
     int a = 1;
-
-    int abc = 1;
-
-    int abcd = 1;
-
-    volatile int b = 0;
-
+    int b = 2;
+    int c = 2;
+    int d = 2;
     private void print() {
-        if (b == 0)
-            System.out.println("abc = " + abc + ",abcd = " + abcd + ",a = " + a);
+        int aa = 0;
+        synchronized (this) {
+             aa = a;
+        }
+        int bb = b;
+        int cc = c;
+        int dd = d;
+        System.out.println("aa = " + aa + ",bb = " + bb + ",cc = " + cc + ",dd = " + dd);
     }
 
     private void change() {
-        abc = 7;
-        abcd = 70;
         a = 3;
-        b = a;
+        b = 4;
+        c = 5;
+        synchronized (this) {
+            d = 6;
+        }
     }
 
     public static void main(String[] args) {
         while (true) {
-            FieldVisibility1 test = new FieldVisibility1();
+            FieldVisibility2 test = new FieldVisibility2();
             new Thread(new Runnable() {
                 @Override
                 public void run() {
