@@ -17,7 +17,7 @@ public class backTracking_216 {
 
     public void backTracking(int n, int k, int startIndex) {
         if (path.size() == k) {
-            int sum = path.stream().map(e->e).mapToInt(Integer::intValue).sum();
+            int sum = path.stream().mapToInt(Integer::intValue).sum();
             if (sum == n) {
                 List<Integer> clone = new ArrayList<>();
                 clone.addAll(path);

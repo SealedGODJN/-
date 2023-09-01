@@ -33,7 +33,7 @@ public class backTracking_17 {
     }
 
     /**
-     * 先选取数字对应的字母 再
+     * 先选取数字对应的字母 再横向遍历字母 在横向遍历字母的时候 纵向通过回溯来深入挖掘
      * @param digits
      */
     public void backTracking(String digits, int num) {
