@@ -10,6 +10,7 @@ public class FieldVisibility2 {
     int d = 2;
     private void print() {
         int aa = 0;
+        // 在读取时，把第一个元素放入synchronized中，利用synchronized的可见性
         synchronized (this) {
              aa = a;
         }
@@ -23,6 +24,7 @@ public class FieldVisibility2 {
         a = 3;
         b = 4;
         c = 5;
+        // 利用synchronized的可见性，在修改时，用synchronized来保证前面的操作都执行，并被其他线程可见
         synchronized (this) {
             d = 6;
         }
