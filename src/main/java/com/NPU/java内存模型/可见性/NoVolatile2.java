@@ -12,7 +12,7 @@ public class NoVolatile2 implements Runnable{
     AtomicInteger realA = new AtomicInteger();
 
     public static void main(String[] args) throws InterruptedException {
-        Runnable r = new NoVolatile();
+        Runnable r = new NoVolatile2();
         Thread t1 = new Thread(r);
         Thread t2 = new Thread(r);
         t1.start();
@@ -32,6 +32,8 @@ public class NoVolatile2 implements Runnable{
     }
 
     private void flipDone() {
+        // 与之前状态有关系
+        // 最终输出的done的值不稳定（有时候是false，有时候是true）
         done = !done;
     }
 }

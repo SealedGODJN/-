@@ -21,7 +21,8 @@ public class FieldVisibility1 {
         abc = 7;
         abcd = 70;
         a = 3;
-        b = a;
+        // b充当触发器的作用
+        b = 0;
     }
 
     public static void main(String[] args) {
