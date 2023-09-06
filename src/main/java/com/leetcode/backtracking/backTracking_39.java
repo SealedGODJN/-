@@ -29,9 +29,7 @@ public class backTracking_39 {
     public void backTracking(int[] candidates, int sum, int target, int startIndex) {
         if (sum > target) return;
         if (sum == target) {
-            List<Integer> clone = new ArrayList<>();
-            clone.addAll(path);
-            result.add(clone);
+            result.add(new ArrayList<>(path));
             return;
         }
         for (int i = startIndex; i < candidates.length; i++) {
