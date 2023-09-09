@@ -44,9 +44,7 @@ public class backTracking_77 {
      */
     public void backTracking(int n, int k, int startIndex) {
         if (path.size() == k) {
-            List<Integer> clone = new ArrayList<>();
-            clone.addAll(path);
-            result.add(clone);
+            result.add(new ArrayList<>(path));
             return;
         }
         for (int i = startIndex; i <= n; i++) {
