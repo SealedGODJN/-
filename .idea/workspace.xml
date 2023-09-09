@@ -7,10 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第一题debug/ByteBuffer_Debug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第一题debug/bug.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第三题debug/Solution_黄江南_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第三题debug/bug.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第三题陈晶debug/Sequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/ThreadFactoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/UnCaughtException/ThreadFactoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/digit/TestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/digit/TestNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第四题debug/DHCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第四题debug/DHCPServer_黄江南_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第四题debug/bug记录.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/考试0531/第四题debug/bug记录.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +53,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,39 +73,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/ucdp-front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/code/helloworld-java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37241378",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="ReaderModeSettings">
-    <option name="enabled" value="false" />
-    <option name="showLigatures" value="false" />
-  </component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.NPU.json.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\helloworld-java\src\main\java\com\NPU\考试0531\第四题debug" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\stack\Test" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\LinkedList" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\java\Generic\improve" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\NPU\Assistant" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\leetcode\dp" />
@@ -126,13 +127,13 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestNumber">
-    <configuration name="Greedy_455" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Greedy.Greedy_455" />
+  <component name="RunManager" selected="Application.Sword_Offer_06">
+    <configuration name="Array_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Array.Array_1" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Greedy.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Greedy_53" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Greedy.Greedy_53" />
+    <configuration name="Array_15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Array.Array_15" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Greedy.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2j.java.digit.TestNumber" />
+    <configuration name="Array_18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Array.Array_18" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2j.java.digit.*" />
+          <option name="PATTERN" value="com.leetcode.Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadFactoryException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.UnCaughtException.ThreadFactoryException" />
+    <configuration name="Sword_Offer_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.LinkedList.Sword_Offer_06" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.UnCaughtException.*" />
+          <option name="PATTERN" value="com.leetcode.LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="backTracking_77" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.backtracking.backTracking_77" />
+    <configuration name="岛屿的最大面积_695" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.岛屿.岛屿的最大面积_695" />
       <module name="Test_2020_3_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.backtracking.*" />
+          <option name="PATTERN" value="com.leetcode.岛屿.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,19 +194,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestNumber" />
-      <item itemvalue="Application.Greedy_455" />
-      <item itemvalue="Application.Greedy_53" />
-      <item itemvalue="Application.backTracking_77" />
-      <item itemvalue="Application.ThreadFactoryException" />
+      <item itemvalue="Application.Sword_Offer_06" />
+      <item itemvalue="Application.Array_1" />
+      <item itemvalue="Application.Array_15" />
+      <item itemvalue="Application.Array_18" />
+      <item itemvalue="Application.岛屿的最大面积_695" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestNumber" />
-        <item itemvalue="Application.Greedy_53" />
-        <item itemvalue="Application.Greedy_455" />
-        <item itemvalue="Application.backTracking_77" />
-        <item itemvalue="Application.ThreadFactoryException" />
+        <item itemvalue="Application.Sword_Offer_06" />
+        <item itemvalue="Application.Array_18" />
+        <item itemvalue="Application.Array_15" />
+        <item itemvalue="Application.Array_1" />
+        <item itemvalue="Application.岛屿的最大面积_695" />
       </list>
     </recent_temporary>
   </component>
@@ -537,90 +538,31 @@
       <workItem from="1682488046291" duration="8093000" />
       <workItem from="1682607932647" duration="1721000" />
       <workItem from="1682694346590" duration="1406000" />
-    </task>
-    <task id="LOCAL-00038" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、优化第113题，减少递归函数的参数&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1647915610839</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1647915610839</updated>
-    </task>
-    <task id="LOCAL-00039" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、优化第113题，减少递归函数的参数&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1647915785019</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1647915785020</updated>
-    </task>
-    <task id="LOCAL-00040" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;3、开始第三周的第四题&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1648764033355</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1648764033355</updated>
-    </task>
-    <task id="LOCAL-00041" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、开始第五周的第一个：二叉搜索树的公共祖先&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1649693244867</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1649693244867</updated>
-    </task>
-    <task id="LOCAL-00042" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、昨天开始测试《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程技术&#10;2、">
-      <created>1650869703393</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1650869703393</updated>
-    </task>
-    <task id="LOCAL-00043" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：今天测完《面向对象》第4、5、6章的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <created>1650969821772</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1650969821772</updated>
-    </task>
-    <task id="LOCAL-00044" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成第四周的所有内容&#10;3、今天计划完成第五周的第二个&#10;4、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <created>1651591061324</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1651591061324</updated>
-    </task>
-    <task id="LOCAL-00045" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、今天计划完成第五周的第三个&#10;3、目标：完成了《面向对象》第4、5、6章的代码和第三章的示例&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
-      <created>1651721452975</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1651721452975</updated>
-    </task>
-    <task id="LOCAL-00046" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <created>1652011064015</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1652011064015</updated>
-    </task>
-    <task id="LOCAL-00047" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的4道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <created>1652103518582</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1652103518582</updated>
-    </task>
-    <task id="LOCAL-00048" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了华为的10道题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <created>1652771681260</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1652771681260</updated>
-    </task>
-    <task id="LOCAL-00049" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree:450，普通二叉树节点的删除&#10;3、完成了面向对象Java教程的代码&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
-      <created>1653399600065</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1653399600065</updated>
+      <workItem from="1683511568886" duration="2781000" />
+      <workItem from="1683736330516" duration="177000" />
+      <workItem from="1683738278796" duration="378000" />
+      <workItem from="1683738762069" duration="1220000" />
+      <workItem from="1683848557314" duration="17000" />
+      <workItem from="1683875234143" duration="2214000" />
+      <workItem from="1684051144133" duration="612000" />
+      <workItem from="1684247998489" duration="3560000" />
+      <workItem from="1684294577217" duration="7821000" />
+      <workItem from="1684320304900" duration="6705000" />
+      <workItem from="1684475925453" duration="6596000" />
+      <workItem from="1684665656527" duration="3986000" />
+      <workItem from="1684733701481" duration="6915000" />
+      <workItem from="1685095013581" duration="15638000" />
+      <workItem from="1685344093905" duration="2743000" />
+      <workItem from="1685391594212" duration="1765000" />
+      <workItem from="1685393995886" duration="1236000" />
+      <workItem from="1685860956640" duration="20000" />
+      <workItem from="1685958173154" duration="652000" />
+      <workItem from="1686035808222" duration="13262000" />
+      <workItem from="1686275622650" duration="8365000" />
+      <workItem from="1686304332312" duration="1900000" />
+      <workItem from="1687749640232" duration="633000" />
+      <workItem from="1688989427386" duration="12000" />
+      <workItem from="1692947177772" duration="9000" />
     </task>
     <task id="LOCAL-00050" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
       <created>1653563014718</created>
@@ -881,7 +823,91 @@
       <option name="project" value="LOCAL" />
       <updated>1682499723653</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1683511602033</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1683511602033</updated>
+    </task>
+    <task id="LOCAL-00088" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684248407993</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1684248407993</updated>
+    </task>
+    <task id="LOCAL-00089" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684295669923</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1684295669924</updated>
+    </task>
+    <task id="LOCAL-00090" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684301393995</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1684301393995</updated>
+    </task>
+    <task id="LOCAL-00091" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684476260071</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1684476260072</updated>
+    </task>
+    <task id="LOCAL-00092" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684733738956</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1684733738956</updated>
+    </task>
+    <task id="LOCAL-00093" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684777267414</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1684777267414</updated>
+    </task>
+    <task id="LOCAL-00094" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1685190904846</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1685190904846</updated>
+    </task>
+    <task id="LOCAL-00095" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1685392061315</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1685392061315</updated>
+    </task>
+    <task id="LOCAL-00096" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686214370057</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1686214370057</updated>
+    </task>
+    <task id="LOCAL-00097" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686221241804</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1686221241804</updated>
+    </task>
+    <task id="LOCAL-00098" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686234212167</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1686234212167</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -900,17 +926,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;3、更新scala的build插件&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
-    <MESSAGE value="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的启动【2/8】（start()和run()）&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-2/8】(错误的停止线程的方法：stop、suspend+volatile and boolean)&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】(如何正确的停止生产者和消费者？使用interrupt和while循环外的try/catch语句)&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】（分辨interrupt()、static interrupted()、interrupted()的作用）&#10;3、开始java多线程的6个状态【3-1/8】&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -925,7 +940,18 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1098,11 +1124,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="nums[i]" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
