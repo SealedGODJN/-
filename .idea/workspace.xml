@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interview/alibaba/h20230913/main1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interview/alibaba/h20230913/main2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interview/alibaba/h20230913/main3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_207.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_797.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/poj_1270.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hjn &lt;1286039722@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="21Ag4zGGcIhgWXMlk1D6H8sJlVR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/code/helloworld-java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37241378",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.NPU.json.bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\helloworld-java\src\main\java\com\NPU\考试0531\第四题debug" />
+      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\stack\Test" />
+      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\LinkedList" />
+      <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\java\Generic\improve" />
+      <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\NPU\Assistant" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\leetcode\dp" />
+      <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\leetcode\Tree\FirstWeek\Traverse" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/GetClass" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.leetcode.Tree" />
+      <recent name="com.leetcode.String" />
+      <recent name="com.leetcode.Stack" />
+      <recent name="com.leetcode.LinkedList" />
+      <recent name="com.leetcode.HashMap" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.NPU.线程八大基础.threadObjectClassCommonMethods" />
+      <recent name="com.NPU.synchronized深度解析" />
+      <recent name="com.NPU.线程八大基础.stopThreads" />
+      <recent name="com.dataStructure.Queue.Test" />
+      <recent name="com.dataStructure.stack.Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.poj_1270">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interview.侯蓓.unknown0909.main3.Main" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.侯蓓.unknown0909.main3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sword_Offer_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.LinkedList.Sword_Offer_06" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.interview.侯蓓.unknown0909.main2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interview.侯蓓.unknown0909.main2.Main" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.侯蓓.unknown0909.main2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.interview.alibaba.h20230913.main2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interview.alibaba.h20230913.main2.Main" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.alibaba.h20230913.main2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="poj_1270" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.DFS.poj_1270" />
+      <module name="Test_2020_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.Graph.DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.interview.alibaba.h20230913.main2.Main" />
+      <item itemvalue="Application.poj_1270" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.com.interview.侯蓓.unknown0909.main2.Main" />
+      <item itemvalue="Application.Sword_Offer_06" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.poj_1270" />
+        <item itemvalue="Application.com.interview.alibaba.h20230913.main2.Main" />
+        <item itemvalue="Application.com.interview.侯蓓.unknown0909.main2.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Sword_Offer_06" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="" />
+      <created>1637338645753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637338645753</updated>
+      <workItem from="1637338660622" duration="2730000" />
+      <workItem from="1637389153226" duration="493000" />
+      <workItem from="1637395760852" duration="500000" />
+      <workItem from="1637471877765" duration="194000" />
+      <workItem from="1637474483274" duration="631000" />
+      <workItem from="1637496191607" duration="11322000" />
+      <workItem from="1637896425353" duration="1876000" />
+      <workItem from="1637944572010" duration="1367000" />
+      <workItem from="1637997186690" duration="933000" />
+      <workItem from="1637998602740" duration="9275000" />
+      <workItem from="1638167489430" duration="5000" />
+      <workItem from="1638174023512" duration="8036000" />
+      <workItem from="1638245886509" duration="149000" />
+      <workItem from="1638252128059" duration="466000" />
+      <workItem from="1638427420712" duration="1931000" />
+      <workItem from="1638517831687" duration="712000" />
+      <workItem from="1638627018102" duration="730000" />
+      <workItem from="1638628130780" duration="168000" />
+      <workItem from="1638628435241" duration="2216000" />
+      <workItem from="1638631878686" duration="699000" />
+      <workItem from="1638709124409" duration="270000" />
+      <workItem from="1638709537703" duration="575000" />
+      <workItem from="1638759323359" duration="1863000" />
+      <workItem from="1638890174672" duration="304000" />
+      <workItem from="1638892077495" duration="191000" />
+      <workItem from="1638972690274" duration="437000" />
+      <workItem from="1639059245986" duration="588000" />
+      <workItem from="1639215622719" duration="209000" />
+      <workItem from="1639887575874" duration="523000" />
+      <workItem from="1639970261555" duration="709000" />
+      <workItem from="1640006376495" duration="2478000" />
+      <workItem from="1640746324866" duration="2174000" />
+      <workItem from="1640797589040" duration="1590000" />
+      <workItem from="1640872449419" duration="12613000" />
+      <workItem from="1641014121011" duration="2322000" />
+      <workItem from="1641020706483" duration="7003000" />
+      <workItem from="1641031234423" duration="2387000" />
+      <workItem from="1641100617624" duration="1000" />
+      <workItem from="1641122804263" duration="553000" />
+      <workItem from="1641174000346" duration="15064000" />
+      <workItem from="1641210859756" duration="1730000" />
+      <workItem from="1641223129570" duration="106000" />
+      <workItem from="1641223305746" duration="1613000" />
+      <workItem from="1641264944796" duration="4443000" />
+      <workItem from="1641284274828" duration="12662000" />
+      <workItem from="1641391240736" duration="1642000" />
+      <workItem from="1641446328120" duration="598000" />
+      <workItem from="1641461269961" duration="1658000" />
+      <workItem from="1641475898946" duration="3633000" />
+      <workItem from="1641542819595" duration="18030000" />
+      <workItem from="1641731108177" duration="10721000" />
+      <workItem from="1641788680183" duration="1187000" />
+      <workItem from="1641954416666" duration="2051000" />
+      <workItem from="1641956543088" duration="411000" />
+      <workItem from="1641957008146" duration="968000" />
+      <workItem from="1641958006654" duration="3415000" />
+      <workItem from="1642005160798" duration="2276000" />
+      <workItem from="1642060652829" duration="12672000" />
+      <workItem from="1642078854072" duration="7669000" />
+      <workItem from="1642091675659" duration="123000" />
+      <workItem from="1642130922582" duration="601000" />
+      <workItem from="1642142432243" duration="2662000" />
+      <workItem from="1642424938221" duration="316000" />
+      <workItem from="1642562201272" duration="5439000" />
+      <workItem from="1642757735801" duration="2837000" />
+      <workItem from="1642768468038" duration="12716000" />
+      <workItem from="1642988999218" duration="1140000" />
+      <workItem from="1643205804668" duration="5212000" />
+      <workItem from="1643276291366" duration="2736000" />
+      <workItem from="1643280643812" duration="8869000" />
+      <workItem from="1643335201815" duration="1064000" />
+      <workItem from="1643414488176" duration="3933000" />
+      <workItem from="1643421393935" duration="2658000" />
+      <workItem from="1643428089334" duration="1441000" />
+      <workItem from="1643432168463" duration="1784000" />
+      <workItem from="1643456365733" duration="6000" />
+      <workItem from="1643460814735" duration="2339000" />
+      <workItem from="1643469710912" duration="9036000" />
+      <workItem from="1643619985627" duration="6370000" />
+      <workItem from="1643780764260" duration="162000" />
+      <workItem from="1643781060895" duration="2920000" />
+      <workItem from="1643803326769" duration="1788000" />
+      <workItem from="1643892607256" duration="1712000" />
+      <workItem from="1643898021746" duration="1400000" />
+      <workItem from="1643938564293" duration="90000" />
+      <workItem from="1643939428359" duration="12714000" />
+      <workItem from="1644026953033" duration="152000" />
+      <workItem from="1644060621435" duration="5366000" />
+      <workItem from="1644415934182" duration="879000" />
+      <workItem from="1644465926296" duration="173000" />
+      <workItem from="1644466168773" duration="982000" />
+      <workItem from="1644759091286" duration="2978000" />
+      <workItem from="1644797898508" duration="687000" />
+      <workItem from="1644848891813" duration="600000" />
+      <workItem from="1644890661066" duration="7073000" />
+      <workItem from="1644915257442" duration="152000" />
+      <workItem from="1644915436289" duration="3161000" />
+      <workItem from="1644925122650" duration="2150000" />
+      <workItem from="1644976697220" duration="13650000" />
+      <workItem from="1645066912579" duration="725000" />
+      <workItem from="1645092390821" duration="8905000" />
+      <workItem from="1645149301638" duration="3776000" />
+      <workItem from="1645170043830" duration="2732000" />
+      <workItem from="1645246458192" duration="1429000" />
+      <workItem from="1645267927011" duration="1710000" />
+      <workItem from="1645367481576" duration="2461000" />
+      <workItem from="1645403865705" duration="2234000" />
+      <workItem from="1645420829067" duration="2000" />
+      <workItem from="1645495772744" duration="7870000" />
+      <workItem from="1645534810993" duration="1665000" />
+      <workItem from="1645538226462" duration="618000" />
+      <workItem from="1645582062381" duration="4988000" />
+      <workItem from="1645598230267" duration="859000" />
+      <workItem from="1645612179611" duration="2858000" />
+      <workItem from="1645680557057" duration="666000" />
+      <workItem from="1645702236811" duration="1747000" />
+      <workItem from="1645754983510" duration="9347000" />
+      <workItem from="1646027791889" duration="3188000" />
+      <workItem from="1646064081481" duration="158000" />
+      <workItem from="1646064373093" duration="1536000" />
+      <workItem from="1646821831152" duration="975000" />
+      <workItem from="1646964492747" duration="5638000" />
+      <workItem from="1647066259733" duration="1239000" />
+      <workItem from="1647150154863" duration="599000" />
+      <workItem from="1647215953660" duration="1180000" />
+      <workItem from="1647271646116" duration="8987000" />
+      <workItem from="1647343302349" duration="2093000" />
+      <workItem from="1647345530128" duration="158000" />
+      <workItem from="1647345826807" duration="6952000" />
+      <workItem from="1647398267979" duration="1349000" />
+      <workItem from="1647404058440" duration="9000" />
+      <workItem from="1647440353995" duration="493000" />
+      <workItem from="1647524988491" duration="2042000" />
+      <workItem from="1647771067314" duration="1181000" />
+      <workItem from="1647772659776" duration="2785000" />
+      <workItem from="1647789245381" duration="3881000" />
+      <workItem from="1647795535180" duration="7000" />
+      <workItem from="1647853571152" duration="12000" />
+      <workItem from="1647869204229" duration="10000" />
+      <workItem from="1647869261768" duration="6795000" />
+      <workItem from="1647910836425" duration="154000" />
+      <workItem from="1647911083885" duration="6340000" />
+      <workItem from="1647956778261" duration="355000" />
+      <workItem from="1647957587052" duration="69000" />
+      <workItem from="1648043974994" duration="1743000" />
+      <workItem from="1648277236142" duration="7281000" />
+      <workItem from="1648291854910" duration="1194000" />
+      <workItem from="1648303046336" duration="597000" />
+      <workItem from="1648534611908" duration="116000" />
+      <workItem from="1648549108743" duration="5105000" />
+      <workItem from="1648555830284" duration="3303000" />
+      <workItem from="1648650084809" duration="1500000" />
+      <workItem from="1648763972853" duration="6128000" />
+      <workItem from="1648795830076" duration="620000" />
+      <workItem from="1648796715280" duration="719000" />
+      <workItem from="1648812461707" duration="2080000" />
+      <workItem from="1649335790142" duration="186000" />
+      <workItem from="1649680086632" duration="7895000" />
+      <workItem from="1650202561983" duration="1239000" />
+      <workItem from="1650615713821" duration="775000" />
+      <workItem from="1650643208441" duration="611000" />
+      <workItem from="1650793754310" duration="6827000" />
+      <workItem from="1650866306432" duration="4385000" />
+      <workItem from="1650874758529" duration="4999000" />
+      <workItem from="1650902363324" duration="901000" />
+      <workItem from="1650968520010" duration="4509000" />
+      <workItem from="1650979706538" duration="3383000" />
+      <workItem from="1651159126437" duration="80000" />
+      <workItem from="1651159537281" duration="4028000" />
+      <workItem from="1651588500566" duration="10302000" />
+      <workItem from="1651902663991" duration="7433000" />
+      <workItem from="1651939890244" duration="1082000" />
+      <workItem from="1651994409139" duration="11257000" />
+      <workItem from="1652096261148" duration="2786000" />
+      <workItem from="1652100977109" duration="942000" />
+      <workItem from="1652263488740" duration="5009000" />
+      <workItem from="1652520241335" duration="4684000" />
+      <workItem from="1652771641531" duration="9060000" />
+      <workItem from="1653037668503" duration="899000" />
+      <workItem from="1653212627013" duration="20000" />
+      <workItem from="1653395470871" duration="475000" />
+      <workItem from="1653396103944" duration="2904000" />
+      <workItem from="1653453005202" duration="591000" />
+      <workItem from="1653467489819" duration="941000" />
+      <workItem from="1653469164547" duration="1218000" />
+      <workItem from="1653558057223" duration="1051000" />
+      <workItem from="1653560191852" duration="2997000" />
+      <workItem from="1653574704598" duration="4478000" />
+      <workItem from="1653635420125" duration="2401000" />
+      <workItem from="1653721573131" duration="1201000" />
+      <workItem from="1654065508596" duration="209000" />
+      <workItem from="1655778873236" duration="685000" />
+      <workItem from="1656380143942" duration="716000" />
+      <workItem from="1656380887200" duration="24000" />
+      <workItem from="1656645265947" duration="3348000" />
+      <workItem from="1656727321592" duration="705000" />
+      <workItem from="1656902799591" duration="330000" />
+      <workItem from="1658113636386" duration="335000" />
+      <workItem from="1658116912828" duration="595000" />
+      <workItem from="1660445784885" duration="794000" />
+      <workItem from="1660658963093" duration="1515000" />
+      <workItem from="1660746668402" duration="6697000" />
+      <workItem from="1661091061907" duration="5323000" />
+      <workItem from="1661172451955" duration="818000" />
+      <workItem from="1661336172058" duration="4094000" />
+      <workItem from="1661508726704" duration="7256000" />
+      <workItem from="1661592189022" duration="6599000" />
+      <workItem from="1661690402042" duration="3555000" />
+      <workItem from="1661781894059" duration="118000" />
+      <workItem from="1661782022272" duration="777000" />
+      <workItem from="1661782820922" duration="974000" />
+      <workItem from="1661869326673" duration="2917000" />
+      <workItem from="1661942187775" duration="6062000" />
+      <workItem from="1662073113077" duration="1922000" />
+      <workItem from="1662252766327" duration="787000" />
+      <workItem from="1662271567148" duration="7064000" />
+      <workItem from="1662635397138" duration="20273000" />
+      <workItem from="1663075094825" duration="54000" />
+      <workItem from="1663086936781" duration="2169000" />
+      <workItem from="1663166804914" duration="13000" />
+      <workItem from="1663324425202" duration="4301000" />
+      <workItem from="1663331039332" duration="1198000" />
+      <workItem from="1663470137569" duration="1466000" />
+      <workItem from="1663510456548" duration="3435000" />
+      <workItem from="1663679304638" duration="2613000" />
+      <workItem from="1664113495923" duration="1353000" />
+      <workItem from="1664198642093" duration="21000" />
+      <workItem from="1664460381050" duration="1064000" />
+      <workItem from="1664728893751" duration="3620000" />
+      <workItem from="1664963098375" duration="9806000" />
+      <workItem from="1665661158072" duration="602000" />
+      <workItem from="1665907285808" duration="3952000" />
+      <workItem from="1666509932186" duration="12050000" />
+      <workItem from="1666864767021" duration="1834000" />
+      <workItem from="1666873343936" duration="1557000" />
+      <workItem from="1664728893751" duration="3341000" />
+      <workItem from="1665484439713" duration="3903000" />
+      <workItem from="1665996738809" duration="32000" />
+      <workItem from="1666339164505" duration="750000" />
+      <workItem from="1666765654454" duration="2727000" />
+      <workItem from="1667273553474" duration="610000" />
+      <workItem from="1667542756727" duration="689000" />
+      <workItem from="1667545302130" duration="4978000" />
+      <workItem from="1667703115244" duration="263000" />
+      <workItem from="1667703708170" duration="2069000" />
+      <workItem from="1667707947418" duration="258000" />
+      <workItem from="1667717327306" duration="596000" />
+      <workItem from="1667815247557" duration="9547000" />
+      <workItem from="1667918507467" duration="2259000" />
+      <workItem from="1668079715464" duration="1227000" />
+      <workItem from="1668093274609" duration="3939000" />
+      <workItem from="1668331566382" duration="7425000" />
+      <workItem from="1668446003403" duration="5000" />
+      <workItem from="1668509419602" duration="2658000" />
+      <workItem from="1668524613121" duration="3047000" />
+      <workItem from="1668594118164" duration="818000" />
+      <workItem from="1668841292543" duration="14413000" />
+      <workItem from="1669213903112" duration="974000" />
+      <workItem from="1669457560635" duration="6020000" />
+      <workItem from="1669630778376" duration="4154000" />
+      <workItem from="1670928762316" duration="4401000" />
+      <workItem from="1671114049058" duration="623000" />
+      <workItem from="1671277982771" duration="1933000" />
+      <workItem from="1671617774276" duration="19000" />
+      <workItem from="1671891527137" duration="1922000" />
+      <workItem from="1672230627070" duration="2013000" />
+      <workItem from="1672307869821" duration="2224000" />
+      <workItem from="1672401129611" duration="166000" />
+      <workItem from="1672404335293" duration="14000" />
+      <workItem from="1672404748541" duration="6000" />
+      <workItem from="1672915597448" duration="469000" />
+      <workItem from="1672916290720" duration="2635000" />
+      <workItem from="1673272041605" duration="169000" />
+      <workItem from="1673866915161" duration="257000" />
+      <workItem from="1673945670516" duration="649000" />
+      <workItem from="1675117104880" duration="18000" />
+      <workItem from="1675117131782" duration="2052000" />
+      <workItem from="1675143134395" duration="6649000" />
+      <workItem from="1675480665249" duration="598000" />
+      <workItem from="1675755084590" duration="3317000" />
+      <workItem from="1675841514217" duration="652000" />
+      <workItem from="1676195368714" duration="610000" />
+      <workItem from="1680443735995" duration="515000" />
+      <workItem from="1681085623235" duration="3857000" />
+      <workItem from="1681376402398" duration="1333000" />
+      <workItem from="1681438161809" duration="1321000" />
+      <workItem from="1681443045203" duration="2451000" />
+      <workItem from="1681448275258" duration="798000" />
+      <workItem from="1681449106361" duration="1647000" />
+      <workItem from="1681455635317" duration="237000" />
+      <workItem from="1681455907939" duration="9000" />
+      <workItem from="1681497131880" duration="674000" />
+      <workItem from="1681498727491" duration="163000" />
+      <workItem from="1681540814285" duration="638000" />
+      <workItem from="1681541490109" duration="770000" />
+      <workItem from="1681554912442" duration="1014000" />
+      <workItem from="1681629050145" duration="9990000" />
+      <workItem from="1681639993199" duration="27000" />
+      <workItem from="1681650478858" duration="12798000" />
+      <workItem from="1681721435150" duration="7777000" />
+      <workItem from="1681791161459" duration="915000" />
+      <workItem from="1681797036685" duration="2237000" />
+      <workItem from="1681821002816" duration="717000" />
+      <workItem from="1681888078095" duration="831000" />
+      <workItem from="1681920112314" duration="2121000" />
+      <workItem from="1681996349045" duration="681000" />
+      <workItem from="1681997535359" duration="1879000" />
+      <workItem from="1682002086792" duration="1062000" />
+      <workItem from="1682040103758" duration="5000000" />
+      <workItem from="1682058752606" duration="4455000" />
+      <workItem from="1682079102964" duration="2393000" />
+      <workItem from="1682084858062" duration="1174000" />
+      <workItem from="1682149539432" duration="7444000" />
+      <workItem from="1682180446345" duration="19312000" />
+      <workItem from="1682303464529" duration="17306000" />
+      <workItem from="1682299916789" duration="87000" />
+      <workItem from="1682301856543" duration="141000" />
+      <workItem from="1682488046291" duration="8093000" />
+      <workItem from="1682607932647" duration="1721000" />
+      <workItem from="1682694346590" duration="1406000" />
+      <workItem from="1683511568886" duration="2781000" />
+      <workItem from="1683736330516" duration="177000" />
+      <workItem from="1683738278796" duration="378000" />
+      <workItem from="1683738762069" duration="1220000" />
+      <workItem from="1683848557314" duration="17000" />
+      <workItem from="1683875234143" duration="2214000" />
+      <workItem from="1684051144133" duration="612000" />
+      <workItem from="1684247998489" duration="3560000" />
+      <workItem from="1684294577217" duration="7821000" />
+      <workItem from="1684320304900" duration="6705000" />
+      <workItem from="1684475925453" duration="6596000" />
+      <workItem from="1684665656527" duration="3986000" />
+      <workItem from="1684733701481" duration="6915000" />
+      <workItem from="1685095013581" duration="15638000" />
+      <workItem from="1685344093905" duration="2743000" />
+      <workItem from="1685391594212" duration="1765000" />
+      <workItem from="1685393995886" duration="1236000" />
+      <workItem from="1685860956640" duration="20000" />
+      <workItem from="1685958173154" duration="652000" />
+      <workItem from="1686035808222" duration="13262000" />
+      <workItem from="1686275622650" duration="8365000" />
+      <workItem from="1686304332312" duration="1900000" />
+      <workItem from="1687749640232" duration="633000" />
+      <workItem from="1688989427386" duration="12000" />
+      <workItem from="1692947177772" duration="9000" />
+    </task>
+    <task id="LOCAL-00050" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <created>1653563014718</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1653563014718</updated>
+    </task>
+    <task id="LOCAL-00051" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习利用poi包，创建word&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
+      <created>1656645585330</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1656645585331</updated>
+    </task>
+    <task id="LOCAL-00052" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1661096131071</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1661096131072</updated>
+    </task>
+    <task id="LOCAL-00053" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp，但是也不太想学&#10;4、数据结构-楠哥-讲课&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1661695594078</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1661695594078</updated>
+    </task>
+    <task id="LOCAL-00054" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第一题：509斐波那契数列【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1661871873909</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1661871873909</updated>
+    </task>
+    <task id="LOCAL-00055" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【栈（一道题）+队列+树（三大遍历）】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1662075199858</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1662075199859</updated>
+    </task>
+    <task id="LOCAL-00056" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第2题：70爬楼梯【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接矩阵】&#10;5、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1662975167481</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1662975167481</updated>
+    </task>
+    <task id="LOCAL-00057" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第3题：746爬楼梯-改进版【代码随想录】&#10;4、数据结构-楠哥-讲课【图的邻接表+排序算法+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1663089110203</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663089110204</updated>
+    </task>
+    <task id="LOCAL-00058" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第8题：dp343【用数学方法去证明】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1664114252028</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1664114252028</updated>
+    </task>
+    <task id="LOCAL-00059" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、Tree108还没写&#10;3、系统性学习dp-第9题：dp96【推导递推公式，找规律】&#10;4、数据结构-楠哥-讲课【图的6DFS、BFS+归并排序+时间复杂度】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1664732813779</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1664732813779</updated>
+    </task>
+    <task id="LOCAL-00060" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、准备讲课（广义表）&#10;2、leetcode-416：划分为等价集合，转换为01背包问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1667708190631</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1667708190632</updated>
+    </task>
+    <task id="LOCAL-00061" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、leetcode-1049：最后一块石头的重量II，转换为leetcode-416【01背包问题】&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1668079786113</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1668079786113</updated>
+    </task>
+    <task id="LOCAL-00062" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1668097002181</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1668097002181</updated>
+    </task>
+    <task id="LOCAL-00063" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习java多线程3.3.2&#10;2、总结01背包的遍历顺序、初始化（从定义出发）&#10;3、leetcode494：目标和（求组合的和）&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1668913935604</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1668913935604</updated>
+    </task>
+    <task id="LOCAL-00064" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1672234484950</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1672234484950</updated>
+    </task>
+    <task id="LOCAL-00065" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、给楠哥重新讲了两遍建立大根堆、一遍huffmanTree算法&#10;2、想编写身份证验证程序，但在正则表达式上出现了问题&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1673867048984</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1673867048984</updated>
+    </task>
+    <task id="LOCAL-00066" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、修改旧的目录结构：混合编译scala&#10;2、还是要切换到windows上，否则还得重新配环境&#10;&#10;待完成：&#10;1、学习java的多线程：线程池（拓展和原理，根据原理进行线程池配置的优化）&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）">
+      <created>1681087101068</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681087101068</updated>
+    </task>
+    <task id="LOCAL-00067" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <created>1681444301689</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1681444301689</updated>
+    </task>
+    <task id="LOCAL-00068" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、通过maven helper来分析dependency的冲突&#10;3、更新scala的build插件&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <created>1681449346815</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681449346815</updated>
+    </task>
+    <task id="LOCAL-00069" summary="leetcode+javafx多线程+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成Array_209题的复习&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、优化网络演算法">
+      <created>1681560753999</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1681560754000</updated>
+    </task>
+    <task id="LOCAL-00070" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的创建【1/8】（Runnable和Thread）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681636784042</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1681636784043</updated>
+    </task>
+    <task id="LOCAL-00071" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的启动【2/8】（start()和run()）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681639711881</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681639711881</updated>
+    </task>
+    <task id="LOCAL-00072" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-1/8】（传递中断：run()方法不允许throws，run()方法调用的子函数中，存在一个子函数要throws，则应该对该子函数使用try/catch语句）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681716288162</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1681716288162</updated>
+    </task>
+    <task id="LOCAL-00073" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-2/8】(错误的停止线程的方法：stop、suspend+volatile and boolean)&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681732827348</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1681732827348</updated>
+    </task>
+    <task id="LOCAL-00074" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】(如何正确的停止生产者和消费者？使用interrupt和while循环外的try/catch语句)&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1681808279525</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1681808279525</updated>
+    </task>
+    <task id="LOCAL-00075" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】（分辨interrupt()、static interrupted()、interrupted()的作用）&#10;3、开始java多线程的6个状态【3-1/8】&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682048187291</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1682048187291</updated>
+    </task>
+    <task id="LOCAL-00076" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;3、完成java多线程的6个状态【3/8】（New、Runnable、Terminated、Timed_waiting、waiting、blocked）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682059045496</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1682059045496</updated>
+    </task>
+    <task id="LOCAL-00077" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682079527192</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1682079527193</updated>
+    </task>
+    <task id="LOCAL-00078" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682080907697</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1682080907697</updated>
+    </task>
+    <task id="LOCAL-00079" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682181507583</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1682181507583</updated>
+    </task>
+    <task id="LOCAL-00080" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682236657548</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1682236657548</updated>
+    </task>
+    <task id="LOCAL-00081" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682255452729</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1682255452729</updated>
+    </task>
+    <task id="LOCAL-00082" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682340615450</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1682340615451</updated>
+    </task>
+    <task id="LOCAL-00083" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682391707246</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1682391707246</updated>
+    </task>
+    <task id="LOCAL-00084" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682394172777</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1682394172777</updated>
+    </task>
+    <task id="LOCAL-00085" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682445339852</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1682445339852</updated>
+    </task>
+    <task id="LOCAL-00086" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1682499723652</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1682499723653</updated>
+    </task>
+    <task id="LOCAL-00087" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1683511602033</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1683511602033</updated>
+    </task>
+    <task id="LOCAL-00088" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684248407993</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1684248407993</updated>
+    </task>
+    <task id="LOCAL-00089" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684295669923</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1684295669924</updated>
+    </task>
+    <task id="LOCAL-00090" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684301393995</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1684301393995</updated>
+    </task>
+    <task id="LOCAL-00091" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684476260071</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1684476260072</updated>
+    </task>
+    <task id="LOCAL-00092" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684733738956</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1684733738956</updated>
+    </task>
+    <task id="LOCAL-00093" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1684777267414</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1684777267414</updated>
+    </task>
+    <task id="LOCAL-00094" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1685190904846</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1685190904846</updated>
+    </task>
+    <task id="LOCAL-00095" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1685392061315</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1685392061315</updated>
+    </task>
+    <task id="LOCAL-00096" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686214370057</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1686214370057</updated>
+    </task>
+    <task id="LOCAL-00097" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686221241804</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1686221241804</updated>
+    </task>
+    <task id="LOCAL-00098" summary="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法">
+      <created>1686234212167</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1686234212167</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、完成java多线程的停止【2-3/8】（分辨interrupt()、static interrupted()、interrupted()的作用）&#10;3、开始java多线程的6个状态【3-1/8】&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;3、完成java多线程的6个状态【3/8】（New、Runnable、Terminated、Timed_waiting、waiting、blocked）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁1、代码块形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：对象锁2、方法锁形式&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_1047.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_150.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Stack/Stack_150.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/HashMap_1.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/BeanMapTest.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestEasyExcel.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/TestReflection.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java_Interview_Reference/hashcode_2/TestHashMap.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_572.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_144.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_113.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/java/Generic/improve/Test.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ6.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/huawei/HJ1.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/chapter3/apache/common/lang3/EduManagement.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/Sword_Offer_2_103.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/Sword_Offer_2_103.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/array/Test.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/LinkedList/Test/LNode.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/array/Array.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_509.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dataStructure/sort/InsertSort.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_01背包.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/synchronized深度解析/SynchronizedObjectCodeBlock2.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadObjectClassCommonMethods/JoinThreadState.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/NPU/线程八大基础/threadAttributes/Id.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

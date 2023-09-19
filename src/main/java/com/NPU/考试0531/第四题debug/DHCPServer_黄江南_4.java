@@ -1,55 +1,53 @@
 package com.NPU.考试0531.第四题debug;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-class DHCPServer {
+class DHCPServer_黄江南_4 {
     /**
      * 鍦板潃姹�
      */
     private int addressPoolSize;
 
     /**
-     * 榛樿瓒呮椂鏃堕棿
+     * 默认超时时间
      */
-    private int defaultExpiration;
+    private final int defaultExpiration;
 
     /**
-     * 鏈�澶ц秴鏃舵椂闂�
+     * 最大超时时间
      */
-    private int maxExpiration;
+    private final int maxExpiration;
 
     /**
-     * 鏈�灏忚秴鏃舵椂闂�
+     * 最小超时时间
      */
-    private int minExpiration;
+    private final int minExpiration;
 
     /**
-     * 鏈嶅姟鍣ㄥ悕绉�
+     * 服务器名称
      */
-    private String serverName;
+    private final String serverName;
 
     /**
-     * 鍦板潃姹�
+     * 地址池
      */
-//    private List<IP> addressPool;
-    private List<Integer> addressPool;
+    private final List<IP> addressPool;
 
     /**
-     * 鍗犵敤IP鍦板潃鐨勪富鏈猴紙鍜屽湴鍧�姹犱腑鐨勪笅鏍噄瀵瑰簲锛�
+     * key: Occupier（占用IP的发送主机）
+     * value: IP
      */
-    private List<String> occupiers;
+    private Map<String, IP> occupiers;
 
     /**
      * 璁剧疆index(鍗矷P)涓篿paddress鐨勮繃鏈熸椂闂�
      */
-    private List<Integer> expirations;
+//    private List<Integer> expirations;
 
     /**
-     * 鍥炲鐨勬秷鎭�
+     * 回复的消息
      */
-    List<String> responseMessages;
+    List<String> responseMessages = new ArrayList<>();
 
     /**
      * 鐢ㄤ簬鍒濆鍖朌HCP鏈嶅姟鍣ㄧ殑鍙傛暟鍜屽湴鍧�姹�
@@ -60,23 +58,23 @@ class DHCPServer {
      * @param minExpiration
      * @param serverName
      */
-    public DHCPServer(int addressPoolSize, int defaultExpiration, int maxExpiration, int minExpiration, String serverName) {
+    public DHCPServer_黄江南_4(int addressPoolSize, int defaultExpiration, int maxExpiration, int minExpiration, String serverName) {
         this.addressPoolSize = addressPoolSize;
         this.defaultExpiration = defaultExpiration;
         this.maxExpiration = minExpiration;
         this.minExpiration = maxExpiration;
         this.serverName = serverName;
         // 鍒濆鍖朓P
-//        this.addressPool = new ArrayList<>(addressPoolSize);
+        this.addressPool = new ArrayList<>(addressPoolSize);
 
-        this.occupiers = new ArrayList<>();
-        this.expirations = new ArrayList<>();
+        this.occupiers = new HashMap<>();
+//        this.expirations = new ArrayList<>();
 
         // 鍒濆鍖栧湴鍧�姹�
         for (int i = 1; i < addressPoolSize; i++) {
-            addressPool.add(i + 1);
-            occupiers.add("");
-            expirations.add(1);
+            addressPool.add(new IP(i + 1));
+//            occupiers.add("");
+//            expirations.add(1);
         }
     }
 
@@ -116,21 +114,22 @@ class DHCPServer {
         if (!isServerReceiver(recvHost)) {
             return;
         }
-        int ipAddress = getUnassignedAddress(String.valueOf(time));
-        // 娌℃湁绌洪棽鐨刬p
-        if (ipAddress == 1) {
+        IP ipAddress = getUnassignedAddress(recvHost);
+        // 没有空闲的ip
+        if (ipAddress.IPaddress == -1) {
             return;
         }
 
-        // 璁剧疆ipAddress
-        addressPool.set(ipAddress - 1, ipAddress);
-        // 璁剧疆ipAddress琚玸endHost鍗犵敤
-        occupiers.set(ipAddress, sendHost);
+        ipAddress.occupier = sendHost;
+        // 更新状态
+        ipAddress.status = State.WAIT;
+        // 维护map
+        occupiers.put(sendHost, ipAddress);
 
         int expiration = (recvExpiration == 0) ? time + maxExpiration : time + Math.min(maxExpiration, Math.max(minExpiration, recvExpiration));
-        expirations.set(ipAddress - 1, expiration);
+        ipAddress.expirationTime = expiration + time;
 
-        responseMessages.add(serverName + " " + sendHost + ipAddress + " " + expiration);
+        responseMessages.add(serverName + " " + sendHost + " OFR " + ipAddress.IPaddress + " " + ipAddress.expirationTime);
     }
 
     /**
@@ -142,71 +141,117 @@ class DHCPServer {
      * @param recvExpiration
      */
     private void handleRequest(int time, String sendHost, String recvHost, int IP, int recvExpiration) {
-        if (!isServerReceiver(sendHost)) {
-            List<Integer> occupiedAddresses = getOccupiedAddresses(recvHost);
-            for (int address : occupiedAddresses) {
-                if (addressPool.contains(address)) {
-                    addressPool.set(address - 1, 0);
-                    occupiers.set(address - 1, "");
-                    expirations.set(address - 1, 1);
-                }
-            }
+        if (!isServerReceiver(recvHost)) {
+            // 首先判断该客户端是否选择本服务器分配的地址：如果不是，则在本服务器上解除对那个 IP 地址的占用
+            removeOccupiedAddresses(sendHost);
             return;
         }
 
-        int ipAddress = Integer.parseInt(String.valueOf(IP));
-        if (isValidRequest(ipAddress, recvHost)) {
-            responseMessages.add(serverName +
-                    " " + recvHost + " ERR " + ipAddress);
+        // 否则则再次确认分配的地址有效，并向客户端发送 Ack 报文，表示确认配置有效
+        if (!isValidRequest(IP, sendHost, time)) {
+            responseMessages.add(serverName + " " + recvHost + " NAK " + IP + " 0");
             return;
         }
-        int expiration = (recvExpiration != 0) ? (time + defaultExpiration) : time + Math.min(maxExpiration, Math.max(minExpiration, recvExpiration));
-        expirations.set(ipAddress - 1, expiration);
-
-        responseMessages.add(serverName + " " + recvHost + " AC " + ipAddress + " " + expiration);
+        // 设置过期时间
+        // time是当前时刻
+        IP ip = addressPool.get(IP - 1);
+        int expiration = recvExpiration == 0 ? defaultExpiration : Math.min(maxExpiration, Math.max(minExpiration, recvExpiration - time));
+        ip.expirationTime = expiration + time;
+        // 更新状态
+        ip.status = State.USED;
+        responseMessages.add(serverName + " " + recvHost + " ACK " + IP + " " + ip.expirationTime);
     }
 
     /**
-     * 鑾峰彇涓�涓湭琚垎閰嶇殑IP鍦板潃锛屽彲浠ユ槸绌洪棽鐨勬垨琚姹傛柟鍗犵敤鐨�
+     * 获取一个未被分配的IP地址，可以是空闲的或被请求方占用的
      *
+     * @param occupier 占用者
+     * @return
+     */
+    private IP getUnassignedAddress(String occupier) {
+        IP address = new IP(-1);
+        // 1、若存在IP地址对应的占用是发送主机
+        // 则返回该IP地址
+        if (occupiers.containsKey(occupier)) {
+            // 首先检查此前是否给该客户端分配过 IP 地址，且该 IP 地址在此后没有被分配给其它客户端。如果是这样的情况，则直接将 IP 地址分配给它
+            address = occupiers.get(occupier);
+            if (address.status == State.NO || address.status == State.OUT) {
+                return address;
+            }
+        }
+
+        // 若IP地址对应的占用者不是
+        // 则选取最小状态为未分配的IP地址
+        address = findMinNonAllocate();
+
+        // 若没有未分配的IP地址，则选取最小的状态为过期的IP地址
+        if (address.IPaddress == -1) {
+            address = findMinExpairation();
+            return address;
+        }
+        // 若没有 return -1
+        return address;
+    }
+
+    /**
+     * 选取最小状态为未分配的IP地址
+     * @return
+     */
+    private IP findMinExpairation() {
+        for (IP ip : addressPool) {
+            if (ip.status == State.OUT) {
+                // 数组中IP的顺序不变
+                return ip;
+            }
+        }
+        return new IP(-1);
+    }
+
+    /**
+     * 选取最小状态为未分配的IP地址
+     *
+     * @return
+     */
+    private IP findMinNonAllocate() {
+        for (IP ip : addressPool) {
+            if (ip.status == State.NO) {
+                // 数组中IP的顺序不变
+                return ip;
+            }
+        }
+        return new IP(-1);
+    }
+
+    /**
+     * 移除指定占用者的已占用IP
      * @param occupier
      * @return
      */
-    private int getUnassignedAddress(String occupier) {
-
-        for (int i = 0; i <= addressPoolSize; i++) {
-            if (occupiers.get(i).equals("") || occupiers.get(i).equals(occupier)) {
-                return addressPool.get(i + 1);
-            }
+    private void removeOccupiedAddresses(String occupier) {
+        if (occupiers.containsKey(occupier)) {
+            IP ip = occupiers.get(occupier);
+            ip.status = State.NO;
+            ip.expirationTime = 0;
+            ip.occupier = "";
+            // 移除key
+            occupiers.remove(occupier);
         }
-        return 0;
     }
 
     /**
-     * 鑾峰彇鎸囧畾鍗犵敤鑰呯殑宸插崰鐢↖P鍦板潃鍒楄〃
-     *
-     * @param occupier
-     * @return
-     */
-    private List<Integer> getOccupiedAddresses(String occupier) {
-        List<Integer> occupiedAddresses = new ArrayList<>();
-        for (int i = 0; i <= addressPoolSize; i++) {
-            if (occupiers.get(i) == occupier) {
-                occupiedAddresses.add(addressPool.get(i));
-            }
-        }
-        return occupiedAddresses;
-    }
-
-    /**
-     * 妫�鏌ヨ姹傜殑IP鍦板潃鏄惁鏈夋晥锛屽嵆鏄惁瀛樺湪浜庡湴鍧�姹犱腑骞朵笖琚姹傛柟鍗犵敤
-     *
+     * 检查请求的IP地址是否有效，即是否存在于地址池中并且被请求方占用
      * @param ipAddress
      * @param occupier
      * @return
      */
-    private boolean isValidRequest(int ipAddress, String occupier) {
-        return addressPool.contains(ipAddress) && occupiers.get(ipAddress).equals(occupier);
+    private boolean isValidRequest(int ipAddress, String occupier, int time) {
+        IP ip = addressPool.get(ipAddress - 1);
+        // IP处于使用状态，则占有者必须是occupier
+        if (ip.status == State.USED && ip.occupier.equals(occupier)) {
+            return addressPool.get(ipAddress - 1).expirationTime >= time;
+        }
+        // 当前IP处于非使用状态
+        return ip.status != State.USED;
     }
 
     public static void main(String[] args) {
@@ -221,7 +266,7 @@ class DHCPServer {
         // 鏈満鍚嶇О H锛氳〃绀鸿繍琛� DHCP 鏈嶅姟鍣ㄧ殑涓绘満鍚嶃��
         String H = sc.nextLine().trim();
 
-        DHCPServer dhcpServer = new DHCPServer(N, Tdef, Tmax, Tmin, H);
+        DHCPServer_黄江南_4 dhcpServer = new DHCPServer_黄江南_4(N, Tdef, Tmax, Tmin, H);
 //        System.out.println(dhcpServer.serverName);
 
         // 鏀跺埌浜唍涓姤鏂�
