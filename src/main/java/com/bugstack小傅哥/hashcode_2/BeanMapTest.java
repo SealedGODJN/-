@@ -49,10 +49,6 @@ public class BeanMapTest {
     /**
      * 将List<T>转换为List<Map<String, Object>>
      * @param objList
-     * @return
-     * @throws JsonGenerationException
-     * @throws JsonMappingException
-     * @throws IOException
      */
     public static <T> List<Map<String, Object>> objectsToMaps(List<T> objList) {
         List<Map<String, Object>> list = new ArrayList<>();

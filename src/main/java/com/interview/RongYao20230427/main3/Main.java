@@ -10,8 +10,8 @@ public class Main {
         List<String> fruits = new ArrayList<>();//记录水果的输入次序
         LinkedList<String> message = new LinkedList<>();
 
-        while (in.hasNext()) {
-//        for (int i = 0; i < n; i++) {
+//        while (in.hasNext()) {
+        for (int i = 0; i < n; i++) {
             message.offer(in.next());
             message.offer(in.next());
             message.offer(in.next());

@@ -31,6 +31,8 @@ public class HashMap_1 {
 //        boolean b = !(i++ == 3) ^ (i++ ==2) && (i++==3);
 //        System.out.println(b);
 //        System.out.println(i);
+
+        // 初始化一组字符串
         List<String> strings = new ArrayList<>();
         strings.add("r1oir");
         strings.add("gr3g24");
@@ -42,14 +44,17 @@ public class HashMap_1 {
 
         // 定义要存放的数组
         String[] tab = new String[8];
-        for (String s : strings) {
-            int hashcode = HashCode1.hashCode(s, 31);
+
+        // 循环存放
+        for (String key : strings) {
+            int hashcode = HashCode1.hashCode(key, 31);
+            // 计算索引位置
             hashcode = hashcode & (tab.length - 1);
-            System.out.println(String.format("key值=%s Idx=%d", s, hashcode));
+            System.out.println(String.format("key值=%s Idx=%d", key, hashcode));
             if (null == tab[hashcode]) {
-                tab[hashcode] = s;
+                tab[hashcode] = key;
             } else {
-                tab[hashcode] = tab[hashcode] + "->" + s;
+                tab[hashcode] = tab[hashcode] + "->" + key;
             }
         }
 
