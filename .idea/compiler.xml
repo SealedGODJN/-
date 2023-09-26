@@ -7,9 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Test_2020_3_2" />
         <module name="code" />
+        <module name="deadlock" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Test_2020_3_2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
