@@ -12,6 +12,8 @@ public class TransferMoney implements Runnable {
     static Account a = new Account(1, 500);
     static Account b = new Account(2, 500);
 
+    static Object lock = new Account(3, 500);
+
     public static void main(String[] args) throws InterruptedException {
         TransferMoney o1 = new TransferMoney();
         TransferMoney o2 = new TransferMoney();
@@ -38,17 +40,8 @@ public class TransferMoney implements Runnable {
     }
 
     public static void transferMoney(Account from, Account to, int amount) {
-        // 本人加锁
-        synchronized (from) {
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-//            System.out.println("1 from.lock->" + from.name);
-            // 对方加锁
-            synchronized (to) {
-//                System.out.println("2 to.lock->" + from.name);
+        class Helper {
+            public void transfer() {
                 if (from.balance - amount < 0) {
                     System.out.println(from.name + "->" + to.name + "======余额不足，转账失败");
                     // throw
@@ -56,6 +49,33 @@ public class TransferMoney implements Runnable {
                 from.balance -= amount;
                 to.balance += amount;
                 System.out.println(from.name + "->" + to.name + "------成功转账" + amount + "元");
+            }
+        }
+        int fromHash = System.identityHashCode(from);
+        int toHash = System.identityHashCode(to);
+
+        if (fromHash < toHash) {
+            synchronized (from) {
+                // 对方加锁
+                synchronized (to) {
+                    new Helper().transfer();
+                }
+            }
+        } else if (fromHash > toHash) {
+            synchronized (to) {
+                synchronized (from) {
+                    new Helper().transfer();
+                }
+            }
+        } else {
+            // 新的锁
+            synchronized (lock) {
+                // 无论是to先，还是first先都可以
+                synchronized (to) {
+                    synchronized (from) {
+                        new Helper().transfer();
+                    }
+                }
             }
         }
     }
