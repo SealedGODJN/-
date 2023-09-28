@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）哲学家就餐问题：解决方法①最后一个哲学家的筷子拿起顺序对调【避免策略】&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/deadlock/LiveLock.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/deadlock/TryLockDeadLock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -904,7 +904,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -923,7 +923,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized用法：类锁1、synchronized加在static方法上&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -948,7 +947,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）最简单的例子&#10;  （2）两人转账&#10;  （3）多人转账&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）最简单的例子&#10;  （2）两人转账&#10;  （3）多人转账&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）哲学家就餐问题：解决方法①最后一个哲学家的筷子拿起顺序对调【避免策略】&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）哲学家就餐问题：解决方法①最后一个哲学家的筷子拿起顺序对调【避免策略】&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
