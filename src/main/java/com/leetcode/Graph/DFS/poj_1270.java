@@ -75,17 +75,17 @@ public class poj_1270 {
                 System.out.print(c + " ");
             }
             System.out.println();
-        } else {
-            for (int i = 0; i < 26; i++)
-                // 已标记 未访问
-                if (mark[i] && !vis[i] && ok(i, cnt)) {
-                    // 回溯开始
-                    vis[i] = true;
-                    ans[cnt] = i;
-                    dfs(cnt + 1);
-                    // 回溯结束
-                    vis[i] = false;
-                }
+        }
+        for (int i = 0; i < 26; i++) {
+            // 已标记 未访问
+            if (mark[i] && !vis[i] && ok(i, cnt)) {
+                // 回溯开始
+                vis[i] = true;
+                ans[cnt] = i;
+                dfs(cnt + 1);
+                // 回溯结束
+                vis[i] = false;
+            }
         }
     }
 
