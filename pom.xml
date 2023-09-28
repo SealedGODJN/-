@@ -4,8 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hjn</groupId>
-    <artifactId>Test_2020_3_2</artifactId>
+    <groupId>com.NPU</groupId>
+    <!-- -->
+    <artifactId>deadlock</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -16,11 +17,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>4.3.1</version>
-        </dependency>
         <!--        &lt;!&ndash; https://mvnrepository.com/artifact/mysql/mysql-connector-java &ndash;&gt;-->
         <!--        <dependency>-->
         <!--            <groupId>mysql</groupId>-->
@@ -51,7 +47,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.28</version>
+            <version>1.2.30</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -99,18 +95,6 @@
             <version>3.5</version>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.poi</groupId>-->
-        <!--            <artifactId>poi</artifactId>-->
-        <!--            <version>4.1.2</version>-->
-        <!--        </dependency>-->
-
-        <!--        <dependency>-->
-        <!--            <groupId>cn.afterturn</groupId>-->
-        <!--            <artifactId>easypoi-base</artifactId>-->
-        <!--            <version>4.1.0</version>-->
-        <!--        </dependency>-->
-
         <dependency>
             <groupId>org.jfree</groupId>
             <artifactId>jcommon</artifactId>
@@ -130,58 +114,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>com.e-iceblue</id>
-            <name>e-iceblue</name>
-            <url>https://repo.e-iceblue.cn/repository/maven-public/</url>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
-            <!--添加Scala的plugin -->
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-                <version>3.3.2</version>
-                <executions>
-                    <execution>
-                        <id>compile-scala</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>test-compile-scala</id>
-                        <phase>test-compile</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                            <goal>testCompile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <recompileMode>incremental</recompileMode>
-                    <scalaVersion>${scala.version}}</scalaVersion>
-                    <args>
-                        <arg>-deprecation</arg>
-                    </args>
-                    <jvmArgs>
-                        <jvmArg>-Xms64m</jvmArg>
-                        <jvmArg>-Xmx1024m</jvmArg>
-                    </jvmArgs>
-                </configuration>
-            </plugin>
-
-            <!-- 启动该plugin的原因：编译器插件用于编译项目的源代码。
-            从 3.0 开始，默认编译器是 javax.tools.JavaCompiler（如果使用的是Java 1.6），并且用于编译 Java 源代码。
-            如果你想强制插件使用 javac，你必须配置插件选项 forceJavacCompilerUse。
-            还要注意，   目前默认的源代码设置是 1.5，默认的目标设置是 1.5，与运行 Maven 的 JDK 无关。
-            如果要更改这些默认值，则应按照设置 Java 编译器的 -source 和 -target 中所述设置源和目标。  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
