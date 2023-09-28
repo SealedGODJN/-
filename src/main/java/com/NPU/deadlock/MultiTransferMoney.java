@@ -1,10 +1,6 @@
 package com.NPU.deadlock;
 
-import com.DesignPattern.ProxyPattern.cgLib.Frank;
-
 import java.util.Random;
-
-import static com.NPU.deadlock.TransferMoney.b;
 
 /**
  * 多人同时转账 依然很危险
