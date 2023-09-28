@@ -1,4 +1,4 @@
-package com.java.thread.深入浅出java多线程.chapter2_2.FutureTask;
+package com.NPU.深入浅出java多线程.chapter2_2.FutureTask;
 
 import java.util.concurrent.*;
 

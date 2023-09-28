@@ -1,4 +1,4 @@
-package com.java.thread.深入浅出java多线程.chapter2_1;
+package com.NPU.深入浅出java多线程.chapter2_1;
 
 
 public class example1 {

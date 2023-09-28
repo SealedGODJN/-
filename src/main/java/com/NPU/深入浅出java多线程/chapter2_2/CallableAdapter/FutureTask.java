@@ -1,4 +1,4 @@
-package com.java.thread.深入浅出java多线程.chapter2_2.CallableAdapter;
+package com.NPU.深入浅出java多线程.chapter2_2.CallableAdapter;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
