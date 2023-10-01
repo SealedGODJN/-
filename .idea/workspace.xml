@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_496.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_42.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_503.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +128,7 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShutDown">
+  <component name="RunManager" selected="Application.单调栈_42">
     <configuration name="CachedThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.CachedThreadPool" />
       <module name="deadlock" />
@@ -145,19 +146,6 @@
       <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.FixedThreadPoolOOM" />
       <module name="deadlock" />
       <option name="VM_PARAMETERS" value="-Xmx64m -Xms64m" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.threadpool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FixedThreadPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.FixedThreadPoolTest" />
-      <module name="deadlock" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.NPU.threadpool.*" />
@@ -194,8 +182,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="单调栈_42" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.单调栈.单调栈_42" />
+      <module name="deadlock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.单调栈.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.FixedThreadPoolTest" />
+      <item itemvalue="Application.单调栈_42" />
       <item itemvalue="Application.FixedThreadPoolOOM" />
       <item itemvalue="Application.CachedThreadPool" />
       <item itemvalue="Application.ScheduledThreadPoolTest" />
@@ -203,11 +204,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.单调栈_42" />
         <item itemvalue="Application.ShutDown" />
         <item itemvalue="Application.ScheduledThreadPoolTest" />
         <item itemvalue="Application.CachedThreadPool" />
         <item itemvalue="Application.FixedThreadPoolOOM" />
-        <item itemvalue="Application.FixedThreadPoolTest" />
       </list>
     </recent_temporary>
   </component>
@@ -911,7 +912,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -930,7 +931,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -955,7 +955,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、刷leetcode：206&#10;3、总结面试【完成】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
