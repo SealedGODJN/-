@@ -14,15 +14,22 @@ public class 单调栈_84 {
         int[] minRightIndex = new int[size];
 
         minLeftIndex[0] = -1; // 注意这里初始化，防止下面while死循环
-        for (int i = 0; i < size; i++) {
+
+        // i的初始化
+        for (int i = 1; i < size; i++) {
             int minLIndex = i - 1;
+            // > 改为 >=
+            // minLIndex--
             while (minLIndex >= 0 && heights[minLIndex] >= heights[i]) minLIndex = minLeftIndex[minLIndex];
             minLeftIndex[i] = minLIndex;
         }
 
         minRightIndex[size - 1] = size; // 注意这里初始化，防止下面while死循环
+
+        // i的初始化
         for (int i = size - 2; i >= 0; i--) {
             int minRIndex = i + 1;
+            // minRIndex++
             while (minRIndex < size && heights[minRIndex] >= heights[i]) minRIndex = minRightIndex[minRIndex];
             minRightIndex[i] = minRIndex;
         }

@@ -7,55 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;4、单调栈-42：接雨水（三种解法：双指针【按列计算】+单调栈【按行计算】）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/BFS_111.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/BFS_752.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_210.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_84.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;4、单调栈-84：柱状图中的最大矩形（不适合用单调栈，用双指针更适合理解）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_200.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_102.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_102.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_107.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_107.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_199.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_199.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_515.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_515.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_637.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/LevelTraverse/Tree_637.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_144.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_144.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_145.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_145.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Traverse/Tree_94.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Tree_226.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FirstWeek/Tree_226.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_235.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_235.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_450.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_450.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_669.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_669.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_701.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FiveWeek/Tree_701.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_236.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_236.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_501.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_501.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_530.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_530.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_617.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_700.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_700.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_98.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/FourWeek/Tree_98.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_100.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_101.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_101.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_104.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_104.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_110.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_110.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_111.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_111.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_222.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_222.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_257_BackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_257_BackTracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_572.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/SecondWeek/Tree_572.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_105.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_106.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_112.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_113.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_113.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_404.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_513.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/ThirdWeek/Tree_654.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_653.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/Tree_653.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/utils/PrintTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/utils/PrintTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/分解问题/Tree_104.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/分解问题/Tree_104.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_104.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_104.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_111.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_111.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_543.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Tree/遍历二叉树/Tree_543.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_337.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/dp/dp_337.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_42.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_84.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/单调栈/单调栈_84.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,20 +128,7 @@
       <recent name="com.dataStructure.stack.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.单调栈_84">
-    <configuration name="CachedThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.CachedThreadPool" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.threadpool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.graph_200">
     <configuration name="ScheduledThreadPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.ScheduledThreadPoolTest" />
       <module name="deadlock" />
@@ -239,20 +181,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="graph_200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.DFS.graph_200" />
+      <module name="deadlock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.Graph.DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.graph_200" />
       <item itemvalue="Application.单调栈_42" />
       <item itemvalue="Application.单调栈_84" />
-      <item itemvalue="Application.CachedThreadPool" />
       <item itemvalue="Application.ScheduledThreadPoolTest" />
       <item itemvalue="Application.ShutDown" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.graph_200" />
         <item itemvalue="Application.单调栈_84" />
         <item itemvalue="Application.单调栈_42" />
         <item itemvalue="Application.ShutDown" />
         <item itemvalue="Application.ScheduledThreadPoolTest" />
-        <item itemvalue="Application.CachedThreadPool" />
       </list>
     </recent_temporary>
   </component>
@@ -956,7 +911,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -975,7 +930,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -1000,7 +954,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;3、单调栈-503：循环数组（遍历两遍即可）&#10;4、单调栈-42：接雨水（三种解法：双指针【按列计算】+单调栈【按行计算】）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;3、单调栈-503：循环数组（遍历两遍即可）&#10;4、单调栈-42：接雨水（三种解法：双指针【按列计算】+单调栈【按行计算】）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;4、单调栈-84：柱状图中的最大矩形（不适合用单调栈，用双指针更适合理解）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;4、单调栈-84：柱状图中的最大矩形（不适合用单调栈，用双指针更适合理解）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
