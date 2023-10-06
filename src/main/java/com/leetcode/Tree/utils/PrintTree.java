@@ -1,6 +1,6 @@
 package com.leetcode.Tree.utils;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 public class PrintTree {
     static String prefix = "-";

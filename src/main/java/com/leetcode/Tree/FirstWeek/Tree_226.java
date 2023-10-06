@@ -1,7 +1,7 @@
 package com.leetcode.Tree.FirstWeek;
 
 import com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse.Tree_102;
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 import java.util.List;
 

@@ -1,11 +1,6 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.TreeNode;
-
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import com.leetcode.TreeNode;
 
 public class Tree_572 {
 //    public boolean isSubtree(TreeNode root, TreeNode subRoot) {

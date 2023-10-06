@@ -1,6 +1,6 @@
 package com.leetcode.Tree.FourWeek;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 import java.util.Stack;
 

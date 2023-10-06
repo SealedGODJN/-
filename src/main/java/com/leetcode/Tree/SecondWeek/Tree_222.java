@@ -1,6 +1,6 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 public class Tree_222 {
 //    public int countNodes(TreeNode root) {

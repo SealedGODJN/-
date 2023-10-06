@@ -1,9 +1,7 @@
 package com.leetcode.Tree.FourWeek;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class Tree_98 {

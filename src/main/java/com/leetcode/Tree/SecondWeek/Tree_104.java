@@ -1,6 +1,6 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 public class Tree_104 {
     /**

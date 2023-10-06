@@ -1,8 +1,6 @@
 package com.leetcode.Tree.ThirdWeek;
 
-import com.leetcode.Tree.TreeNode;
-
-import java.util.Arrays;
+import com.leetcode.TreeNode;
 
 /**
  * 给定一个不重复的整数数组nums 。最大二叉树可以用下面的算法从nums 递归地构建:

@@ -1,6 +1,6 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

@@ -1,6 +1,6 @@
 package com.leetcode.Tree.遍历二叉树;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 public class Tree_543 {
     int max = 0;

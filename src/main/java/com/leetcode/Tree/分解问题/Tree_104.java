@@ -1,6 +1,6 @@
 package com.leetcode.Tree.分解问题;
 
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 
 public class Tree_104 {
     public int maxDepth(TreeNode root) {

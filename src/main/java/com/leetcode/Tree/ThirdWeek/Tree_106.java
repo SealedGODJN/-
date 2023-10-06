@@ -1,9 +1,6 @@
 package com.leetcode.Tree.ThirdWeek;
 
-import com.leetcode.Tree.TreeNode;
-
-
-import java.util.Arrays;
+import com.leetcode.TreeNode;
 
 public class Tree_106 {
 

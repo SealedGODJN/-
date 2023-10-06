@@ -1,12 +1,6 @@
 package com.leetcode.Tree.SecondWeek;
 
-import com.leetcode.Tree.FirstWeek.Traverse.LevelTraverse.Tree_102;
-import com.leetcode.Tree.TreeNode;
-
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import com.leetcode.TreeNode;
 
 /**
  * 给定一个二叉树，判断它是否是高度平衡的二叉树。

@@ -1,10 +1,7 @@
 package com.leetcode.Tree.FiveWeek;
 
-import com.leetcode.Tree.FirstWeek.Traverse.Tree_94;
-import com.leetcode.Tree.TreeNode;
+import com.leetcode.TreeNode;
 import com.leetcode.Tree.utils.PrintTree;
-
-import java.util.List;
 
 public class Tree_669 {
 //    /**
