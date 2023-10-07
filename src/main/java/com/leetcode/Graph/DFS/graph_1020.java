@@ -19,9 +19,6 @@ public class graph_1020 {
 
         for (int[] ints : grid) {
             for (int anInt : ints) {
-//                if (anInt == 1) {
-//                    count++;
-//                }
                 count += anInt;
             }
         }
