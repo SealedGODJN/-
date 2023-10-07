@@ -24,21 +24,17 @@ public class graph_695 {
     }
 
     private int dfs(int[][] grid, int i, int j) {
-        int result = 0;
         // 判断搜索的位置是否合法
         if (!inArea(grid, i, j)) return 0;
 
-        if (grid[i][j] != 1) return 0;
-        // '2'代表已经遍历过的岛屿
+        if (grid[i][j] != 1) {
+            return 0;
+        }
         grid[i][j] = 2;
-        result++;
-
-        result += dfs(grid, i - 1, j);
-        result += dfs(grid, i + 1, j);
-        result += dfs(grid, i, j - 1);
-        result += dfs(grid, i, j + 1);
-
-        return result;
+        // int[][] dir={{0,1},{0,-1},{1,0},{-1,0}};
+        //可到这一步说明它是1，需要+1
+        return 1 + dfs(grid, i, j - 1) + dfs(grid, i - 1, j)
+                + dfs(grid, i, j + 1) + dfs(grid, i + 1, j);
     }
 
     public static void main(String[] args) {
