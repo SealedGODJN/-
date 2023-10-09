@@ -7,11 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_130.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_417.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/threadpool/PauseableThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_1020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_1020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_417.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_417.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +128,13 @@
       <recent name="com.dataStructure.Queue.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.graph_1020">
-    <configuration name="单调栈_84" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.单调栈.单调栈_84" />
+  <component name="RunManager" selected="Application.PauseableThreadPool">
+    <configuration name="PauseableThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.PauseableThreadPool" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.单调栈.*" />
+          <option name="PATTERN" value="com.NPU.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,19 +195,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.PauseableThreadPool" />
       <item itemvalue="Application.graph_1020" />
       <item itemvalue="Application.graph_695" />
       <item itemvalue="Application.com.leetcode.Graph.BFS.graph_200" />
       <item itemvalue="Application.graph_200" />
-      <item itemvalue="Application.单调栈_84" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PauseableThreadPool" />
         <item itemvalue="Application.graph_1020" />
         <item itemvalue="Application.graph_695" />
         <item itemvalue="Application.com.leetcode.Graph.BFS.graph_200" />
         <item itemvalue="Application.graph_200" />
-        <item itemvalue="Application.单调栈_84" />
       </list>
     </recent_temporary>
   </component>
@@ -912,7 +911,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -931,7 +930,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -956,7 +954,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、bfs、dfs的模板题-岛屿数量：使用dfs找出连通的所有1&#10;3、岛屿的最大面积：dfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、岛屿的最大面积：dfs【优化dfs递归单层逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
