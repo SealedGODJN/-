@@ -4,16 +4,14 @@ public class graph_1020 {
 
     public int numEnclaves(int[][] grid) {
         int count = 0;
+        // 两个可以合并
         for (int i = 0; i < grid.length; i++) {
             dfs(grid, i, 0);
-        }
-        for (int i = 0; i < grid[0].length; i++) {
-            dfs(grid, 0, i);
-        }
-        for (int i = 0; i < grid.length; i++) {
             dfs(grid, i, grid[0].length - 1);
         }
+        // 两个可以合并
         for (int i = 0; i < grid[0].length; i++) {
+            dfs(grid, 0, i);
             dfs(grid, grid.length - 1, i);
         }
 
