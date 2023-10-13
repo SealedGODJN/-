@@ -151,12 +151,95 @@ public class TestStream {
         }
     }
 
+    /**
+     * UTF-8编码方式(二进制)
+     * 0xxxxxxx ASCII码
+     * 110xxxxx 10xxxxxx
+     * 1110xxxx 10xxxxxx 10xxxxxx
+     * 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+     * <p>
+     * 根据上面表格，要解析 UTF-8 编码就很简单了，如果一个字节第一位是 0 ，则这个字节就是一个单独的字符，如果第一位是 1 ，则连续有多少个 1 ，就表示当前字符占用多少个字节
+     */
+    public static void test4() {
+        // 了解二进制
+//            String binaryValue = "11100100"; // 二进制值
+//            int hexadecimalValue = Integer.parseInt(binaryValue, 2);
+//
+//            System.out.println("二进制值：" + binaryValue);
+//            System.out.println("十六进制值：" + Integer.toHexString(hexadecimalValue));
+
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream("D:\\test\\Fifo.a");
+            // 当写入的整数无法在字符集编码中找到对应的字符时，
+            // 字符流读取会将其转换成Unicode Character ‘REPLACEMENT CHARACTER’ (U+FFFD)：65533
+            fos.write(7870);
+            // java中字符流一次到底读几个字节？由于输入的整数找不到对应的字符，故只读1个字节。
+            // 如果输入这3个字节
+            // test5中的char[]数组只有一个元素，20320（不强转成long将输出字符“你”）
+
+            // 1110 0100 (代表这个utf-8字符是由3个8bit二进制数构成)
+//            fos.write(0xe4);
+            // 1011 1100
+//            fos.write(0xbd);
+            // 1010 0000
+//            fos.write(0xa0);
+
+            // java字符流一次只读一个字节
+//            fos.write(0xe4bda0);
+
+            // java字符流一次只读一个字节
+//            fos.write(0xe4bd);
+//            fos.write(0xa0);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fos != null) {
+                    fos.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void test5() {
+        FileReader fr = null;
+        try {
+            fr = new FileReader("D:\\test\\Fifo.a");
+
+            char[] data = new char[10];
+            int len;
+            while ((len = fr.read(data)) != -1) {
+                for (int i = 0; i < len; i++) {
+//                    System.out.println((long) data[i]);
+                    System.out.println(data[i]);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fr != null) {
+                    fr.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
     public static void main(String[] args) throws IOException {
 //        test1();
-        test2();
-        File file1 = new File("d:/lol.txt");
-        File file2 = new File("d:/lol2.txt");
+//        test2();
+//        File file1 = new File("d:/lol.txt");
+//        File file2 = new File("d:/lol2.txt");
 //        encodeFile(file1, file2);
-        decodeFile(file1, file2);
+//        decodeFile(file1, file2);
+
+        test4();
+        test5();
     }
 }
