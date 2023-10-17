@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/BufferStream/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/BufferStream/TestStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/ReaderAndWriter/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/ReaderAndWriter/TestStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -911,7 +911,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -930,7 +930,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -955,7 +954,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

@@ -17,7 +17,7 @@ public class TestStream {
         // 缓存流必须建立在一个存在的流的基础上
         try (
                 FileReader fr = new FileReader(f);
-                BufferedReader br = new BufferedReader(fr);
+                BufferedReader br = new BufferedReader(fr)
         )
         {
             while (true) {
@@ -40,7 +40,7 @@ public class TestStream {
                 // 创建文件字符流
                 FileWriter fw = new FileWriter(f);
                 // 缓存流必须建立在一个存在的流的基础上
-                PrintWriter pw = new PrintWriter(fw);
+                PrintWriter pw = new PrintWriter(fw)
         ) {
             pw.println("garen kill teemo");
             pw.flush();
@@ -69,7 +69,7 @@ public class TestStream {
                 // 创建文件字符流
                 FileWriter fw = new FileWriter(f2);
                 // 缓存流必须建立在一个存在的流的基础上
-                PrintWriter pw = new PrintWriter(fw);
+                PrintWriter pw = new PrintWriter(fw)
         )
         {
             while (true) {
@@ -109,7 +109,7 @@ public class TestStream {
         StringBuilder sb = new StringBuilder();
         try (
             FileReader reader = new FileReader(javaFile);
-            BufferedReader br = new BufferedReader(reader);
+            BufferedReader br = new BufferedReader(reader)
         ) {
 
             while (true) {

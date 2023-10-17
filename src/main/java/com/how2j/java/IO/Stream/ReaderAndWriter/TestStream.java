@@ -234,12 +234,12 @@ public class TestStream {
     public static void main(String[] args) throws IOException {
 //        test1();
 //        test2();
-//        File file1 = new File("d:/lol.txt");
-//        File file2 = new File("d:/lol2.txt");
-//        encodeFile(file1, file2);
-//        decodeFile(file1, file2);
+        File file1 = new File("d:/test/lol.txt");
+        File file2 = new File("d:/test/lol2.txt");
+        encodeFile(file1, file2);
+        decodeFile(file1, file2);
 
-        test4();
-        test5();
+//        test4();
+//        test5();
     }
 }
