@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/中文/TestStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/BufferStream/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/BufferStream/TestStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/ReaderAndWriter/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/Stream/ReaderAndWriter/TestStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/graph_1020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/graph_1020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_417.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_417.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <recent name="com.dataStructure.Queue.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestStream">
+  <component name="RunManager" selected="Application.com.how2j.java.IO.Stream.中文.TestStream">
     <configuration name="PauseableThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.PauseableThreadPool" />
       <module name="deadlock" />
@@ -155,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.leetcode.Graph.BFS.graph_200" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.BFS.graph_200" />
+    <configuration name="com.how2j.java.IO.Stream.中文.TestStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.how2j.java.IO.Stream.中文.TestStream" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Graph.BFS.*" />
+          <option name="PATTERN" value="com.how2j.java.IO.Stream.中文.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,19 +196,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
       <item itemvalue="Application.TestStream" />
       <item itemvalue="Application.PauseableThreadPool" />
       <item itemvalue="Application.graph_1020" />
       <item itemvalue="Application.graph_695" />
-      <item itemvalue="Application.com.leetcode.Graph.BFS.graph_200" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
         <item itemvalue="Application.TestStream" />
         <item itemvalue="Application.PauseableThreadPool" />
         <item itemvalue="Application.graph_1020" />
         <item itemvalue="Application.graph_695" />
-        <item itemvalue="Application.com.leetcode.Graph.BFS.graph_200" />
       </list>
     </recent_temporary>
   </component>
@@ -911,7 +912,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -930,7 +931,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -955,7 +955,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
