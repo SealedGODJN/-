@@ -7,13 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、再次理解dfs和bfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/BFS_127.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/DFS_827.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/岛屿/岛屿_463.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/DFS_841.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_1971.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_684.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_685.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_841.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板_rank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/岛屿/岛屿数量_200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/岛屿/岛屿数量_200.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,20 @@
       <recent name="com.dataStructure.Queue.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.岛屿_463">
+  <component name="RunManager" selected="Application.模板">
+    <configuration name="模板" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.并查集.模板" />
+      <module name="deadlock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.Graph.并查集.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PauseableThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.PauseableThreadPool" />
       <module name="deadlock" />
@@ -184,33 +199,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="graph_1020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.BFS.graph_1020" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.Graph.BFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.模板" />
       <item itemvalue="Application.岛屿_463" />
       <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
       <item itemvalue="Application.TestStream" />
       <item itemvalue="Application.PauseableThreadPool" />
-      <item itemvalue="Application.graph_1020" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.模板" />
         <item itemvalue="Application.岛屿_463" />
         <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
         <item itemvalue="Application.TestStream" />
         <item itemvalue="Application.PauseableThreadPool" />
-        <item itemvalue="Application.graph_1020" />
       </list>
     </recent_temporary>
   </component>
@@ -914,7 +916,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -933,7 +935,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -958,7 +959,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、再次理解dfs和bfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、再次理解dfs和bfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

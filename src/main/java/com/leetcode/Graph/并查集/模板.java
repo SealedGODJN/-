@@ -25,7 +25,7 @@ public class 模板 {
         u = find(u);
         v = find(v);
         if (u == v) return;
-        father[u] = v;
+        father[v] = u;
     }
 
     public int find(int u) {
@@ -46,5 +46,14 @@ public class 模板 {
         模板 test = new 模板();
         test.size = 10;
         test.father = new int[test.size];
+
+        test.init();
+
+        test.join(1, 8);
+        test.join(3, 8);
+        test.join(1, 7);
+        test.join(8, 5);
+        test.join(2, 9);
+        test.join(6, 2);
     }
 }
