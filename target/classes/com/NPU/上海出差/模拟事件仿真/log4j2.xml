@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5p [%t][%c] %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+        <Logger name="com.NPU" level="warn" />
+        <Logger name="com.NPU.上海出差" level="warn" />
+        <Logger name="com.NPU.上海出差.模拟事件仿真" level="debug" />
+    </Loggers>
+</Configuration>

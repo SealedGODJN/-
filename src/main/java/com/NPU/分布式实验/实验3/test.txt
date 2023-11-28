@@ -1,0 +1,21 @@
+server:
+8080
+
+client:
+
+注册用户: <servername> <port> register
+
+注册用户a
+localhost 8080 register a a
+注册用户b
+localhost 8080 register b b
+
+添加会议: <servername> <port> add <begin> <end> <title>
+
+添加会议1
+localhost 8080 add a a b 2023-11-17-10-10 2023-11-17-10-20 meeting1
+添加会议2
+localhost 8080 add a a b 2023-11-17-10-20 2023-11-17-10-30 meeting2
+
+查询会议：<servername> <port> query <username> <password> <begin> <end>
+

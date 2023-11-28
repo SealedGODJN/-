@@ -192,9 +192,9 @@ public class TestFile {
 
     public static void main(String[] args) throws IOException {
 //        test1();
-//        test2();
+        test2();
 //        test3();
 //        train1();
-        train2();
+//        train2();
     }
 }
