@@ -36,6 +36,16 @@ public class graph_1020 {
         return i >= 0 && i <= grid.length - 1 && j >= 0 && j <= grid[0].length - 1;
     }
 
+    /**
+     * 理解bfs：<br>
+     * 1）辅助队列<br>
+     * 2）广度优先遍历（下一个搜索的是？根据数据结构关系，树形、二维、三维、图）<br>
+     * 3）设置条件，在遍历中收集结果<br>
+     *
+     * @param grid
+     * @param i
+     * @param j
+     */
     private void bfs(int[][] grid, int i, int j) {
         if (grid[i][j] == 0) return;
         // 判断搜索的位置是否合法

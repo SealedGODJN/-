@@ -43,6 +43,16 @@ public class graph_417 {
 //        return i >= 0 && i <= grid.length - 1 && j >= 0 && j <= grid[0].length - 1;
 //    }
 
+    /**
+     * dfs理解：<br>
+     * 1）如何找到dfs的下一个对象？树形关系、二维关系、三维关系、图<br>
+     * 2）回溯，深度优先，即先把一条路搜索完（搜索完的条件？）<br>
+     *
+     * @param heights
+     * @param x
+     * @param y
+     * @param signal
+     */
     private void dfs(int[][] heights, int x, int y, int signal) {
         // 访问过 则 返回
         if (visited[x][y][signal]) return;
