@@ -7,52 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法">
-      <change afterPath="$PROJECT_DIR$/From" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/concurrent_tools_practice/threadlocal/ThreadLocalNormalUsage00.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/concurrent_tools_practice/threadlocal/ThreadLocalNormalUsage01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/concurrent_tools_practice/threadlocal/ThreadLocalNormalUsage03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/concurrent_tools_practice/threadlocal/ThreadLocalNormalUsage04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/concurrent_tools_practice/threadlocal/ThreadLocalNormalUsage05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/FA算法/flow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/FA算法/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/PollerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/SendRecvApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Flow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl1/FTPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl1/FTPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl1/TCPServerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl1/UDPThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl2/FTPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl2/FTPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验1/impl2/TCPServerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验2/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验2/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验2/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验2/ThreadedServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/AgendaImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/Meeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/实验3/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/考试1/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/考试1/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/分布式实验/考试1/ProxyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/NPU/上海出差/模拟事件仿真/delay.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/NPU/上海出差/模拟事件仿真/helloWorldDemo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/NPU/上海出差/模拟事件仿真/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象&#10;4、之前尝试使用spring-integration（扩展性不好），不喜欢用xml进行配置&#10;&#10;待完成：&#10;1、优化网络演算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/File/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2j/java/IO/File/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/huawei/huawei20230906/No3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/huawei/huawei20230906/No3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/graph_200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/BFS/graph_200.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_695.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/graph_695.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/threadpool/ShutDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/threadpool/ShutDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Flow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Flow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.模拟事件仿真.队列.Main" />
       <module name="deadlock" />
       <extension name="coverage">
@@ -197,13 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SendRecvApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.模拟事件仿真.SendRecvApp" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.模拟事件仿真.队列.Main" />
       <module name="deadlock" />
-      <option name="PROGRAM_PARAMETERS" value="-classpath D:\\code\\helloworld\\src\\main\\resources\\" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.上海出差.模拟事件仿真.*" />
+          <option name="PATTERN" value="com.NPU.上海出差.模拟事件仿真.队列.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,13 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.NPU.分布式实验.实验3.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.分布式实验.实验3.Client" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.模拟事件仿真.队列.Main" />
       <module name="deadlock" />
-      <option name="PROGRAM_PARAMETERS" value="localhost 8080 register a a" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.分布式实验.实验3.*" />
+          <option name="PATTERN" value="com.NPU.上海出差.模拟事件仿真.队列.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -225,12 +182,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="graph_695" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.DFS.graph_695" />
+    <configuration name="ShutDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.ShutDown" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Graph.DFS.*" />
+          <option name="PATTERN" value="com.NPU.threadpool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,19 +196,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.ShutDown" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.SendRecvApp" />
-      <item itemvalue="Application.graph_695" />
-      <item itemvalue="Application.com.NPU.分布式实验.实验3.Client" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SendRecvApp" />
-        <item itemvalue="Application.graph_695" />
-        <item itemvalue="Application.com.NPU.分布式实验.实验3.Client" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.ShutDown" />
       </list>
     </recent_temporary>
   </component>
@@ -952,7 +909,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -971,7 +928,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized面试题（7种情况）对应7个类&#10;4、synchronized可重入性质：递归调用method1+method1调用method2&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、正在学习java多线程的Thread、Object类的方法【4/8】&#10;3、synchronized：用lock的形式展现synchronized如何工作&#10;4、synchronized：将synchronized的代码反编译，查看.class中monitor什么时候enter和exit&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -996,7 +952,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）最简单的例子&#10;  （2）两人转账&#10;  （3）多人转账&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）哲学家就餐问题：解决方法①最后一个哲学家的筷子拿起顺序对调【避免策略】&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象&#10;4、之前尝试使用spring-integration（扩展性不好），不喜欢用xml进行配置&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象&#10;4、之前尝试使用spring-integration（扩展性不好），不喜欢用xml进行配置&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

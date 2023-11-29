@@ -7,14 +7,14 @@ public class Flow {
     String id;
 
     /**
-     * 当前加入下一队列的延迟
+     * 产生的时间
      */
-    int currentDelay;
+    long generateTime;
 
     /**
      * 总延迟
      */
-    int totalDelay;
+    long totalDelay;
 
     /**
      * 消息长度

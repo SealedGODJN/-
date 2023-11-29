@@ -38,7 +38,6 @@ public class ShutDown {
         // 被中断的任务列表
         List<Runnable> runnableList = executorService.shutdownNow();
     }
-
 }
 
 class ShutDownTask implements Runnable {
