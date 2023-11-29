@@ -7,15 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/DFS/DFS_841.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_1971.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_684.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_685.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/并查集_841.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板_rank.java" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、并查集【结束】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_376.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_45.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_455_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_455_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_53_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Greedy/Greedy_55.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Graph/并查集/模板.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/helloworld-java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/hjn/Downloads/实验4/10/Lab4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37241378",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.NPU.threadpool" />
@@ -133,13 +132,13 @@
       <recent name="com.dataStructure.Queue.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.模板">
-    <configuration name="模板" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.Graph.并查集.模板" />
+  <component name="RunManager" selected="Application.WaitNotifyPrintOddEvenWaitNotify">
+    <configuration name="Greedy_455_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Greedy.Greedy_455_3" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.Graph.并查集.*" />
+          <option name="PATTERN" value="com.leetcode.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PauseableThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.threadpool.PauseableThreadPool" />
+    <configuration name="Greedy_53_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Greedy.Greedy_53_2" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.NPU.threadpool.*" />
+          <option name="PATTERN" value="com.leetcode.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2j.java.IO.Stream.ReaderAndWriter.TestStream" />
+    <configuration name="Greedy_55" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Greedy.Greedy_55" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2j.java.IO.Stream.ReaderAndWriter.*" />
+          <option name="PATTERN" value="com.leetcode.Greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="岛屿_463" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.岛屿.岛屿_463" />
+    <configuration name="WaitNotifyPrintOddEvenSyn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenSyn" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.岛屿.*" />
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,12 +185,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.how2j.java.IO.Stream.中文.TestStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.how2j.java.IO.Stream.中文.TestStream" />
+    <configuration name="WaitNotifyPrintOddEvenWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
       <module name="deadlock" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2j.java.IO.Stream.中文.*" />
+          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.模板" />
-      <item itemvalue="Application.岛屿_463" />
-      <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
-      <item itemvalue="Application.TestStream" />
-      <item itemvalue="Application.PauseableThreadPool" />
+      <item itemvalue="Application.Greedy_455_3" />
+      <item itemvalue="Application.Greedy_53_2" />
+      <item itemvalue="Application.Greedy_55" />
+      <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
+      <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.模板" />
-        <item itemvalue="Application.岛屿_463" />
-        <item itemvalue="Application.com.how2j.java.IO.Stream.中文.TestStream" />
-        <item itemvalue="Application.TestStream" />
-        <item itemvalue="Application.PauseableThreadPool" />
+        <item itemvalue="Application.WaitNotifyPrintOddEvenWaitNotify" />
+        <item itemvalue="Application.WaitNotifyPrintOddEvenSyn" />
+        <item itemvalue="Application.Greedy_55" />
+        <item itemvalue="Application.Greedy_53_2" />
+        <item itemvalue="Application.Greedy_455_3" />
       </list>
     </recent_temporary>
   </component>
@@ -916,7 +915,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -935,7 +934,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
@@ -960,7 +958,8 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、再次理解dfs和bfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、并查集【结束】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、并查集【结束】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
