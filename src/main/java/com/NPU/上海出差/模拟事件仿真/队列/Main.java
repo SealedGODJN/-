@@ -47,8 +47,8 @@ public class Main {
             e.execute(allPort.get(id));
         }
 
-//        Thread.sleep(10000);
-        // 被中断的任务列表
-//        List<Runnable> runnableList = e.shutdownNow();
+        Thread.sleep(5000);
+//         被中断的任务列表
+        List<Runnable> runnableList = e.shutdownNow();
     }
 }

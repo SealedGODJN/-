@@ -52,7 +52,7 @@ public class Channel {
     }
 
     /**
-     * @param message >0时要sleep
+     * @param message >0时要计算flow的延迟
      * @param delay
      */
     public synchronized void addAfterDelay(Flow message, long delay) {
@@ -82,32 +82,22 @@ public class Channel {
     }
 
     /**
-     * @param delay >0时要sleep
+     * @param delay >0时要计算flow的延迟
      */
     public synchronized void handleMessage(long delay) {
-//        while (!Thread.currentThread().isInterrupted() && recvQueue.size() == 0) {
-//            try {
-//                // 阻塞，等待生产者消费put()
-//                wait();
-//            } catch (InterruptedException e) {
-//                // 线程在wait或sleep期间被中断了
-//                e.printStackTrace();
-//                Thread.currentThread().interrupt();//重新设置中断标示
-//                System.out.println(Thread.currentThread().getName() + "在消费者中" + "被中断了");
-//            } finally {
-//                //线程结束前做一些清理工作
-//            }
-//        }
-        while (recvQueue.size() == 0) {
+        while (!Thread.currentThread().isInterrupted() && recvQueue.size() == 0) {
             try {
                 // 阻塞，等待生产者消费put()
                 wait();
             } catch (InterruptedException e) {
                 // 线程在wait或sleep期间被中断了
                 e.printStackTrace();
-
+//                Thread.currentThread().interrupt();//重新设置中断标示
+// 不能重新设置中断标识，不需要退出循环，如果退出循环，则会执行while循环后面的代码
                 //线程结束前做一些清理工作
                 System.out.println(Thread.currentThread().getName() + "在消费者中" + "被中断了");
+                // 退出进程
+                return;
             }
         }
 
