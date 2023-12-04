@@ -9,7 +9,7 @@
 
 
     <int:inbound-channel-adapter expression="T(java.lang.System).currentTimeMillis()" channel="logger">
-        <int:poller fixed-delay="20000" max-messages-per-poll="2" />
+        <int:poller fixed-delay="20000" max-messages-per-poll="2"/>
     </int:inbound-channel-adapter>
 
     <int:logging-channel-adapter id="logger" logger-name="com.NPU.上海出差.模拟事件仿真"/>
