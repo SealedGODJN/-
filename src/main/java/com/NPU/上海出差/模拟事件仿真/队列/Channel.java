@@ -71,8 +71,7 @@ public class Channel {
         }
 
         if (delay > 0) {
-//            Thread.sleep(delay);
-            message.totalDelay += delay;
+            message.totalDelay += this.id + ": " + delay + "+";
         }
         // 延迟一段时间再加入队列
         recvQueue.add(message);
@@ -115,15 +114,14 @@ public class Channel {
         // 延迟一段时间再取出队列
         Flow flow = recvQueue.removeFirst();
         if (delay > 0) {
-//            Thread.sleep(delay);
-            flow.totalDelay += delay;
-            flow.totalDelay += (System.currentTimeMillis() - flow.generateTime);
+            flow.totalDelay += this.id + ": " + delay + "+";
+            flow.totalDelay += this.id + ": " + (System.currentTimeMillis() - flow.generateTime) + "+";
         }
         // 不是最终接收端，则发送给另一个channel
         if (!flow.dest.equals(this.id)) {
             keepAndSendQueue.add(flow);
         }
-        System.out.println("totalDelay=" + flow.totalDelay);
+        System.out.println(flow.id + ": totalDelay=" + flow.totalDelay);
 
         // 通知生产者继续干活
         notify();

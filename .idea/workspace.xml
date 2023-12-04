@@ -7,19 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、leetcode：贪心算法&#10;3、基于生产者消费者的网络传输仿真&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Port.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/实验52023/TeamDataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/NPU/面向对象设计/实验52023/team.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象：抽象为（1）网络流flow（2）端口（既是生产者也是消费者）（3）Channel（生产者将消息加入channel中，消费者从channel中抽取channel）（4）Main作为初始化管理器&#10;&#10;待完成：&#10;1、优化网络演算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Flow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Flow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/NPU/上海出差/模拟事件仿真/delay.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/NPU/上海出差/模拟事件仿真/delay.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/NPU/上海出差/模拟事件仿真/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/NPU/上海出差/模拟事件仿真/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +46,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../WXR/Java/jdk1.8.0_271/src.zip!/java/util/concurrent/Executors.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/../../WXR/Java/jdk1.8.0_271/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../software/jdk1.8.0_271/src.zip!/java/util/concurrent/Executor.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -91,33 +81,34 @@
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/code/helloworld-java/src/main/java/com/NPU/面向对象设计/实验52023&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/helloworld/src/main/resources/com/NPU/上海出差/模拟事件仿真&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.37241378&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.NPU.threadpool" />
       <recent name="com.NPU.json.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\helloworld-java\src\main\java\com\NPU\面向对象设计\实验52023" />
-      <recent name="D:\code\helloworld-java\src\main\java\com\NPU\考试0531\第四题debug" />
-      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\stack\Test" />
-      <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\dataStructure\LinkedList" />
-      <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\java\Generic\improve" />
+      <recent name="D:\code\helloworld\src\main\resources\com\NPU\上海出差\模拟事件仿真" />
+      <recent name="D:\code\helloworld\src\main\java\com\NPU\分布式实验\实验3" />
+      <recent name="D:\code\helloworld\src\main\java\com\NPU\分布式实验\考试1" />
+      <recent name="D:\code\helloworld\src\main\java\com\NPU\分布式实验\实验1\impl2" />
+      <recent name="D:\code\helloworld\src\main\java\com\NPU\分布式实验\实验1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\helloworld\src\main\resources" />
+      <recent name="D:\code\helloworld\src\main\resources\com\NPU\上海出差\模拟事件仿真" />
       <recent name="C:\Users\黄江南\Desktop\code\src\main\java\com\leetcode\dp" />
       <recent name="D:\code\IDEA_PROGECT\helloworld\src\main\java\com\leetcode\Tree\FirstWeek\Traverse" />
       <recent name="$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/GetClass" />
@@ -130,14 +121,14 @@
       <recent name="com.leetcode.HashMap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.leetcode.Graph.BFS" />
+      <recent name="com.NPU.concurrent_tools_practice.threadlocal" />
       <recent name="com.NPU.线程八大基础.threadObjectClassCommonMethods" />
       <recent name="com.NPU.synchronized深度解析" />
       <recent name="com.NPU.线程八大基础.stopThreads" />
       <recent name="com.dataStructure.Queue.Test" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.NPU.上海出差.模拟事件仿真.队列.Main" />
       <module name="deadlock" />
@@ -151,65 +142,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamDataParser (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.实验52023.TeamDataParser" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.面向对象设计.实验52023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamDataParser (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.实验52023.TeamDataParser" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.面向对象设计.实验52023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamDataParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.面向对象设计.实验52023.TeamDataParser" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.面向对象设计.实验52023.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitNotifyPrintOddEvenWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.WaitNotifyPrintOddEvenWaitNotify" />
-      <module name="deadlock" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.NPU.线程八大基础.threadObjectClassCommonMethods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="应用程序.Main" />
-      <item itemvalue="应用程序.TeamDataParser" />
-      <item itemvalue="应用程序.TeamDataParser (1)" />
-      <item itemvalue="应用程序.TeamDataParser (2)" />
-      <item itemvalue="应用程序.WaitNotifyPrintOddEvenWaitNotify" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -564,9 +501,6 @@
       <workItem from="1687749640232" duration="633000" />
       <workItem from="1688989427386" duration="12000" />
       <workItem from="1692947177772" duration="9000" />
-      <workItem from="1695201136700" duration="626000" />
-      <workItem from="1695202731756" duration="1000" />
-      <workItem from="1695265157069" duration="18000" />
     </task>
     <task id="LOCAL-00050" summary="leetcode+可视化&#10;&#10;已完成：&#10;1、多线程的2-3&#10;2、完成了Tree669修建二叉搜索树&#10;3、完成了打印二叉树的函数&#10;&#10;待完成：&#10;1、学习java的多线程&#10;2、学习乐观锁、悲观锁的具体应用（预计4个小时）&#10;3、">
       <created>1653563014718</created>
@@ -911,7 +845,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -930,32 +864,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-1/8】：wait、notify、notifyAll（生产者消费者实现）&#10;3、【正在学习】java多线程的Thread、Object类的方法【4-2/8】：sleep&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程的Thread、Object类的方法【4-5/8】：总结（wait/notify/sleep/join/yield/start/Thread.currentThread()）&#10;3、【正在学习】java多线程-线程各个属性【5-1/8】：线程的ID、线程的唯一身份识别号、线程ID、守护线程、线程优先级&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【完成】java多线程-线程的属性【5/8】：&#10;3、【正在学习】java多线程-未捕获的异常【6/8】：UncaughtException&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、学习scala&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode回溯+贪心（两道题）&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode继续刷题&#10;2、【正在学习】java多线程的UncaughtExceptionHandler【4-5/8】：自定义线程池的ThreadFactory，在ThreadFactory中setUncaughtExceptionHandler()&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表&#10;2、帮张重阳解决了“14. 最长公共前缀”（暴力+分治）&#10;3、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode160. 相交链表+21. 合并两个有序链表（1、虚拟头节点dummy2、循环结束后，还要把剩余的部分加到链表上）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode86.分隔链表（1、拆解成两个链表，再合并成一个链表）&#10;2、【正在学习】java多线程&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode19+23（链表）&#10;2、华为OD面试（括号匹配）&#10;3、【正在学习】java多线程-保证线程安全（1、运行结果错误类2、活跃性问题3、对象发布和初始化时的问题）&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode双指针（数组）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode岛屿数量（待解决）&#10;2、【正在学习】java内存模型&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：2、3、4数之和（还有n数之和（递归））&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的遍历形式与递归形式&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试【完成】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;2、刷leetcode：206&#10;3、总结面试【完成】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、刷leetcode：206&#10;3、总结面试【完成】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、单调栈-496（更新栈，更新结果数组应该具体问题具体分析）&#10;3、单调栈-503：循环数组（遍历两遍即可）&#10;4、单调栈-42：接雨水（三种解法：双指针【按列计算】+单调栈【按行计算】）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;4、单调栈-84：柱状图中的最大矩形（不适合用单调栈，用双指针更适合理解）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、dfs的模板题-岛屿数量：使用dfs找出连通的所有1&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、bfs、dfs的模板题-岛屿数量：使用dfs找出连通的所有1&#10;3、岛屿的最大面积：dfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、岛屿的最大面积：dfs【优化dfs递归单层逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-创建、参数讲解、手动创建线程池（自带的线程池可能出现的问题）、如何停止线程池&#10;2、飞地的数量：【优化统计飞地的逻辑】&#10;3、被围绕的区域：与【飞地的数量】思路相反&#10;4、太平洋大西洋水流问题：从四面开始dfs，同时被访问过两次的即为（返回网格坐标 result 的 2D 列表）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-钩子函数&#10;2、java字符流一次只读一个字节&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、再次理解dfs和bfs&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、完成四道题目&#10;4、重新理解：并查集&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、并查集【结束】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、leetcode：贪心算法&#10;3、基于生产者消费者的网络传输仿真&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、leetcode：贪心算法&#10;3、基于生产者消费者的网络传输仿真&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
+    <MESSAGE value="leetcode+多线程&#10;【已完成】&#10;1、backTracking回溯-40题：树层去重+树枝去重&#10;2、复习hashmap的原理" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）最简单的例子&#10;  （2）两人转账&#10;  （3）多人转账&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）最简单的例子&#10;  （2）两人转账&#10;  （3）多人转账&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;  （1）哲学家就餐问题：解决方法①最后一个哲学家的筷子拿起顺序对调【避免策略】&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程-死锁&#10;  （1）活锁问题&#10;  （2）饥饿问题&#10;2、刷leetcode：复习一遍所有中等题&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象&#10;4、之前尝试使用spring-integration（扩展性不好），不喜欢用xml进行配置&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象：抽象为（1）网络流flow（2）端口（既是生产者也是消费者）（3）Channel（生产者将消息加入channel中，消费者从channel中抽取channel）（4）Main作为初始化管理器&#10;&#10;待完成：&#10;1、优化网络演算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】线程池&#10;2、刷leetcode：复习一遍所有中等题&#10;3、完成网络传输的模型抽象：抽象为（1）网络流flow（2）端口（既是生产者也是消费者）（3）Channel（生产者将消息加入channel中，消费者从channel中抽取channel）（4）Main作为初始化管理器&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -993,8 +927,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
           <line>53</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javascriptCheck/TickStep.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/how2j/java/reflection/newObject/TestReflection.java</url>

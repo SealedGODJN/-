@@ -40,7 +40,7 @@ public class Port implements Runnable {
             f1.id = "flow" + i;
             i++;
             f1.generateTime = System.currentTimeMillis();
-            f1.totalDelay = 0;
+            f1.totalDelay = "";
             f1.source = "A653send";
             f1.dest = "A653recv";
             f1.nextChannelId.add("channel1");
@@ -91,7 +91,7 @@ public class Port implements Runnable {
     public void run() {
         if (isOnlySend) {
             try {
-                System.out.println("==开始生产消息==");
+                System.out.println(Thread.currentThread().getName() + "==开始生产消息==");
                 generateFlow();
             } catch (InterruptedException e) {
                 System.out.println(Thread.currentThread().getName() + "生产消息" + "被中断了");
@@ -99,7 +99,7 @@ public class Port implements Runnable {
             }
         } else {
             try {
-                System.out.println("==开始接收消息==");
+                System.out.println(Thread.currentThread().getName() + "==开始接收消息==");
                 recvFlow();
             } catch (InterruptedException e) {
                 System.out.println(Thread.currentThread().getName() + "接收消息" + "被中断了");

@@ -19,7 +19,7 @@ public class Flow {
     /**
      * 总延迟
      */
-    long totalDelay;
+    String totalDelay;
 
     /**
      * 消息长度（与技术延迟有关）
