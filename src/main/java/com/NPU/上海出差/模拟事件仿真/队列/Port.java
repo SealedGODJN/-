@@ -68,7 +68,8 @@ public class Port implements Runnable {
     }
 
     public void recvFlow() throws InterruptedException {
-        while (true) {
+        // 当线程没有被interrupted时，继续接收消息，否则停止
+        while (!Thread.currentThread().isInterrupted()) {
             // 如果消息到达终点了，则不继续处理
             for (String id :
                     lines.keySet()) {

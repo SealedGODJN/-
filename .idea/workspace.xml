@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：完成多个网络节点的接力传输消息&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类">
+    <list default="true" id="5dde5e17-b401-496d-819b-4f785af50df2" name="Changes" comment="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：解决问题：消息传输结束之后，接收端无法自动停止（需要使用线程池设置停止，同时在while循环中try-catch捕获InterruptedException）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/NPU/上海出差/模拟事件仿真/队列/Port.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -907,7 +908,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686234212167</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -926,8 +927,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：二叉树的直径&#10;2、【正在学习】java内存模型-可见性&#10;&#10;待完成：&#10;1、优化网络演算法" />
-    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、leetcode：【1/2-待完成】&#10;2、【正在学习】java内存模型-可见性&#10;3、【额外任务】结对代码走查&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试&#10;&#10;待完成：&#10;1、优化网络演算法" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【正在学习】线程-死锁&#10;2、刷leetcode：DFS+回溯&#10;3、总结面试【完成】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存" />
@@ -951,7 +950,9 @@
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池-addWorker()原理&#10;2、复习了javaIO：中文的字符编码及在java中的表示&#10;3、并查集【结束】&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、leetcode：贪心算法&#10;3、基于生产者消费者的网络传输仿真&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、优化jvm内存-新方法&#10;3、Java并发工具类" />
     <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：完成多个网络节点的接力传输消息&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：完成多个网络节点的接力传输消息&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：解决问题：消息传输结束之后，接收端无法自动停止（需要使用线程池设置停止）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类" />
+    <MESSAGE value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：解决问题：消息传输结束之后，接收端无法自动停止（需要使用线程池设置停止，同时在while循环中try-catch捕获InterruptedException）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode+java多线程基础+可视化&#10;&#10;已完成：&#10;1、【完成】java线程池&#10;2、基于生产者消费者的网络传输仿真：解决问题：消息传输结束之后，接收端无法自动停止（需要使用线程池设置停止，同时在while循环中try-catch捕获InterruptedException）&#10;&#10;待完成：&#10;1、优化网络演算法&#10;2、Java并发工具类" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

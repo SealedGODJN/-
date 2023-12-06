@@ -64,10 +64,13 @@ public class Channel {
                 // 线程在wait或sleep期间被中断了
                 e.printStackTrace();
                 Thread.currentThread().interrupt();//重新设置中断标示
-            } finally {
                 //线程结束前做一些清理工作
                 System.out.println(Thread.currentThread().getName() + "在生产者中" + "被中断了");
             }
+        }
+
+        if (Thread.currentThread().isInterrupted()) {
+            return;
         }
 
         if (delay > 0) {
@@ -91,14 +94,16 @@ public class Channel {
                 wait();
             } catch (InterruptedException e) {
                 // 线程在wait或sleep期间被中断了
-                e.printStackTrace();
-//                Thread.currentThread().interrupt();//重新设置中断标示
+                Thread.currentThread().interrupt();//重新设置中断标示
 // 不能重新设置中断标识，不需要退出循环，如果退出循环，则会执行while循环后面的代码
                 //线程结束前做一些清理工作
                 System.out.println(Thread.currentThread().getName() + "在消费者中" + "被中断了");
-                // 退出进程
                 return;
             }
+        }
+
+        if (Thread.currentThread().isInterrupted()) {
+            return;
         }
 
         // 延迟一段时间再取出队列
