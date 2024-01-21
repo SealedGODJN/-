@@ -12,11 +12,6 @@
       <option name="url" value="http://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="repo.spring.io.snapshot" />
-      <option name="name" value="Spring Framework Maven Snapshot Repository" />
-      <option name="url" value="http://maven.aliyun.com/repository/public" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
@@ -37,11 +32,6 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="jboss.community" />
-      <option name="name" value="JBoss Community repository" />
-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
@@ -50,6 +40,26 @@
       <option name="id" value="repo.spring.io.milestone" />
       <option name="name" value="Spring Framework Maven Milestone Repository" />
       <option name="url" value="http://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="repo.spring.io.milestone" />
+      <option name="name" value="Spring Framework Maven Milestone Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="repo.spring.io.snapshot" />
+      <option name="name" value="Spring Framework Maven Snapshot Repository" />
+      <option name="url" value="http://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="repo.spring.io.snapshot" />
+      <option name="name" value="Spring Framework Maven Snapshot Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="com.e-iceblue" />

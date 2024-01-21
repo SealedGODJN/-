@@ -26,6 +26,7 @@ public class Channel {
      */
     public String destPortId;
 
+    //===================================接收方是队列端口
     /**
      * 队列长度
      */
